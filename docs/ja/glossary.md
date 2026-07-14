@@ -1,115 +1,110 @@
 ---
+audience: mixed
+date: 2026-07-14
+keywords:
+  - glossary
+  - 用語集
+  - terminology
+related_adrs: []
+related_specs: []
+status: published
+summary: Vault-Framework 全体で使われる用語の一覧。導入者や第三者がドキュメントを読む際に、独自用語の意味を素早く確認できるようにする。
 title: 用語集
 title_en: Glossary
-type: glossary
-audience: mixed
-status: published
-date: 2026-07-13
-keywords: [glossary, 用語集, terminology, vault, mcp, skill, project, handoff, capture, adr, spec]
-summary: Vault-Framework で使われる用語の定義集。混同しやすい用語(Vault、vault、Vault リポジトリ等)の区別も明確化。
+type: reference
+created: 2026-07-14T20:48:28+09:00
+updated: 2026-07-14T20:48:28+09:00
 ---
 
 ## Summary
 
-Vault-Framework で使われる用語の定義集。特に、大文字小文字で意味が変わる用語や、複数の意味を持つ用語の区別を明確にする。
+Vault-Framework 全体で使われる用語の一覧。導入者や第三者がドキュメントを読む際に、独自用語の意味を素早く確認できるようにする。
 
-## 主要用語
+## 用語一覧
 
-### Vault(大文字)
+### Vault(ボールト)
 
-Naoya の個人 GitHub リポジトリ `nkhippo/Vault` を指す固有名詞。または、この Framework 全体の内部呼称。
-
-### vault(小文字)
-
-一般名詞としての「知識を蓄積する場所」の意味。文脈により Vault(大文字)と互換的に使われる場合もあるが、原則: リポジトリ名を明示する時は Vault、概念を語る時は vault。
+個人のナレッジベース兼 Chat 集約先となる GitHub リポジトリ。`nkhippo/Vault` がその実運用インスタンス。Markdown ファイルと Front Matter で構造化されたデータを保持する。
 
 ### Vault-MCP
 
-MCP サーバ実装のリポジトリ名(`nkhippo/Vault-MCP`)。ハイフン区切り。
-
-### Vault MCP(スペース区切り)
-
-Claude Pro Connectors 上に表示される MCP コネクタの名前。同じ実体を指すが、UI 表示形式のため区切り文字が異なる。
+Vault を MCP(Model Context Protocol)経由で操作するためのサーバ実装。Cloudflare Workers 上にデプロイされ、GitHub API を介して Vault リポジトリの読み書きを行う。
 
 ### Vault-Framework
 
-この Framework 自体のリポジトリ名(`nkhippo/Vault-Framework`)。
+Vault と Vault-MCP の運用知見を一般化した公開用フレームワーク。このリポジトリ自体を指す。設計思想、Skill、テンプレート、導入手順を含む。
 
-### Skill
+### Skill(vault-manager)
 
-Claude のアカウント単位で登録される振る舞い規約。SKILL.md ファイルを Claude Settings > Skills からアップロードする。
-
-- `vault-manager`: vault への保存判断、参照判断、あいまい名解決を担当
-- `vault-maintainer`: 保守運用(4 レベル運用の実行、抽象生成)を担当(将来分離予定)
-
-### Project(Claude Projects)
-
-Claude UI 上の「プロジェクト」機能。特定用途の Chat を集約するコンテナ。Vault Project は「Vault」という Project を指す。
-
-### Project Instructions
-
-Claude Projects の Instructions フィールド。Vault-Framework の運用では「激薄 Instructions」方針で、実質的なルールは vault の `project_instructions_vault.md` に集約する。
+Claude Skills にアップロードする `SKILL.md`。Claude の振る舞いロジック(保存判断、参照判断、あいまい名解決等)を定義する。
 
 ### MCP(Model Context Protocol)
 
-Anthropic 主導の、AI モデルと外部ツールをつなぐプロトコル。ここでは Cloudflare Workers 上に実装した MCP サーバを Claude Pro Connectors 経由で接続する。
-
-### handoff
-
-Chat 間・セッション間の引き継ぎに特化した領域。`30_projects/<RepoName>/handoff/` 配下に配置。`current-state.md` が代表的なファイル。
-
-### capture
-
-vault のトップレベルディレクトリ `10_captures/` に配置される、生の入力データ。将来 `10_chat_logs/` から改名予定。discussions/、quick-thoughts/、external-inputs/ にサブ分類。
-
-### ADR (Architecture Decision Record)
-
-意思決定の記録。`docs/ja/decisions/` 配下に個別ファイルで管理。番号(0001, 0002, ...)で識別。
-
-### spec(仕様)
-
-Vault-Framework が定義する各種仕様の詳細記述。`docs/ja/specs/` 配下。Front Matter スキーマ、統制語彙、参照レベル等。
-
-### rejected alternative(却下案)
-
-検討したが採用しなかった選択肢の記録。`docs/ja/rejected-alternatives/` 配下。「なぜこれではダメだったか」を残すことで、将来の議論の重複を防ぐ。
-
-### guideline(運用ガイドライン)
-
-日々の運用における判断基準の集約。`docs/ja/guidelines/` 配下。9 原則、動作原則、Sonnet 対応、保存判断フロー等。
-
-### Fine-grained PAT
-
-GitHub Personal Access Token の細粒度版。特定リポジトリの特定権限のみに絞れる。Vault-MCP では `nkhippo/Vault` の Contents R/W 限定で運用。
+Anthropic が定義する、AI モデルが外部ツールやデータソースと連携するためのプロトコル。Vault-MCP はこのプロトコルに準拠したサーバ実装。
 
 ### Front Matter
 
-Markdown ファイル冒頭の YAML メタデータブロック。Vault では type / status / tags / summary / keywords 等を含む。
+Markdown ファイルの先頭に置く YAML 形式のメタデータブロック。`title`、`type`、`status`、`tags` 等のフィールドを含む。
 
-### 統制語彙(vocabulary)
+### 統制語彙(Controlled Vocabulary)
 
-Front Matter の tags 等で使用可能な語彙を制限する仕組み。`00_meta/vocabulary.md` に定義。
+`type`、`status`、`tags`、`project` フィールドで使用が許可された値の集合。表記揺れを防ぎ、AI の判定精度を上げるために管理される。
 
-### 参照レベル 5 段階
+### 参照レベル(Reference Level)
 
-Claude が vault をどこまで深く参照するかの 5 段階。0(参照しない)〜 4(全文精読)。詳細は `docs/ja/specs/reference-level-system.md`。
+Skill が vault を参照する深度を 0〜4 の 5 段階で表現したもの。Level 0(参照しない)がデフォルトで、必要に応じて段階的に深く参照する。
 
-### 保守運用 4 レベル
+### あいまい名解決(Ambiguous Name Resolution)
 
-vault の保守運用における 4 段階のレベル分け。詳細は `docs/ja/specs/maintenance-four-levels.md`。
+ユーザーが機能表現や通称でプロジェクト・アプリを指した際に、Skill が正式なリポジトリ名を特定するフロー。`project_aliases.md` を参照して行う。
 
-### 抽象生成
+### handoff(ハンドオフ)
 
-具体的な chat_log から、より抽象的な spec や ADR を生成する運用。定期実施を想定。詳細は `docs/ja/specs/abstract-generation.md`。
+各プロジェクトの「直近の状態」を記録する `current-state.md` と、詳細な変更履歴を記録する `recent-changes/` ディレクトリの総称。新しい Chat セッションでのキャッチアップを容易にする。
+
+### 保守運用 4 レベル(Four-Level Maintenance)
+
+Vault のエントロピー(統制語彙の揺らぎ、リンク切れ等)に対処するための、頻度と担当が異なる 4 段階の保守運用フロー(Level 1〜4)。
+
+### 抽象生成(Abstract Generation)
+
+具体的な chat_log から、ADR・spec・rejected-alternatives のような抽象的なドキュメントを生成するプロセス。保守運用 4 レベルとは独立した並行運用。
+
+### ADR(Architecture Decision Record)
+
+意思決定記録。「何を」「なぜ」決定したかを構造化して記録する形式。Vault-Framework の `docs/ja/decisions/` 配下に蓄積されている。
+
+### rejected-alternatives(却下案)
+
+意思決定の過程で検討されたが採用されなかった選択肢を記録するドキュメント。ADR と対になって、なぜその案が採用されなかったかを明示する。
+
+### スラグ(Slug)
+
+ファイル名の一部として使う、英語の kebab-case で表現された識別子。例: `mcp-platform-selection`。
+
+### kebab-case
+
+単語をハイフンでつなぐ命名記法(例: `file-naming`)。Vault-Framework のスラグやディレクトリ名で使用される。
+
+### sensitive フィールド
+
+Front Matter の boolean フィールド。`true` の場合、そのファイルの内容は他コンテキストで引用・要約しない扱いになる(50_self/ 配下のファイルはデフォルトで `true`)。
+
+### Cursor 委譲
+
+複数ファイルにまたがる整合性が必要な作業を、Claude が直接行わず、Cursor(コーディングエージェント)向けの指示書を作成して委譲すること。
 
 ### GitHub-as-a-Backend
 
-「Obsidian ブランドを使わず、実態としては GitHub リポジトリを Markdown 置き場として使う」思想。Vault の設計の根幹。詳細は `docs/ja/philosophy.md`。
+Vault-Framework の中核思想。個人ナレッジベースの正典データストアとして GitHub リポジトリを採用する設計判断([Philosophy](./philosophy.md) 参照)。
 
-## Skill と Project と Vault の 3 層構造
+### 3 層構造(Skill・Project・Vault)
 
-- **Skill**: Claude アカウント全体で発火する振る舞い規約(ユーザーごと)
-- **Project**: Claude Projects 単位で発火する Instructions(用途ごと)
-- **Vault**: GitHub リポジトリ上のドキュメントと Front Matter(データと詳細ルール)
+Vault-Framework の運用アーキテクチャ。Skill(振る舞いロジック)、Project Instructions(最小限のポインタ)、Vault(運用ルールの正典)の 3 層に責務を分離する([Architecture](./architecture.md) 参照)。
 
-詳細は `docs/ja/architecture.md` と `docs/ja/decisions/0003-skill-project-vault-3-layer.md`。
+## 関連
+
+- [Philosophy: GitHub-as-a-Backend](./philosophy.md)
+- [Architecture: Skill・Project・Vault の 3 層](./architecture.md)
+- [naming-conventions.md: 命名規約の思想](./naming-conventions.md)
+- [maintenance-guide.md: 保守運用ガイド](./maintenance-guide.md)
