@@ -33,7 +33,7 @@ summary: CURSOR_INSTRUCTIONS_step9_integrated-mirroring.md の実行結果。JA 
 | Phase F README 言語セクション更新 | ✅ `(pending)` → available |
 | 対象外パス変更なし | ✅ |
 | Front Matter 欠如なし | ✅ |
-| `git push origin main` | ✅ (本レポート commit 後) |
+| `git push origin main` | ✅ `60d4637..3948026` → origin/main |
 
 ---
 
