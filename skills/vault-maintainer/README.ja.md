@@ -1,30 +1,78 @@
 ---
-title: vault-maintainer Skill (日本語説明)
-type: readme
-audience: human_primary
-status: draft
-date: 2026-07-13
-keywords: [vault-maintainer, skill, readme, japanese, maintenance]
-summary: vault-maintainer Skill の概要(日本語)。
+created: 2026-07-14T21:12:00+09:00
+keywords:
+  - skill
+  - vault-maintainer
+  - readme
+  - upload
+  - defer-lifted
+status: published
+summary: vault-maintainer Skill の管理用 README。この Skill の目的、vault-manager との棲み分け、アップロード手順、保留解除の経緯を説明。
+title: vault-maintainer README(日本語)
+type: reference
+updated: 2026-07-14T21:06:00+09:00
 ---
 
 ## Summary
 
-<!-- TODO: 概要を書く -->
+`vault-maintainer` Skill の管理用 README。この Skill の目的、`vault-manager` との棲み分け、アップロード手順、保留解除の経緯を説明する。
 
-## 発火条件
+## この Skill は何か
 
-<!-- TODO: 発火条件 の内容を書く -->
+`vault-maintainer` は、個人 Vault(`nkhippo/Vault`)の**保守運用(Level 2〜4)と抽象生成**を担当する Claude Skill です。
 
-## 4 レベル運用
+`vault-manager`(日常の保存・参照・Level 1 自動修正を担当)とは役割が分離されており、この Skill は保守運用または抽象生成の**明示的なトリガーがある時のみ**発火します。
 
-<!-- TODO: 4 レベル運用 の内容を書く -->
+## vault-manager との棲み分け
 
-## 抽象生成
+| 領域 | 担当 |
+|---|---|
+| 保存・参照・日記・あいまい名解決・Issue 起票 | vault-manager |
+| Level 1(日常の統制語彙自動修正) | vault-manager |
+| Level 2〜4(週次・月次・季節の保守運用) | **vault-maintainer** |
+| 抽象生成(chat_log → ADR/spec/rejected/guideline) | **vault-maintainer** |
 
-<!-- TODO: 抽象生成 の内容を書く -->
+2 つの Skill を両方 Claude Skills にアップロードして併用します。誤発火を避けるため、`vault-maintainer` の description は保守・抽象生成の明示的トリガーのみに限定されています。
+
+## 保留解除の経緯
+
+この Skill は当初、Naoya の設計判断により「**3 ヶ月の運用データが蓄積されるまで着手を保留**」とされていました(Reference Class Forecasting 的な、実データを見てから設計する慎重な判断)。
+
+2026-07-14、Naoya の判断で保留を解除し、v1.0 を作成しました。運用データ蓄積前の作成となるため、実際の運用パターンが見えてきたら、Level 2〜4 の具体的な作業内容や抽象生成のフローを調整する想定です(v1.1 以降で反映)。
 
 ## アップロード手順
 
-<!-- TODO: アップロード手順 の内容を書く -->
+1. Vault から `skills/vault-maintainer/SKILL.md` を取得(iCloud パス)
+2. `updated:` 等の Vault 用 Front Matter フィールドを削除(`name` + `description` のみの純粋形式にする)
+3. `vault-maintainer/` フォルダを zip 化
+4. Claude Skills にアップロード
+5. `vault-manager` と併せて両方 Enabled にする
 
+```bash
+cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Vault/30_projects/Vault-Framework/skills/
+# vault-maintainer の Front Matter を純粋形式に
+cd vault-maintainer/
+sed -i '' '/^created: /d; /^updated: /d; /^type: /d; /^status: /d; /^title: /d; /^summary: /d; /^keywords:/,/^[a-z]/d' SKILL.md
+head -5 SKILL.md  # name + description のみになっているか確認
+cd ../
+zip -r vault-maintainer-v1.0.zip vault-maintainer/
+```
+
+注意: 上記の sed は複数フィールド削除のため、実行後に必ず `head` で `name:` と `description:` の 2 フィールドのみ残っていることを確認してください。うまくいかない場合は手動でエディタから不要フィールドを削除するのが確実です。
+
+## 動作確認
+
+アップロード後、新規 Chat で以下を試す:
+
+- 「週次メンテをお願い」→ vault-maintainer が発火、Level 2 の検出フローを開始
+- 「この議論を ADR にして」→ vault-maintainer が発火、抽象生成フローを開始
+- 「これを Vault に保存して」→ **vault-manager が発火**(vault-maintainer は反応しない、棲み分けの確認)
+
+3 つ目で vault-maintainer が誤発火しないことが、棲み分け設計の正しさの確認ポイントです。
+
+## 関連
+
+- SKILL.md: `skills/vault-maintainer/SKILL.md`
+- 保守運用仕様: `docs/ja/specs/maintenance-four-levels.md`
+- 抽象生成仕様: `docs/ja/specs/abstract-generation.md`
+- 対になる Skill: `skills/vault-manager/`
