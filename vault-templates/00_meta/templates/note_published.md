@@ -1,22 +1,25 @@
 ---
-title: <ノート題名>
-created: <YYYY-MM-DDTHH:MM:SS+09:00>
-updated: <YYYY-MM-DDTHH:MM:SS+09:00>
-type: note_published
+created: 2026-07-14T01:10:27+09:00
+published_date: ""
+published_url: ""
+related: []
 status: published
-summary: <2-4 行の要約>
-tags: []
-keywords: []
+summary: ""
+tags:
+  - note-article
+title: ""
+type: note_published
+updated: 2026-07-14T01:10:27+09:00
 ---
 
 ## Summary
 
-<要約>
+<公開版の概要>
 
-## Body
+## 本文(公開版)
 
-<本文>
+<清書版本文>
 
-## References
+## 公開後の反応・振り返り
 
-- <wikilink>
+<必要に応じて追記>

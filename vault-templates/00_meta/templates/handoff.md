@@ -1,26 +1,58 @@
 ---
-title: <プロジェクト名> handoff
-created: <YYYY-MM-DDTHH:MM:SS+09:00>
-updated: <YYYY-MM-DDTHH:MM:SS+09:00>
-type: handoff
-status: current
-summary: <現在状態の 2-4 行要約>
-tags: []
+created: 2026-07-14T01:10:59+09:00
 keywords: []
+one_line_purpose: ""
+project: ""
+related: []
+status: wip
+summary: ""
+tags:
+  - handoff
+  - current-state
+title: ""
+type: handoff
+updated: 2026-07-14T01:10:59+09:00
 ---
 
-## Current State
+## Summary
 
-<いまどこまでできているか>
+<プロジェクトの現在の状態を 2-4 行で>
 
-## Recent Changes
+## 現在のフェーズ
 
-- <直近の変更>
+<今どこにいるか、何を達成した / 何を目指している>
 
-## Next Actions
+## 直近の重要決定
 
-- <次にやること>
+- YYYY-MM-DD: <決定内容> → [[wikilink]]
+- YYYY-MM-DD: <決定内容> → [[wikilink]]
 
-## Blockers
+## 実施済み構造
 
-- <ブロッカー>
+<既に構築・整備が完了している要素>
+
+## 未解決の論点(重要度上位)
+
+- <論点 1>
+- <論点 2>
+
+## 直近のアクション
+
+以下は今後実施予定。
+
+- **アクション 1**: <説明>
+- **アクション 2**: <説明>
+
+## 関連ファイル
+
+- <関連ファイルへのリンク>
+
+## 他 Chat からのキャッチアップ手順
+
+新しい Chat でこのプロジェクトについて相談する時、この current-state.md を読めば以下が把握できる:
+
+1. <ポイント 1>
+2. <ポイント 2>
+3. <ポイント 3>
+
+より詳細な議論の背景を知りたい場合は、related のリンクを辿る。

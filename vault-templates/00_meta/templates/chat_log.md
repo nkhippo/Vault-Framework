@@ -1,35 +1,39 @@
 ---
-title: <chat のトピック>
-created: <YYYY-MM-DDTHH:MM:SS+09:00>
-updated: <YYYY-MM-DDTHH:MM:SS+09:00>
-type: chat_log
+created: 2026-07-14T01:10:15+09:00
+related: []
+sensitive: false
+source_chat_date: ""
 status: draft
-source_chat_date: <YYYY-MM-DD>
-summary: <2-4 行の要約>
+summary: ""
 tags: []
-keywords: []
+title: ""
+type: chat_log
+updated: 2026-07-14T01:10:15+09:00
 ---
 
 ## Summary
 
-<要約>
+<2-4行の要約>
 
-## 背景
+## 背景・目的
 
-<この Chat が始まった経緯>
+<なぜこの会話をしたか>
 
 ## 主な論点
 
-<議論の中心>
+- 
+- 
 
 ## 決定事項
 
-<確定した判断>
+- 
+- 
 
-## 未解決
+## 未決 / TODO
 
-<持ち越し>
+- 
+- 
 
-## 関連
+## 会話ログ(抜粋)
 
-- <wikilink>
+<必要に応じて要点を引用>

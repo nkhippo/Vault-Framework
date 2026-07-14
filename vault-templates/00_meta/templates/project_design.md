@@ -1,34 +1,25 @@
 ---
-title: <プロジェクト名> 設計
-created: <YYYY-MM-DDTHH:MM:SS+09:00>
-updated: <YYYY-MM-DDTHH:MM:SS+09:00>
-type: project_design
+created: 2026-07-14T01:10:41+09:00
+project: ""
+related: []
 status: draft
-summary: <2-4 行の要約>
+summary: ""
 tags: []
-keywords: []
+title: ""
+type: project_design
+updated: 2026-07-14T01:10:41+09:00
 ---
 
 ## Summary
 
-<要約>
+<この設計文書が扱う範囲>
 
-## Goals
+## 背景
 
-- <ゴール>
+## 検討事項
 
-## Non-Goals
+## 決定
 
-- <非ゴール>
+## 代替案(採用しなかったもの)
 
-## Design
-
-<設計概要>
-
-## Decisions
-
-- <決定事項>
-
-## Open Questions
-
-- <未解決>
+## 未解決事項

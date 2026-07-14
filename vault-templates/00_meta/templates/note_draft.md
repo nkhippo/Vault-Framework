@@ -1,18 +1,35 @@
 ---
-title: <ノート題名>
-created: <YYYY-MM-DDTHH:MM:SS+09:00>
-updated: <YYYY-MM-DDTHH:MM:SS+09:00>
-type: note_draft
+created: 2026-07-14T01:10:22+09:00
+related: []
+sensitive: false
 status: wip
-summary: <2-4 行の要約>
-tags: []
-keywords: []
+summary: ""
+tags:
+  - note-article
+target_publish_date: ""
+title: ""
+type: note_draft
+updated: 2026-07-14T01:10:22+09:00
 ---
 
 ## Summary
 
-<要約>
+<記事の一言概要>
 
-## Body
+## 想定読者
 
-<本文>
+<誰に向けて書くか>
+
+## 記事の主張(1 文)
+
+<最も伝えたいこと 1 行>
+
+## 構成案
+
+1. 
+2. 
+3. 
+
+## 本文
+
+<執筆中>

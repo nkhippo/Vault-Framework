@@ -1,26 +1,34 @@
 ---
-title: <アイデア名>
-created: <YYYY-MM-DDTHH:MM:SS+09:00>
-updated: <YYYY-MM-DDTHH:MM:SS+09:00>
-type: project_idea
+created: 2026-07-14T01:10:34+09:00
+idea_slug: ""
+related: []
+sensitive: false
 status: incubating
-summary: <2-4 行の要約>
+summary: ""
 tags: []
-keywords: []
+title: ""
+type: project_idea
+updated: 2026-07-14T01:10:34+09:00
 ---
 
 ## Summary
 
-<要約>
+<アイデアの一言概要>
 
-## Motivation
+## 動機・きっかけ
 
-<なぜやりたいか>
+<なぜやりたいと思ったか>
 
-## Rough Scope
+## コンセプト
 
-<粗いスコープ>
+<何を作るか、どんな問題を解くか>
 
-## Open Questions
+## 想定ユーザー
 
-- <未解決>
+## 技術スタック候補
+
+## リスク・懸念
+
+## 次のアクション
+
+- [ ] 
