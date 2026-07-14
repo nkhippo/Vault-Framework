@@ -116,7 +116,7 @@ Vault-Framework は次の 6 つの領域から構成されます。
 ## 言語
 
 - 日本語(default): [`docs/ja/`](./docs/ja/)
-- English (pending): [`docs/en/`](./docs/en/)
+- English: [`README.en.md`](./README.en.md) / [`docs/en/`](./docs/en/)
 
 ---
 
