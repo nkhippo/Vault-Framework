@@ -1,36 +1,87 @@
 ---
-title: 却下案: ファイル数での Cursor 委譲
-title_en: Rejected: Cursor delegation by file count
-type: rejected_alternative
 audience: mixed
-status: rejected
+created: 2026-07-14T06:40:00+09:00
 date: 2026-07-13
-keywords: [cursor, delegation, file-count, rejected, alternative]
-superseded_by: 0008
-related_adrs: [0008]
-summary: ファイル数での Cursor 委譲。却下理由: 作業の質的な違いが評価できず、機械的すぎる
+keywords:
+  - cursor-delegation
+  - file-count
+  - numeric-rule
+  - coarse-criteria
+  - task-type
+related_adrs:
+  - "0008"
+  - "0009"
+status: rejected
+summary: Cursor 委譲判定を「3 ファイル以上で Cursor 委譲」のファイル数ベースの数値ルールで行う案。ファイル数が粗い指標で、単一ファイルでも波及が大きい操作や、多数ファイルでも独立した操作を適切に判定できないため却下。
+superseded_by: "0008"
+tags:
+  - rejected
+  - cursor
+title: "却下案: Cursor 委譲のファイル数ルール"
+type: rejected_alternative
+updated: 2026-07-14T06:40:00+09:00
 ---
 
 ## Summary
 
-<!-- TODO: この案の概要と却下理由を 2-3 行で。主要理由: 作業の質的な違いが評価できず、機械的すぎる -->
+Cursor 委譲判定を「3 ファイル以上の一括操作は Cursor 委譲」等のファイル数ベースの数値ルールで行う案。ファイル数が粗い指標で、単一ファイルでも波及が大きい操作や、多数ファイルでも独立した操作を適切に判定できないため却下。ADR-0008 でメンテナンスレベル方式に変更。
 
 ## What Was Proposed
 
-<!-- TODO: この案が具体的に何だったか -->
+Cursor 委譲判定を以下のシンプルな数値ルールで行う案:
+
+- **判定基準**: 「3 ファイル以上の一括操作 → Cursor 委譲」「1-2 ファイル → Claude 単独」
+- **例外**: ディレクトリ再編、リネームは常に Cursor 委譲
+- **判定タイミング**: Skill が保存指示を受けた時点で判定
+
+このルールで Vault 運用開始から数日間、実際に運用していた。
 
 ## Why It Was Considered
 
-<!-- TODO: 検討に値した理由(この案のメリット) -->
+- **判定の単純さ**: ファイル数のカウントは機械的で明快
+- **実装容易性**: Skill 側の判定ロジックがシンプル
+- **一般的な直感との一致**: 「多数ファイルの操作は Cursor で」という直感に合う
+- **予測可能性**: 「今の操作は Claude?Cursor?」の判定がユーザーにも予測可能
 
 ## Why It Was Rejected
 
-<!-- TODO: 却下の主要理由。ADR での判断につながった論点。主要理由: 作業の質的な違いが評価できず、機械的すぎる -->
+### 単一ファイル操作でも波及が大きい場合
+
+- **vault_index.md の全プロジェクト一覧更新**: 1 ファイル操作だが、他ファイルとの整合(vocabulary、リポジトリ一覧、handoff 更新)を伴う
+- **リネーム(rename)**: 1 ファイル書き換えだが、他ファイルからの wikilink 波及があるため、実質的に大規模操作
+- **structure 変更**: 単一のディレクトリを移動するだけでも、参照している全ファイルへの影響
+
+これらは「1-2 ファイル操作」に分類されるが、Claude 単独では危険。ファイル数だけでは判定不十分。
+
+### 3+ ファイル操作でも独立している場合
+
+- **複数の chat_log を独立して追記**: 3 件の Chat を別々に保存するだけなら、Claude 単独で問題ない
+- **複数プロジェクトの handoff 独立更新**: 3 プロジェクトの current-state.md を独立して更新するのは Claude で完結可能
+- **独立した日記の連続追記**: 数日分の diary を別々に保存するのは並列作業として安全
+
+これらは「3+ ファイル操作」だが、Cursor 委譲は過剰。ファイル数だけでは判定過剰。
+
+### 実運用での判定ミス
+
+- Vault 運用の初期数日で、このルールの限界が顕在化
+- 「単一ファイル操作だから」と Claude 単独で実施 → 波及エラー
+- 「3 ファイルだから Cursor 委譲」→ 独立操作なのに Cursor 起動の overhead
+
+### メンテナンスレベル方式との比較
+
+- ADR-0009 で保守運用 4 レベルを確定
+- Level 1(日常発火)は Claude 単独、Level 2+ は Cursor 委譲
+- 作業の性質(整合性の要求、波及範囲、リグレッションリスク)を評価する方が精度高い
 
 ## What Was Chosen Instead
 
-- 採用された案: [ADR 0008](../decisions/0008-cursor-delegation-by-maintenance-level.md)
+- **採用案**: ADR-0008「Cursor 委譲判定: メンテナンスレベル方式」
+- **参照**: [[../decisions/0008-cursor-delegation-by-maintenance-level.md]]
+
+作業種別 × メンテナンスレベルで判定。リネーム、restructure、Front Matter 一括更新等は常に Cursor 委譲。独立操作は Claude 単独で高速に実施。
 
 ## References
 
-<!-- TODO: 元記録へのリンク -->
+- 実運用の記録: 2026-07-13 前半のファイル数ルールでの運用と数日後の反省
+- 対応 ADR: [[../decisions/0008-cursor-delegation-by-maintenance-level.md]]
+- 関連 ADR: [[../decisions/0009-four-level-maintenance-operation.md]](保守運用 4 レベル)
