@@ -16,9 +16,10 @@ FIXTURES = Path(__file__).parent / "fixtures"
 def _ctx(tmp_path: Path, files: list[Path]) -> VerifyContext:
     return VerifyContext(
         repo_root=tmp_path,
-        files=files,
-        id_map={},
+        index={},
+        reverse={},
         broken=set(),
+        files=files,
     )
 
 
