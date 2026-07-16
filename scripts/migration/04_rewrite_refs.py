@@ -38,6 +38,23 @@ WIKILINK_PATH_RE = re.compile(
 )
 
 
+def _index_hit(candidate: Path | str, repo_root: Path, index: dict[str, str]) -> str | None:
+    """Return index key if candidate resolves inside repo and exists in index."""
+    try:
+        resolved = to_posix(Path(os.path.normpath(Path(candidate).as_posix())))
+        abs_candidate = (repo_root / resolved).resolve()
+        if not str(abs_candidate).startswith(str(repo_root.resolve())):
+            return None
+    except Exception:  # noqa: BLE001
+        return None
+    if resolved in index:
+        return resolved
+    alt = resolved.lstrip("./")
+    if alt in index:
+        return alt
+    return None
+
+
 def resolve_target(
     source_rel: str,
     raw_target: str,
@@ -46,49 +63,59 @@ def resolve_target(
 ) -> tuple[str | None, str | None]:
     """Resolve a path reference to an index key.
 
+    Resolution order (first hit wins):
+      1. absolute path (leading ``/``) from repo root
+      2. vault-root style (repo-root join of the given path)
+      3. file-relative from the source file's directory
+      4. unique basename match across the index
+
     Returns (resolved_posix_path, error_reason).
     """
     target = raw_target.strip()
     if target.startswith(("http://", "https://", "mailto:")):
         return None, None  # not a path ref — caller should skip
 
-    section = ""
     if "#" in target:
-        target, section = target.split("#", 1)
-        section = "#" + section
+        target, _section = target.split("#", 1)
 
     if not target.lower().endswith(".md"):
         if "." not in Path(target).name:
             target = target + ".md"
 
-    source_dir = Path(source_rel).parent
+    # 1. Absolute (leading /)
     if target.startswith("/"):
-        candidate = Path(target.lstrip("/"))
-    else:
-        candidate = (source_dir / target)
+        hit = _index_hit(Path(target.lstrip("/")), repo_root, index)
+        if hit is not None:
+            return hit, None
 
+    # 2. Vault-root style (repo-root join)
+    if not target.startswith("/"):
+        hit = _index_hit(Path(target), repo_root, index)
+        if hit is not None:
+            return hit, None
+
+    # 3. File-relative
+    source_dir = Path(source_rel).parent
+    hit = _index_hit(source_dir / target.lstrip("/"), repo_root, index)
+    if hit is not None:
+        return hit, None
+
+    # Reject paths that escape the repo via relative traversal
     try:
-        norm = Path(os.path.normpath(candidate.as_posix()))
-        # Reject escaping repo root via ..
-        parts = norm.parts
-        if ".." in parts:
-            # After normpath, .. should be gone unless outside
-            pass
-        resolved = to_posix(norm)
-        # Check outside: if abs resolution escapes repo
-        abs_candidate = (repo_root / resolved).resolve()
-        if not str(abs_candidate).startswith(str(repo_root.resolve())):
+        abs_rel = (repo_root / source_dir / target.lstrip("/")).resolve()
+        if not str(abs_rel).startswith(str(repo_root.resolve())):
             return None, "outside_repo"
     except Exception:  # noqa: BLE001
         return None, "outside_repo"
 
-    resolved = to_posix(Path(os.path.normpath(candidate.as_posix())))
-    if resolved in index:
-        return resolved, None
-    # try without leading ./
-    alt = resolved.lstrip("./")
-    if alt in index:
-        return alt, None
+    # 4. Basename unique match
+    base = Path(target).name
+    matches = [k for k in index if Path(k).name == base]
+    if len(matches) == 1:
+        return matches[0], None
+    if len(matches) > 1:
+        return None, "ambiguous_target"
+
     return None, "target_not_found"
 
 

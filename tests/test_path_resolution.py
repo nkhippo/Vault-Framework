@@ -69,13 +69,13 @@ def test_basename_unique_resolution() -> None:
 def test_basename_ambiguous() -> None:
     mod = _load_rewrite()
     root = FIXTURES
-    # two same basenames
+    # two same basenames; source has no relative neighbor named dup.md
     index = {
         "docs/dup.md": "pj-2026-07-17-d001",
         "notes/dup.md": "pj-2026-07-17-d002",
-        "docs/source.md": "pj-2026-07-17-ccc3",
+        "other/source.md": "pj-2026-07-17-ccc3",
     }
-    resolved, err = mod.resolve_target("docs/source.md", "dup.md", root, index)
+    resolved, err = mod.resolve_target("other/source.md", "dup.md", root, index)
     assert resolved is None
     assert err == "ambiguous_target"
 
