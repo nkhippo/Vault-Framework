@@ -33,3 +33,11 @@ Anthropic Skills `description` 上限: **1024 文字**
 ## Root cause
 
 Phase 0.6 / 1c / 1d PR-A で `description` にトリガー phrase を累積追加し 1024 超過。詳細は body の workflow セクションに既存。修正は `description` のみ、body unchanged。
+
+## Follow-up fix (2026-07-17): dual frontmatter merge
+
+- `skills/vault-maintainer/SKILL.md`: 2 frontmatter blocks → merged to 1
+- Root cause: Anthropic Skills parser が第 2 frontmatter を body 内 YAML として誤解釈
+- Fix: `name` / `description` を第 1 frontmatter に merge、第 2 ブロック削除
+- description length: 228 chars(維持)
+- Body unchanged
