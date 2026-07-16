@@ -87,3 +87,7 @@ Naoya が「起票して」と言ったら即実施する案。
 - Phase 1c: Vault-Framework #10(ADR-0019)
 - Save workflow doc: [[pj-2026-07-17-64df|save-workflow]]
 - Skill: `skills/vault-manager/SKILL.md`
+
+## Amended by
+
+- [[pj-2026-07-17-052b|ADR-0024]](Phase 1g、2026-07-17): 承認 gate の適用範囲を整理。候補抽出コマンドからの呼び出し時は gate skip、Naoya の直接明示要求は現状維持。
