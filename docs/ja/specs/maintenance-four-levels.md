@@ -141,6 +141,12 @@ Vault の保守運用 4 レベル(Level 1 日常発火 / Level 2 週次補正 / 
 - 各プロジェクトの handoff/current-state.md の updated 日時をチェック
 - 1 週間以上更新されていないプロジェクトを Naoya に報告
 
+#### Backlog stalled detection(Phase 1d PR-B)
+
+- `state: open` かつ `updated` が threshold(デフォルト 14 日)より古い backlog item を検出
+- `stalled` tag の有無で A/B 群に分別し、Naoya 承認 gate 経由で tag 付与 / abandoned 化等を提案
+- 詳細: [[pj-2026-07-17-74af|docs/ja/backlog/maintainer-workflow.md]]
+
 ### 介入コスト
 
 - **30 分〜1 時間**(Naoya のレビュー含む)
