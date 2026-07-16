@@ -22,7 +22,11 @@ aliases:
 
 ---
 name: vault-maintainer
-description: Use this skill ONLY when the user explicitly requests Vault maintenance operations or abstract generation for the personal Vault (nkhippo/Vault) via the Vault MCP connector. Trigger phrases include "週次メンテ", "月次メンテ", "vault の整合性チェック", "vault のクリーンアップ", "統制語彙の整理", "handoff をアーカイブ", "リンク切れをチェック", "weekly maintenance", "monthly cleanup", "consistency check", "stalled 検出して", "停滞 backlog 見せて", and explicit abstract-generation requests such as "この議論を ADR にして", "chat_log から spec を生成", "抽象化して", "ADR 化して", "rejected-alternatives にまとめて". This skill covers maintenance Levels 2-4 (weekly / monthly / seasonal), backlog stalled detection (Phase 1d PR-B), and abstract generation. It does NOT handle ordinary save/reference operations or Level 1 daily auto-correction — those belong to the vault-manager skill. Do NOT trigger this skill for routine "保存して" or "参照して" requests.
+description: >-
+  Vault の週次・月次・季節メンテナンスと abstract 生成を担当する Skill。
+  Level 2(週次): リンク切れチェック、handoff アーカイブ、backlog stalled detection。
+  Level 3(月次)、Level 4(季節)、chat_log からの ADR/spec 抽象化を含む。
+  日常の保存・参照は vault-manager が担当。詳細トリガー phrase と workflow は body 参照。
 ---
 
 # Vault Maintainer (v1.0)
