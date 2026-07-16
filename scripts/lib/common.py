@@ -266,31 +266,94 @@ def is_vault_repo_name(repo_name: str) -> bool:
     return repo_name.lower() == "vault"
 
 
+def _fence_indent_ok(line: str) -> bool:
+    """True if line has at most 3 leading spaces before a potential fence (CommonMark)."""
+    i = 0
+    while i < len(line) and line[i] == " ":
+        i += 1
+        if i > 3:
+            return False
+    return True
+
+
+def _parse_opening_fence(line: str) -> tuple[str, int] | None:
+    """Return (fence_char, fence_len) for an opening fence line, else None.
+
+    Opening fences may include an info string (e.g. ```yaml). Tabs in indent
+    are not treated as opening fences here (indent must be spaces only, ≤3).
+    """
+    if not _fence_indent_ok(line):
+        return None
+    stripped = line.lstrip(" ")
+    if not stripped:
+        return None
+    ch = stripped[0]
+    if ch not in ("`", "~"):
+        return None
+    n = 0
+    for c in stripped:
+        if c == ch:
+            n += 1
+        else:
+            break
+    if n < 3:
+        return None
+    # Info string follows; backticks cannot appear in info for backtick fences
+    # (CommonMark). We only need to recognize an opening line.
+    return ch, n
+
+
+def _is_closing_fence(line: str, fence_char: str, fence_len: int) -> bool:
+    """True if line closes a fence opened with fence_char * fence_len.
+
+    Closing fence: ≤3 space indent, ≥fence_len of the same char, no info string.
+    """
+    if not _fence_indent_ok(line):
+        return False
+    stripped = line.lstrip(" ")
+    if not stripped.startswith(fence_char * fence_len):
+        return False
+    n = 0
+    for c in stripped:
+        if c == fence_char:
+            n += 1
+        else:
+            break
+    if n < fence_len:
+        return False
+    # Remainder must be whitespace only (no info string)
+    return stripped[n:].strip() == ""
+
+
 def split_fenced_regions(text: str) -> list[tuple[int, int, bool]]:
     """Return list of (start_offset, end_offset, is_code) covering full text.
 
-    Marks fenced ``` / ~~~ blocks and indented code blocks as code.
-    Simplified: line-based fence detection is enough for migration rewrite.
+    Marks fenced ``` / ~~~ blocks as code using CommonMark-ish rules:
+    - Opening: line with ≤3 space indent, ≥3 backticks/tildes, optional info
+    - Closing: same character, length ≥ opening, no info string
+    - Unclosed fence runs to EOF
+    - Indented (4-space) code blocks are NOT treated as fences
+    - Inline single-backtick code is NOT a fence
     """
     lines = text.splitlines(keepends=True)
     regions: list[tuple[int, int, bool]] = []
     offset = 0
     in_fence = False
-    fence_marker = ""
+    fence_char = ""
+    fence_len = 0
     for line in lines:
         end = offset + len(line)
-        stripped = line.lstrip()
         if in_fence:
             regions.append((offset, end, True))
-            if stripped.startswith(fence_marker):
+            if _is_closing_fence(line.rstrip("\n"), fence_char, fence_len):
                 in_fence = False
-                fence_marker = ""
+                fence_char = ""
+                fence_len = 0
         else:
-            if stripped.startswith("```") or stripped.startswith("~~~"):
-                fence_marker = stripped[:3]
+            opened = _parse_opening_fence(line.rstrip("\n"))
+            if opened is not None:
+                fence_char, fence_len = opened
                 in_fence = True
-                regions.append((offset, end, True))
-            elif line.startswith("    ") or line.startswith("\t"):
                 regions.append((offset, end, True))
             else:
                 regions.append((offset, end, False))

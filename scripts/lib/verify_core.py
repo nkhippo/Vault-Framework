@@ -325,7 +325,13 @@ def check_v7(ctx: VerifyContext, scope_files: list[Path]) -> CheckResult:
 
 
 def check_v8(ctx: VerifyContext, scope_files: list[Path]) -> CheckResult:
-    """V8: no leftover path wikilinks (slash-containing)."""
+    """V8: no leftover path wikilinks (slash-containing).
+
+    Uses shared ``split_fenced_regions`` so fence false-closes (e.g. a
+    `` ```javascript `` line wrongly ending a `` ```markdown `` block) cannot
+    hide path wikilinks that sit outside real fences. Links inside genuine
+    fenced examples are skipped on purpose.
+    """
     failures: list[dict[str, Any]] = []
     total = 0
     for abs_path in scope_files:

@@ -35,6 +35,29 @@ aliases:
 | `05_verify.py` | 検証（全 ID ユニーク、全 wikilink resolvable、path ref 残存ゼロ、`_id`/`_ids` 参照先実在） |
 | `06_report.py` | `migration/report-YYYY-MM-DD.md` を生成 |
 
+### `04_rewrite_refs.py` の path 解決順序
+
+Path / path-wikilink の解決は次の順で最初に index に当たったものを採用する:
+
+1. **absolute**（先頭 `/`）— repo-root からの絶対 path
+2. **vault-root** — 先頭スラッシュなしの path を repo-root から解決（Obsidian 標準の vault 起点記法）
+3. **file-relative** — 参照元ファイルの親ディレクトリからの相対 path
+4. **basename** — 拡張子込み basename が index 内で一意なら採用。複数候補は `ambiguous_target`
+
+Fenced code（\`\`\` / \`\`\`\` 等）内の参照は書き換えない。閉じフェンスは info string を許容しない（CommonMark 風）。4-space indented block は fence 対象外。
+
+### Known issues resolved（2026-07-17 / Phase 0.5B revision）
+
+Batch 4（ThinkGrindAi）で判明し、本 revision で修正済み:
+
+| 問題 | 修正 |
+|---|---|
+| `split_fenced_regions` が info string 付き行で誤クローズ | 閉じは同じ文字 ≥N かつ info なしのみ |
+| Vault-root 風 `[[docs/foo.md]]` が file-relative のみで `target_not_found` | 上記 4 段階解決 |
+| V8 が同じ誤 fence 判定で偽陰性 | 共有 `split_fenced_regions` 修正で解消 |
+
+**注:** ThinkGrindAi `docs/setup/OBSIDIAN_SETUP.md` の残存 path wikilink 5 件は、調査の結果 **例示用 \`\`\`markdown フェンス内**であり、正しい判定では書き換え対象外。実リンクとして直す場合は指示書 9 でテンプレ本文側を別途扱う。
+
 ## リポジトリごとの実行手順
 
 1. 対象リポジトリの最新 `main`（または `master`）を取得する
