@@ -1,21 +1,24 @@
 ---
 audience: adopter
-created: 2026-07-14T09:25:00+09:00
+created: 2026-07-14 09:25:00+09:00
 keywords:
-  - setup
-  - troubleshooting
-  - problems
-  - solutions
-  - faq
-  - common-issues
+- setup
+- troubleshooting
+- problems
+- solutions
+- faq
+- common-issues
 status: published
 summary: Vault-Framework の運用中によく発生する問題と解決策。MCP 接続、認証、Skill 発火、Front Matter、命名衝突、コスト等の問題を扱う。
 tags:
-  - setup
-  - troubleshooting
+- setup
+- troubleshooting
 title: トラブルシューティング
 type: setup
-updated: 2026-07-14T09:25:00+09:00
+updated: 2026-07-14 09:25:00+09:00
+id: pj-2026-07-13-e32c
+aliases:
+- pj-2026-07-13-e32c
 ---
 
 ## Summary

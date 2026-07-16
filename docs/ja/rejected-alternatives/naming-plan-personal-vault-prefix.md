@@ -1,24 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T05:55:00+09:00
+created: 2026-07-14 05:55:00+09:00
 date: 2026-07-13
 keywords:
-  - naming
-  - personal-vault
-  - kebab-case
-  - prefix
-  - verbose
+- naming
+- personal-vault
+- kebab-case
+- prefix
+- verbose
 related_adrs:
-  - "0006"
+- '0006'
 status: rejected
-summary: 3 リポジトリの命名に personal-vault-* プレフィックスを付ける案。一度は採用されたが、冗長性と「personal」の違和感で撤回され、Vault-* へ変更。
-superseded_by: "0006"
+summary: 3 リポジトリの命名に personal-vault-* プレフィックスを付ける案。一度は採用されたが、冗長性と「personal」の違和感で撤回され、Vault-*
+  へ変更。
+superseded_by: '0006'
 tags:
-  - rejected
-  - naming
-title: "却下案: personal-vault-* プレフィックス"
+- rejected
+- naming
+title: '却下案: personal-vault-* プレフィックス'
 type: rejected_alternative
-updated: 2026-07-14T05:55:00+09:00
+updated: 2026-07-14 05:55:00+09:00
+id: pj-2026-07-13-f5da
+aliases:
+- pj-2026-07-13-f5da
 ---
 
 ## Summary

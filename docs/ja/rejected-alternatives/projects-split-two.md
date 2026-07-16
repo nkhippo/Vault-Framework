@@ -1,25 +1,29 @@
 ---
 audience: mixed
-created: 2026-07-14T05:40:00+09:00
+created: 2026-07-14 05:40:00+09:00
 date: 2026-07-13
 keywords:
-  - projects-split
-  - two-projects
-  - consolidation
-  - ux
-  - memory-fragmentation
+- projects-split
+- two-projects
+- consolidation
+- ux
+- memory-fragmentation
 related_adrs:
-  - "0004"
-  - "0013"
+- '0004'
+- '0013'
 status: rejected
-summary: "Claude Projects を「Vault: General」と「Vault: Project Design」の 2 分割で運用した案。UX 上の摩擦と記憶の分断が発生したため却下、後に 1 Project に統合された。"
-superseded_by: "0013"
+summary: 'Claude Projects を「Vault: General」と「Vault: Project Design」の 2 分割で運用した案。UX
+  上の摩擦と記憶の分断が発生したため却下、後に 1 Project に統合された。'
+superseded_by: '0013'
 tags:
-  - rejected
-  - projects
-title: "却下案: Projects 2 分割運用"
+- rejected
+- projects
+title: '却下案: Projects 2 分割運用'
 type: rejected_alternative
-updated: 2026-07-14T05:40:00+09:00
+updated: 2026-07-14 05:40:00+09:00
+id: pj-2026-07-13-08cd
+aliases:
+- pj-2026-07-13-08cd
 ---
 
 ## Summary

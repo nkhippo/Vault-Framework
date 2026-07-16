@@ -2,25 +2,29 @@
 audience: mixed
 date: 2026-07-14
 keywords:
-  - maintenance
-  - four-levels
-  - abstract-generation
-  - english
+- maintenance
+- four-levels
+- abstract-generation
+- english
 lang: en
 related_adrs:
-  - "0008"
-  - "0009"
+- 0008
+- 0009
 related_ja: docs/ja/maintenance-guide.md
 related_specs:
-  - maintenance-four-levels
-  - abstract-generation
+- maintenance-four-levels
+- abstract-generation
 status: published
-summary: Overview of Vault's four-level maintenance operation, letting readers grasp the position and overall picture of each level.
+summary: Overview of Vault's four-level maintenance operation, letting readers grasp
+  the position and overall picture of each level.
 title: Maintenance Guide
 title_ja: 保守運用ガイド
 type: overview
-created: 2026-07-14T20:50:04+09:00
-updated: 2026-07-14T20:50:04+09:00
+created: 2026-07-14 20:50:04+09:00
+updated: 2026-07-14 20:50:04+09:00
+id: pj-2026-07-15-7604
+aliases:
+- pj-2026-07-15-7604
 ---
 
 ## Summary

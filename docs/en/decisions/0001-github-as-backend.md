@@ -1,33 +1,38 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: adr-0001
+id: pj-2026-07-15-e78f
 keywords:
-  - github
-  - backend
-  - vault
-  - obsidian
-  - storage
-  - philosophy
-  - single-source-of-truth
-  - english
+- github
+- backend
+- vault
+- obsidian
+- storage
+- philosophy
+- single-source-of-truth
+- english
 lang: en
 related_adrs:
-  - "0002"
-  - "0003"
-  - "0012"
+- '0002'
+- '0003'
+- '0012'
 related_ja: docs/ja/decisions/0001-github-as-backend.md
 related_specs: []
 status: accepted
-summary: Decision to adopt a GitHub repository as the de facto backend for persisting Chat content. Obsidian is the editing UI; the source of truth is GitHub. This decision is the starting point of the entire Framework.
+summary: Decision to adopt a GitHub repository as the de facto backend for persisting
+  Chat content. Obsidian is the editing UI; the source of truth is GitHub. This decision
+  is the starting point of the entire Framework.
 tags:
-  - adr
-  - important
-title: "ADR-0001: Adopting GitHub-as-a-Backend"
-title_ja: "ADR-0001: GitHub-as-a-Backend の採用"
+- adr
+- important
+title: 'ADR-0001: Adopting GitHub-as-a-Backend'
+title_ja: 'ADR-0001: GitHub-as-a-Backend の採用'
 type: adr
-created: 2026-07-14T21:14:17+09:00
-updated: 2026-07-14T21:14:17+09:00
+created: 2026-07-14 21:14:17+09:00
+updated: 2026-07-14 21:14:17+09:00
+aliases:
+- pj-2026-07-15-e78f
+- adr-0001
 ---
 
 ## Summary

@@ -5,8 +5,16 @@ type: index
 audience: mixed
 status: published
 date: 2026-07-13
-keywords: [rejected, alternatives, index, 却下案, discarded]
+keywords:
+- rejected
+- alternatives
+- index
+- 却下案
+- discarded
 summary: 検討したが採用しなかった選択肢の索引。将来の議論で同じ検討を繰り返さないためのアーカイブ。
+id: pj-2026-07-13-3fc6
+aliases:
+- pj-2026-07-13-3fc6
 ---
 
 ## 却下案一覧

@@ -1,25 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T06:30:00+09:00
+created: 2026-07-14 06:30:00+09:00
 date: 2026-07-13
 keywords:
-  - naming
-  - functional-only
-  - descriptive
-  - brand
-  - identity
-  - verbose
+- naming
+- functional-only
+- descriptive
+- brand
+- identity
+- verbose
 related_adrs:
-  - "0006"
+- '0006'
 status: rejected
 summary: 3 リポジトリを機能を直接説明する記述的な名前(chat-storage、mcp-server、docs-framework 等)で命名する案。ブランド性の欠如と、プロジェクトとしての一体感が出ないため却下。
-superseded_by: "0006"
+superseded_by: '0006'
 tags:
-  - rejected
-  - naming
-title: "却下案: 機能名オンリー命名"
+- rejected
+- naming
+title: '却下案: 機能名オンリー命名'
 type: rejected_alternative
-updated: 2026-07-14T06:30:00+09:00
+updated: 2026-07-14 06:30:00+09:00
+id: pj-2026-07-13-156d
+aliases:
+- pj-2026-07-13-156d
 ---
 
 ## Summary

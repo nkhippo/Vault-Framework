@@ -1,36 +1,42 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: adr-0003
+id: pj-2026-07-15-318e
 keywords:
-  - architecture
-  - skill
-  - project
-  - vault
-  - 3-layer
-  - layering
-  - separation-of-concerns
-  - english
+- architecture
+- skill
+- project
+- vault
+- 3-layer
+- layering
+- separation-of-concerns
+- english
 lang: en
 related_adrs:
-  - "0001"
-  - "0004"
-  - "0013"
-  - "0016"
+- '0001'
+- '0004'
+- '0013'
+- '0016'
 related_ja: docs/ja/decisions/0003-skill-project-vault-3-layer.md
 related_specs:
-  - reference-level-system
+- reference-level-system
 status: accepted
-summary: "Decision to separate Vault operation responsibilities into three layers: Skill, Project, and Vault. The Skill holds behavioral rules, the Project holds use-case operational policy, and the Vault holds detailed rules and data. Conflict priority is also finalized."
+summary: 'Decision to separate Vault operation responsibilities into three layers:
+  Skill, Project, and Vault. The Skill holds behavioral rules, the Project holds use-case
+  operational policy, and the Vault holds detailed rules and data. Conflict priority
+  is also finalized.'
 tags:
-  - adr
-  - architecture
-  - important
-title: "ADR-0003: Skill / Project / Vault 3-layer Operational Architecture"
-title_ja: "ADR-0003: Skill・Project・Vault の 3 層運用アーキテクチャ"
+- adr
+- architecture
+- important
+title: 'ADR-0003: Skill / Project / Vault 3-layer Operational Architecture'
+title_ja: 'ADR-0003: Skill・Project・Vault の 3 層運用アーキテクチャ'
 type: adr
-created: 2026-07-14T21:42:50+09:00
-updated: 2026-07-14T21:42:50+09:00
+created: 2026-07-14 21:42:50+09:00
+updated: 2026-07-14 21:42:50+09:00
+aliases:
+- pj-2026-07-15-318e
+- adr-0003
 ---
 
 ## Summary

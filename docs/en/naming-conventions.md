@@ -2,25 +2,29 @@
 audience: mixed
 date: 2026-07-14
 keywords:
-  - naming
-  - kebab-case
-  - repository-naming
-  - hashicorp-collision
-  - english
+- naming
+- kebab-case
+- repository-naming
+- hashicorp-collision
+- english
 lang: en
 related_adrs:
-  - "0006"
+- '0006'
 related_ja: docs/ja/naming-conventions.md
 related_specs:
-  - file-naming
-  - vocabulary-design
+- file-naming
+- vocabulary-design
 status: published
-summary: Overview of Vault-Framework's naming conventions covering file names, directory names, and repository names.
+summary: Overview of Vault-Framework's naming conventions covering file names, directory
+  names, and repository names.
 title: Naming Conventions Overview
 title_ja: 命名規約の思想
 type: overview
-created: 2026-07-14T20:49:45+09:00
-updated: 2026-07-14T20:49:45+09:00
+created: 2026-07-14 20:49:45+09:00
+updated: 2026-07-14 20:49:45+09:00
+id: pj-2026-07-15-4e85
+aliases:
+- pj-2026-07-15-4e85
 ---
 
 ## Summary

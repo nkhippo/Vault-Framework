@@ -5,8 +5,16 @@ type: reference
 audience: human_primary
 status: draft
 date: 2026-07-13
-keywords: [setup, deploy, cloudflare-workers, wrangler, mcp]
+keywords:
+- setup
+- deploy
+- cloudflare-workers
+- wrangler
+- mcp
 summary: Cloudflare Workers への Vault MCP デプロイ手順。
+id: pj-2026-07-13-2157
+aliases:
+- pj-2026-07-13-2157
 ---
 
 ## Summary

@@ -1,22 +1,25 @@
 ---
 audience: adopter
-created: 2026-07-14T08:40:00+09:00
+created: 2026-07-14 08:40:00+09:00
 keywords:
-  - setup
-  - prerequisites
-  - github
-  - cloudflare
-  - claude-pro
-  - nodejs
-  - obsidian
+- setup
+- prerequisites
+- github
+- cloudflare
+- claude-pro
+- nodejs
+- obsidian
 status: published
 summary: Vault-Framework を導入する前に確認しておくべき前提となる環境と、必要なアカウント・ツール類。契約プラン、権限、ローカル環境について詳細を規定。
 tags:
-  - setup
-  - prerequisites
+- setup
+- prerequisites
 title: 00 - 前提確認
 type: setup
-updated: 2026-07-14T08:40:00+09:00
+updated: 2026-07-14 08:40:00+09:00
+id: pj-2026-07-13-ed0d
+aliases:
+- pj-2026-07-13-ed0d
 ---
 
 ## Summary

@@ -1,20 +1,23 @@
 ---
 audience: adopter
-created: 2026-07-14T09:00:00+09:00
+created: 2026-07-14 09:00:00+09:00
 keywords:
-  - setup
-  - mcp-connector
-  - claude-pro-connectors
-  - authentication
-  - bearer-token
+- setup
+- mcp-connector
+- claude-pro-connectors
+- authentication
+- bearer-token
 status: published
 summary: Cloudflare Workers にデプロイした Vault-MCP を、Claude Pro Connectors に登録する手順。コネクタ表示名、URL、認証トークンの設定、動作確認までを含む。
 tags:
-  - setup
-  - mcp-connector
+- setup
+- mcp-connector
 title: 03 - MCP コネクタの設定
 type: setup
-updated: 2026-07-14T09:00:00+09:00
+updated: 2026-07-14 09:00:00+09:00
+id: pj-2026-07-13-d62b
+aliases:
+- pj-2026-07-13-d62b
 ---
 
 ## Summary

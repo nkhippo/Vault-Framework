@@ -5,8 +5,16 @@ type: index
 audience: mixed
 status: published
 date: 2026-07-13
-keywords: [project-instructions, claude-projects, templates, thin-instructions]
-summary: Claude Projects の Instructions フィールド用の「激薄」テンプレ。実質的なルールは vault の 00_meta/project_instructions_vault.md に集約する。
+keywords:
+- project-instructions
+- claude-projects
+- templates
+- thin-instructions
+summary: Claude Projects の Instructions フィールド用の「激薄」テンプレ。実質的なルールは vault の 00_meta/project_instructions_vault.md
+  に集約する。
+id: pj-2026-07-13-8e6b
+aliases:
+- pj-2026-07-13-8e6b
 ---
 
 ## Purpose

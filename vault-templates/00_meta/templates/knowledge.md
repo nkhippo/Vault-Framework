@@ -1,12 +1,15 @@
 ---
-created: 2026-07-14T01:10:47+09:00
+created: 2026-07-14 01:10:47+09:00
 related: []
 status: published
-summary: ""
+summary: ''
 tags: []
-title: ""
+title: ''
 type: knowledge
-updated: 2026-07-14T01:10:47+09:00
+updated: 2026-07-14 01:10:47+09:00
+id: pj-2026-07-13-8fa0
+aliases:
+- pj-2026-07-13-8fa0
 ---
 
 ## Summary

@@ -1,21 +1,25 @@
 ---
 audience: adopter
-created: 2026-07-14T08:55:00+09:00
+created: 2026-07-14 08:55:00+09:00
 keywords:
-  - setup
-  - deploy
-  - cloudflare-workers
-  - wrangler
-  - fine-grained-pat
-  - secrets
+- setup
+- deploy
+- cloudflare-workers
+- wrangler
+- fine-grained-pat
+- secrets
 status: published
-summary: Vault-MCP サーバを Cloudflare Workers にデプロイする手順。Fine-grained PAT の発行、Cloudflare Secrets の設定、wrangler.toml のカスタマイズ、初回デプロイ、動作確認までを含む。
+summary: Vault-MCP サーバを Cloudflare Workers にデプロイする手順。Fine-grained PAT の発行、Cloudflare
+  Secrets の設定、wrangler.toml のカスタマイズ、初回デプロイ、動作確認までを含む。
 tags:
-  - setup
-  - mcp-deploy
+- setup
+- mcp-deploy
 title: 02 - MCP サーバのデプロイ
 type: setup
-updated: 2026-07-14T08:55:00+09:00
+updated: 2026-07-14 08:55:00+09:00
+id: pj-2026-07-13-1341
+aliases:
+- pj-2026-07-13-1341
 ---
 
 ## Summary

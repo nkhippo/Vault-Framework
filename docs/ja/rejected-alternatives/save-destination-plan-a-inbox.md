@@ -1,24 +1,27 @@
 ---
 audience: mixed
-created: 2026-07-14T05:35:00+09:00
+created: 2026-07-14 05:35:00+09:00
 date: 2026-07-13
 keywords:
-  - inbox
-  - save-destination
-  - plan-a
-  - classification
-  - gtd
+- inbox
+- save-destination
+- plan-a
+- classification
+- gtd
 related_adrs:
-  - "0007"
+- '0007'
 status: rejected
 summary: Chat 保存時に全て一旦 90_inbox/ に置き、後で分類する運用案(案 A)。実運用で inbox が溢まり続けて分類が後回しになる悪循環が発生したため却下。
-superseded_by: "0007"
+superseded_by: '0007'
 tags:
-  - rejected
-  - save-destination
-title: "却下案: inbox 経由分類方式"
+- rejected
+- save-destination
+title: '却下案: inbox 経由分類方式'
 type: rejected_alternative
-updated: 2026-07-14T05:35:00+09:00
+updated: 2026-07-14 05:35:00+09:00
+id: pj-2026-07-13-8dfd
+aliases:
+- pj-2026-07-13-8dfd
 ---
 
 ## Summary

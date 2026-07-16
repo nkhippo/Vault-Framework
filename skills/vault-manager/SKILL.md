@@ -1,7 +1,22 @@
 ---
 name: vault-manager
-description: Use this skill when the user asks to save chat content to the personal Vault repository (nkhippo/Vault) via the Vault MCP connector. Trigger phrases include "Vault に保存して", "Obsidian に保存して"(legacy phrasing), "保存して"(when Vault context is clear), and any equivalent Japanese or English instructions to save, record, or archive to the Vault or Obsidian. Also triggers for diary/journal-related phrases such as "日記", "今日の記録", "diary", "今日あったこと", "振り返り", "reflection". Also use when the user references a specific personal project or app by exact name, by common alias (IPA, VCT, Structure, Listening etc.), or by function description ("発音を鍛えるアプリ", "語彙のアプリ"). Also use when the user asks to search past decisions or records from the personal Vault, or reads/writes to nkhippo/Vault via the Vault MCP connector. Also use when the user asks to create GitHub issues from Vault-Framework discussions (Phase 3.2 workflow) — trigger phrases include "Issue を起票", "GitHub Issue", "課題を起票", "この議論を Issue に".
-updated: 2026-07-16T22:30:00+09:00
+description: Use this skill when the user asks to save chat content to the personal
+  Vault repository (nkhippo/Vault) via the Vault MCP connector. Trigger phrases include
+  "Vault に保存して", "Obsidian に保存して"(legacy phrasing), "保存して"(when Vault context is clear),
+  and any equivalent Japanese or English instructions to save, record, or archive
+  to the Vault or Obsidian. Also triggers for diary/journal-related phrases such as
+  "日記", "今日の記録", "diary", "今日あったこと", "振り返り", "reflection". Also use when the user
+  references a specific personal project or app by exact name, by common alias (IPA,
+  VCT, Structure, Listening etc.), or by function description ("発音を鍛えるアプリ", "語彙のアプリ").
+  Also use when the user asks to search past decisions or records from the personal
+  Vault, or reads/writes to nkhippo/Vault via the Vault MCP connector. Also use when
+  the user asks to create GitHub issues from Vault-Framework discussions (Phase 3.2
+  workflow) — trigger phrases include "Issue を起票", "GitHub Issue", "課題を起票", "この議論を
+  Issue に".
+updated: 2026-07-16 22:30:00+09:00
+id: pj-2026-07-13-f844
+aliases:
+- pj-2026-07-13-f844
 ---
 
 # Vault Manager (v1.4)

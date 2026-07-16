@@ -1,26 +1,29 @@
 ---
 audience: mixed
-created: 2026-07-14T06:05:00+09:00
+created: 2026-07-14 06:05:00+09:00
 date: 2026-07-13
 keywords:
-  - naming
-  - cerebro
-  - cortex
-  - memex
-  - synapse
-  - brain-metaphor
-  - rhetorical
+- naming
+- cerebro
+- cortex
+- memex
+- synapse
+- brain-metaphor
+- rhetorical
 related_adrs:
-  - "0006"
+- '0006'
 status: rejected
 summary: 3 リポジトリを脳・記憶メタファ(Cerebro、Cortex、Memex、Synapse 等)で命名する案。過度に修辞的で、機能理解を阫害するため却下。
-superseded_by: "0006"
+superseded_by: '0006'
 tags:
-  - rejected
-  - naming
-title: "却下案: Cerebro / Cortex 系命名"
+- rejected
+- naming
+title: '却下案: Cerebro / Cortex 系命名'
 type: rejected_alternative
-updated: 2026-07-14T06:05:00+09:00
+updated: 2026-07-14 06:05:00+09:00
+id: pj-2026-07-13-395d
+aliases:
+- pj-2026-07-13-395d
 ---
 
 ## Summary

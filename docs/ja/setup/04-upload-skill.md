@@ -1,21 +1,25 @@
 ---
 audience: adopter
-created: 2026-07-14T09:05:00+09:00
+created: 2026-07-14 09:05:00+09:00
 keywords:
-  - setup
-  - skill
-  - upload
-  - claude-skills
-  - zip
-  - front-matter
+- setup
+- skill
+- upload
+- claude-skills
+- zip
+- front-matter
 status: published
-summary: Framework の skills/vault-manager/SKILL.md を Claude Skills にアップロードする手順。Skill パッケージの取得、Front Matter の確認、zip 化、Claude Settings > Skills でのアップロード、動作確認までを含む。
+summary: Framework の skills/vault-manager/SKILL.md を Claude Skills にアップロードする手順。Skill
+  パッケージの取得、Front Matter の確認、zip 化、Claude Settings > Skills でのアップロード、動作確認までを含む。
 tags:
-  - setup
-  - skill-upload
+- setup
+- skill-upload
 title: 04 - Skill のアップロード
 type: setup
-updated: 2026-07-14T09:05:00+09:00
+updated: 2026-07-14 09:05:00+09:00
+id: pj-2026-07-13-ff6f
+aliases:
+- pj-2026-07-13-ff6f
 ---
 
 ## Summary

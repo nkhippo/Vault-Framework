@@ -1,36 +1,40 @@
 ---
 audience: mixed
-created: 2026-07-14T03:35:00+09:00
+created: 2026-07-14 03:35:00+09:00
 date: 2026-07-13
-id: adr-0003
+id: pj-2026-07-13-d28f
 keywords:
-  - architecture
-  - skill
-  - project
-  - vault
-  - 3-layer
-  - layering
-  - separation-of-concerns
+- architecture
+- skill
+- project
+- vault
+- 3-layer
+- layering
+- separation-of-concerns
 related_adrs:
-  - "0001"
-  - "0004"
-  - "0013"
-  - "0016"
+- '0001'
+- '0004'
+- '0013'
+- '0016'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md
+- 10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md
 related_specs:
-  - reference-level-system
+- reference-level-system
 status: accepted
-summary: Vault 運用における責務を Skill、Project、Vault の 3 層に分離した設計。Skill が振る舞い規約、Project が用途別の運用方針、Vault が詳細ルールとデータ。矛盾時の優先順位も確定。
+summary: Vault 運用における責務を Skill、Project、Vault の 3 層に分離した設計。Skill が振る舞い規約、Project が用途別の運用方針、Vault
+  が詳細ルールとデータ。矛盾時の優先順位も確定。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - architecture
-  - important
-title: "ADR-0003: Skill・Project・Vault の 3 層運用アーキテクチャ"
+- adr
+- architecture
+- important
+title: 'ADR-0003: Skill・Project・Vault の 3 層運用アーキテクチャ'
 type: adr
-updated: 2026-07-14T03:35:00+09:00
+updated: 2026-07-14 03:35:00+09:00
+aliases:
+- pj-2026-07-13-d28f
+- adr-0003
 ---
 
 ## Summary

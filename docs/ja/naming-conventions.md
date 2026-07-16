@@ -2,23 +2,26 @@
 audience: mixed
 date: 2026-07-14
 keywords:
-  - naming
-  - 命名規約
-  - kebab-case
-  - repository-naming
-  - hashicorp-collision
+- naming
+- 命名規約
+- kebab-case
+- repository-naming
+- hashicorp-collision
 related_adrs:
-  - "0006"
+- '0006'
 related_specs:
-  - file-naming
-  - vocabulary-design
+- file-naming
+- vocabulary-design
 status: published
 summary: Vault-Framework の命名規約の全体像。ファイル名、ディレクトリ名、リポジトリ名それぞれの命名思想を概説。
 title: 命名規約の思想
 title_en: Naming Conventions Overview
 type: overview
-created: 2026-07-14T20:47:31+09:00
-updated: 2026-07-14T20:47:31+09:00
+created: 2026-07-14 20:47:31+09:00
+updated: 2026-07-14 20:47:31+09:00
+id: pj-2026-07-13-d0c9
+aliases:
+- pj-2026-07-13-d0c9
 ---
 
 ## Summary

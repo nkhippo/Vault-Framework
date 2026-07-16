@@ -2,20 +2,24 @@
 audience: mixed
 date: 2026-07-14
 keywords:
-  - glossary
-  - terminology
-  - english
+- glossary
+- terminology
+- english
 lang: en
 related_adrs: []
 related_ja: docs/ja/glossary.md
 related_specs: []
 status: published
-summary: A glossary of terms used throughout Vault-Framework, letting adopters and third parties quickly check the meaning of project-specific terminology.
+summary: A glossary of terms used throughout Vault-Framework, letting adopters and
+  third parties quickly check the meaning of project-specific terminology.
 title: Glossary
 title_ja: 用語集
 type: reference
-created: 2026-07-14T20:50:21+09:00
-updated: 2026-07-14T20:50:21+09:00
+created: 2026-07-14 20:50:21+09:00
+updated: 2026-07-14 20:50:21+09:00
+id: pj-2026-07-15-5baf
+aliases:
+- pj-2026-07-15-5baf
 ---
 
 ## Summary

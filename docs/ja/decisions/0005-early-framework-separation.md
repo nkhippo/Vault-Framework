@@ -1,35 +1,39 @@
 ---
 audience: mixed
-created: 2026-07-14T04:00:00+09:00
+created: 2026-07-14 04:00:00+09:00
 date: 2026-07-13
-id: adr-0005
+id: pj-2026-07-13-a7f9
 keywords:
-  - framework
-  - separation
-  - publication
-  - packaging
-  - fable
-  - staging-mirroring
-  - early-separation
+- framework
+- separation
+- publication
+- packaging
+- fable
+- staging-mirroring
+- early-separation
 related_adrs:
-  - "0001"
-  - "0003"
-  - "0006"
-  - "0015"
+- '0001'
+- '0003'
+- '0006'
+- '0015'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md
+- 10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md
 related_specs: []
 status: accepted
-summary: Vault 運用の Framework を早期に別リポジトリ(Vault-Framework)に分離した意思決定。安定化後の分離や統合維持案を却下し、Public 化・Fable パッケージ化の準備を先行させる。staging → mirroring ワークフローを受容。
+summary: Vault 運用の Framework を早期に別リポジトリ(Vault-Framework)に分離した意思決定。安定化後の分離や統合維持案を却下し、Public
+  化・Fable パッケージ化の準備を先行させる。staging → mirroring ワークフローを受容。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - framework
-  - important
-title: "ADR-0005: Vault-Framework 早期分離"
+- adr
+- framework
+- important
+title: 'ADR-0005: Vault-Framework 早期分離'
 type: adr
-updated: 2026-07-14T04:00:00+09:00
+updated: 2026-07-14 04:00:00+09:00
+aliases:
+- pj-2026-07-13-a7f9
+- adr-0005
 ---
 
 ## Summary

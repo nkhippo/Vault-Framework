@@ -1,33 +1,37 @@
 ---
 audience: mixed
-created: 2026-07-14T03:30:00+09:00
+created: 2026-07-14 03:30:00+09:00
 date: 2026-07-13
-id: adr-0001
+id: pj-2026-07-13-2564
 keywords:
-  - github
-  - backend
-  - vault
-  - obsidian
-  - storage
-  - philosophy
-  - single-source-of-truth
+- github
+- backend
+- vault
+- obsidian
+- storage
+- philosophy
+- single-source-of-truth
 related_adrs:
-  - "0002"
-  - "0003"
-  - "0012"
+- '0002'
+- '0003'
+- '0012'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_vault-system-design-inception-to-completion.md
+- 10_chat_logs/2026/07/2026-07-13_vault-system-design-inception-to-completion.md
 related_specs: []
 status: accepted
-summary: Chat 内容の永続化にあたり、GitHub リポジトリを実質バックエンドとして採用した意思決定。Obsidian は編集 UI、真実の source は GitHub。この決定が Framework 全体の起点。
+summary: Chat 内容の永続化にあたり、GitHub リポジトリを実質バックエンドとして採用した意思決定。Obsidian は編集 UI、真実の source
+  は GitHub。この決定が Framework 全体の起点。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - important
-title: "ADR-0001: GitHub-as-a-Backend の採用"
+- adr
+- important
+title: 'ADR-0001: GitHub-as-a-Backend の採用'
 type: adr
-updated: 2026-07-14T03:30:00+09:00
+updated: 2026-07-14 03:30:00+09:00
+aliases:
+- pj-2026-07-13-2564
+- adr-0001
 ---
 
 ## Summary

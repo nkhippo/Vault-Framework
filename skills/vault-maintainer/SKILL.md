@@ -1,19 +1,23 @@
 ---
-created: 2026-07-14T21:10:00+09:00
+created: 2026-07-14 21:10:00+09:00
 keywords:
-  - skill
-  - vault-maintainer
-  - maintenance
-  - abstract-generation
-  - level-2
-  - level-3
-  - level-4
-  - cursor-delegation
+- skill
+- vault-maintainer
+- maintenance
+- abstract-generation
+- level-2
+- level-3
+- level-4
+- cursor-delegation
 status: published
-summary: 保守運用(Level 2、4)と抽象生成を担当する vault-maintainer Skill v1.0。vault-manager との棲み分けを明確化し、実作業は Cursor 委譲を前提とする設計。当初は3ヶ月の運用データ蓄積後に着手として保留されていたが、Naoya の判断で保留を解除して作成。
+summary: 保守運用(Level 2、4)と抽象生成を担当する vault-maintainer Skill v1.0。vault-manager との棲み分けを明確化し、実作業は
+  Cursor 委譲を前提とする設計。当初は3ヶ月の運用データ蓄積後に着手として保留されていたが、Naoya の判断で保留を解除して作成。
 title: vault-maintainer SKILL.md v1.0
 type: skill_definition
-updated: 2026-07-14T21:05:25+09:00
+updated: 2026-07-14 21:05:25+09:00
+id: pj-2026-07-13-5e3d
+aliases:
+- pj-2026-07-13-5e3d
 ---
 
 ---

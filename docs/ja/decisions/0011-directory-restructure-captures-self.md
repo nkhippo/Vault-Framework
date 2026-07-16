@@ -1,36 +1,40 @@
 ---
 audience: mixed
-created: 2026-07-14T04:55:00+09:00
+created: 2026-07-14 04:55:00+09:00
 date: 2026-07-13
-id: adr-0011
+id: pj-2026-07-13-ab6d
 keywords:
-  - directory
-  - restructure
-  - captures
-  - self
-  - handoff
-  - 10_captures
-  - 50_self
-  - sub-classification
+- directory
+- restructure
+- captures
+- self
+- handoff
+- 10_captures
+- 50_self
+- sub-classification
 related_adrs:
-  - "0007"
-  - "0009"
-  - "0010"
+- '0007'
+- 0009
+- '0010'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md
+- 10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md
 related_specs:
-  - handoff-mechanism
+- handoff-mechanism
 status: accepted
-summary: "Vault のトップレベルディレクトリ構造を実運用の学びに基づいて刷新した意思決定。主要な変更は 3 点: 10_chat_logs/ → 10_captures/ サブ分類化、50_self/ 新設、handoff/ を全プロジェクトに展開。"
+summary: 'Vault のトップレベルディレクトリ構造を実運用の学びに基づいて刷新した意思決定。主要な変更は 3 点: 10_chat_logs/ → 10_captures/
+  サブ分類化、50_self/ 新設、handoff/ を全プロジェクトに展開。'
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - structure
-  - important
-title: "ADR-0011: ディレクトリ構造刷新"
+- adr
+- structure
+- important
+title: 'ADR-0011: ディレクトリ構造刷新'
 type: adr
-updated: 2026-07-14T04:55:00+09:00
+updated: 2026-07-14 04:55:00+09:00
+aliases:
+- pj-2026-07-13-ab6d
+- adr-0011
 ---
 
 ## Summary

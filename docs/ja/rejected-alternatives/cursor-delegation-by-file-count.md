@@ -1,25 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T06:40:00+09:00
+created: 2026-07-14 06:40:00+09:00
 date: 2026-07-13
 keywords:
-  - cursor-delegation
-  - file-count
-  - numeric-rule
-  - coarse-criteria
-  - task-type
+- cursor-delegation
+- file-count
+- numeric-rule
+- coarse-criteria
+- task-type
 related_adrs:
-  - "0008"
-  - "0009"
+- 0008
+- 0009
 status: rejected
 summary: Cursor 委譲判定を「3 ファイル以上で Cursor 委譲」のファイル数ベースの数値ルールで行う案。ファイル数が粗い指標で、単一ファイルでも波及が大きい操作や、多数ファイルでも独立した操作を適切に判定できないため却下。
-superseded_by: "0008"
+superseded_by: 0008
 tags:
-  - rejected
-  - cursor
-title: "却下案: Cursor 委譲のファイル数ルール"
+- rejected
+- cursor
+title: '却下案: Cursor 委譲のファイル数ルール'
 type: rejected_alternative
-updated: 2026-07-14T06:40:00+09:00
+updated: 2026-07-14 06:40:00+09:00
+id: pj-2026-07-13-7ee4
+aliases:
+- pj-2026-07-13-7ee4
 ---
 
 ## Summary

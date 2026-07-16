@@ -1,24 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T05:15:00+09:00
+created: 2026-07-14 05:15:00+09:00
 date: 2026-07-13
 keywords:
-  - obsidian-sync
-  - vendor-lock-in
-  - backend
-  - monthly-subscription
-  - sync
+- obsidian-sync
+- vendor-lock-in
+- backend
+- monthly-subscription
+- sync
 related_adrs:
-  - "0001"
+- '0001'
 status: rejected
-summary: Vault の主たる同期・保存手段として Obsidian Syncを採用し、GitHub は補助バックアップに留める案。Vendor Lock-inと Claude 連携の複雑化により却下。
-superseded_by: "0001"
+summary: Vault の主たる同期・保存手段として Obsidian Syncを採用し、GitHub は補助バックアップに留める案。Vendor Lock-inと
+  Claude 連携の複雑化により却下。
+superseded_by: '0001'
 tags:
-  - rejected
-  - vault-composition
-title: "却下案: Obsidian Sync 主導"
+- rejected
+- vault-composition
+title: '却下案: Obsidian Sync 主導'
 type: rejected_alternative
-updated: 2026-07-14T05:15:00+09:00
+updated: 2026-07-14 05:15:00+09:00
+id: pj-2026-07-13-e650
+aliases:
+- pj-2026-07-13-e650
 ---
 
 ## Summary

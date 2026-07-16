@@ -5,8 +5,17 @@ type: report
 audience: mixed
 status: published
 date: 2026-07-13
-keywords: [scaffold, report, verification, step2, cursor, completion]
+keywords:
+- scaffold
+- report
+- verification
+- step2
+- cursor
+- completion
 summary: CURSOR_INSTRUCTIONS_step2.md に基づく Phase 1〜15 の実行結果。Claude による確認用レポート。
+id: pj-2026-07-13-6c20
+aliases:
+- pj-2026-07-13-6c20
 ---
 
 # Vault-Framework 初期 scaffold 完了レポート

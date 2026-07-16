@@ -1,25 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T06:55:00+09:00
+created: 2026-07-14 06:55:00+09:00
 keywords:
-  - file-naming
-  - spec
-  - kebab-case
-  - date-format
-  - slug
-  - directory-naming
-  - auto-generation
+- file-naming
+- spec
+- kebab-case
+- date-format
+- slug
+- directory-naming
+- auto-generation
 related_adrs:
-  - "0006"
-  - "0007"
+- '0006'
+- '0007'
 status: published
 summary: Vault 内のファイル名とディレクトリ名の命名規約の詳細仕様。日付形式、スラグ規則、例外パターン、Skill 側の自動生成ロジックを定義。
 tags:
-  - spec
-  - naming
+- spec
+- naming
 title: ファイル名規約 仕様
 type: spec
-updated: 2026-07-14T06:55:00+09:00
+updated: 2026-07-14 06:55:00+09:00
+id: pj-2026-07-13-5c9b
+aliases:
+- pj-2026-07-13-5c9b
 ---
 
 ## Summary

@@ -1,26 +1,30 @@
 ---
 audience: mixed
-created: 2026-07-14T06:20:00+09:00
+created: 2026-07-14 06:20:00+09:00
 date: 2026-07-13
 keywords:
-  - naming
-  - archive
-  - ledger
-  - repository
-  - registry
-  - stale-feel
-  - financial-connotation
+- naming
+- archive
+- ledger
+- repository
+- registry
+- stale-feel
+- financial-connotation
 related_adrs:
-  - "0006"
+- '0006'
 status: rejected
-summary: 3 リポジトリを Archive・Ledger・Repository・Registry 系の書庫・台帳・保管所で命名する案。Archive の「終わった感」や Ledger の金融連想で違和感が強く却下。
-superseded_by: "0006"
+summary: 3 リポジトリを Archive・Ledger・Repository・Registry 系の書庫・台帳・保管所で命名する案。Archive の「終わった感」や
+  Ledger の金融連想で違和感が強く却下。
+superseded_by: '0006'
 tags:
-  - rejected
-  - naming
-title: "却下案: Archive / Ledger 系命名"
+- rejected
+- naming
+title: '却下案: Archive / Ledger 系命名'
 type: rejected_alternative
-updated: 2026-07-14T06:20:00+09:00
+updated: 2026-07-14 06:20:00+09:00
+id: pj-2026-07-13-dc3d
+aliases:
+- pj-2026-07-13-dc3d
 ---
 
 ## Summary

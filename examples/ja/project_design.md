@@ -1,25 +1,29 @@
 ---
-created: 2026-07-13T22:20:00+09:00
+created: 2026-07-13 22:20:00+09:00
 example_of_type: project_design
 keywords:
-  - example
-  - project_design
-  - design-decisions
-  - mcp-server
-  - cloudflare-workers
-  - fine-grained-pat
+- example
+- project_design
+- design-decisions
+- mcp-server
+- cloudflare-workers
+- fine-grained-pat
 project: <your-mcp-project>
 related: []
 status: published
-summary: project_design type の記入例。MCP サーバプロジェクトの design-decisions.md ファイルを題材にした設計判断の逆完例。プロジェクトごとに 1 つ配置し、値射型の設計判断をリスト化する。
+summary: project_design type の記入例。MCP サーバプロジェクトの design-decisions.md ファイルを題材にした設計判断の逆完例。プロジェクトごとに
+  1 つ配置し、値射型の設計判断をリスト化する。
 tags:
-  - example
-  - project_design
-  - design-decision
-  - mcp
-title: "例: MCP サーバ設計上の意思決定"
+- example
+- project_design
+- design-decision
+- mcp
+title: '例: MCP サーバ設計上の意思決定'
 type: example
-updated: 2026-07-13T22:20:00+09:00
+updated: 2026-07-13 22:20:00+09:00
+id: pj-2026-07-13-72b8
+aliases:
+- pj-2026-07-13-72b8
 ---
 
 ## Summary

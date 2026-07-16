@@ -5,8 +5,15 @@ type: placeholder
 audience: mixed
 status: draft
 date: 2026-07-13
-keywords: [examples, english, pending, translation]
+keywords:
+- examples
+- english
+- pending
+- translation
 summary: English examples pending translation.
+id: pj-2026-07-13-22fd
+aliases:
+- pj-2026-07-13-22fd
 ---
 
 Pending translation.

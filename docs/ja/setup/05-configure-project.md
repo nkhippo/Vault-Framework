@@ -1,20 +1,24 @@
 ---
 audience: adopter
-created: 2026-07-14T09:10:00+09:00
+created: 2026-07-14 09:10:00+09:00
 keywords:
-  - setup
-  - claude-projects
-  - vault-project
-  - instructions
-  - thin-instructions
+- setup
+- claude-projects
+- vault-project
+- instructions
+- thin-instructions
 status: published
-summary: Claude Projects に Vault Project を作成し、Instructions を「激薄」テンプレで設定する手順。Project の目的、Instructions、Custom Instructions、MCP コネクタの割り当てを含む。
+summary: Claude Projects に Vault Project を作成し、Instructions を「激薄」テンプレで設定する手順。Project
+  の目的、Instructions、Custom Instructions、MCP コネクタの割り当てを含む。
 tags:
-  - setup
-  - claude-projects
+- setup
+- claude-projects
 title: 05 - Claude Projects の設定
 type: setup
-updated: 2026-07-14T09:10:00+09:00
+updated: 2026-07-14 09:10:00+09:00
+id: pj-2026-07-13-19c6
+aliases:
+- pj-2026-07-13-19c6
 ---
 
 ## Summary

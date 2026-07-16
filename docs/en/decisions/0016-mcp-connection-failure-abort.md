@@ -1,36 +1,42 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: adr-0016
+id: pj-2026-07-15-75ed
 keywords:
-  - mcp
-  - failure
-  - retry
-  - abort
-  - guardrail
-  - connection
-  - prompt-injection
-  - silent-failure
-  - english
+- mcp
+- failure
+- retry
+- abort
+- guardrail
+- connection
+- prompt-injection
+- silent-failure
+- english
 lang: en
 related_adrs:
-  - "0002"
-  - "0003"
-  - "0004"
+- '0002'
+- '0003'
+- '0004'
 related_ja: docs/ja/decisions/0016-mcp-connection-failure-abort.md
 related_specs: []
 status: accepted
-summary: Rule for Vault MCP connection failure. Retry once; if it still fails, abort. Continuing on guesswork is forbidden; tell Naoya explicitly and ask for direction. Prevents inconsistencies and misjudgments with the vault, and also serves as a defense against prompt injection.
+summary: Rule for Vault MCP connection failure. Retry once; if it still fails, abort.
+  Continuing on guesswork is forbidden; tell Naoya explicitly and ask for direction.
+  Prevents inconsistencies and misjudgments with the vault, and also serves as a defense
+  against prompt injection.
 tags:
-  - adr
-  - safety
-  - guardrail
-  - important
-title: "ADR-0016: Retry and Abort on MCP Connection Failure"
-title_ja: "ADR-0016: MCP 接続失敗時のリトライと中断"
+- adr
+- safety
+- guardrail
+- important
+title: 'ADR-0016: Retry and Abort on MCP Connection Failure'
+title_ja: 'ADR-0016: MCP 接続失敗時のリトライと中断'
 type: adr
-created: 2026-07-15T08:30:24+09:00
-updated: 2026-07-15T08:30:24+09:00
+created: 2026-07-15 08:30:24+09:00
+updated: 2026-07-15 08:30:24+09:00
+aliases:
+- pj-2026-07-15-75ed
+- adr-0016
 ---
 
 ## Summary

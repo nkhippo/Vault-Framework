@@ -1,25 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T06:35:00+09:00
+created: 2026-07-14 06:35:00+09:00
 date: 2026-07-13
 keywords:
-  - framework
-  - integration
-  - monorepo
-  - publication-scope
-  - fable-packaging
+- framework
+- integration
+- monorepo
+- publication-scope
+- fable-packaging
 related_adrs:
-  - "0005"
-  - "0006"
+- '0005'
+- '0006'
 status: rejected
 summary: Vault-Framework を Vault 本体内に統合維持し、別リポジトリ化しない案。Public 化スコープの混在と Fable パッケージング困難で却下。
-superseded_by: "0005"
+superseded_by: '0005'
 tags:
-  - rejected
-  - framework
-title: "却下案: Framework を Vault 内に統合維持"
+- rejected
+- framework
+title: '却下案: Framework を Vault 内に統合維持'
 type: rejected_alternative
-updated: 2026-07-14T06:35:00+09:00
+updated: 2026-07-14 06:35:00+09:00
+id: pj-2026-07-13-fa96
+aliases:
+- pj-2026-07-13-fa96
 ---
 
 ## Summary

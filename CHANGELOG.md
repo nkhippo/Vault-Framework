@@ -1,3 +1,10 @@
+---
+id: pj-2026-07-13-4ee4
+aliases:
+- pj-2026-07-13-4ee4
+title: Changelog
+created: '2026-07-13'
+---
 # Changelog
 
 All notable changes to Vault-Framework will be documented in this file.

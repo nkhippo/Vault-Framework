@@ -1,25 +1,29 @@
 ---
 audience: mixed
-created: 2026-07-14T07:00:00+09:00
+created: 2026-07-14 07:00:00+09:00
 keywords:
-  - frontmatter
-  - schema
-  - yaml
-  - metadata
-  - required-fields
-  - optional-fields
-  - type-specific-fields
-  - sensitive
+- frontmatter
+- schema
+- yaml
+- metadata
+- required-fields
+- optional-fields
+- type-specific-fields
+- sensitive
 related_adrs: []
 status: published
-summary: Vault 内の Markdown ファイルの Front Matter スキーマの詳細仕様。必須・任意フィールド、type 別の追加必須フィールド、YAML 記述ルール、バリデーション手順を定義。
+summary: Vault 内の Markdown ファイルの Front Matter スキーマの詳細仕様。必須・任意フィールド、type 別の追加必須フィールド、YAML
+  記述ルール、バリデーション手順を定義。
 tags:
-  - spec
-  - frontmatter
-  - schema
+- spec
+- frontmatter
+- schema
 title: Front Matter スキーマ 仕様
 type: spec
-updated: 2026-07-14T07:00:00+09:00
+updated: 2026-07-14 07:00:00+09:00
+id: pj-2026-07-13-9fa5
+aliases:
+- pj-2026-07-13-9fa5
 ---
 
 ## Summary

@@ -1,24 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T07:45:00+09:00
+created: 2026-07-14 07:45:00+09:00
 keywords:
-  - abstract-generation
-  - spec
-  - concrete-to-abstract
-  - chat-log-to-adr
-  - parallel-operation
-  - iteration
+- abstract-generation
+- spec
+- concrete-to-abstract
+- chat-log-to-adr
+- parallel-operation
+- iteration
 related_adrs:
-  - "0009"
-  - "0016"
+- 0009
+- '0016'
 status: published
-summary: 具体的な chat_log から抽象的な spec / ADR / rejected-alternative を生成する抽象生成の並行運用の詳細仕様。保守運用 4 レベルとは独立した並行運用として位置づけ、発火条件、生成フロー、対象範囲、除外領域を規定。
+summary: 具体的な chat_log から抽象的な spec / ADR / rejected-alternative を生成する抽象生成の並行運用の詳細仕様。保守運用
+  4 レベルとは独立した並行運用として位置づけ、発火条件、生成フロー、対象範囲、除外領域を規定。
 tags:
-  - spec
-  - abstract-generation
+- spec
+- abstract-generation
 title: 抽象生成 仕様
 type: spec
-updated: 2026-07-14T07:45:00+09:00
+updated: 2026-07-14 07:45:00+09:00
+id: pj-2026-07-13-7921
+aliases:
+- pj-2026-07-13-7921
 ---
 
 ## Summary

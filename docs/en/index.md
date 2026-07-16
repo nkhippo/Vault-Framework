@@ -5,8 +5,16 @@ type: placeholder
 audience: mixed
 status: draft
 date: 2026-07-13
-keywords: [index, english, translation, pending, i18n]
+keywords:
+- index
+- english
+- translation
+- pending
+- i18n
 summary: Placeholder English index mirroring docs/ja/index.md. Pending translation.
+id: pj-2026-07-13-861f
+aliases:
+- pj-2026-07-13-861f
 ---
 
 # Vault-Framework English Index

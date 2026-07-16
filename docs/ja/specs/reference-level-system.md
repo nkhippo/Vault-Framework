@@ -1,28 +1,32 @@
 ---
 audience: mixed
-created: 2026-07-14T07:15:00+09:00
+created: 2026-07-14 07:15:00+09:00
 keywords:
-  - reference-level
-  - spec
-  - level-0
-  - level-1
-  - level-2
-  - level-3
-  - level-4
-  - prompt-caching
-  - phase3.1-tools
+- reference-level
+- spec
+- level-0
+- level-1
+- level-2
+- level-3
+- level-4
+- prompt-caching
+- phase3.1-tools
 related_adrs:
-  - "0003"
-  - "0014"
+- '0003'
+- '0014'
 status: published
-summary: Skill が vault を参照する際の 5 段階(Level 0、4)の詳細仕様。各レベルの発火条件、参照ファイル、キャッシュ挙動、prompt caching への配慮を規定。
+summary: Skill が vault を参照する際の 5 段階(Level 0、4)の詳細仕様。各レベルの発火条件、参照ファイル、キャッシュ挙動、prompt
+  caching への配慮を規定。
 tags:
-  - spec
-  - reference-level
-  - skill
+- spec
+- reference-level
+- skill
 title: 参照レベルシステム 仕様
 type: spec
-updated: 2026-07-14T07:15:00+09:00
+updated: 2026-07-14 07:15:00+09:00
+id: pj-2026-07-13-dd44
+aliases:
+- pj-2026-07-13-dd44
 ---
 
 ## Summary

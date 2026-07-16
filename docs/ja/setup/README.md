@@ -1,20 +1,24 @@
 ---
 audience: adopter
-created: 2026-07-14T08:35:00+09:00
+created: 2026-07-14 08:35:00+09:00
 keywords:
-  - setup
-  - overview
-  - roadmap
-  - 10-steps
-  - framework-adoption
+- setup
+- overview
+- roadmap
+- 10-steps
+- framework-adoption
 status: published
-summary: Vault-Framework を導入して、自分の個人 Vault 運用を立ち上げるための導入手順集の概要とロードマップ。10 ステップで構成し、各ステップを順に実施することで、Naoya と同等の Vault 運用体制を構築できる。
+summary: Vault-Framework を導入して、自分の個人 Vault 運用を立ち上げるための導入手順集の概要とロードマップ。10 ステップで構成し、各ステップを順に実施することで、Naoya
+  と同等の Vault 運用体制を構築できる。
 tags:
-  - setup
-  - overview
+- setup
+- overview
 title: セットアップガイド - 全体の流れ
 type: setup
-updated: 2026-07-14T08:35:00+09:00
+updated: 2026-07-14 08:35:00+09:00
+id: pj-2026-07-13-abd8
+aliases:
+- pj-2026-07-13-abd8
 ---
 
 ## Summary

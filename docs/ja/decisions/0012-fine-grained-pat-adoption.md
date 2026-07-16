@@ -1,34 +1,38 @@
 ---
 audience: mixed
-created: 2026-07-14T04:25:00+09:00
+created: 2026-07-14 04:25:00+09:00
 date: 2026-07-13
-id: adr-0012
+id: pj-2026-07-13-9107
 keywords:
-  - fine-grained-pat
-  - github
-  - security
-  - pat
-  - classic-pat
-  - least-privilege
-  - authentication
+- fine-grained-pat
+- github
+- security
+- pat
+- classic-pat
+- least-privilege
+- authentication
 related_adrs:
-  - "0001"
-  - "0002"
-  - "0015"
+- '0001'
+- '0002'
+- '0015'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_platform-selection-and-phase12-completion.md
+- 10_chat_logs/2026/07/2026-07-13_platform-selection-and-phase12-completion.md
 related_specs: []
 status: accepted
-summary: Vault-MCP から GitHub API へのアクセス認証に Fine-grained PAT を採用し、権限を nkhippo/Vault の Contents R/W のみに限定した意思決定。事故時の被害範囲を単一リポジトリに閉じ込めるセキュリティ設計。
+summary: Vault-MCP から GitHub API へのアクセス認証に Fine-grained PAT を採用し、権限を nkhippo/Vault
+  の Contents R/W のみに限定した意思決定。事故時の被害範囲を単一リポジトリに閉じ込めるセキュリティ設計。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - security
-  - important
-title: "ADR-0012: Fine-grained PAT の採用"
+- adr
+- security
+- important
+title: 'ADR-0012: Fine-grained PAT の採用'
 type: adr
-updated: 2026-07-14T04:25:00+09:00
+updated: 2026-07-14 04:25:00+09:00
+aliases:
+- pj-2026-07-13-9107
+- adr-0012
 ---
 
 ## Summary

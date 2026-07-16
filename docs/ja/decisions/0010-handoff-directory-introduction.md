@@ -1,33 +1,37 @@
 ---
 audience: mixed
-created: 2026-07-14T04:50:00+09:00
+created: 2026-07-14 04:50:00+09:00
 date: 2026-07-13
-id: adr-0010
+id: pj-2026-07-13-e49e
 keywords:
-  - handoff
-  - current-state
-  - recent-changes
-  - session-continuity
-  - catchup
-  - prepend-pattern
+- handoff
+- current-state
+- recent-changes
+- session-continuity
+- catchup
+- prepend-pattern
 related_adrs:
-  - "0003"
-  - "0011"
+- '0003'
+- '0011'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md
+- 10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md
 related_specs:
-  - handoff-mechanism
+- handoff-mechanism
 status: accepted
-summary: Chat 間・セッション間の引き継ぎに特化した領域として 30_projects/<RepoName>/handoff/ を新設した意思決定。current-state.md で直近状態のスナップショットを、recent-changes/YYYY/MM/ で変更履歴の詳細を管理。
+summary: Chat 間・セッション間の引き継ぎに特化した領域として 30_projects/<RepoName>/handoff/ を新設した意思決定。current-state.md
+  で直近状態のスナップショットを、recent-changes/YYYY/MM/ で変更履歴の詳細を管理。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - handoff
-  - important
-title: "ADR-0010: handoff/ 領域の新設"
+- adr
+- handoff
+- important
+title: 'ADR-0010: handoff/ 領域の新設'
 type: adr
-updated: 2026-07-14T04:50:00+09:00
+updated: 2026-07-14 04:50:00+09:00
+aliases:
+- pj-2026-07-13-e49e
+- adr-0010
 ---
 
 ## Summary

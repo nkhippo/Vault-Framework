@@ -1,33 +1,36 @@
 ---
 audience: mixed
-created: 2026-07-14T04:40:00+09:00
+created: 2026-07-14 04:40:00+09:00
 date: 2026-07-13
-id: adr-0008
+id: pj-2026-07-13-b51c
 keywords:
-  - cursor
-  - delegation
-  - maintenance-level
-  - criteria
-  - file-count
-  - task-type
-  - delegation-judgment
+- cursor
+- delegation
+- maintenance-level
+- criteria
+- file-count
+- task-type
+- delegation-judgment
 related_adrs:
-  - "0003"
-  - "0009"
+- '0003'
+- 0009
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_cursor-delegation-and-maintenance-levels.md
+- 10_chat_logs/2026/07/2026-07-13_cursor-delegation-and-maintenance-levels.md
 related_specs: []
 status: accepted
 summary: Cursor に委譲すべき作業の判定基準を「3 ファイル以上の一括操作」の単純な数値ルールから、作業種別 × 保守レベルの組み合わせに変更した意思決定。機械的すぎる判定を廃し、作業の質を評価する方式に移行。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - cursor
-  - delegation
-title: "ADR-0008: Cursor 委譲判定: メンテナンスレベル方式"
+- adr
+- cursor
+- delegation
+title: 'ADR-0008: Cursor 委譲判定: メンテナンスレベル方式'
 type: adr
-updated: 2026-07-14T04:40:00+09:00
+updated: 2026-07-14 04:40:00+09:00
+aliases:
+- pj-2026-07-13-b51c
+- adr-0008
 ---
 
 ## Summary

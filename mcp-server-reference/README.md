@@ -5,8 +5,18 @@ type: reference
 audience: mixed
 status: published
 date: 2026-07-13
-keywords: [mcp, mcp-server, cloudflare-workers, vault-mcp, reference, deployment]
-summary: Reference documentation for the Vault MCP server implementation, deployment, and configuration.
+keywords:
+- mcp
+- mcp-server
+- cloudflare-workers
+- vault-mcp
+- reference
+- deployment
+summary: Reference documentation for the Vault MCP server implementation, deployment,
+  and configuration.
+id: pj-2026-07-13-d955
+aliases:
+- pj-2026-07-13-d955
 ---
 
 # Vault MCP Server Reference

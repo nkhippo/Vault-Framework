@@ -2,23 +2,26 @@
 audience: mixed
 date: 2026-07-14
 keywords:
-  - architecture
-  - 3-layer
-  - skill
-  - project
-  - vault
-  - priority
+- architecture
+- 3-layer
+- skill
+- project
+- vault
+- priority
 related_adrs:
-  - "0003"
-  - "0004"
+- '0003'
+- '0004'
 related_specs: []
 status: published
 summary: Skill・Project・Vault の 3 層運用アーキテクチャの概要。各層の役割、優先順位、データフローを整理。
-title: "アーキテクチャ: Skill・Project・Vault の 3 層"
-title_en: "Architecture: Skill / Project / Vault 3-layer"
+title: 'アーキテクチャ: Skill・Project・Vault の 3 層'
+title_en: 'Architecture: Skill / Project / Vault 3-layer'
 type: overview
-created: 2026-07-14T20:47:07+09:00
-updated: 2026-07-14T20:47:07+09:00
+created: 2026-07-14 20:47:07+09:00
+updated: 2026-07-14 20:47:07+09:00
+id: pj-2026-07-13-0245
+aliases:
+- pj-2026-07-13-0245
 ---
 
 ## Summary

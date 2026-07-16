@@ -4,8 +4,16 @@ type: readme
 audience: human_primary
 status: draft
 date: 2026-07-13
-keywords: [vault-manager, skill, readme, english, triggers]
+keywords:
+- vault-manager
+- skill
+- readme
+- english
+- triggers
 summary: Overview and trigger phrases for vault-manager Skill (English).
+id: pj-2026-07-13-34a1
+aliases:
+- pj-2026-07-13-34a1
 ---
 
 ## Summary

@@ -4,9 +4,17 @@ type: rationale
 audience: mixed
 status: draft
 date: 2026-07-13
-keywords: [rationale, thin-instructions, project-instructions, adr-0004]
+keywords:
+- rationale
+- thin-instructions
+- project-instructions
+- adr-0004
 summary: 激薄 Instructions 方針の設計根拠。ADR 0004 へのポインタと要約。
-related_adrs: [0004]
+related_adrs:
+- 4
+id: pj-2026-07-13-0d06
+aliases:
+- pj-2026-07-13-0d06
 ---
 
 ## Summary

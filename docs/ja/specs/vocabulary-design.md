@@ -1,27 +1,30 @@
 ---
 audience: mixed
-created: 2026-07-14T07:05:00+09:00
+created: 2026-07-14 07:05:00+09:00
 keywords:
-  - vocabulary
-  - controlled-vocabulary
-  - spec
-  - type
-  - status
-  - tags
-  - project
-  - extension
-  - deprecation
-  - governance
+- vocabulary
+- controlled-vocabulary
+- spec
+- type
+- status
+- tags
+- project
+- extension
+- deprecation
+- governance
 related_adrs: []
 status: published
 summary: Vault で使う統制語彙の設計原則、拡張手順、管理方針の詳細仕様。type、status、tags、project の 4 カテゴリについて、なぜ統制するか、どう拡張するかを規定。
 tags:
-  - spec
-  - vocabulary
-  - governance
+- spec
+- vocabulary
+- governance
 title: 統制語彙の設計 仕様
 type: spec
-updated: 2026-07-14T07:05:00+09:00
+updated: 2026-07-14 07:05:00+09:00
+id: pj-2026-07-13-f5e9
+aliases:
+- pj-2026-07-13-f5e9
 ---
 
 ## Summary

@@ -1,22 +1,25 @@
 ---
-created: 2026-07-14T02:15:00+09:00
+created: 2026-07-14 02:15:00+09:00
 keywords:
-  - vault-index
-  - index
-  - navigation
-  - ai-facing
-  - dispatcher
-  - meta
+- vault-index
+- index
+- navigation
+- ai-facing
+- dispatcher
+- meta
 status: published
 summary: Vault 全体の索引ファイル。AI が vault に何がどこにあるかを最短で把握するための情報を集約。プロジェクト一覧・参照 order・センシティブ領域の注意を含む。
 tags:
-  - framework
-  - vault-templates
-  - meta
-  - index
+- framework
+- vault-templates
+- meta
+- index
 title: Vault Index
 type: knowledge
-updated: 2026-07-14T02:15:00+09:00
+updated: 2026-07-14 02:15:00+09:00
+id: pj-2026-07-13-4bab
+aliases:
+- pj-2026-07-13-4bab
 ---
 
 ## Summary

@@ -1,25 +1,29 @@
 ---
 audience: mixed
-created: 2026-07-14T08:00:00+09:00
+created: 2026-07-14 08:00:00+09:00
 keywords:
-  - operational-principles
-  - guidelines
-  - daily-operation
-  - chat-session-flow
-  - dialog-patterns
+- operational-principles
+- guidelines
+- daily-operation
+- chat-session-flow
+- dialog-patterns
 related_adrs:
-  - "0003"
-  - "0007"
-  - "0008"
+- '0003'
+- '0007'
+- 0008
 status: published
-summary: Vault の日々の運用における実践的な判断原則。v1-nine-principles が思想レベルの原則を扱うのに対し、このガイドラインは「実際の Chat 内でどう振る舞うか」の運用パターンを具体的に規定。
+summary: Vault の日々の運用における実践的な判断原則。v1-nine-principles が思想レベルの原則を扱うのに対し、このガイドラインは「実際の
+  Chat 内でどう振る舞うか」の運用パターンを具体的に規定。
 tags:
-  - guideline
-  - operational
-  - daily
+- guideline
+- operational
+- daily
 title: 運用原則
 type: guideline
-updated: 2026-07-14T08:00:00+09:00
+updated: 2026-07-14 08:00:00+09:00
+id: pj-2026-07-13-988d
+aliases:
+- pj-2026-07-13-988d
 ---
 
 ## Summary

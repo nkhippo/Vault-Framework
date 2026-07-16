@@ -1,35 +1,41 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: adr-0006
+id: pj-2026-07-15-ffd1
 keywords:
-  - naming
-  - vault
-  - vault-mcp
-  - vault-framework
-  - convention
-  - rename
-  - personal-vault
-  - hashicorp-collision
-  - english
+- naming
+- vault
+- vault-mcp
+- vault-framework
+- convention
+- rename
+- personal-vault
+- hashicorp-collision
+- english
 lang: en
 related_adrs:
-  - "0001"
-  - "0005"
+- '0001'
+- '0005'
 related_ja: docs/ja/decisions/0006-naming-vault-scheme.md
 related_specs:
-  - file-naming
+- file-naming
 status: accepted
-summary: Decision that finalized the naming of the three repositories (Vault / Vault-MCP / Vault-Framework). The original personal-vault-* prefix proposal was withdrawn; naming was unified to Vault-* for simplicity. Internal designation and external name are unified.
+summary: Decision that finalized the naming of the three repositories (Vault / Vault-MCP
+  / Vault-Framework). The original personal-vault-* prefix proposal was withdrawn;
+  naming was unified to Vault-* for simplicity. Internal designation and external
+  name are unified.
 tags:
-  - adr
-  - naming
-  - important
-title: "ADR-0006: Naming Scheme: Vault / Vault-MCP / Vault-Framework"
-title_ja: "ADR-0006: 命名スキーム: Vault / Vault-MCP / Vault-Framework"
+- adr
+- naming
+- important
+title: 'ADR-0006: Naming Scheme: Vault / Vault-MCP / Vault-Framework'
+title_ja: 'ADR-0006: 命名スキーム: Vault / Vault-MCP / Vault-Framework'
 type: adr
-created: 2026-07-15T08:28:27+09:00
-updated: 2026-07-15T08:28:27+09:00
+created: 2026-07-15 08:28:27+09:00
+updated: 2026-07-15 08:28:27+09:00
+aliases:
+- pj-2026-07-15-ffd1
+- adr-0006
 ---
 
 ## Summary

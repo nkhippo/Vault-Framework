@@ -5,8 +5,16 @@ type: index
 audience: mixed
 status: published
 date: 2026-07-13
-keywords: [skills, claude-skills, vault-manager, vault-maintainer, upload]
+keywords:
+- skills
+- claude-skills
+- vault-manager
+- vault-maintainer
+- upload
 summary: Claude アカウントにアップロードすべき Skill (SKILL.md) の一覧と用途。
+id: pj-2026-07-13-acad
+aliases:
+- pj-2026-07-13-acad
 ---
 
 ## For AI: Which SKILL.md to upload

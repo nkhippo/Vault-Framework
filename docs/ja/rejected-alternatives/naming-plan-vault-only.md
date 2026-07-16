@@ -1,25 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T06:00:00+09:00
+created: 2026-07-14 06:00:00+09:00
 date: 2026-07-13
 keywords:
-  - naming
-  - vault-only
-  - monorepo
-  - single-name
-  - identification
+- naming
+- vault-only
+- monorepo
+- single-name
+- identification
 related_adrs:
-  - "0005"
-  - "0006"
+- '0005'
+- '0006'
 status: rejected
 summary: 3 リポジトリを全て Vault と命名し、区別を付けない案。MCP・Framework がリポジトリ名で識別できず、Public 化時に混乱を招くため却下。
-superseded_by: "0006"
+superseded_by: '0006'
 tags:
-  - rejected
-  - naming
-title: "却下案: Vault のみ命名"
+- rejected
+- naming
+title: '却下案: Vault のみ命名'
 type: rejected_alternative
-updated: 2026-07-14T06:00:00+09:00
+updated: 2026-07-14 06:00:00+09:00
+id: pj-2026-07-13-cb3e
+aliases:
+- pj-2026-07-13-cb3e
 ---
 
 ## Summary

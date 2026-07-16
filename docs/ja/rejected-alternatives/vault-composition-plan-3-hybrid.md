@@ -1,24 +1,27 @@
 ---
 audience: mixed
-created: 2026-07-14T05:20:00+09:00
+created: 2026-07-14 05:20:00+09:00
 date: 2026-07-13
 keywords:
-  - hybrid
-  - obsidian-sync
-  - github
-  - single-source-of-truth
-  - dual-write
+- hybrid
+- obsidian-sync
+- github
+- single-source-of-truth
+- dual-write
 related_adrs:
-  - "0001"
+- '0001'
 status: rejected
 summary: Obsidian Syncと GitHub を並列運用するハイブリッド構成の案。単一 source of truth を維持できず、統合コストが高いため却下。
-superseded_by: "0001"
+superseded_by: '0001'
 tags:
-  - rejected
-  - vault-composition
-title: "却下案: ハイブリッド構成"
+- rejected
+- vault-composition
+title: '却下案: ハイブリッド構成'
 type: rejected_alternative
-updated: 2026-07-14T05:20:00+09:00
+updated: 2026-07-14 05:20:00+09:00
+id: pj-2026-07-13-8398
+aliases:
+- pj-2026-07-13-8398
 ---
 
 ## Summary

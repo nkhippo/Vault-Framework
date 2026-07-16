@@ -1,24 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T05:25:00+09:00
+created: 2026-07-14 05:25:00+09:00
 date: 2026-07-13
 keywords:
-  - mcp-platform
-  - cloud-run
-  - google-cloud
-  - cold-start
-  - container
+- mcp-platform
+- cloud-run
+- google-cloud
+- cold-start
+- container
 related_adrs:
-  - "0002"
+- '0002'
 status: rejected
-summary: Vault-MCP のホスティングプラットフォームとして Google Cloud Run を採用する案。コールドスタート数百 ms〜数秒がネックとなり、MCP の対話系ワークロードに不利。
-superseded_by: "0002"
+summary: Vault-MCP のホスティングプラットフォームとして Google Cloud Run を採用する案。コールドスタート数百 ms〜数秒がネックとなり、MCP
+  の対話系ワークロードに不利。
+superseded_by: '0002'
 tags:
-  - rejected
-  - mcp-platform
-title: "却下案: Google Cloud Run"
+- rejected
+- mcp-platform
+title: '却下案: Google Cloud Run'
 type: rejected_alternative
-updated: 2026-07-14T05:25:00+09:00
+updated: 2026-07-14 05:25:00+09:00
+id: pj-2026-07-13-a307
+aliases:
+- pj-2026-07-13-a307
 ---
 
 ## Summary

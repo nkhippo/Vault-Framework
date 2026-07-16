@@ -1,20 +1,24 @@
 ---
-created: 2026-07-13T22:35:00+09:00
+created: 2026-07-13 22:35:00+09:00
 keywords:
-  - examples
-  - staging
-  - readme
-  - framework-mirror
+- examples
+- staging
+- readme
+- framework-mirror
 project: Vault-Framework
 status: published
-summary: examples/ja/ の staging area の説明。Framework へのミラーの canonical source を格納し、実データベースの記入例を 4 type 分提供。
+summary: examples/ja/ の staging area の説明。Framework へのミラーの canonical source を格納し、実データベースの記入例を
+  4 type 分提供。
 tags:
-  - framework
-  - examples
-  - staging
+- framework
+- examples
+- staging
 title: Vault-Framework examples staging README
 type: knowledge
-updated: 2026-07-13T22:35:00+09:00
+updated: 2026-07-13 22:35:00+09:00
+id: pj-2026-07-13-ca82
+aliases:
+- pj-2026-07-13-ca82
 ---
 
 ## Summary

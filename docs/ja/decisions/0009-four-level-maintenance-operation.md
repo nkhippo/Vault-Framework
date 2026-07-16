@@ -1,37 +1,40 @@
 ---
 audience: mixed
-created: 2026-07-14T04:45:00+09:00
+created: 2026-07-14 04:45:00+09:00
 date: 2026-07-13
-id: adr-0009
+id: pj-2026-07-13-48bc
 keywords:
-  - maintenance
-  - four-level
-  - level-1
-  - level-2
-  - level-3
-  - level-4
-  - abstract-generation
-  - cadence
+- maintenance
+- four-level
+- level-1
+- level-2
+- level-3
+- level-4
+- abstract-generation
+- cadence
 related_adrs:
-  - "0003"
-  - "0008"
-  - "0011"
+- '0003'
+- 0008
+- '0011'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_maintenance-operation-design.md
+- 10_chat_logs/2026/07/2026-07-13_maintenance-operation-design.md
 related_specs:
-  - maintenance-four-levels
-  - abstract-generation
+- maintenance-four-levels
+- abstract-generation
 status: accepted
 summary: Vault の保守運用を 4 レベル(日常発火 / 週次補正 / 月次補正 / 季節補正)に分類し、抽象生成を並行運用として独立管理した意思決定。頃度・担当・介入コストを明確化。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - maintenance
-  - important
-title: "ADR-0009: 保守運用 4 レベル + 抽象生成の並行運用"
+- adr
+- maintenance
+- important
+title: 'ADR-0009: 保守運用 4 レベル + 抽象生成の並行運用'
 type: adr
-updated: 2026-07-14T04:45:00+09:00
+updated: 2026-07-14 04:45:00+09:00
+aliases:
+- pj-2026-07-13-48bc
+- adr-0009
 ---
 
 ## Summary

@@ -1,32 +1,36 @@
 ---
 audience: mixed
-created: 2026-07-14T03:55:00+09:00
+created: 2026-07-14 03:55:00+09:00
 date: 2026-07-13
-id: adr-0004
+id: pj-2026-07-13-9b13
 keywords:
-  - project-instructions
-  - thin
-  - delegation
-  - vault
-  - canonical
-  - instructions-template
+- project-instructions
+- thin
+- delegation
+- vault
+- canonical
+- instructions-template
 related_adrs:
-  - "0003"
-  - "0013"
-  - "0016"
+- '0003'
+- '0013'
+- '0016'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md
+- 10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md
 related_specs: []
 status: accepted
-summary: Claude Projects の Instructions を「激薄」に保ち、実質的な運用ルールは vault 内の 00_meta/project_instructions_vault.md に集約する方針。Instructions はセッション開始時に「vault の正典を読め」というポインタのみ。
+summary: Claude Projects の Instructions を「激薄」に保ち、実質的な運用ルールは vault 内の 00_meta/project_instructions_vault.md
+  に集約する方針。Instructions はセッション開始時に「vault の正典を読め」というポインタのみ。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - instructions
-title: "ADR-0004: 激薄 Project Instructions 方針"
+- adr
+- instructions
+title: 'ADR-0004: 激薄 Project Instructions 方針'
 type: adr
-updated: 2026-07-14T03:55:00+09:00
+updated: 2026-07-14 03:55:00+09:00
+aliases:
+- pj-2026-07-13-9b13
+- adr-0004
 ---
 
 ## Summary

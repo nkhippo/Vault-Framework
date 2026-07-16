@@ -1,26 +1,30 @@
 ---
 audience: mixed
-created: 2026-07-14T05:30:00+09:00
+created: 2026-07-14 05:30:00+09:00
 date: 2026-07-13
 keywords:
-  - mcp-platform
-  - fly-io
-  - railway
-  - render
-  - vercel
-  - netlify
-  - deno-deploy
+- mcp-platform
+- fly-io
+- railway
+- render
+- vercel
+- netlify
+- deno-deploy
 related_adrs:
-  - "0002"
+- '0002'
 status: rejected
-summary: Vault-MCP のホスティングプラットフォームとして、Cloudflare Workers と Cloud Run 以外の 6 候補(Fly.io、Railway、Render、Vercel、Netlify、Deno Deploy)を検討した記録。各候補の個別理由を統合。
-superseded_by: "0002"
+summary: Vault-MCP のホスティングプラットフォームとして、Cloudflare Workers と Cloud Run 以外の 6 候補(Fly.io、Railway、Render、Vercel、Netlify、Deno
+  Deploy)を検討した記録。各候補の個別理由を統合。
+superseded_by: '0002'
 tags:
-  - rejected
-  - mcp-platform
-title: "却下案: Fly.io / Railway / Render / Vercel / Netlify / Deno Deploy"
+- rejected
+- mcp-platform
+title: '却下案: Fly.io / Railway / Render / Vercel / Netlify / Deno Deploy'
 type: rejected_alternative
-updated: 2026-07-14T05:30:00+09:00
+updated: 2026-07-14 05:30:00+09:00
+id: pj-2026-07-13-6540
+aliases:
+- pj-2026-07-13-6540
 ---
 
 ## Summary

@@ -4,8 +4,16 @@ type: template
 audience: human_primary
 status: draft
 date: 2026-07-13
-keywords: [app-project, instructions, template, en, thin]
+keywords:
+- app-project
+- instructions
+- template
+- en
+- thin
 summary: English thin Instructions template for an app-specific Claude Project.
+id: pj-2026-07-13-7b17
+aliases:
+- pj-2026-07-13-7b17
 ---
 
 # App Project Instructions Template (English)

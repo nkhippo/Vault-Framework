@@ -1,20 +1,23 @@
 ---
-created: 2026-07-13T21:41:00+09:00
+created: 2026-07-13 21:41:00+09:00
 keywords:
-  - 00_meta
-  - vault-templates
-  - readme
-  - framework
+- 00_meta
+- vault-templates
+- readme
+- framework
 project: Vault-Framework
 status: published
 summary: vault-templates/00_meta/ の各ファイルの役割と、導入者がカスタマイズすべきファイルの説明。
 tags:
-  - framework
-  - vault-templates
-  - meta
+- framework
+- vault-templates
+- meta
 title: vault-templates/00_meta/ README
 type: knowledge
-updated: 2026-07-13T21:41:00+09:00
+updated: 2026-07-13 21:41:00+09:00
+id: pj-2026-07-13-1e0c
+aliases:
+- pj-2026-07-13-1e0c
 ---
 
 ## Summary

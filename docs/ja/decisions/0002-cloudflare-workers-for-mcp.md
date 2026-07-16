@@ -1,36 +1,39 @@
 ---
 audience: mixed
-created: 2026-07-14T04:20:00+09:00
+created: 2026-07-14 04:20:00+09:00
 date: 2026-07-13
-id: adr-0002
+id: pj-2026-07-13-bccd
 keywords:
-  - mcp
-  - cloudflare-workers
-  - platform
-  - cloud-run
-  - deployment
-  - cold-start
-  - wrangler
-  - edge
+- mcp
+- cloudflare-workers
+- platform
+- cloud-run
+- deployment
+- cold-start
+- wrangler
+- edge
 related_adrs:
-  - "0001"
-  - "0012"
-  - "0015"
-  - "0016"
+- '0001'
+- '0012'
+- '0015'
+- '0016'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_platform-selection-and-phase12-completion.md
+- 10_chat_logs/2026/07/2026-07-13_platform-selection-and-phase12-completion.md
 related_specs: []
 status: accepted
 summary: MCP サーバのホスティングプラットフォームとし、8 候補から Cloudflare Workers を採用した意思決定。コールドスタート 0ms、広い無料枠、シンプルな運用モデルが決定要因。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - mcp
-  - platform
-title: "ADR-0002: MCP プラットフォームに Cloudflare Workers"
+- adr
+- mcp
+- platform
+title: 'ADR-0002: MCP プラットフォームに Cloudflare Workers'
 type: adr
-updated: 2026-07-14T04:20:00+09:00
+updated: 2026-07-14 04:20:00+09:00
+aliases:
+- pj-2026-07-13-bccd
+- adr-0002
 ---
 
 ## Summary

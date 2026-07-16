@@ -1,16 +1,19 @@
 ---
-created: 2026-07-14T21:12:00+09:00
+created: 2026-07-14 21:12:00+09:00
 keywords:
-  - skill
-  - vault-maintainer
-  - readme
-  - upload
-  - defer-lifted
+- skill
+- vault-maintainer
+- readme
+- upload
+- defer-lifted
 status: published
 summary: vault-maintainer Skill の管理用 README。この Skill の目的、vault-manager との棲み分け、アップロード手順、保留解除の経緯を説明。
 title: vault-maintainer README(日本語)
 type: reference
-updated: 2026-07-14T21:06:00+09:00
+updated: 2026-07-14 21:06:00+09:00
+id: pj-2026-07-13-0eb8
+aliases:
+- pj-2026-07-13-0eb8
 ---
 
 ## Summary

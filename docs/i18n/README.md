@@ -2,11 +2,11 @@
 audience: mixed
 date: 2026-07-14
 keywords:
-  - i18n
-  - multilingual
-  - translation
-  - strategy
-  - 多言語対応
+- i18n
+- multilingual
+- translation
+- strategy
+- 多言語対応
 related_adrs: []
 related_specs: []
 status: published
@@ -14,8 +14,11 @@ summary: Vault-Framework の多言語対応(i18n)戦略の全体像。日本語�
 title: 多言語対応(i18n)戦略
 title_en: Internationalization (i18n) Strategy
 type: overview
-created: 2026-07-14T21:12:21+09:00
-updated: 2026-07-14T21:12:21+09:00
+created: 2026-07-14 21:12:21+09:00
+updated: 2026-07-14 21:12:21+09:00
+id: pj-2026-07-13-3cbd
+aliases:
+- pj-2026-07-13-3cbd
 ---
 
 ## Summary

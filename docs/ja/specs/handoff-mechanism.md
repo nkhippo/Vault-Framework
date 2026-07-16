@@ -1,27 +1,31 @@
 ---
 audience: mixed
-created: 2026-07-14T07:20:00+09:00
+created: 2026-07-14 07:20:00+09:00
 keywords:
-  - handoff
-  - current-state
-  - recent-changes
-  - prepend
-  - spec
-  - session-continuity
-  - archive
+- handoff
+- current-state
+- recent-changes
+- prepend
+- spec
+- session-continuity
+- archive
 related_adrs:
-  - "0010"
-  - "0011"
-  - "0003"
+- '0010'
+- '0011'
+- '0003'
 status: published
-summary: 各プロジェクトの handoff/ 領域(current-state.md + recent-changes/YYYY/MM/)の詳細仕様。current-state.md の構造・prepend 運用、recent-changes/ のアーカイブ手順、Skill 側の参照優先度を規定。
+summary: 各プロジェクトの handoff/ 領域(current-state.md + recent-changes/YYYY/MM/)の詳細仕様。current-state.md
+  の構造・prepend 運用、recent-changes/ のアーカイブ手順、Skill 側の参照優先度を規定。
 tags:
-  - spec
-  - handoff
-  - session-continuity
+- spec
+- handoff
+- session-continuity
 title: Handoff 機構 仕様
 type: spec
-updated: 2026-07-14T07:20:00+09:00
+updated: 2026-07-14 07:20:00+09:00
+id: pj-2026-07-13-c1bd
+aliases:
+- pj-2026-07-13-c1bd
 ---
 
 ## Summary

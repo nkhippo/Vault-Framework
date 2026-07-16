@@ -1,24 +1,28 @@
 ---
-created: 2026-07-13T21:44:00+09:00
+created: 2026-07-13 21:44:00+09:00
 keywords:
-  - frontmatter
-  - schema
-  - yaml
-  - metadata
-  - fields
-  - required
-  - optional
-  - sensitive
+- frontmatter
+- schema
+- yaml
+- metadata
+- fields
+- required
+- optional
+- sensitive
 status: published
-summary: Vault 内の Markdown ファイルの Front Matter スキーマ。必須・任意フィールド、type 別の追加必須フィールド、sensitive の扱いを定義。
+summary: Vault 内の Markdown ファイルの Front Matter スキーマ。必須・任意フィールド、type 別の追加必須フィールド、sensitive
+  の扱いを定義。
 tags:
-  - framework
-  - vault-templates
-  - meta
-  - schema
+- framework
+- vault-templates
+- meta
+- schema
 title: Front Matter スキーマ
 type: knowledge
-updated: 2026-07-13T21:44:00+09:00
+updated: 2026-07-13 21:44:00+09:00
+id: pj-2026-07-13-dca8
+aliases:
+- pj-2026-07-13-dca8
 ---
 
 ## Summary

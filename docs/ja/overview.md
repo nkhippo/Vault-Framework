@@ -5,10 +5,17 @@ type: overview
 audience: mixed
 status: draft
 date: 2026-07-13
-keywords: [overview, 目的, problem, framework]
+keywords:
+- overview
+- 目的
+- problem
+- framework
 related_adrs: []
 related_specs: []
 summary: Framework の目的と解こうとする問題領域の概要。
+id: pj-2026-07-13-9fa8
+aliases:
+- pj-2026-07-13-9fa8
 ---
 
 ## Summary

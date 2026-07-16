@@ -2,23 +2,27 @@
 audience: mixed
 date: 2026-07-14
 keywords:
-  - philosophy
-  - github-as-a-backend
-  - obsidian
-  - ai-first
-  - english
+- philosophy
+- github-as-a-backend
+- obsidian
+- ai-first
+- english
 lang: en
 related_adrs:
-  - "0001"
+- '0001'
 related_ja: docs/ja/philosophy.md
 related_specs: []
 status: published
-summary: Explains the GitHub-as-a-Backend philosophy and the premise that AI is the primary reader, and its relationship with the Obsidian brand.
-title: "Philosophy: GitHub-as-a-Backend"
-title_ja: "思想: GitHub-as-a-Backend"
+summary: Explains the GitHub-as-a-Backend philosophy and the premise that AI is the
+  primary reader, and its relationship with the Obsidian brand.
+title: 'Philosophy: GitHub-as-a-Backend'
+title_ja: '思想: GitHub-as-a-Backend'
 type: overview
-created: 2026-07-14T20:49:11+09:00
-updated: 2026-07-14T20:49:11+09:00
+created: 2026-07-14 20:49:11+09:00
+updated: 2026-07-14 20:49:11+09:00
+id: pj-2026-07-15-4872
+aliases:
+- pj-2026-07-15-4872
 ---
 
 ## Summary

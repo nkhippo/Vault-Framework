@@ -5,8 +5,17 @@ type: report
 audience: mixed
 status: published
 date: 2026-07-16
-keywords: [id-scheme, migration, scripts, phase-0.5b, report]
-summary: 2026-07-16_cursor-instruction-2_vault-framework-scripts.md の実行結果。migration 6 + validate 1 + workflow 1 を PR #3 で main にマージ済み。
+keywords:
+- id-scheme
+- migration
+- scripts
+- phase-0.5b
+- report
+summary: 2026-07-16_cursor-instruction-2_vault-framework-scripts.md の実行結果。migration
+  6 + validate 1 + workflow 1 を PR
+id: pj-2026-07-16-c898
+aliases:
+- pj-2026-07-16-c898
 ---
 
 # Vault-Framework scripts 完了レポート (Phase 0.5B)

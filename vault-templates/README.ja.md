@@ -1,21 +1,24 @@
 ---
-created: 2026-07-13T21:40:00+09:00
+created: 2026-07-13 21:40:00+09:00
 keywords:
-  - vault-templates
-  - staging
-  - canonical
-  - framework-mirror
-  - readme
+- vault-templates
+- staging
+- canonical
+- framework-mirror
+- readme
 project: Vault-Framework
 status: published
 summary: vault-templates/ の staging area の説明。Framework へのミラーの canonical source を格納し、個人情報伏せ済みの汎用テンプレを管理する。
 tags:
-  - framework
-  - vault-templates
-  - staging
+- framework
+- vault-templates
+- staging
 title: Vault-Framework vault-templates staging README
 type: knowledge
-updated: 2026-07-13T21:40:00+09:00
+updated: 2026-07-13 21:40:00+09:00
+id: pj-2026-07-13-a958
+aliases:
+- pj-2026-07-13-a958
 ---
 
 ## Summary

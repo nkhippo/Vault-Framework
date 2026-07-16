@@ -3,8 +3,14 @@ title: <Project Name>
 type: template
 status: draft
 date: 2026-07-13
-keywords: [project, template, readme]
+keywords:
+- project
+- template
+- readme
 summary: 新規プロジェクトの README テンプレ。
+id: pj-2026-07-13-d552
+aliases:
+- pj-2026-07-13-d552
 ---
 
 ## Summary

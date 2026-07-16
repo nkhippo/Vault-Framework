@@ -1,28 +1,31 @@
 ---
 audience: mixed
-created: 2026-07-14T07:55:00+09:00
+created: 2026-07-14 07:55:00+09:00
 keywords:
-  - v1
-  - nine-principles
-  - guidelines
-  - philosophy
-  - best-practices
+- v1
+- nine-principles
+- guidelines
+- philosophy
+- best-practices
 related_adrs:
-  - "0003"
-  - "0007"
-  - "0008"
-  - "0010"
-  - "0014"
-  - "0016"
+- '0003'
+- '0007'
+- 0008
+- '0010'
+- '0014'
+- '0016'
 status: published
 summary: Vault v1.0(2026-07-13 初期版)で確立した運用の 9 原則。Chat 集約、AI 参照、保守運用の全体を貫く思想を規定。
 tags:
-  - guideline
-  - philosophy
-  - important
+- guideline
+- philosophy
+- important
 title: v1 の 9 原則
 type: guideline
-updated: 2026-07-14T07:55:00+09:00
+updated: 2026-07-14 07:55:00+09:00
+id: pj-2026-07-13-fba6
+aliases:
+- pj-2026-07-13-fba6
 ---
 
 ## Summary

@@ -4,8 +4,12 @@ type: readme
 audience: human_primary
 status: draft
 date: 2026-07-13
-keywords: [90_inbox]
+keywords:
+- 90_inbox
 summary: 一時置き場。原則 Plan B では常用しない。
+id: pj-2026-07-13-1630
+aliases:
+- pj-2026-07-13-1630
 ---
 
 ## Summary

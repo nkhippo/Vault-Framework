@@ -1,21 +1,24 @@
 ---
-created: 2026-07-13T21:42:00+09:00
+created: 2026-07-13 21:42:00+09:00
 keywords:
-  - vault-structure
-  - directory
-  - top-level
-  - framework
-  - 50_self
-  - captures
+- vault-structure
+- directory
+- top-level
+- framework
+- 50_self
+- captures
 status: published
 summary: Vault のトップレベルディレクトリの構造と役割を定義。導入者はこの構造を採用することが推奨される。
 tags:
-  - framework
-  - vault-templates
-  - meta
+- framework
+- vault-templates
+- meta
 title: Vault 構造
 type: knowledge
-updated: 2026-07-13T21:42:00+09:00
+updated: 2026-07-13 21:42:00+09:00
+id: pj-2026-07-13-0391
+aliases:
+- pj-2026-07-13-0391
 ---
 
 ## Summary

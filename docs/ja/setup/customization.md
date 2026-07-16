@@ -1,21 +1,25 @@
 ---
 audience: adopter
-created: 2026-07-14T09:20:00+09:00
+created: 2026-07-14 09:20:00+09:00
 keywords:
-  - setup
-  - customization
-  - vocabulary-extension
-  - templates
-  - skill-adjustment
-  - iteration
+- setup
+- customization
+- vocabulary-extension
+- templates
+- skill-adjustment
+- iteration
 status: published
-summary: Vault-Framework の初期セットアップ完了後、自分の運用に合わせて Vault をカスタマイズする方法。統制語彙の拡張、テンプレートの追加、Skill の調整、Vault 構造のカスタマイズを扱う。
+summary: Vault-Framework の初期セットアップ完了後、自分の運用に合わせて Vault をカスタマイズする方法。統制語彙の拡張、テンプレートの追加、Skill
+  の調整、Vault 構造のカスタマイズを扱う。
 tags:
-  - setup
-  - customization
+- setup
+- customization
 title: カスタマイズ
 type: setup
-updated: 2026-07-14T09:20:00+09:00
+updated: 2026-07-14 09:20:00+09:00
+id: pj-2026-07-13-e55f
+aliases:
+- pj-2026-07-13-e55f
 ---
 
 ## Summary

@@ -1,15 +1,18 @@
 ---
-created: 2026-07-14T01:10:27+09:00
-published_date: ""
-published_url: ""
+created: 2026-07-14 01:10:27+09:00
+published_date: ''
+published_url: ''
 related: []
 status: published
-summary: ""
+summary: ''
 tags:
-  - note-article
-title: ""
+- note-article
+title: ''
 type: note_published
-updated: 2026-07-14T01:10:27+09:00
+updated: 2026-07-14 01:10:27+09:00
+id: pj-2026-07-13-94e3
+aliases:
+- pj-2026-07-13-94e3
 ---
 
 ## Summary

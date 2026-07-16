@@ -1,23 +1,27 @@
 ---
 audience: mixed
-created: 2026-07-14T05:50:00+09:00
+created: 2026-07-14 05:50:00+09:00
 date: 2026-07-13
 keywords:
-  - project-instructions
-  - attached-file
-  - reference-pointer
-  - sync-drift
+- project-instructions
+- attached-file
+- reference-pointer
+- sync-drift
 related_adrs:
-  - "0004"
+- '0004'
 status: rejected
-summary: Claude Projects の Instructions にポインタを書き、詳細ルールをファイル添付する案。添付ファイルの更新頻度が下がり、vault 側の変更が反映されないため却下。
-superseded_by: "0004"
+summary: Claude Projects の Instructions にポインタを書き、詳細ルールをファイル添付する案。添付ファイルの更新頻度が下がり、vault
+  側の変更が反映されないため却下。
+superseded_by: '0004'
 tags:
-  - rejected
-  - instructions
-title: "却下案: 添付ファイル方式 Instructions"
+- rejected
+- instructions
+title: '却下案: 添付ファイル方式 Instructions'
 type: rejected_alternative
-updated: 2026-07-14T05:50:00+09:00
+updated: 2026-07-14 05:50:00+09:00
+id: pj-2026-07-13-9bc9
+aliases:
+- pj-2026-07-13-9bc9
 ---
 
 ## Summary

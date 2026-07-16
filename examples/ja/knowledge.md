@@ -1,26 +1,29 @@
 ---
-created: 2026-07-13T22:30:00+09:00
+created: 2026-07-13 22:30:00+09:00
 example_of_type: knowledge
 keywords:
-  - example
-  - knowledge
-  - cloudflare-workers
-  - mcp
-  - constraints
-  - nodejs_compat
-  - secrets
+- example
+- knowledge
+- cloudflare-workers
+- mcp
+- constraints
+- nodejs_compat
+- secrets
 related: []
 status: published
 summary: knowledge type の記入例。Cloudflare Workers で MCP サーバを実装した際の制約と対処法を題材にした汎用ナレッジの例。特定プロジェクトに依存しない形で技術的な学びを残す。
 tags:
-  - example
-  - knowledge
-  - cloudflare
-  - mcp
-  - dev
-title: "例: Cloudflare Workers で MCP サーバを実装して学んだこと"
+- example
+- knowledge
+- cloudflare
+- mcp
+- dev
+title: '例: Cloudflare Workers で MCP サーバを実装して学んだこと'
 type: example
-updated: 2026-07-13T22:30:00+09:00
+updated: 2026-07-13 22:30:00+09:00
+id: pj-2026-07-13-596a
+aliases:
+- pj-2026-07-13-596a
 ---
 
 ## Summary

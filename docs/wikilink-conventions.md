@@ -2,7 +2,12 @@
 title: Wikilink Conventions
 created: 2026-07-16
 status: draft
-tags: [id-scheme, phase-0.5]
+tags:
+- id-scheme
+- phase-0.5
+id: pj-2026-07-16-8def
+aliases:
+- pj-2026-07-16-8def
 ---
 
 # Wikilink Conventions

@@ -1,27 +1,31 @@
 ---
 audience: mixed
-created: 2026-07-14T06:25:00+09:00
+created: 2026-07-14 06:25:00+09:00
 date: 2026-07-13
 keywords:
-  - naming
-  - japanese
-  - romaji
-  - kanji
-  - multilingual
-  - public-adopters
-  - seo
+- naming
+- japanese
+- romaji
+- kanji
+- multilingual
+- public-adopters
+- seo
 related_adrs:
-  - "0005"
-  - "0006"
+- '0005'
+- '0006'
 status: rejected
-summary: 3 リポジトリを日本語(記録所、知識庫、保管室 等)で命名する案。多言語対応時の障壁、GitHub URL の可読性低下、Framework の Public 化戦略との不整合により却下。
-superseded_by: "0006"
+summary: 3 リポジトリを日本語(記録所、知識庫、保管室 等)で命名する案。多言語対応時の障壁、GitHub URL の可読性低下、Framework の
+  Public 化戦略との不整合により却下。
+superseded_by: '0006'
 tags:
-  - rejected
-  - naming
-title: "却下案: 日本語命名"
+- rejected
+- naming
+title: '却下案: 日本語命名'
 type: rejected_alternative
-updated: 2026-07-14T06:25:00+09:00
+updated: 2026-07-14 06:25:00+09:00
+id: pj-2026-07-13-93a4
+aliases:
+- pj-2026-07-13-93a4
 ---
 
 ## Summary

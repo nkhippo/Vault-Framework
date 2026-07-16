@@ -1,25 +1,29 @@
 ---
 audience: mixed
-created: 2026-07-14T08:25:00+09:00
+created: 2026-07-14 08:25:00+09:00
 keywords:
-  - sonnet
-  - sonnet-5
-  - optimization
-  - prompt-engineering
-  - guidelines
-  - structural-modification
-  - prompt-caching
+- sonnet
+- sonnet-5
+- optimization
+- prompt-engineering
+- guidelines
+- structural-modification
+- prompt-caching
 related_adrs:
-  - "0014"
+- '0014'
 status: published
-summary: Anthropic が Sonnet 5 を標準モデルとして推進する動向に対応した最適化ガイド。ADR-0014 のプロンプト工夫 5 個 + 構造修正 4 点を具体的な実装レベルで詳述。
+summary: Anthropic が Sonnet 5 を標準モデルとして推進する動向に対応した最適化ガイド。ADR-0014 のプロンプト工夫 5 個 + 構造修正
+  4 点を具体的な実装レベルで詳述。
 tags:
-  - guideline
-  - sonnet
-  - prompt-engineering
+- guideline
+- sonnet
+- prompt-engineering
 title: Sonnet 5 最適化
 type: guideline
-updated: 2026-07-14T08:25:00+09:00
+updated: 2026-07-14 08:25:00+09:00
+id: pj-2026-07-13-b12c
+aliases:
+- pj-2026-07-13-b12c
 ---
 
 ## Summary

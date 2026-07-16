@@ -5,8 +5,18 @@ type: index
 audience: mixed
 status: published
 date: 2026-07-13
-keywords: [index, 索引, dispatcher, 日本語, japanese, framework, vault]
+keywords:
+- index
+- 索引
+- dispatcher
+- 日本語
+- japanese
+- framework
+- vault
 summary: 日本語版 Vault-Framework ドキュメントの起点。Framework 内の全カテゴリへの入り口。
+id: pj-2026-07-13-4ded
+aliases:
+- pj-2026-07-13-4ded
 ---
 
 ## Summary

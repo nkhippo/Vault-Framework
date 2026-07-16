@@ -1,13 +1,16 @@
 ---
-created: 2026-07-14T01:10:41+09:00
-project: ""
+created: 2026-07-14 01:10:41+09:00
+project: ''
 related: []
 status: draft
-summary: ""
+summary: ''
 tags: []
-title: ""
+title: ''
 type: project_design
-updated: 2026-07-14T01:10:41+09:00
+updated: 2026-07-14 01:10:41+09:00
+id: pj-2026-07-13-3c8b
+aliases:
+- pj-2026-07-13-3c8b
 ---
 
 ## Summary

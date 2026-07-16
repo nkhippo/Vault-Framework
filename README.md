@@ -1,3 +1,10 @@
+---
+id: pj-2026-07-13-8f31
+aliases:
+- pj-2026-07-13-8f31
+title: Vault-Framework
+created: '2026-07-13'
+---
 # Vault-Framework
 
 > **AI が読むことを最優先とする、Chat 集約ワークフローの Framework**

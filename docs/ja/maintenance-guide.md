@@ -2,23 +2,26 @@
 audience: mixed
 date: 2026-07-14
 keywords:
-  - maintenance
-  - 保守運用
-  - four-levels
-  - abstract-generation
+- maintenance
+- 保守運用
+- four-levels
+- abstract-generation
 related_adrs:
-  - "0008"
-  - "0009"
+- 0008
+- 0009
 related_specs:
-  - maintenance-four-levels
-  - abstract-generation
+- maintenance-four-levels
+- abstract-generation
 status: published
 summary: Vault の保守運用 4 レベルの全体像。各レベルの位置づけと全体像を把握できるようにする。
 title: 保守運用ガイド
 title_en: Maintenance Guide
 type: overview
-created: 2026-07-14T20:47:58+09:00
-updated: 2026-07-14T20:47:58+09:00
+created: 2026-07-14 20:47:58+09:00
+updated: 2026-07-14 20:47:58+09:00
+id: pj-2026-07-13-d0b2
+aliases:
+- pj-2026-07-13-d0b2
 ---
 
 ## Summary

@@ -2,7 +2,12 @@
 title: Front Matter Spec
 created: 2026-07-16
 status: draft
-tags: [id-scheme, phase-0.5]
+tags:
+- id-scheme
+- phase-0.5
+id: pj-2026-07-16-bc64
+aliases:
+- pj-2026-07-16-bc64
 ---
 
 # Front Matter Spec

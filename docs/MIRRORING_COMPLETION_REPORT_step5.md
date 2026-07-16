@@ -5,8 +5,20 @@ type: report
 audience: mixed
 status: published
 date: 2026-07-14
-keywords: [mirroring, report, step5, vault-staging, ADR, specs, guidelines, setup]
-summary: CURSOR_INSTRUCTIONS_step5_full-mirroring.md に基づく Phase 1〜7 の実行結果。Claude による確認用レポート。56 ファイル一括反映。
+keywords:
+- mirroring
+- report
+- step5
+- vault-staging
+- ADR
+- specs
+- guidelines
+- setup
+summary: CURSOR_INSTRUCTIONS_step5_full-mirroring.md に基づく Phase 1〜7 の実行結果。Claude による確認用レポート。56
+  ファイル一括反映。
+id: pj-2026-07-14-c629
+aliases:
+- pj-2026-07-14-c629
 ---
 
 # Vault-Framework 完全ミラーリング完了レポート (step 5)

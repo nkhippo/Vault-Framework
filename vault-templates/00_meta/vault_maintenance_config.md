@@ -1,24 +1,27 @@
 ---
-created: 2026-07-14T02:20:00+09:00
+created: 2026-07-14 02:20:00+09:00
 keywords:
-  - maintenance
-  - config
-  - 4-level
-  - abstract-generation
-  - cursor-delegation
-  - sensitive
-  - cadence
+- maintenance
+- config
+- 4-level
+- abstract-generation
+- cursor-delegation
+- sensitive
+- cadence
 status: published
 summary: 保守運用(4 レベル + 抽象生成)の設定ファイル。導入者が「どの保守を、いつ、どこまで自動で走らせるか」をカスタマイズする。
 tags:
-  - framework
-  - vault-templates
-  - meta
-  - maintenance
-  - config
+- framework
+- vault-templates
+- meta
+- maintenance
+- config
 title: Vault Maintenance Config
 type: knowledge
-updated: 2026-07-14T02:20:00+09:00
+updated: 2026-07-14 02:20:00+09:00
+id: pj-2026-07-13-18e5
+aliases:
+- pj-2026-07-13-18e5
 ---
 
 ## Summary

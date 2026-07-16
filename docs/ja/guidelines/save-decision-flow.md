@@ -1,25 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T08:15:00+09:00
+created: 2026-07-14 08:15:00+09:00
 keywords:
-  - save-decision
-  - flow
-  - 7-steps
-  - skill-implementation
-  - guidelines
+- save-decision
+- flow
+- 7-steps
+- skill-implementation
+- guidelines
 related_adrs:
-  - "0007"
-  - "0011"
-  - "0016"
+- '0007'
+- '0011'
+- '0016'
 status: published
 summary: Chat 保存指示に対する Skill の判断フロー(7 ステップ)の詳細実装ガイド。ADR-0007 の具体的な運用手順を規定。
 tags:
-  - guideline
-  - save-flow
-  - skill-implementation
+- guideline
+- save-flow
+- skill-implementation
 title: 保存判断フロー
 type: guideline
-updated: 2026-07-14T08:15:00+09:00
+updated: 2026-07-14 08:15:00+09:00
+id: pj-2026-07-13-c302
+aliases:
+- pj-2026-07-13-c302
 ---
 
 ## Summary
