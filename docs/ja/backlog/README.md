@@ -6,7 +6,7 @@ title: Backlog System - Index
 type: knowledge
 status: published
 created: 2026-07-17T02:05:00+09:00
-updated: 2026-07-17T02:05:00+09:00
+updated: 2026-07-17T05:10:00+09:00
 tags: [backlog, index, docs]
 summary: Vault-Framework の backlog システム関連 docs の索引。全体設計・境界規約・既存資産統合ルールへの入口。
 ---
@@ -25,14 +25,15 @@ Vault-Framework の backlog システム関連ドキュメントの索引。
 - [[pj-2026-07-17-27e2|Reference Workflow]] — 参照系 workflow 詳細(Phase 1c)
 - [[pj-2026-07-17-64df|Save Workflow]] — 保存系 workflow 詳細(Phase 1d PR-A)
 - [[pj-2026-07-17-74af|Maintainer Workflow]] — 停滞検出 workflow 詳細(Phase 1d PR-B)
-- [[pj-2026-07-17-6320|Chat Save With Residue Workflow]] — Chat 保存 + 残タスク統合フロー(Phase 1e)
+- [[pj-2026-07-17-4a23|Candidate Extraction Workflow]] — backlog 候補抽出の独立コマンド(Phase 1f)
+- [[pj-2026-07-17-68cf|Handoff Workflow]] — 履歴蓄積型 handoff 保存の独立コマンド(Phase 1f)
 
 ## Related
 
-- ADR: [[pj-2026-07-17-e9df|0018-backlog-system]], [[pj-2026-07-17-a25e|0019-skill-backlog-reference-workflow]], [[pj-2026-07-17-632e|0020-skill-backlog-save-workflow]], [[pj-2026-07-17-e2ef|0021-vault-maintainer-stalled-detection]], [[pj-2026-07-17-ba5f|0022-chat-save-with-residue-integration]]
+- ADR: [[pj-2026-07-17-e9df|0018-backlog-system]], [[pj-2026-07-17-a25e|0019-skill-backlog-reference-workflow]], [[pj-2026-07-17-632e|0020-skill-backlog-save-workflow]], [[pj-2026-07-17-e2ef|0021-vault-maintainer-stalled-detection]], [[pj-2026-07-17-ba5f|0022-chat-save-with-residue-integration (superseded)]], [[pj-2026-07-17-c14c|0023-phase-1f-three-independent-commands]]
 - ID scheme: [[pj-2026-07-16-4a20|id-scheme]]
 - Frontmatter spec: [[pj-2026-07-16-bc64|frontmatter-spec]]
-- Skill: `skills/vault-manager/SKILL.md`(Phase 1c 参照 + Phase 1d 保存 workflow)
+- Skill: `skills/vault-manager/SKILL.md`(Phase 1c 参照 + Phase 1d 保存 + Phase 1f 候補抽出 / handoff workflow)
 - Skill: `skills/vault-maintainer/SKILL.md`(Phase 1d PR-B stalled detection)
 
 ## 位置付け
