@@ -41,6 +41,7 @@ aliases:
 | 0019 | Skill Backlog Reference Workflow(Phase 1c) | accepted | Phase 1c |
 | 0020 | Skill Backlog Save Workflow(Phase 1d PR-A) | accepted | Phase 1d PR-A |
 | 0021 | Vault-maintainer Stalled Detection(Phase 1d PR-B) | accepted | Phase 1d PR-B |
+| 0022 | Chat Save With Residue Integration(Phase 1e) | accepted | Phase 1e |
 
 ## ADR の使い方(AI 向け)
 
