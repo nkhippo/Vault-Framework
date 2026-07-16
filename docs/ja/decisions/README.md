@@ -37,6 +37,7 @@ aliases:
 | 0015 | Issue 起票機能は Framework 分離の次に実装 | accepted | 2026-07-13_publication-strategy-and-naming-convention |
 | 0016 | MCP コネクタ接続失敗時: 1 回リトライ後に中断、憶測禁止 | accepted | (このセッションで確定) |
 | 0017 | Skill vault-manager への id scheme 統合(Phase 0.6) | accepted | Phase 0.5 完了後 |
+| 0018 | Backlog System の導入(Phase 1a-1b) | accepted | Phase 1a Vault #8 / Phase 1b |
 
 ## ADR の使い方(AI 向け)
 
