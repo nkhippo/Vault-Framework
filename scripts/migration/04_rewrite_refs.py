@@ -204,10 +204,35 @@ def rewrite_body(
 
 
 def looks_like_path(value: Any) -> bool:
-    """True if value looks like a markdown path string."""
+    """True if value looks like a markdown path string (bare or ``[[...]]``)."""
     if not isinstance(value, str):
         return False
-    return ".md" in value.lower()
+    v = value.strip()
+    if v.startswith("[[") and v.endswith("]]"):
+        return True
+    return ".md" in v.lower()
+
+
+def strip_wikilink_wrapping(value: str) -> str:
+    """Strip Obsidian wikilink ``[[...]]`` wrapping; return a bare path.
+
+    Handles alias (``|``), section (``#``), surrounding whitespace, and adds
+    ``.md`` when the inner path has no extension.
+    Bare paths are returned trimmed unchanged (extension not forced).
+    """
+    v = value.strip()
+    if v.startswith("[[") and v.endswith("]]"):
+        inner = v[2:-2]
+        if "#" in inner:
+            inner = inner.split("#", 1)[0]
+        if "|" in inner:
+            inner = inner.split("|", 1)[0]
+        inner = inner.strip()
+        if not inner.lower().endswith(".md"):
+            if "." not in Path(inner).name:
+                inner = inner + ".md"
+        return inner
+    return v
 
 
 def rewrite_frontmatter(
@@ -218,11 +243,18 @@ def rewrite_frontmatter(
     broken: list[dict[str, str]],
     text: str,
 ) -> tuple[dict[str, Any], int]:
-    """Add *_id / *_ids fields for legacy path keys. Keep legacy keys."""
+    """Add *_id / *_ids fields for legacy path keys. Keep legacy keys.
+
+    Idempotent: if ``{key}_id`` or ``{key}_ids`` already exists, skip that key.
+    Wikilink-wrapped FM values (``[[path.md]]``) are stripped before resolve.
+    """
     fm = dict(fm)
     count = 0
     for key in FM_PATH_KEYS:
         if key not in fm:
+            continue
+        # Already migrated companion field — do not re-resolve / overwrite
+        if f"{key}_id" in fm or f"{key}_ids" in fm:
             continue
         val = fm[key]
         line_no = "1"
@@ -237,7 +269,8 @@ def rewrite_frontmatter(
             for item in val:
                 if not looks_like_path(item):
                     continue
-                resolved, reason = resolve_target(source_rel, str(item), repo_root, index)
+                raw = strip_wikilink_wrapping(str(item))
+                resolved, reason = resolve_target(source_rel, raw, repo_root, index)
                 if reason or resolved is None:
                     broken.append(
                         {
@@ -254,7 +287,8 @@ def rewrite_frontmatter(
                 fm[f"{key}_ids"] = ids
                 count += len(ids)
         elif looks_like_path(val):
-            resolved, reason = resolve_target(source_rel, str(val), repo_root, index)
+            raw = strip_wikilink_wrapping(str(val))
+            resolved, reason = resolve_target(source_rel, raw, repo_root, index)
             if reason or resolved is None:
                 broken.append(
                     {
