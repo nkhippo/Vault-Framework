@@ -1,23 +1,11 @@
 ---
 name: vault-manager
-description: Use this skill when the user asks to save chat content to the personal
-  Vault repository (nkhippo/Vault) via the Vault MCP connector. Trigger phrases include
-  "Vault に保存して", "Obsidian に保存して"(legacy phrasing), "保存して"(when Vault context is clear),
-  and any equivalent Japanese or English instructions to save, record, or archive
-  to the Vault or Obsidian. Also triggers for diary/journal-related phrases such as
-  "日記", "今日の記録", "diary", "今日あったこと", "振り返り", "reflection". Also use when the user
-  references a specific personal project or app by exact name, by common alias (IPA,
-  VCT, Structure, Listening etc.), or by function description ("発音を鍛えるアプリ", "語彙のアプリ").
-  Also use when the user asks to search past decisions or records from the personal
-  Vault, or reads/writes to nkhippo/Vault via the Vault MCP connector. Also use when
-  the user asks to create GitHub issues from Vault-Framework discussions (Phase 3.2
-  workflow) — trigger phrases include "Issue を起票", "GitHub Issue", "課題を起票", "この議論を
-  Issue に". Also use for backlog reference operations (Phase 1c) — trigger phrases include
-  "今仕掛かりは", "今のタスクは", "backlog 見せて", "棚卸しして", "進捗確認", "Issue 状態確認",
-  "〜の詳細見せて", "〜の状態は", and similar backlog listing or review requests. Also use for
-  backlog save operations (Phase 1d) — trigger phrases include "タスクとして起票", "課題として残して",
-  "backlog に入れて", "タスク化して", "Cursor 委譲して", "後で考えましょう", "後で検討", and similar
-  backlog creation, promotion, or delegation requests.
+description: >-
+  Vault(nkhippo/Vault)への保存・参照を管理する Skill。
+  Chat の議論記録、note 記事、プロジェクト設計相談、日記等を Front Matter 準拠で保存し、
+  過去 chat / 意思決定 / open-questions を参照する。
+  ID scheme(pj/nt/kn/mt prefix)準拠、backlog システムの参照(棚卸し等)と保存(起票、昇格、Cursor 委譲、Issue 起票)workflow を含む。
+  詳細トリガー phrase と workflow は body 参照。
 updated: 2026-07-17 02:30:00+09:00
 id: pj-2026-07-13-f844
 aliases:
