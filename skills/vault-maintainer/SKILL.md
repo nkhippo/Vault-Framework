@@ -1,4 +1,10 @@
 ---
+name: vault-maintainer
+description: >-
+  Vault の週次・月次・季節メンテナンスと abstract 生成を担当する Skill。
+  Level 2(週次): リンク切れチェック、handoff アーカイブ、backlog stalled detection。
+  Level 3(月次)、Level 4(季節)、chat_log からの ADR/spec 抽象化を含む。
+  日常の保存・参照は vault-manager が担当。詳細トリガー phrase と workflow は body 参照。
 created: 2026-07-14 21:10:00+09:00
 keywords:
 - skill
@@ -14,19 +20,10 @@ summary: 保守運用(Level 2、4)と抽象生成を担当する vault-maintaine
   Cursor 委譲を前提とする設計。当初は3ヶ月の運用データ蓄積後に着手として保留されていたが、Naoya の判断で保留を解除して作成。
 title: vault-maintainer SKILL.md v1.0
 type: skill_definition
-updated: 2026-07-14 21:05:25+09:00
+updated: 2026-07-17T03:10:00+09:00
 id: pj-2026-07-13-5e3d
 aliases:
 - pj-2026-07-13-5e3d
----
-
----
-name: vault-maintainer
-description: >-
-  Vault の週次・月次・季節メンテナンスと abstract 生成を担当する Skill。
-  Level 2(週次): リンク切れチェック、handoff アーカイブ、backlog stalled detection。
-  Level 3(月次)、Level 4(季節)、chat_log からの ADR/spec 抽象化を含む。
-  日常の保存・参照は vault-manager が担当。詳細トリガー phrase と workflow は body 参照。
 ---
 
 # Vault Maintainer (v1.0)
