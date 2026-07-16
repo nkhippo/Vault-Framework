@@ -13,13 +13,13 @@ description: Use this skill when the user asks to save chat content to the perso
   the user asks to create GitHub issues from Vault-Framework discussions (Phase 3.2
   workflow) — trigger phrases include "Issue を起票", "GitHub Issue", "課題を起票", "この議論を
   Issue に".
-updated: 2026-07-16 22:30:00+09:00
+updated: 2026-07-17 01:30:00+09:00
 id: pj-2026-07-13-f844
 aliases:
 - pj-2026-07-13-f844
 ---
 
-# Vault Manager (v1.4)
+# Vault Manager (v1.5)
 
 Naoya の個人 Vault リポジトリ(`nkhippo/Vault`)を Cloudflare Workers ベースの MCP コネクタ経由で操作するための Skill。
 
@@ -32,6 +32,7 @@ Naoya の個人 Vault リポジトリ(`nkhippo/Vault`)を Cloudflare Workers ベ
 - 日記・個人記録の保存と、その参照制御
 - GitHub Issue 起票 workflow(Phase 3.2 対応、v1.2 で追加)
 - **特定プロジェクト相談時の `project_instructions.md` と `applies_common` 共通ルールの一括読み込み**(v1.3 で追加)
+- **新規保存時の id/aliases 自動付与と wikilink ID 参照**(Phase 0.6 / v1.5)
 
 ## 前提: MCP コネクタと vault の関係
 
@@ -341,6 +342,8 @@ note を公開した清書版 → 20_notes/published/
 
 **必須フィールド**
 
+- `id`: `<prefix>-YYYY-MM-DD-<4hex>`(JST 日付、prefix は保存先 path から infer。詳細は下記「ID scheme」)
+- `aliases`: `[<id>]`(`aliases[0] == id` を必ず保持)
 - `title`: 日本語で会話の主題(日記は `YYYY-MM-DD`)
 - `created`, `updated`: 現在時刻(ISO8601、JST)
 - `type`: 保存先に応じた type
@@ -354,11 +357,18 @@ note を公開した清書版 → 20_notes/published/
 
 **type 別の追加必須フィールドは vocabulary.md と各テンプレ参照**
 
+**FM 内の他 note 参照**(構造的参照を書く場合)
+
+- 単一: `<意味>_id: <target-id>`(例: `derived_from_id`, `parent_id`)
+- 複数: `<意味>_ids: [<target-id>, ...]`(例: `related_ids`)
+- Legacy path フィールド(`related: path.md` 等)は**新規作成時に書かない**
+
 ### Step 5: 本文の組み立て
 
 - Front Matter 直後に必ず H2 `## Summary` セクションを置く(diary は例外的に不要、テンプレ通り)
 - テンプレートの構造を踏襲
 - 日記の場合、Naoya の発話をそのまま構造化して記入。要約しない
+- 他 note への参照は `[[<id>|<display text>]]` 形式のみ。Path 形式(`[text](path.md)`)と basename wikilink(`[[filename]]`)は使わない(参照先 id は `search_by_keyword` / `get_frontmatter` で取得)
 
 ### Step 6: MCP で保存
 
@@ -373,14 +383,57 @@ note を公開した清書版 → 20_notes/published/
 ```
 保存しました。
 - パス: <フルパス>
+- id: <id>
 - タイプ: <type>
 - 概要: <summary の内容>
 ```
 
 日記の場合(最小限、内容は引用しない):
 ```
-日記を保存しました(<パス>)。
+日記を保存しました(<パス>, id: <id>)。
 ```
+
+## ID scheme(Phase 0.6 以降)
+
+すべての新規保存で以下を必須とする。詳細ルールは Vault-Framework `docs/id-scheme.md` を参照(本 Skill は要点のみ)。
+
+### FM 生成時の必須項目
+
+- `id: <prefix>-YYYY-MM-DD-<4hex>`
+- `aliases: [<id>]`(`aliases[0] == id`)
+- `YYYY-MM-DD` は JST 現在日付
+
+### Prefix inference(要点のみ)
+
+| Path 先頭 | Prefix |
+|---|---|
+| `30_projects/`、`_ideas/`、`_life/` | `pj-` |
+| `20_notes/` | `nt-` |
+| `40_knowledge/`、`10_chat_logs/` | `kn-` |
+| `00_meta/`、`50_self/` | `mt-` |
+
+判断困難時は Naoya に確認し、`mt-` を fallback として提案する。
+
+### 4hex 生成と collision 回避
+
+1. Claude が `0-9` / `a-f` から pseudo-random に 4 文字(lowercase hex)を生成
+2. 候補 id で `search_by_keyword(keyword: "<candidate-id>")` を呼び衝突チェック
+3. Hit があれば別の 4hex を再生成(最大 3 回)
+4. 3 回とも衝突したら Naoya にエラー報告(実質ほぼ発生しない)
+
+### Body 内参照
+
+他 note を body から参照する時は `[[<id>|<display text>]]` 形式。
+Path 形式(`[text](path.md)`)は使用しない。Basename 記法(`[[filename]]`)も避ける。
+
+### FM 内参照
+
+他 note を FM から参照する時は `<意味>_id` / `<意味>_ids` サフィックス:
+
+- 単一: `derived_from_id: pj-...`、`parent_id: mt-...`
+- 配列: `related_ids: [pj-..., nt-...]`
+
+Legacy path フィールド(`related: xxx.md`)は新規作成時に使わない。
 
 ## GitHub Issue 起票フロー(v1.2、Phase 3.2 対応)
 

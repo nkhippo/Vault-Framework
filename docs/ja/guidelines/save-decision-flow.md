@@ -11,6 +11,7 @@ related_adrs:
 - '0007'
 - '0011'
 - '0016'
+- '0017'
 status: published
 summary: Chat 保存指示に対する Skill の判断フロー(7 ステップ)の詳細実装ガイド。ADR-0007 の具体的な運用手順を規定。
 tags:
@@ -185,12 +186,24 @@ note を公開した清書版?
 ### 必須フィールド(全 type 共通)
 
 ```yaml
+id: <prefix>-YYYY-MM-DD-<4hex>
+aliases:
+  - <id と同じ値>
 title: <日本語の主題>
 created: <ISO 8601 datetime with JST>
 updated: <ISO 8601 datetime with JST>
 type: <vocabulary.md の type>
 status: <vocabulary.md の status>
 ```
+
+### Step 4a: FM 構築時の id 生成(Phase 0.6 以降)
+
+1. Prefix を保存先 path から infer(`30_projects/`→`pj-`、`20_notes/`→`nt-`、`40_knowledge/`/`10_chat_logs/`→`kn-`、`00_meta/`/`50_self/`→`mt-`。詳細は `docs/id-scheme.md` / SKILL.md「ID scheme」)
+2. 4hex を pseudo-random 生成(`0-9a-f`、4 文字)
+3. `search_by_keyword(keyword: "<candidate-id>")` で衝突チェック、Hit なら再生成(最大 3 回)
+4. FM に `id` と `aliases: [<id>]` を含める(`aliases[0] == id`)
+5. その他既存フィールド(`title`, `type`, `created` 等)は従来通り
+6. 他 note への構造的参照は `<意味>_id` / `<意味>_ids` のみ(legacy path フィールドは新規作成時に使わない)
 
 ### type 別の追加必須フィールド
 
@@ -218,6 +231,12 @@ Front Matter 直後に H2 `## Summary` セクションを置く:
 
 <2-4 行の要約>
 ```
+
+### 他 note への参照(Phase 0.6 以降)
+
+- `[[<id>|<display text>]]` 形式を使う
+- Path 形式(`[text](path.md)`)と basename wikilink(`[[filename]]`)は使わない
+- 参照先 id は `search_by_keyword` / `get_frontmatter` で取得してから書く
 
 ### 例外
 

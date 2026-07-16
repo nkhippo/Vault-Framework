@@ -36,6 +36,7 @@ aliases:
 | 0014 | Sonnet 5 標準化への対応 | accepted | 2026-07-13_maintenance-operation-design |
 | 0015 | Issue 起票機能は Framework 分離の次に実装 | accepted | 2026-07-13_publication-strategy-and-naming-convention |
 | 0016 | MCP コネクタ接続失敗時: 1 回リトライ後に中断、憶測禁止 | accepted | (このセッションで確定) |
+| 0017 | Skill vault-manager への id scheme 統合(Phase 0.6) | accepted | Phase 0.5 完了後 |
 
 ## ADR の使い方(AI 向け)
 
