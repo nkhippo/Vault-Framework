@@ -39,6 +39,7 @@ aliases:
 | 0017 | Skill vault-manager への id scheme 統合(Phase 0.6) | accepted | Phase 0.5 完了後 |
 | 0018 | Backlog System の導入(Phase 1a-1b) | accepted | Phase 1a Vault #8 / Phase 1b |
 | 0019 | Skill Backlog Reference Workflow(Phase 1c) | accepted | Phase 1c |
+| 0020 | Skill Backlog Save Workflow(Phase 1d PR-A) | accepted | Phase 1d PR-A |
 
 ## ADR の使い方(AI 向け)
 
