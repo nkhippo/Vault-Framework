@@ -27,4 +27,4 @@ aliases:
 - Setup
 - Decisions / Specs / Rejected Alternatives / Guidelines
 
-Status: pending translation. See [`docs/i18n/translation-strategy.md`](../i18n/translation-strategy.md).
+Status: pending translation. See [[pj-2026-07-13-e271|`docs/i18n/translation-strategy.md`]].

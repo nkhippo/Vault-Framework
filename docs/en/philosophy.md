@@ -75,5 +75,5 @@ This GitHub-as-a-Backend philosophy connects to the following design decisions a
 
 ## Related
 
-- [ADR 0001: Adoption of GitHub-as-a-Backend](../ja/decisions/0001-github-as-backend.md) *(English translation pending)*
-- [Architecture: Skill / Project / Vault 3-layer](./architecture.md)
+- [[pj-2026-07-13-2564|ADR 0001: Adoption of GitHub-as-a-Backend]] *(English translation pending)*
+- [[pj-2026-07-15-89b9|Architecture: Skill / Project / Vault 3-layer]]

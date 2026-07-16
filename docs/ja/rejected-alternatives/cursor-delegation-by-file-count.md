@@ -79,12 +79,12 @@ Cursor 委譲判定を以下のシンプルな数値ルールで行う案:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0008「Cursor 委譲判定: メンテナンスレベル方式」
-- **参照**: [[../decisions/0008-cursor-delegation-by-maintenance-level.md]]
+- **参照**: [[pj-2026-07-13-b51c]]
 
 作業種別 × メンテナンスレベルで判定。リネーム、restructure、Front Matter 一括更新等は常に Cursor 委譲。独立操作は Claude 単独で高速に実施。
 
 ## References
 
 - 実運用の記録: 2026-07-13 前半のファイル数ルールでの運用と数日後の反省
-- 対応 ADR: [[../decisions/0008-cursor-delegation-by-maintenance-level.md]]
-- 関連 ADR: [[../decisions/0009-four-level-maintenance-operation.md]](保守運用 4 レベル)
+- 対応 ADR: [[pj-2026-07-13-b51c]]
+- 関連 ADR: [[pj-2026-07-13-48bc]](保守運用 4 レベル)

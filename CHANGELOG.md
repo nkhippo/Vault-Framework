@@ -5,6 +5,7 @@ aliases:
 title: Changelog
 created: '2026-07-13'
 ---
+
 # Changelog
 
 All notable changes to Vault-Framework will be documented in this file.

@@ -85,12 +85,12 @@ aliases:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0006「命名スキーム: Vault / Vault-MCP / Vault-Framework」
-- **参照**: [[../decisions/0006-naming-vault-scheme.md]]
+- **参照**: [[pj-2026-07-13-e13e]]
 
 英語名で統一。ドキュメントは日本語版(ja/)と英語版(en/)を並列で用意する Framework 構成。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md`
-- 対応 ADR: [[../decisions/0006-naming-vault-scheme.md]]
-- 関連 ADR: [[../decisions/0005-early-framework-separation.md]](Public 化・Fable 化の前提)
+- 対応 ADR: [[pj-2026-07-13-e13e]]
+- 関連 ADR: [[pj-2026-07-13-a7f9]](Public 化・Fable 化の前提)

@@ -59,12 +59,12 @@ Vault を以下のハイブリッド構成で運用する案:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0001「GitHub-as-a-Backend」(単一 source of truth = GitHub)
-- **参照**: [[../decisions/0001-github-as-backend.md]]
+- **参照**: [[pj-2026-07-13-2564]]
 
 Obsidian は編集 UI として使用するが、真実の source は GitHub。iCloud Drive はローカルミラーで、GitHub への push が「保存」の意味を持つ。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_vault-system-design-inception-to-completion.md`
-- 対応 ADR: [[../decisions/0001-github-as-backend.md]]
-- 関連却下案: [[./vault-composition-plan-2-obsidian-sync.md]](Obsidian Sync 主導)
+- 対応 ADR: [[pj-2026-07-13-2564]]
+- 関連却下案: [[pj-2026-07-13-e650]](Obsidian Sync 主導)

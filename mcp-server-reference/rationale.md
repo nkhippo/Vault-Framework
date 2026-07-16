@@ -27,10 +27,10 @@ aliases:
 
 <!-- TODO: ADR 0002 の要約 -->
 
-- ADR: [`docs/ja/decisions/0002-cloudflare-workers-for-mcp.md`](../docs/ja/decisions/0002-cloudflare-workers-for-mcp.md)
+- ADR: [[pj-2026-07-13-bccd|`docs/ja/decisions/0002-cloudflare-workers-for-mcp.md`]]
 
 ## Why Fine-grained PAT
 
 <!-- TODO: ADR 0012 の要約 -->
 
-- ADR: [`docs/ja/decisions/0012-fine-grained-pat-adoption.md`](../docs/ja/decisions/0012-fine-grained-pat-adoption.md)
+- ADR: [[pj-2026-07-13-9107|`docs/ja/decisions/0012-fine-grained-pat-adoption.md`]]

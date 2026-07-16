@@ -81,8 +81,8 @@ Separate from naming rules, the Front Matter fields `type`, `status`, `tags`, an
 
 ## Related
 
-- [ADR 0006: Finalizing the naming scheme](../ja/decisions/0006-naming-vault-scheme.md) *(English translation pending)*
+- [[pj-2026-07-13-e13e|ADR 0006: Finalizing the naming scheme]] *(English translation pending)*
 - [file-naming spec: Detailed file-naming specification](./specs/file-naming.md) *(English translation pending)*
 - [vocabulary-design spec: Controlled vocabulary design](./specs/vocabulary-design.md) *(English translation pending)*
 - [rejected-alternatives: Rejected naming candidates](./rejected-alternatives/README.md) *(English translation pending)*
-- [Philosophy: GitHub-as-a-Backend](./philosophy.md)
+- [[pj-2026-07-15-4872|Philosophy: GitHub-as-a-Backend]]

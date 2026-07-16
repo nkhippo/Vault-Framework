@@ -204,8 +204,8 @@ SKILL.md, 各 template      (実際の使用箇所)
 
 - **関連 ADR**: なし(vocabulary は仕様として独立)
 - **関連 spec**: 
-  - [[./frontmatter-schema.md]](Front Matter での使用)
-  - [[./file-naming.md]](type と保存先の対応)
+  - [[pj-2026-07-13-9fa5]](Front Matter での使用)
+  - [[pj-2026-07-13-5c9b]](type と保存先の対応)
 - **実装**: `vault-templates/00_meta/vocabulary.md`(vault 内正典)
 
 ## Change Log

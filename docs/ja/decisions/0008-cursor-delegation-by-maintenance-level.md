@@ -115,7 +115,7 @@ Cursor 委譲指示書のテンプレは Framework の `vault-templates/docs/cur
 
 **却下理由**: ファイル数という指標そのものが誤っており、閾値を変えても本質的な問題は解決しない。
 
-詳細: [[../rejected-alternatives/cursor-delegation-by-file-count.md]]
+詳細: [[pj-2026-07-13-7ee4]]
 
 ### 案 B: 全ての操作を Cursor 委譲
 

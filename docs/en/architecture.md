@@ -101,7 +101,7 @@ An alternative of putting all rules into a single file was also considered (see 
 
 ## Related
 
-- [ADR 0003: Skill / Project / Vault 3-layer structure](../ja/decisions/0003-skill-project-vault-3-layer.md) *(English translation pending)*
-- [ADR 0004: Keeping Project Instructions very thin](../ja/decisions/0004-thin-project-instructions.md) *(English translation pending)*
-- [Philosophy: GitHub-as-a-Backend](./philosophy.md)
-- [Reference-Level System spec](../ja/specs/reference-level-system.md) *(English translation pending)*
+- [[pj-2026-07-13-d28f|ADR 0003: Skill / Project / Vault 3-layer structure]] *(English translation pending)*
+- [[pj-2026-07-13-9b13|ADR 0004: Keeping Project Instructions very thin]] *(English translation pending)*
+- [[pj-2026-07-15-4872|Philosophy: GitHub-as-a-Backend]]
+- [[pj-2026-07-13-dd44|Reference-Level System spec]] *(English translation pending)*

@@ -29,6 +29,6 @@ aliases:
 
 ## ドキュメント
 
-- [Setup Guide](./setup.md)
-- [Environment Variables](./env-reference.md)
-- [Design Rationale](./rationale.md)
+- [[pj-2026-07-13-2157|Setup Guide]]
+- [[pj-2026-07-13-9d1f|Environment Variables]]
+- [[pj-2026-07-13-8f48|Design Rationale]]

@@ -73,4 +73,4 @@ Vault-Framework は Markdown ファイルベースであるため、Obsidian(人
 ## 関連
 
 - [ADR 0001: GitHub-as-a-Backend の採用](../decisions/0001-github-as-backend.md)
-- [Architecture: Skill・Project・Vault の 3 層](./architecture.md)
+- [[pj-2026-07-13-0245|Architecture: Skill・Project・Vault の 3 層]]

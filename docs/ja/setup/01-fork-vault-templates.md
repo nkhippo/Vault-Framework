@@ -295,4 +295,4 @@ git push origin main
 
 ## Next Step
 
-vault リポジトリの初期化が完了したら [02-deploy-mcp-server.md](./02-deploy-mcp-server.md) に進み、Vault-MCP を Cloudflare Workers にデプロイします。
+vault リポジトリの初期化が完了したら [[pj-2026-07-13-1341|02-deploy-mcp-server.md]] に進み、Vault-MCP を Cloudflare Workers にデプロイします。

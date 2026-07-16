@@ -134,7 +134,7 @@ status: published
 
 - **型**: array of wikilink
 - **意味**: 関連ファイルへのリンク
-- **例**: `["[[../decisions/0002-cloudflare-workers-for-mcp.md]]"]`
+- **例**: `["[[pj-2026-07-13-bccd]]"]`
 
 ### `supersedes`
 
@@ -146,7 +146,7 @@ status: published
 
 - **型**: string
 - **意味**: このファイルを置き換えた新ファイル(ADR 番号または wikilink)
-- **例**: `"0006"`(ADR 番号)、`"[[../decisions/0006-naming-vault-scheme.md]]"`(wikilink)
+- **例**: `"0006"`(ADR 番号)、`"[[pj-2026-07-13-e13e]]"`(wikilink)
 
 ### `sensitive`
 
@@ -363,8 +363,8 @@ Front Matter 直後に H2 `## Summary` セクションを置く:
 
 - **関連 ADR**: なし(schema はスペックとして独立)
 - **関連 spec**: 
-  - [[./vocabulary-design.md]](統制語彙の設計原則)
-  - [[./file-naming.md]](ファイル名の規則)
+  - [[pj-2026-07-13-f5e9]](統制語彙の設計原則)
+  - [[pj-2026-07-13-5c9b]](ファイル名の規則)
 - **実装**: `vault-templates/00_meta/frontmatter_schema.md`(vault 内正典)
 
 ## Change Log

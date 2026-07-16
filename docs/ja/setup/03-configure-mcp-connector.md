@@ -159,4 +159,4 @@ Chat ごとにコネクタの有効/無効を切り替えできます:
 
 ## Next Step
 
-MCP コネクタの設定が完了したら [04-upload-skill.md](./04-upload-skill.md) で Skill `vault-manager` を Claude Skills にアップロードします。
+MCP コネクタの設定が完了したら [[pj-2026-07-13-ff6f|04-upload-skill.md]] で Skill `vault-manager` を Claude Skills にアップロードします。

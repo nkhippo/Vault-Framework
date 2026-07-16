@@ -242,11 +242,11 @@ Framework(`nkhippo/Vault-Framework/docs/ja/`)への反映:
 ## References
 
 - **関連 ADR**: 
-  - [[../decisions/0009-four-level-maintenance-operation.md]](並行運用の位置づけ)
-  - [[../decisions/0016-mcp-connection-failure-abort.md]](sensitive 引用禁止)
+  - [[pj-2026-07-13-48bc]](並行運用の位置づけ)
+  - [[pj-2026-07-13-e19b]](sensitive 引用禁止)
 - **関連 spec**: 
-  - [[./maintenance-four-levels.md]](保守運用 4 レベル、抽象生成は並行)
-  - [[./frontmatter-schema.md]](ADR/spec/rejected の Front Matter)
+  - [[pj-2026-07-13-d0dd]](保守運用 4 レベル、抽象生成は並行)
+  - [[pj-2026-07-13-9fa5]](ADR/spec/rejected の Front Matter)
 - **実装**: `vault-templates/00_meta/vault_maintenance_config.md`(有効化設定)
 
 ## Change Log

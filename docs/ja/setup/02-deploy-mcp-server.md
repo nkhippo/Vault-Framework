@@ -194,4 +194,4 @@ Cloudflare Workers Free プランで運用可能。
 
 ## Next Step
 
-MCP サーバのデプロイが完了したら [03-configure-mcp-connector.md](./03-configure-mcp-connector.md) で Claude Pro Connectors に登録します。
+MCP サーバのデプロイが完了したら [[pj-2026-07-13-d62b|03-configure-mcp-connector.md]] で Claude Pro Connectors に登録します。

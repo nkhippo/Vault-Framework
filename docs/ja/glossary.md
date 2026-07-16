@@ -99,15 +99,15 @@ Front Matter の boolean フィールド。`true` の場合、そのファイル
 
 ### GitHub-as-a-Backend
 
-Vault-Framework の中核思想。個人ナレッジベースの正典データストアとして GitHub リポジトリを採用する設計判断([Philosophy](./philosophy.md) 参照)。
+Vault-Framework の中核思想。個人ナレッジベースの正典データストアとして GitHub リポジトリを採用する設計判断([[pj-2026-07-13-b9c7|Philosophy]] 参照)。
 
 ### 3 層構造(Skill・Project・Vault)
 
-Vault-Framework の運用アーキテクチャ。Skill(振る舞いロジック)、Project Instructions(最小限のポインタ)、Vault(運用ルールの正典)の 3 層に責務を分離する([Architecture](./architecture.md) 参照)。
+Vault-Framework の運用アーキテクチャ。Skill(振る舞いロジック)、Project Instructions(最小限のポインタ)、Vault(運用ルールの正典)の 3 層に責務を分離する([[pj-2026-07-13-0245|Architecture]] 参照)。
 
 ## 関連
 
-- [Philosophy: GitHub-as-a-Backend](./philosophy.md)
-- [Architecture: Skill・Project・Vault の 3 層](./architecture.md)
-- [naming-conventions.md: 命名規約の思想](./naming-conventions.md)
-- [maintenance-guide.md: 保守運用ガイド](./maintenance-guide.md)
+- [[pj-2026-07-13-b9c7|Philosophy: GitHub-as-a-Backend]]
+- [[pj-2026-07-13-0245|Architecture: Skill・Project・Vault の 3 層]]
+- [[pj-2026-07-13-d0c9|naming-conventions.md: 命名規約の思想]]
+- [[pj-2026-07-13-d0b2|maintenance-guide.md: 保守運用ガイド]]

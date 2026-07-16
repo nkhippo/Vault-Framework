@@ -48,27 +48,27 @@ Vault-Framework を導入して、自分の個人 Vault 運用を立ち上げる
 
 ### Phase 1: 前提確認と準備
 
-- [00-prerequisites.md](./00-prerequisites.md) - 前提となる環境(GitHub、Cloudflare、Claude Pro 契約)の確認
+- [[pj-2026-07-13-ed0d|00-prerequisites.md]] - 前提となる環境(GitHub、Cloudflare、Claude Pro 契約)の確認
 
 ### Phase 2: リポジトリの初期化
 
-- [01-fork-vault-templates.md](./01-fork-vault-templates.md) - Framework の vault-templates/ を元に vault リポジトリを初期化
-- [02-deploy-mcp-server.md](./02-deploy-mcp-server.md) - Vault-MCP を Cloudflare Workers にデプロイ
+- [[pj-2026-07-13-472f|01-fork-vault-templates.md]] - Framework の vault-templates/ を元に vault リポジトリを初期化
+- [[pj-2026-07-13-1341|02-deploy-mcp-server.md]] - Vault-MCP を Cloudflare Workers にデプロイ
 
 ### Phase 3: Claude 側の設定
 
-- [03-configure-mcp-connector.md](./03-configure-mcp-connector.md) - Claude Pro Connectors で MCP コネクタを追加
-- [04-upload-skill.md](./04-upload-skill.md) - Skill `vault-manager` を Claude Skills にアップロード
-- [05-configure-project.md](./05-configure-project.md) - Claude Projects で Vault Project を作成・設定
+- [[pj-2026-07-13-d62b|03-configure-mcp-connector.md]] - Claude Pro Connectors で MCP コネクタを追加
+- [[pj-2026-07-13-ff6f|04-upload-skill.md]] - Skill `vault-manager` を Claude Skills にアップロード
+- [[pj-2026-07-13-19c6|05-configure-project.md]] - Claude Projects で Vault Project を作成・設定
 
 ### Phase 4: 動作確認
 
-- [06-first-save-test.md](./06-first-save-test.md) - 初回保存動作を確認して稼働開始
+- [[pj-2026-07-13-9c97|06-first-save-test.md]] - 初回保存動作を確認して稼働開始
 
 ### Phase 5: カスタマイズと運用
 
-- [customization.md](./customization.md) - 自分の運用に合わせたカスタマイズ
-- [troubleshooting.md](./troubleshooting.md) - 問題解決とトラブルシューティング
+- [[pj-2026-07-13-e55f|customization.md]] - 自分の運用に合わせたカスタマイズ
+- [[pj-2026-07-13-e32c|troubleshooting.md]] - 問題解決とトラブルシューティング
 
 ## 推奨する導入順序
 
@@ -84,7 +84,7 @@ Vault-Framework を導入して、自分の個人 Vault 運用を立ち上げる
 
 ## Prerequisites Summary
 
-前提として以下が必要です(詳細は [00-prerequisites.md](./00-prerequisites.md)):
+前提として以下が必要です(詳細は [[pj-2026-07-13-ed0d|00-prerequisites.md]]):
 
 - **GitHub アカウント**: リポジトリ作成が可能
 - **Cloudflare アカウント**: Workers デプロイに必要(無料プランで OK)
@@ -126,8 +126,8 @@ Framework が提供するもの:
 - **Skill.md の Front Matter**: name と description のみで純粋な Claude Skills 形式を守る
 - **HashiCorp Vault との命名衝突**: リポジトリ名を `Vault` にする場合の注意(代替命名候補は 01-fork-vault-templates.md 参照)
 
-詳細な対処法は各ステップの手順および [troubleshooting.md](./troubleshooting.md) 参照。
+詳細な対処法は各ステップの手順および [[pj-2026-07-13-e32c|troubleshooting.md]] 参照。
 
 ## Next Step
 
-準備ができたら [00-prerequisites.md](./00-prerequisites.md) に進んでください。
+準備ができたら [[pj-2026-07-13-ed0d|00-prerequisites.md]] に進んでください。

@@ -74,12 +74,12 @@ Framework 部分を Vault 内に維持する案:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0005「Vault-Framework 早期分離」
-- **参照**: [[../decisions/0005-early-framework-separation.md]]
+- **参照**: [[pj-2026-07-13-a7f9]]
 
 早期に別リポジトリ(`nkhippo/Vault-Framework`)に分離。staging → mirroring workflow を受容し、Public 化・Fable パッケージングの準備を整える。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md`
-- 対応 ADR: [[../decisions/0005-early-framework-separation.md]]
-- 関連 ADR: [[../decisions/0006-naming-vault-scheme.md]](3 リポジトリ命名の前提)
+- 対応 ADR: [[pj-2026-07-13-a7f9]]
+- 関連 ADR: [[pj-2026-07-13-e13e]](3 リポジトリ命名の前提)

@@ -93,7 +93,7 @@ Rather than a single "maintenance" concept, the operation was split into 4 level
 
 ## Related
 
-- [ADR 0008: Criteria for Cursor delegation](../ja/decisions/0008-cursor-delegation-by-maintenance-level.md) *(English translation pending)*
-- [ADR 0009: Four-level maintenance + abstract generation](../ja/decisions/0009-four-level-maintenance-operation.md) *(English translation pending)*
+- [[pj-2026-07-13-b51c|ADR 0008: Criteria for Cursor delegation]] *(English translation pending)*
+- [[pj-2026-07-13-48bc|ADR 0009: Four-level maintenance + abstract generation]] *(English translation pending)*
 - [maintenance-four-levels spec: Detailed maintenance specification](./specs/maintenance-four-levels.md) *(English translation pending)*
 - [abstract-generation spec: Detailed abstract-generation specification](./specs/abstract-generation.md) *(English translation pending)*

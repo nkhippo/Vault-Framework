@@ -314,10 +314,10 @@ git status
 ## Reference
 
 - **関連 ADR**: 
-  - [[../decisions/0016-mcp-connection-failure-abort.md]](MCP 接続失敗ルール)
-  - [[../decisions/0012-fine-grained-pat-adoption.md]](PAT のセキュリティ)
+  - [[pj-2026-07-13-e19b]](MCP 接続失敗ルール)
+  - [[pj-2026-07-13-9107]](PAT のセキュリティ)
 - **関連 spec**: 
-  - [[../specs/reference-level-system.md]](Level の適切な使用)
-  - [[../specs/maintenance-four-levels.md]](保守運用による問題予防)
+  - [[pj-2026-07-13-dd44]](Level の適切な使用)
+  - [[pj-2026-07-13-d0dd]](保守運用による問題予防)
 - **関連 guideline**: 
-  - [[../guidelines/v1-nine-principles.md]](運用の原則)
+  - [[pj-2026-07-13-fba6]](運用の原則)

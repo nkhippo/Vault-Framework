@@ -232,10 +232,10 @@ project_aliases.md が肥大化(プロジェクト数 20+ 等)した場合、以
 ## References
 
 - **関連 ADR**: 
-  - [[../decisions/0013-projects-merge-two-to-one.md]](1 Project 統合、あいまい名解決フローの前提)
+  - [[pj-2026-07-13-f6cf]](1 Project 統合、あいまい名解決フローの前提)
 - **関連 spec**: 
-  - [[./reference-level-system.md]](Level 2 遷移の詳細)
-  - [[./vocabulary-design.md]](project フィールドの管理)
+  - [[pj-2026-07-13-dd44]](Level 2 遷移の詳細)
+  - [[pj-2026-07-13-f5e9]](project フィールドの管理)
 - **実装**: `vault-templates/00_meta/project_aliases.md`(vault 内テンプレ)
 
 ## Change Log

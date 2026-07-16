@@ -244,11 +244,11 @@ Skill(SKILL.md)側での実装ガイドライン:
 ## References
 
 - **関連 ADR**: 
-  - [[../decisions/0003-skill-project-vault-3-layer.md]](Skill の役割)
-  - [[../decisions/0014-sonnet-standardization-response.md]](プロンプト工夫 2 の対応)
+  - [[pj-2026-07-13-d28f]](Skill の役割)
+  - [[pj-2026-07-13-d3c5]](プロンプト工夫 2 の対応)
 - **関連 spec**: 
-  - [[./handoff-mechanism.md]](Level 2 での handoff 参照)
-  - [[./ambiguous-name-resolution.md]](Level 2 遷移の判定)
+  - [[pj-2026-07-13-c1bd]](Level 2 での handoff 参照)
+  - [[pj-2026-07-13-47fd]](Level 2 遷移の判定)
 - **実装**: `skills/vault-manager/SKILL.md`(canonical)
 
 ## Change Log

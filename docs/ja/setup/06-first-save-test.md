@@ -230,8 +230,8 @@ Chat の Connectors 設定で `Vault MCP` を **OFF** にする。
 
 初回動作テストが完了したら、日常運用が可能です。以下を参考にしてください:
 
-- [customization.md](./customization.md) - 拡張・カスタマイズの手順
-- [troubleshooting.md](./troubleshooting.md) - 問題解決とトラブルシューティング
+- [[pj-2026-07-13-e55f|customization.md]] - 拡張・カスタマイズの手順
+- [[pj-2026-07-13-e32c|troubleshooting.md]] - 問題解決とトラブルシューティング
 - Framework の [guidelines/](../guidelines/) - 運用原則
 
 Naoya の運用パターンをそのまま真似するか、自分の運用に合わせて段階的にカスタマイズしてください。

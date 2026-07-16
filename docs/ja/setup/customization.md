@@ -241,12 +241,12 @@ Instructions とは別に、より Chat レベルでの調整を行う。
 ## References
 
 - **関連 spec**: 
-  - [[../specs/vocabulary-design.md]](統制語彙の拡張手順)
-  - [[../specs/maintenance-four-levels.md]](保守運用の詳細)
+  - [[pj-2026-07-13-f5e9]](統制語彙の拡張手順)
+  - [[pj-2026-07-13-d0dd]](保守運用の詳細)
 - **関連 guideline**: 
-  - [[../guidelines/operational-principles.md]](日常運用パターン)
+  - [[pj-2026-07-13-988d]](日常運用パターン)
 - **実装**: `vault-templates/00_meta/`(カスタマイズ対象の canonical)
 
 ## Next Step
 
-問題が発生した時は [troubleshooting.md](./troubleshooting.md) を参照してください。
+問題が発生した時は [[pj-2026-07-13-e32c|troubleshooting.md]] を参照してください。

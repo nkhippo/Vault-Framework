@@ -107,7 +107,7 @@ Skill `vault-manager` が以下のフローで対応:
 
 **却下理由**: UX 上の摩擦と記憶の分断が実運用で問題化(数日運用で顕在化)。
 
-詳細: [[../rejected-alternatives/projects-split-two.md]]
+詳細: [[pj-2026-07-13-08cd]]
 
 ### 案 B: 3+ Projects に細分化
 

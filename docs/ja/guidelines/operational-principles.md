@@ -284,17 +284,17 @@ Chat の最後に以下を追加すると、次セッションのキャッチア
 ## References
 
 - **関連 ADR**: 
-  - [[../decisions/0003-skill-project-vault-3-layer.md]]
-  - [[../decisions/0007-save-destination-plan-b.md]]
-  - [[../decisions/0008-cursor-delegation-by-maintenance-level.md]]
+  - [[pj-2026-07-13-d28f]]
+  - [[pj-2026-07-13-b5c2]]
+  - [[pj-2026-07-13-b51c]]
 - **関連 spec**: 
-  - [[../specs/reference-level-system.md]]
-  - [[../specs/handoff-mechanism.md]]
-  - [[../specs/ambiguous-name-resolution.md]]
+  - [[pj-2026-07-13-dd44]]
+  - [[pj-2026-07-13-c1bd]]
+  - [[pj-2026-07-13-47fd]]
 - **関連 guideline**: 
-  - [[./v1-nine-principles.md]](思想レベルの原則)
-  - [[./save-decision-flow.md]](保存判断の詳細)
-  - [[./sonnet-optimization.md]](モデル最適化)
+  - [[pj-2026-07-13-fba6]](思想レベルの原則)
+  - [[pj-2026-07-13-c302]](保存判断の詳細)
+  - [[pj-2026-07-13-b12c]](モデル最適化)
 
 ## Change Log
 

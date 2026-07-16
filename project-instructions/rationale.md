@@ -25,7 +25,7 @@ aliases:
 
 <!-- TODO: ADR 0004 の要約を書く -->
 
-- ADR: [`docs/ja/decisions/0004-thin-project-instructions.md`](../docs/ja/decisions/0004-thin-project-instructions.md)
+- ADR: [[pj-2026-07-13-9b13|`docs/ja/decisions/0004-thin-project-instructions.md`]]
 
 ## What lives in vault instead
 

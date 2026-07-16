@@ -85,10 +85,10 @@ Vault-MCP のホスティングプラットフォームとして、Cloudflare Wo
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0002「MCP プラットフォームに Cloudflare Workers」
-- **参照**: [[../decisions/0002-cloudflare-workers-for-mcp.md]]
+- **参照**: [[pj-2026-07-13-bccd]]
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_platform-selection-and-phase12-completion.md`
-- 対応 ADR: [[../decisions/0002-cloudflare-workers-for-mcp.md]]
-- 関連却下案: [[./mcp-platform-cloud-run.md]](Cloud Run 個別記録)
+- 対応 ADR: [[pj-2026-07-13-bccd]]
+- 関連却下案: [[pj-2026-07-13-a307]](Cloud Run 個別記録)

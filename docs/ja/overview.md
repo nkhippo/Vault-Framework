@@ -36,5 +36,5 @@ aliases:
 
 ## 関連
 
-- [Architecture](./architecture.md)
-- [Philosophy](./philosophy.md)
+- [[pj-2026-07-13-0245|Architecture]]
+- [[pj-2026-07-13-b9c7|Philosophy]]

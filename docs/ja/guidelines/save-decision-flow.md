@@ -159,7 +159,7 @@ note を公開した清書版?
 
 `YYYY-MM-DD_kebab-case-slug.md`
 
-詳細は [[../specs/file-naming.md]] 参照。
+詳細は [[pj-2026-07-13-5c9b]] 参照。
 
 ### スラグ生成のロジック
 
@@ -194,7 +194,7 @@ status: <vocabulary.md の status>
 
 ### type 別の追加必須フィールド
 
-該当 type のテンプレート(`00_meta/templates/<type>.md`)から取得。詳細は [[../specs/frontmatter-schema.md]] 参照。
+該当 type のテンプレート(`00_meta/templates/<type>.md`)から取得。詳細は [[pj-2026-07-13-9fa5]] 参照。
 
 ### diary/reflection/goal の追加処理
 
@@ -335,16 +335,16 @@ handoff/current-state.md を更新しました(<プロジェクト名>)。
 ## References
 
 - **関連 ADR**: 
-  - [[../decisions/0007-save-destination-plan-b.md]](保存先思想)
-  - [[../decisions/0011-directory-restructure-captures-self.md]](50_self/ の扱い)
-  - [[../decisions/0016-mcp-connection-failure-abort.md]](接続失敗ルール)
+  - [[pj-2026-07-13-b5c2]](保存先思想)
+  - [[pj-2026-07-13-ab6d]](50_self/ の扱い)
+  - [[pj-2026-07-13-e19b]](接続失敗ルール)
 - **関連 spec**: 
-  - [[../specs/file-naming.md]](ファイル名の詳細)
-  - [[../specs/frontmatter-schema.md]](Front Matter の詳細)
-  - [[../specs/reference-level-system.md]](Level 遷移)
+  - [[pj-2026-07-13-5c9b]](ファイル名の詳細)
+  - [[pj-2026-07-13-9fa5]](Front Matter の詳細)
+  - [[pj-2026-07-13-dd44]](Level 遷移)
 - **関連 guideline**: 
-  - [[./v1-nine-principles.md]](Principle 7: 3 秒ルール)
-  - [[./operational-principles.md]](Operational Pattern 2: 保存指示の受け方)
+  - [[pj-2026-07-13-fba6]](Principle 7: 3 秒ルール)
+  - [[pj-2026-07-13-988d]](Operational Pattern 2: 保存指示の受け方)
 - **実装**: `skills/vault-manager/SKILL.md` の該当セクション
 
 ## Change Log

@@ -55,11 +55,11 @@ Project Instructions を以下の構成で運用する案:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0004「激薄 Project Instructions 方針」
-- **参照**: [[../decisions/0004-thin-project-instructions.md]]
+- **参照**: [[pj-2026-07-13-9b13]]
 
 Instructions には「vault の `00_meta/project_instructions_vault.md` を読め」というポインタのみを書き、詳細ルールは vault 側に集約。Obsidian で直接編集可能で、更新が容易。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md`
-- 対応 ADR: [[../decisions/0004-thin-project-instructions.md]]
+- 対応 ADR: [[pj-2026-07-13-9b13]]

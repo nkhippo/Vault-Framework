@@ -317,15 +317,15 @@ Sonnet 5 対応が完了しているかのチェックリスト:
 
 ## References
 
-- **関連 ADR**: [[../decisions/0014-sonnet-standardization-response.md]]
+- **関連 ADR**: [[pj-2026-07-13-d3c5]]
 - **関連 spec**: 
-  - [[../specs/reference-level-system.md]](プロンプト工夫 2)
-  - [[../specs/frontmatter-schema.md]](構造修正 2)
-  - [[../specs/vocabulary-design.md]](構造修正 1)
-  - [[../specs/ambiguous-name-resolution.md]](構造修正 3)
-  - [[../specs/handoff-mechanism.md]](構造修正 4)
+  - [[pj-2026-07-13-dd44]](プロンプト工夫 2)
+  - [[pj-2026-07-13-9fa5]](構造修正 2)
+  - [[pj-2026-07-13-f5e9]](構造修正 1)
+  - [[pj-2026-07-13-47fd]](構造修正 3)
+  - [[pj-2026-07-13-c1bd]](構造修正 4)
 - **関連 guideline**: 
-  - [[./v1-nine-principles.md]](Principle 9: prompt caching)
+  - [[pj-2026-07-13-fba6]](Principle 9: prompt caching)
 
 ## Change Log
 

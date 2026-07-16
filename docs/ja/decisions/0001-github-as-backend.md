@@ -90,7 +90,7 @@ Chat 集約のための保存戦略として、3 案を比較検討:
 
 ### 案 2: Obsidian Sync 主導
 
-Obsidian Sync(有料の Obsidian 純正同期サービス)を主軸に、GitHub は補助バックアップとして使う案。詳細は [[../rejected-alternatives/vault-composition-plan-2-obsidian-sync.md]]。
+Obsidian Sync(有料の Obsidian 純正同期サービス)を主軸に、GitHub は補助バックアップとして使う案。詳細は [[pj-2026-07-13-e650]]。
 
 **却下理由**:
 - Vendor Lock-in(Obsidian の運営継続に依存)
@@ -100,7 +100,7 @@ Obsidian Sync(有料の Obsidian 純正同期サービス)を主軸に、GitHub 
 
 ### 案 3: ハイブリッド構成
 
-Obsidian Sync と GitHub を並列運用し、それぞれの強みを活かす案。詳細は [[../rejected-alternatives/vault-composition-plan-3-hybrid.md]]。
+Obsidian Sync と GitHub を並列運用し、それぞれの強みを活かす案。詳細は [[pj-2026-07-13-8398]]。
 
 **却下理由**:
 - 単一 source of truth を維持できず、乖離が発生した時の統合コストが高い

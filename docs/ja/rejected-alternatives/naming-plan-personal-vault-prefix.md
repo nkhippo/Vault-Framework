@@ -58,18 +58,18 @@ aliases:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0006「命名スキーム: Vault / Vault-MCP / Vault-Framework」
-- **参照**: [[../decisions/0006-naming-vault-scheme.md]]
+- **参照**: [[pj-2026-07-13-e13e]]
 
 `Vault-*` に統一。内部呼称と外部名を統一、typing コスト最小。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md`
-- 対応 ADR: [[../decisions/0006-naming-vault-scheme.md]]
+- 対応 ADR: [[pj-2026-07-13-e13e]]
 - 関連却下案: 他 6 命名候補(下記)
-  - [[./naming-plan-vault-only.md]]
-  - [[./naming-plan-cerebro-cortex.md]]
-  - [[./naming-plan-codex.md]]
-  - [[./naming-plan-archive-ledger.md]]
-  - [[./naming-plan-japanese.md]]
-  - [[./naming-plan-functional-only.md]]
+  - [[pj-2026-07-13-cb3e]]
+  - [[pj-2026-07-13-395d]]
+  - [[pj-2026-07-13-3e01]]
+  - [[pj-2026-07-13-dc3d]]
+  - [[pj-2026-07-13-93a4]]
+  - [[pj-2026-07-13-156d]]

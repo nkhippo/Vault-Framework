@@ -110,7 +110,7 @@ Skill.md に詳細を定義し、以下の順序で判断:
 - 「後で整理する」は多くの場合実行されない(GTD の Inbox Zero 原則の反例)
 - 保存直後に情報が「探しに行く場所」に置かれず、参照性が低い
 
-詳細: [[../rejected-alternatives/save-destination-plan-a-inbox.md]]
+詳細: [[pj-2026-07-13-8dfd]]
 
 ### 案 C: ユーザーに毎回確認
 

@@ -304,12 +304,12 @@ cadence:
 ## References
 
 - **関連 ADR**: 
-  - [[../decisions/0009-four-level-maintenance-operation.md]](4 レベル + 抽象生成)
-  - [[../decisions/0008-cursor-delegation-by-maintenance-level.md]](Cursor 委譲判定)
-  - [[../decisions/0011-directory-restructure-captures-self.md]](Level 4 の例)
+  - [[pj-2026-07-13-48bc]](4 レベル + 抽象生成)
+  - [[pj-2026-07-13-b51c]](Cursor 委譲判定)
+  - [[pj-2026-07-13-ab6d]](Level 4 の例)
 - **関連 spec**: 
-  - [[./abstract-generation.md]](抽象生成の並行運用)
-  - [[./handoff-mechanism.md]](Level 3 の月次アーカイブ)
+  - [[pj-2026-07-13-7921]](抽象生成の並行運用)
+  - [[pj-2026-07-13-c1bd]](Level 3 の月次アーカイブ)
 - **実装**: `vault-templates/00_meta/vault_maintenance_config.md`(cadence 設定)
 
 ## Change Log

@@ -181,4 +181,4 @@ Skill を更新する場合の運用:
 
 ## Next Step
 
-Skill のアップロードが完了したら [05-configure-project.md](./05-configure-project.md) で Claude Projects の Vault Project を作成します。
+Skill のアップロードが完了したら [[pj-2026-07-13-19c6|05-configure-project.md]] で Claude Projects の Vault Project を作成します。

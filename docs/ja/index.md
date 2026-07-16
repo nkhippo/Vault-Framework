@@ -27,27 +27,27 @@ Vault-Framework 日本語版ドキュメントの起点。トップレベル `RE
 
 ### 設計思想と全体像
 
-- [Overview](./overview.md) - Framework が解こうとする問題
-- [Architecture](./architecture.md) - Skill・Project・Vault の 3 層構造
-- [Philosophy](./philosophy.md) - GitHub-as-a-Backend の思想
-- [Naming Conventions](./naming-conventions.md) - 命名の設計
-- [Maintenance Guide](./maintenance-guide.md) - 保守運用の考え方
-- [Glossary](./glossary.md) - 用語集
+- [[pj-2026-07-13-9fa8|Overview]] - Framework が解こうとする問題
+- [[pj-2026-07-13-0245|Architecture]] - Skill・Project・Vault の 3 層構造
+- [[pj-2026-07-13-b9c7|Philosophy]] - GitHub-as-a-Backend の思想
+- [[pj-2026-07-13-d0c9|Naming Conventions]] - 命名の設計
+- [[pj-2026-07-13-d0b2|Maintenance Guide]] - 保守運用の考え方
+- [[pj-2026-07-13-bc88|Glossary]] - 用語集
 
 ### 導入
 
-- [Setup Overview](./setup/README.md) - 導入フロー全体
-- [Prerequisites](./setup/00-prerequisites.md) - 前提条件
+- [[pj-2026-07-13-abd8|Setup Overview]] - 導入フロー全体
+- [[pj-2026-07-13-ed0d|Prerequisites]] - 前提条件
 - (以降 setup/01〜06、customization、troubleshooting)
 
 ### 意思決定と設計履歴
 
-- [Decisions (ADR)](./decisions/README.md) - 全 ADR の一覧
-- [Specs](./specs/README.md) - 仕様の詳細
-- [Rejected Alternatives](./rejected-alternatives/README.md) - 却下案の詳細
-- [Guidelines](./guidelines/README.md) - 運用ガイドライン
+- [[pj-2026-07-13-eaa1|Decisions (ADR)]] - 全 ADR の一覧
+- [[pj-2026-07-13-7d43|Specs]] - 仕様の詳細
+- [[pj-2026-07-13-3fc6|Rejected Alternatives]] - 却下案の詳細
+- [[pj-2026-07-13-5c2c|Guidelines]] - 運用ガイドライン
 - [Discussions](./discussions/) - 運用議論の公開版(将来)
 
 ## 参照順序(AI 用)
 
-Claude 等の AI が Framework を初めて読む時の推奨順序は [reading-order-for-ai.md](./reading-order-for-ai.md) を参照。
+Claude 等の AI が Framework を初めて読む時の推奨順序は [[pj-2026-07-13-de42|reading-order-for-ai.md]] を参照。

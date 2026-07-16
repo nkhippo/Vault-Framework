@@ -5,6 +5,7 @@ aliases:
 title: Vault-Framework
 created: '2026-07-13'
 ---
+
 # Vault-Framework
 
 > **AI が読むことを最優先とする、Chat 集約ワークフローの Framework**
@@ -19,81 +20,81 @@ Vault-Framework は、Claude(または将来的に他の LLM)と GitHub リポ�
 
 ### 「Skills にセットすべきファイルは?」
 
-- **Primary**: [`skills/README.md`](./skills/README.md)
-- **Detail**: [`docs/ja/setup/04-upload-skill.md`](./docs/ja/setup/04-upload-skill.md)
+- **Primary**: [[pj-2026-07-13-acad|`skills/README.md`]]
+- **Detail**: [[pj-2026-07-13-ff6f|`docs/ja/setup/04-upload-skill.md`]]
 - **Files**: `skills/vault-manager/SKILL.md`, `skills/vault-maintainer/SKILL.md`
 
 ### 「メンテナンスをどう考えているか?」
 
-- **Primary**: [`docs/ja/maintenance-guide.md`](./docs/ja/maintenance-guide.md)
-- **Detail**: [`docs/ja/specs/maintenance-four-levels.md`](./docs/ja/specs/maintenance-four-levels.md), [`docs/ja/specs/abstract-generation.md`](./docs/ja/specs/abstract-generation.md)
-- **Rationale**: [`docs/ja/decisions/0009-four-level-maintenance-operation.md`](./docs/ja/decisions/0009-four-level-maintenance-operation.md)
+- **Primary**: [[pj-2026-07-13-d0b2|`docs/ja/maintenance-guide.md`]]
+- **Detail**: [[pj-2026-07-13-d0dd|`docs/ja/specs/maintenance-four-levels.md`]], [[pj-2026-07-13-7921|`docs/ja/specs/abstract-generation.md`]]
+- **Rationale**: [[pj-2026-07-13-48bc|`docs/ja/decisions/0009-four-level-maintenance-operation.md`]]
 
 ### 「なぜ Cloudflare Workers を選んだのか?」
 
-- **Rationale**: [`docs/ja/decisions/0002-cloudflare-workers-for-mcp.md`](./docs/ja/decisions/0002-cloudflare-workers-for-mcp.md)
-- **Rejected alternatives**: [`docs/ja/rejected-alternatives/mcp-platform-cloud-run.md`](./docs/ja/rejected-alternatives/mcp-platform-cloud-run.md), [`docs/ja/rejected-alternatives/mcp-platform-other-candidates.md`](./docs/ja/rejected-alternatives/mcp-platform-other-candidates.md)
-- **Setup**: [`docs/ja/setup/02-deploy-mcp-server.md`](./docs/ja/setup/02-deploy-mcp-server.md)
+- **Rationale**: [[pj-2026-07-13-bccd|`docs/ja/decisions/0002-cloudflare-workers-for-mcp.md`]]
+- **Rejected alternatives**: [[pj-2026-07-13-a307|`docs/ja/rejected-alternatives/mcp-platform-cloud-run.md`]], [[pj-2026-07-13-6540|`docs/ja/rejected-alternatives/mcp-platform-other-candidates.md`]]
+- **Setup**: [[pj-2026-07-13-1341|`docs/ja/setup/02-deploy-mcp-server.md`]]
 
 ### 「命名の設計思想は?」
 
-- **Primary**: [`docs/ja/naming-conventions.md`](./docs/ja/naming-conventions.md)
-- **Rationale**: [`docs/ja/decisions/0006-naming-vault-scheme.md`](./docs/ja/decisions/0006-naming-vault-scheme.md)
-- **Rejected alternatives**: [`docs/ja/rejected-alternatives/naming-plan-personal-vault-prefix.md`](./docs/ja/rejected-alternatives/naming-plan-personal-vault-prefix.md), 他 `naming-plan-*` 参照
+- **Primary**: [[pj-2026-07-13-d0c9|`docs/ja/naming-conventions.md`]]
+- **Rationale**: [[pj-2026-07-13-e13e|`docs/ja/decisions/0006-naming-vault-scheme.md`]]
+- **Rejected alternatives**: [[pj-2026-07-13-f5da|`docs/ja/rejected-alternatives/naming-plan-personal-vault-prefix.md`]], 他 `naming-plan-*` 参照
 
 ### 「Skill・Project・Vault の 3 層構造は?」
 
-- **Primary**: [`docs/ja/architecture.md`](./docs/ja/architecture.md)
-- **Rationale**: [`docs/ja/decisions/0003-skill-project-vault-3-layer.md`](./docs/ja/decisions/0003-skill-project-vault-3-layer.md), [`docs/ja/decisions/0004-thin-project-instructions.md`](./docs/ja/decisions/0004-thin-project-instructions.md)
+- **Primary**: [[pj-2026-07-13-0245|`docs/ja/architecture.md`]]
+- **Rationale**: [[pj-2026-07-13-d28f|`docs/ja/decisions/0003-skill-project-vault-3-layer.md`]], [[pj-2026-07-13-9b13|`docs/ja/decisions/0004-thin-project-instructions.md`]]
 
 ### 「GitHub-as-a-Backend の思想は?」
 
-- **Primary**: [`docs/ja/philosophy.md`](./docs/ja/philosophy.md)
-- **Rationale**: [`docs/ja/decisions/0001-github-as-backend.md`](./docs/ja/decisions/0001-github-as-backend.md)
+- **Primary**: [[pj-2026-07-13-b9c7|`docs/ja/philosophy.md`]]
+- **Rationale**: [[pj-2026-07-13-2564|`docs/ja/decisions/0001-github-as-backend.md`]]
 
 ### 「導入手順は?」
 
-- **Overview**: [`docs/ja/setup/README.md`](./docs/ja/setup/README.md)
-- **Detail**: [`docs/ja/setup/00-prerequisites.md`](./docs/ja/setup/00-prerequisites.md) から順次
+- **Overview**: [[pj-2026-07-13-abd8|`docs/ja/setup/README.md`]]
+- **Detail**: [[pj-2026-07-13-ed0d|`docs/ja/setup/00-prerequisites.md`]] から順次
 
 ### 「MCP サーバの実装は?」
 
-- **Primary**: [`mcp-server-reference/README.md`](./mcp-server-reference/README.md)
-- **Setup**: [`mcp-server-reference/setup.md`](./mcp-server-reference/setup.md)
-- **Env vars**: [`mcp-server-reference/env-reference.md`](./mcp-server-reference/env-reference.md)
+- **Primary**: [[pj-2026-07-13-d955|`mcp-server-reference/README.md`]]
+- **Setup**: [[pj-2026-07-13-2157|`mcp-server-reference/setup.md`]]
+- **Env vars**: [[pj-2026-07-13-9d1f|`mcp-server-reference/env-reference.md`]]
 - **Actual implementation**: [github.com/nkhippo/Vault-MCP](https://github.com/nkhippo/Vault-MCP) (private)
 
 ### 「MCP 接続に失敗したらどうする?」
 
-- **Rule**: [`docs/ja/decisions/0016-mcp-connection-failure-abort.md`](./docs/ja/decisions/0016-mcp-connection-failure-abort.md)
+- **Rule**: [[pj-2026-07-13-e19b|`docs/ja/decisions/0016-mcp-connection-failure-abort.md`]]
 - **Enforcement**: `skills/vault-manager/SKILL.md` の該当セクション
 
 ### 「多言語対応の計画は?」
 
-- **Strategy**: [`docs/ja/i18n/README.md`](./docs/i18n/README.md)(注: 実パス `docs/i18n/README.md`)
-- **Translation guide**: [`docs/i18n/translation-strategy.md`](./docs/i18n/translation-strategy.md)
+- **Strategy**: [[pj-2026-07-13-3cbd|`docs/ja/i18n/README.md`]](注: 実パス `docs/i18n/README.md`)
+- **Translation guide**: [[pj-2026-07-13-e271|`docs/i18n/translation-strategy.md`]]
 
 ### 「削られた選択肢は?」(却下案の参照)
 
-- **Index**: [`docs/ja/rejected-alternatives/README.md`](./docs/ja/rejected-alternatives/README.md)
+- **Index**: [[pj-2026-07-13-3fc6|`docs/ja/rejected-alternatives/README.md`]]
 - 各案は個別ファイルで理由込みで記録
 
 ### 「保存判断のフローは?」
 
-- **Primary**: [`docs/ja/guidelines/save-decision-flow.md`](./docs/ja/guidelines/save-decision-flow.md)
-- **Rationale**: [`docs/ja/decisions/0007-save-destination-plan-b.md`](./docs/ja/decisions/0007-save-destination-plan-b.md)
+- **Primary**: [[pj-2026-07-13-c302|`docs/ja/guidelines/save-decision-flow.md`]]
+- **Rationale**: [[pj-2026-07-13-b5c2|`docs/ja/decisions/0007-save-destination-plan-b.md`]]
 
 ### 全 ADR の一覧
 
-- [`docs/ja/decisions/README.md`](./docs/ja/decisions/README.md)
+- [[pj-2026-07-13-eaa1|`docs/ja/decisions/README.md`]]
 
 ### 全 spec の一覧
 
-- [`docs/ja/specs/README.md`](./docs/ja/specs/README.md)
+- [[pj-2026-07-13-7d43|`docs/ja/specs/README.md`]]
 
 ### 用語が分からない時
 
-- [`docs/ja/glossary.md`](./docs/ja/glossary.md)
+- [[pj-2026-07-13-bc88|`docs/ja/glossary.md`]]
 
 ---
 
@@ -112,18 +113,18 @@ Vault-Framework は次の 6 つの領域から構成されます。
 
 ### 導入したい場合
 
-[`docs/ja/setup/README.md`](./docs/ja/setup/README.md) から始めてください。
+[[pj-2026-07-13-abd8|`docs/ja/setup/README.md`]] から始めてください。
 
 ### 貢献したい場合
 
-[`docs/i18n/contributing-translations.md`](./docs/i18n/contributing-translations.md) に翻訳貢献のガイドがあります。
+[[pj-2026-07-13-f022|`docs/i18n/contributing-translations.md`]] に翻訳貢献のガイドがあります。
 
 ---
 
 ## 言語
 
 - 日本語(default): [`docs/ja/`](./docs/ja/)
-- English: [`README.en.md`](./README.en.md) / [`docs/en/`](./docs/en/)
+- English: [[pj-2026-07-15-9e7c|`README.en.md`]] / [`docs/en/`](./docs/en/)
 
 ---
 
