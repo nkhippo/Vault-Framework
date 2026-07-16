@@ -30,6 +30,8 @@ EXCLUDE_DIRS: set[str] = {
     ".pytest_cache",
     "migration",
     "audit",
+    # Test fixtures intentionally contain invalid/fake ids and path refs
+    "tests",
 }
 
 MD_SUFFIXES: set[str] = {".md", ".markdown"}
