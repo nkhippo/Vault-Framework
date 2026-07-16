@@ -60,6 +60,7 @@
   "docs/ja/decisions/0021-vault-maintainer-stalled-detection.md": "pj-2026-07-17-e2ef",
   "docs/ja/decisions/0022-chat-save-with-residue-integration.md": "pj-2026-07-17-ba5f",
   "docs/ja/decisions/0023-phase-1f-three-independent-commands.md": "pj-2026-07-17-c14c",
+  "docs/ja/decisions/0024-immediate-execution-with-explicit-triggers.md": "pj-2026-07-17-052b",
   "docs/ja/decisions/README.md": "pj-2026-07-13-eaa1",
   "docs/ja/glossary.md": "pj-2026-07-13-bc88",
   "docs/ja/guidelines/README.md": "pj-2026-07-13-5c2c",

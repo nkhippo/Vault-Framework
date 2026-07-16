@@ -43,6 +43,7 @@ aliases:
 | 0021 | Vault-maintainer Stalled Detection(Phase 1d PR-B) | accepted | Phase 1d PR-B |
 | 0022 | Chat Save With Residue Integration(Phase 1e、superseded by 0023) | superseded | Phase 1e |
 | 0023 | Phase 1f Three Independent Commands | accepted | Phase 1f |
+| 0024 | Immediate Execution With Explicit Trigger Phrases | accepted | Phase 1g |
 
 ## ADR の使い方(AI 向け)
 
