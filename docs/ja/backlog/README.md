@@ -23,13 +23,14 @@ Vault-Framework の backlog システム関連ドキュメントの索引。
 - [[pj-2026-07-17-315f|GitHub Issue 境界]] — Vault backlog と GitHub Issue の境界、昇格タイミング
 - [[pj-2026-07-17-7293|既存資産統合]] — open-questions.md, roadmap.md, design-decisions.md との棲み分け
 - [[pj-2026-07-17-27e2|Reference Workflow]] — 参照系 workflow 詳細(Phase 1c)
+- [[pj-2026-07-17-64df|Save Workflow]] — 保存系 workflow 詳細(Phase 1d PR-A)
 
 ## Related
 
-- ADR: [[pj-2026-07-17-e9df|0018-backlog-system]], [[pj-2026-07-17-a25e|0019-skill-backlog-reference-workflow]]
+- ADR: [[pj-2026-07-17-e9df|0018-backlog-system]], [[pj-2026-07-17-a25e|0019-skill-backlog-reference-workflow]], [[pj-2026-07-17-632e|0020-skill-backlog-save-workflow]]
 - ID scheme: [[pj-2026-07-16-4a20|id-scheme]]
 - Frontmatter spec: [[pj-2026-07-16-bc64|frontmatter-spec]]
-- Skill: `skills/vault-manager/SKILL.md`(Phase 1c で backlog 参照 workflow 追加済み)
+- Skill: `skills/vault-manager/SKILL.md`(Phase 1c 参照 + Phase 1d 保存 workflow 追加済み)
 
 ## 位置付け
 
