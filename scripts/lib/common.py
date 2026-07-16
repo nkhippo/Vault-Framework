@@ -28,6 +28,8 @@ EXCLUDE_DIRS: set[str] = {
     ".venv",
     "venv",
     ".pytest_cache",
+    "migration",
+    "audit",
 }
 
 MD_SUFFIXES: set[str] = {".md", ".markdown"}
