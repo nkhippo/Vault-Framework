@@ -48,6 +48,12 @@ Skill vault-manager が backlog 系の保存操作を行う時の詳細規約。
 
 ## 新規 task/issue 起票 flow
 
+### 起票 flow(呼び出し元による gate 分岐、Phase 1g 以降)
+
+- **候補抽出コマンド Step 2 からの内部呼び出し**: 保存 trigger 発話を承認扱いとし、Step 2(案提示)と Step 3(承認 gate)を skip して即時起票(ADR-0024)
+- **Naoya の直接明示要求**: 「これタスクとして起票して」「この課題を残しておいて」等、個別 item を指名した要求は従来通り Step 2 → Step 3 を実行
+- **Cursor 委譲 / GitHub Issue 起票 / open-questions 昇格**: 従来通り承認 gate を維持
+
 ### Step 1: 対象プロジェクト特定
 
 - Chat context または Naoya の発話から対象プロジェクトを推定
@@ -57,7 +63,7 @@ Skill vault-manager が backlog 系の保存操作を行う時の詳細規約。
   - Life-scope → `30_projects/_life/backlog/`
   - Idea → `30_projects/_ideas/incubating/<slug>/backlog/`
 
-### Step 2: 起票案の構築と提示
+### Step 2: 起票案の構築と提示(直接明示要求のみ)
 
 以下を **案として** Naoya に提示(まだ create_note しない):
 
@@ -68,7 +74,7 @@ Skill vault-manager が backlog 系の保存操作を行う時の詳細規約。
 - **path**: `30_projects/<Repo>/backlog/YYYY-MM-DD_slug.md`(slug は英数ハイフン)
 - **assignee**: `naoya`(起票時の default)
 
-### Step 3: Naoya 承認 gate
+### Step 3: Naoya 承認 gate(直接明示要求のみ)
 
 Naoya の反応で分岐:
 
@@ -283,15 +289,15 @@ Naoya の選択に応じて実施。デフォルト提案は選択肢 A(open-que
 
 ## Naoya 承認 gate(必須)
 
-以下は全て Naoya の明示承認を経る:
+以下は Naoya の明示承認を経る:
 
-- 新規 backlog item 起票(案提示 → 承認 → 実施)
+- Naoya の直接明示要求による新規 backlog item 起票(案提示 → 承認 → 実施)
 - open-questions.md の削除・置換
 - Cursor 指示書作成
 - GitHub Issue 起票
 - Backlog item の Front Matter 変更(assignee, tags, github_issue 等の追加)
 
-**無断更新禁止**。既存 Skill 原則の継続。
+候補抽出コマンド Step 2 は例外で、保存 trigger 発話を承認として即時起票する。Skill が trigger なしで単独起票することは禁止。
 
 ## エラー処理
 
