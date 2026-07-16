@@ -5,8 +5,17 @@ type: glossary
 audience: mixed
 status: draft
 date: 2026-07-13
-keywords: [glossary, mapping, i18n, terminology, ja, en]
+keywords:
+- glossary
+- mapping
+- i18n
+- terminology
+- ja
+- en
 summary: 主要用語の日本語 ↔ 英語対応表の雛形。
+id: pj-2026-07-13-f064
+aliases:
+- pj-2026-07-13-f064
 ---
 
 ## Summary

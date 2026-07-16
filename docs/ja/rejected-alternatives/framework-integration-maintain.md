@@ -1,25 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T06:35:00+09:00
+created: 2026-07-14 06:35:00+09:00
 date: 2026-07-13
 keywords:
-  - framework
-  - integration
-  - monorepo
-  - publication-scope
-  - fable-packaging
+- framework
+- integration
+- monorepo
+- publication-scope
+- fable-packaging
 related_adrs:
-  - "0005"
-  - "0006"
+- '0005'
+- '0006'
 status: rejected
 summary: Vault-Framework を Vault 本体内に統合維持し、別リポジトリ化しない案。Public 化スコープの混在と Fable パッケージング困難で却下。
-superseded_by: "0005"
+superseded_by: '0005'
 tags:
-  - rejected
-  - framework
-title: "却下案: Framework を Vault 内に統合維持"
+- rejected
+- framework
+title: '却下案: Framework を Vault 内に統合維持'
 type: rejected_alternative
-updated: 2026-07-14T06:35:00+09:00
+updated: 2026-07-14 06:35:00+09:00
+id: pj-2026-07-13-fa96
+aliases:
+- pj-2026-07-13-fa96
 ---
 
 ## Summary
@@ -71,12 +74,12 @@ Framework 部分を Vault 内に維持する案:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0005「Vault-Framework 早期分離」
-- **参照**: [[../decisions/0005-early-framework-separation.md]]
+- **参照**: [[pj-2026-07-13-a7f9]]
 
 早期に別リポジトリ(`nkhippo/Vault-Framework`)に分離。staging → mirroring workflow を受容し、Public 化・Fable パッケージングの準備を整える。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md`
-- 対応 ADR: [[../decisions/0005-early-framework-separation.md]]
-- 関連 ADR: [[../decisions/0006-naming-vault-scheme.md]](3 リポジトリ命名の前提)
+- 対応 ADR: [[pj-2026-07-13-a7f9]]
+- 関連 ADR: [[pj-2026-07-13-e13e]](3 リポジトリ命名の前提)

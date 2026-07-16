@@ -4,8 +4,16 @@ type: template
 audience: human_primary
 status: published
 date: 2026-07-13
-keywords: [vault-project, instructions, template, ja, thin]
+keywords:
+- vault-project
+- instructions
+- template
+- ja
+- thin
 summary: Claude Projects の Vault プロジェクト用 Instructions の激薄テンプレ。
+id: pj-2026-07-13-ea8e
+aliases:
+- pj-2026-07-13-ea8e
 ---
 
 # Vault Project Instructions テンプレ(日本語版)

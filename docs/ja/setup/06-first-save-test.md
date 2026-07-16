@@ -1,22 +1,26 @@
 ---
 audience: adopter
-created: 2026-07-14T09:15:00+09:00
+created: 2026-07-14 09:15:00+09:00
 keywords:
-  - setup
-  - first-save
-  - test
-  - verification
-  - ambiguous-name
-  - front-matter
+- setup
+- first-save
+- test
+- verification
+- ambiguous-name
+- front-matter
 status: published
-summary: Vault-Framework の全セットアップ完了後、初回の Chat 保存と参照を実施して動作を確認する手順。保存、Front Matter 確認、参照、あいまい名解決までを含む。
+summary: Vault-Framework の全セットアップ完了後、初回の Chat 保存と参照を実施して動作を確認する手順。保存、Front Matter
+  確認、参照、あいまい名解決までを含む。
 tags:
-  - setup
-  - first-save
-  - verification
+- setup
+- first-save
+- verification
 title: 06 - 初回保存テスト
 type: setup
-updated: 2026-07-14T09:15:00+09:00
+updated: 2026-07-14 09:15:00+09:00
+id: pj-2026-07-13-9c97
+aliases:
+- pj-2026-07-13-9c97
 ---
 
 ## Summary
@@ -226,8 +230,8 @@ Chat の Connectors 設定で `Vault MCP` を **OFF** にする。
 
 初回動作テストが完了したら、日常運用が可能です。以下を参考にしてください:
 
-- [customization.md](./customization.md) - 拡張・カスタマイズの手順
-- [troubleshooting.md](./troubleshooting.md) - 問題解決とトラブルシューティング
+- [[pj-2026-07-13-e55f|customization.md]] - 拡張・カスタマイズの手順
+- [[pj-2026-07-13-e32c|troubleshooting.md]] - 問題解決とトラブルシューティング
 - Framework の [guidelines/](../guidelines/) - 運用原則
 
 Naoya の運用パターンをそのまま真似するか、自分の運用に合わせて段階的にカスタマイズしてください。

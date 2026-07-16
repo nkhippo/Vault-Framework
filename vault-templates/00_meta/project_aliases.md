@@ -1,22 +1,25 @@
 ---
-created: 2026-07-13T21:47:00+09:00
+created: 2026-07-13 21:47:00+09:00
 keywords:
-  - project-aliases
-  - alias
-  - disambiguation
-  - resolution
-  - template
-  - プロジェクト名解決
+- project-aliases
+- alias
+- disambiguation
+- resolution
+- template
+- プロジェクト名解決
 status: published
 summary: プロジェクトのあいまい名解決辞書のテンプレート。導入者が自分のプロジェクトに合わせて作成。例示コメント付きプレースホルダ形式。
 tags:
-  - framework
-  - vault-templates
-  - meta
-  - template
+- framework
+- vault-templates
+- meta
+- template
 title: プロジェクトエイリアス辞書
 type: template
-updated: 2026-07-13T21:47:00+09:00
+updated: 2026-07-13 21:47:00+09:00
+id: pj-2026-07-13-0640
+aliases:
+- pj-2026-07-13-0640
 ---
 
 ## Summary

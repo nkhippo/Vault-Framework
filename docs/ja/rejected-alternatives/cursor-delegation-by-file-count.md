@@ -1,25 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T06:40:00+09:00
+created: 2026-07-14 06:40:00+09:00
 date: 2026-07-13
 keywords:
-  - cursor-delegation
-  - file-count
-  - numeric-rule
-  - coarse-criteria
-  - task-type
+- cursor-delegation
+- file-count
+- numeric-rule
+- coarse-criteria
+- task-type
 related_adrs:
-  - "0008"
-  - "0009"
+- 0008
+- 0009
 status: rejected
 summary: Cursor 委譲判定を「3 ファイル以上で Cursor 委譲」のファイル数ベースの数値ルールで行う案。ファイル数が粗い指標で、単一ファイルでも波及が大きい操作や、多数ファイルでも独立した操作を適切に判定できないため却下。
-superseded_by: "0008"
+superseded_by: 0008
 tags:
-  - rejected
-  - cursor
-title: "却下案: Cursor 委譲のファイル数ルール"
+- rejected
+- cursor
+title: '却下案: Cursor 委譲のファイル数ルール'
 type: rejected_alternative
-updated: 2026-07-14T06:40:00+09:00
+updated: 2026-07-14 06:40:00+09:00
+id: pj-2026-07-13-7ee4
+aliases:
+- pj-2026-07-13-7ee4
 ---
 
 ## Summary
@@ -76,12 +79,12 @@ Cursor 委譲判定を以下のシンプルな数値ルールで行う案:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0008「Cursor 委譲判定: メンテナンスレベル方式」
-- **参照**: [[../decisions/0008-cursor-delegation-by-maintenance-level.md]]
+- **参照**: [[pj-2026-07-13-b51c]]
 
 作業種別 × メンテナンスレベルで判定。リネーム、restructure、Front Matter 一括更新等は常に Cursor 委譲。独立操作は Claude 単独で高速に実施。
 
 ## References
 
 - 実運用の記録: 2026-07-13 前半のファイル数ルールでの運用と数日後の反省
-- 対応 ADR: [[../decisions/0008-cursor-delegation-by-maintenance-level.md]]
-- 関連 ADR: [[../decisions/0009-four-level-maintenance-operation.md]](保守運用 4 レベル)
+- 対応 ADR: [[pj-2026-07-13-b51c]]
+- 関連 ADR: [[pj-2026-07-13-48bc]](保守運用 4 レベル)

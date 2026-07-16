@@ -1,21 +1,24 @@
 ---
-created: 2026-07-13T21:48:00+09:00
+created: 2026-07-13 21:48:00+09:00
 keywords:
-  - project-instructions
-  - vault-project
-  - instructions
-  - template
-  - claude-projects
+- project-instructions
+- vault-project
+- instructions
+- template
+- claude-projects
 status: published
 summary: Claude Projects の Vault プロジェクト用 Instructions の汎用テンプレート。セッション全体の運用方針を定義し、導入者はプレースホルダを自分の環境に合わせて書き換える。
 tags:
-  - framework
-  - vault-templates
-  - meta
-  - template
+- framework
+- vault-templates
+- meta
+- template
 title: Project Vault 運用ルール
 type: template
-updated: 2026-07-13T21:48:00+09:00
+updated: 2026-07-13 21:48:00+09:00
+id: pj-2026-07-13-9d3c
+aliases:
+- pj-2026-07-13-9d3c
 ---
 
 ## Summary

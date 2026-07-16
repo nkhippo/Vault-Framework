@@ -5,8 +5,16 @@ type: index
 audience: mixed
 status: published
 date: 2026-07-13
-keywords: [skills, claude-skills, vault-manager, vault-maintainer, upload]
+keywords:
+- skills
+- claude-skills
+- vault-manager
+- vault-maintainer
+- upload
 summary: Claude アカウントにアップロードすべき Skill (SKILL.md) の一覧と用途。
+id: pj-2026-07-13-acad
+aliases:
+- pj-2026-07-13-acad
 ---
 
 ## For AI: Which SKILL.md to upload
@@ -15,12 +23,12 @@ The following SKILL.md files should be uploaded to your Claude account via Setti
 
 | Skill | File | Purpose | Status |
 |---|---|---|---|
-| vault-manager | [`vault-manager/SKILL.md`](./vault-manager/SKILL.md) | Save/read judgment, project name resolution, Cursor delegation | Active (V1.0) |
-| vault-maintainer | [`vault-maintainer/SKILL.md`](./vault-maintainer/SKILL.md) | Maintenance operations (4-level, abstract generation) | Draft (scaffold only) |
+| vault-manager | [[pj-2026-07-13-f844|`vault-manager/SKILL.md`]] | Save/read judgment, project name resolution, Cursor delegation | Active (V1.0) |
+| vault-maintainer | [[pj-2026-07-13-5e3d|`vault-maintainer/SKILL.md`]] | Maintenance operations (4-level, abstract generation) | Draft (scaffold only) |
 
 ### Upload procedure
 
-See [`docs/ja/setup/04-upload-skill.md`](../docs/ja/setup/04-upload-skill.md) for step-by-step guide.
+See [[pj-2026-07-13-ff6f|`docs/ja/setup/04-upload-skill.md`]] for step-by-step guide.
 
 ## Concept
 

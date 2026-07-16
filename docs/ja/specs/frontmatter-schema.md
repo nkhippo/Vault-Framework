@@ -1,25 +1,29 @@
 ---
 audience: mixed
-created: 2026-07-14T07:00:00+09:00
+created: 2026-07-14 07:00:00+09:00
 keywords:
-  - frontmatter
-  - schema
-  - yaml
-  - metadata
-  - required-fields
-  - optional-fields
-  - type-specific-fields
-  - sensitive
+- frontmatter
+- schema
+- yaml
+- metadata
+- required-fields
+- optional-fields
+- type-specific-fields
+- sensitive
 related_adrs: []
 status: published
-summary: Vault 内の Markdown ファイルの Front Matter スキーマの詳細仕様。必須・任意フィールド、type 別の追加必須フィールド、YAML 記述ルール、バリデーション手順を定義。
+summary: Vault 内の Markdown ファイルの Front Matter スキーマの詳細仕様。必須・任意フィールド、type 別の追加必須フィールド、YAML
+  記述ルール、バリデーション手順を定義。
 tags:
-  - spec
-  - frontmatter
-  - schema
+- spec
+- frontmatter
+- schema
 title: Front Matter スキーマ 仕様
 type: spec
-updated: 2026-07-14T07:00:00+09:00
+updated: 2026-07-14 07:00:00+09:00
+id: pj-2026-07-13-9fa5
+aliases:
+- pj-2026-07-13-9fa5
 ---
 
 ## Summary
@@ -130,7 +134,7 @@ status: published
 
 - **型**: array of wikilink
 - **意味**: 関連ファイルへのリンク
-- **例**: `["[[../decisions/0002-cloudflare-workers-for-mcp.md]]"]`
+- **例**: `["[[pj-2026-07-13-bccd]]"]`
 
 ### `supersedes`
 
@@ -142,7 +146,7 @@ status: published
 
 - **型**: string
 - **意味**: このファイルを置き換えた新ファイル(ADR 番号または wikilink)
-- **例**: `"0006"`(ADR 番号)、`"[[../decisions/0006-naming-vault-scheme.md]]"`(wikilink)
+- **例**: `"0006"`(ADR 番号)、`"[[pj-2026-07-13-e13e]]"`(wikilink)
 
 ### `sensitive`
 
@@ -359,8 +363,8 @@ Front Matter 直後に H2 `## Summary` セクションを置く:
 
 - **関連 ADR**: なし(schema はスペックとして独立)
 - **関連 spec**: 
-  - [[./vocabulary-design.md]](統制語彙の設計原則)
-  - [[./file-naming.md]](ファイル名の規則)
+  - [[pj-2026-07-13-f5e9]](統制語彙の設計原則)
+  - [[pj-2026-07-13-5c9b]](ファイル名の規則)
 - **実装**: `vault-templates/00_meta/frontmatter_schema.md`(vault 内正典)
 
 ## Change Log

@@ -4,10 +4,23 @@ type: rationale
 audience: mixed
 status: draft
 date: 2026-07-13
-keywords: [rationale, vault-manager, design, 根拠]
+keywords:
+- rationale
+- vault-manager
+- design
+- 根拠
 summary: vault-manager Skill の設計における主要な判断の根拠。
-related_adrs: [0003, 0004, 0007, 0008]
-related_specs: [reference-level-system, ambiguous-name-resolution]
+related_adrs:
+- 3
+- 4
+- 7
+- 0008
+related_specs:
+- reference-level-system
+- ambiguous-name-resolution
+id: pj-2026-07-13-32e7
+aliases:
+- pj-2026-07-13-32e7
 ---
 
 ## Summary

@@ -1,33 +1,37 @@
 ---
 audience: mixed
-created: 2026-07-14T04:10:00+09:00
+created: 2026-07-14 04:10:00+09:00
 date: 2026-07-13
-id: adr-0015
+id: pj-2026-07-13-ab24
 keywords:
-  - issue-creation
-  - mcp-extension
-  - sequencing
-  - phase3.2
-  - framework-priority
-  - workflow
+- issue-creation
+- mcp-extension
+- sequencing
+- phase3.2
+- framework-priority
+- workflow
 related_adrs:
-  - "0002"
-  - "0005"
-  - "0012"
+- '0002'
+- '0005'
+- '0012'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md
+- 10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md
 related_specs: []
 status: accepted
-summary: Vault-MCP の GitHub Issue 起票機能を Vault-Framework 分離完了後(Phase 3.2)に実装する決定。Framework の完成度優先と Phase 3.1(トークン節約系)先行の 2 つの理由。
+summary: Vault-MCP の GitHub Issue 起票機能を Vault-Framework 分離完了後(Phase 3.2)に実装する決定。Framework
+  の完成度優先と Phase 3.1(トークン節約系)先行の 2 つの理由。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - vault-mcp
-  - sequencing
-title: "ADR-0015: Issue 起票機能は Framework 分離の次"
+- adr
+- vault-mcp
+- sequencing
+title: 'ADR-0015: Issue 起票機能は Framework 分離の次'
 type: adr
-updated: 2026-07-14T04:10:00+09:00
+updated: 2026-07-14 04:10:00+09:00
+aliases:
+- pj-2026-07-13-ab24
+- adr-0015
 ---
 
 ## Summary

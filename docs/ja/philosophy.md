@@ -2,21 +2,24 @@
 audience: mixed
 date: 2026-07-14
 keywords:
-  - philosophy
-  - github-as-a-backend
-  - obsidian
-  - 思想
-  - ai-first
+- philosophy
+- github-as-a-backend
+- obsidian
+- 思想
+- ai-first
 related_adrs:
-  - "0001"
+- '0001'
 related_specs: []
 status: published
 summary: GitHub-as-a-Backend の思想と、AI が主読者であるという設計前提、Obsidian ブランドとの関係を説明する。
-title: "思想: GitHub-as-a-Backend"
-title_en: "Philosophy: GitHub-as-a-Backend"
+title: '思想: GitHub-as-a-Backend'
+title_en: 'Philosophy: GitHub-as-a-Backend'
 type: overview
-created: 2026-07-14T20:46:38+09:00
-updated: 2026-07-14T20:46:38+09:00
+created: 2026-07-14 20:46:38+09:00
+updated: 2026-07-14 20:46:38+09:00
+id: pj-2026-07-13-b9c7
+aliases:
+- pj-2026-07-13-b9c7
 ---
 
 ## Summary
@@ -70,4 +73,4 @@ Vault-Framework は Markdown ファイルベースであるため、Obsidian(人
 ## 関連
 
 - [ADR 0001: GitHub-as-a-Backend の採用](../decisions/0001-github-as-backend.md)
-- [Architecture: Skill・Project・Vault の 3 層](./architecture.md)
+- [[pj-2026-07-13-0245|Architecture: Skill・Project・Vault の 3 層]]

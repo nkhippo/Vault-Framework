@@ -1,0 +1,223 @@
+rewrite CHANGELOG.md (md=0 wiki=0 fm=0)
+rewrite README.md (md=35 wiki=0 fm=0)
+rewrite docs/en/architecture.md (md=4 wiki=0 fm=0)
+rewrite docs/en/glossary.md (md=6 wiki=0 fm=0)
+rewrite docs/en/index.md (md=1 wiki=0 fm=0)
+rewrite docs/en/maintenance-guide.md (md=2 wiki=0 fm=0)
+rewrite docs/en/naming-conventions.md (md=2 wiki=0 fm=0)
+rewrite docs/en/philosophy.md (md=2 wiki=0 fm=0)
+rewrite docs/i18n/README.md (md=4 wiki=0 fm=0)
+rewrite docs/i18n/contributing-translations.md (md=9 wiki=0 fm=0)
+rewrite docs/i18n/translation-strategy.md (md=4 wiki=0 fm=0)
+rewrite docs/ja/architecture.md (md=2 wiki=0 fm=0)
+rewrite docs/ja/decisions/0001-github-as-backend.md (md=0 wiki=2 fm=0)
+rewrite docs/ja/decisions/0002-cloudflare-workers-for-mcp.md (md=0 wiki=2 fm=0)
+rewrite docs/ja/decisions/0004-thin-project-instructions.md (md=0 wiki=1 fm=0)
+rewrite docs/ja/decisions/0005-early-framework-separation.md (md=0 wiki=1 fm=0)
+rewrite docs/ja/decisions/0006-naming-vault-scheme.md (md=0 wiki=7 fm=0)
+rewrite docs/ja/decisions/0007-save-destination-plan-b.md (md=0 wiki=1 fm=0)
+rewrite docs/ja/decisions/0008-cursor-delegation-by-maintenance-level.md (md=0 wiki=1 fm=0)
+rewrite docs/ja/decisions/0013-projects-merge-two-to-one.md (md=0 wiki=1 fm=0)
+rewrite docs/ja/glossary.md (md=6 wiki=0 fm=0)
+rewrite docs/ja/guidelines/README.md (md=4 wiki=0 fm=0)
+rewrite docs/ja/guidelines/operational-principles.md (md=0 wiki=9 fm=0)
+rewrite docs/ja/guidelines/save-decision-flow.md (md=0 wiki=10 fm=0)
+rewrite docs/ja/guidelines/sonnet-optimization.md (md=0 wiki=7 fm=0)
+rewrite docs/ja/guidelines/v1-nine-principles.md (md=0 wiki=11 fm=0)
+rewrite docs/ja/index.md (md=13 wiki=0 fm=0)
+rewrite docs/ja/maintenance-guide.md (md=2 wiki=0 fm=0)
+rewrite docs/ja/naming-conventions.md (md=7 wiki=0 fm=0)
+rewrite docs/ja/overview.md (md=2 wiki=0 fm=0)
+rewrite docs/ja/philosophy.md (md=1 wiki=0 fm=0)
+rewrite docs/ja/rejected-alternatives/README.md (md=16 wiki=0 fm=0)
+rewrite docs/ja/rejected-alternatives/cursor-delegation-by-file-count.md (md=0 wiki=3 fm=0)
+rewrite docs/ja/rejected-alternatives/framework-integration-maintain.md (md=0 wiki=3 fm=0)
+rewrite docs/ja/rejected-alternatives/instructions-attached-file.md (md=0 wiki=2 fm=0)
+rewrite docs/ja/rejected-alternatives/mcp-platform-cloud-run.md (md=0 wiki=3 fm=0)
+rewrite docs/ja/rejected-alternatives/mcp-platform-other-candidates.md (md=0 wiki=3 fm=0)
+rewrite docs/ja/rejected-alternatives/naming-plan-archive-ledger.md (md=0 wiki=4 fm=0)
+rewrite docs/ja/rejected-alternatives/naming-plan-cerebro-cortex.md (md=0 wiki=2 fm=0)
+rewrite docs/ja/rejected-alternatives/naming-plan-codex.md (md=0 wiki=3 fm=0)
+rewrite docs/ja/rejected-alternatives/naming-plan-functional-only.md (md=0 wiki=2 fm=0)
+rewrite docs/ja/rejected-alternatives/naming-plan-japanese.md (md=0 wiki=3 fm=0)
+rewrite docs/ja/rejected-alternatives/naming-plan-personal-vault-prefix.md (md=0 wiki=8 fm=0)
+rewrite docs/ja/rejected-alternatives/naming-plan-vault-only.md (md=0 wiki=3 fm=0)
+rewrite docs/ja/rejected-alternatives/projects-split-two.md (md=0 wiki=3 fm=0)
+rewrite docs/ja/rejected-alternatives/save-destination-plan-a-inbox.md (md=0 wiki=2 fm=0)
+rewrite docs/ja/rejected-alternatives/vault-composition-plan-2-obsidian-sync.md (md=0 wiki=3 fm=0)
+rewrite docs/ja/rejected-alternatives/vault-composition-plan-3-hybrid.md (md=0 wiki=3 fm=0)
+rewrite docs/ja/setup/00-prerequisites.md (md=2 wiki=0 fm=0)
+rewrite docs/ja/setup/01-fork-vault-templates.md (md=1 wiki=0 fm=0)
+rewrite docs/ja/setup/02-deploy-mcp-server.md (md=1 wiki=0 fm=0)
+rewrite docs/ja/setup/03-configure-mcp-connector.md (md=1 wiki=0 fm=0)
+rewrite docs/ja/setup/04-upload-skill.md (md=1 wiki=0 fm=0)
+rewrite docs/ja/setup/05-configure-project.md (md=1 wiki=0 fm=0)
+rewrite docs/ja/setup/06-first-save-test.md (md=2 wiki=0 fm=0)
+rewrite docs/ja/setup/README.md (md=12 wiki=0 fm=0)
+rewrite docs/ja/setup/customization.md (md=1 wiki=3 fm=0)
+rewrite docs/ja/setup/troubleshooting.md (md=0 wiki=5 fm=0)
+rewrite docs/ja/specs/README.md (md=8 wiki=0 fm=0)
+rewrite docs/ja/specs/abstract-generation.md (md=0 wiki=4 fm=0)
+rewrite docs/ja/specs/ambiguous-name-resolution.md (md=0 wiki=3 fm=0)
+rewrite docs/ja/specs/file-naming.md (md=0 wiki=4 fm=0)
+rewrite docs/ja/specs/frontmatter-schema.md (md=0 wiki=4 fm=0)
+rewrite docs/ja/specs/handoff-mechanism.md (md=0 wiki=6 fm=0)
+rewrite docs/ja/specs/maintenance-four-levels.md (md=0 wiki=5 fm=0)
+rewrite docs/ja/specs/reference-level-system.md (md=0 wiki=4 fm=0)
+rewrite docs/ja/specs/vocabulary-design.md (md=0 wiki=2 fm=0)
+rewrite mcp-server-reference/README.ja.md (md=3 wiki=0 fm=0)
+rewrite mcp-server-reference/README.md (md=6 wiki=0 fm=0)
+rewrite mcp-server-reference/rationale.md (md=2 wiki=0 fm=0)
+rewrite project-instructions/README.md (md=5 wiki=0 fm=0)
+rewrite project-instructions/rationale.md (md=1 wiki=0 fm=0)
+rewrite skills/README.md (md=3 wiki=0 fm=0)
+rewrite vault-templates/30_projects/_template/README.md (md=4 wiki=0 fm=0)
+dry-run totals: {'markdown_link': 176, 'wikilink': 143, 'frontmatter': 0}; broken=42
+=== CHANGELOG.md ===
+changes: md_link=0 wikilink=0 frontmatter=0
+=== README.md ===
+changes: md_link=35 wikilink=0 frontmatter=0
+=== docs/en/architecture.md ===
+changes: md_link=4 wikilink=0 frontmatter=0
+=== docs/en/glossary.md ===
+changes: md_link=6 wikilink=0 frontmatter=0
+=== docs/en/index.md ===
+changes: md_link=1 wikilink=0 frontmatter=0
+=== docs/en/maintenance-guide.md ===
+changes: md_link=2 wikilink=0 frontmatter=0
+=== docs/en/naming-conventions.md ===
+changes: md_link=2 wikilink=0 frontmatter=0
+=== docs/en/philosophy.md ===
+changes: md_link=2 wikilink=0 frontmatter=0
+=== docs/i18n/README.md ===
+changes: md_link=4 wikilink=0 frontmatter=0
+=== docs/i18n/contributing-translations.md ===
+changes: md_link=9 wikilink=0 frontmatter=0
+=== docs/i18n/translation-strategy.md ===
+changes: md_link=4 wikilink=0 frontmatter=0
+=== docs/ja/architecture.md ===
+changes: md_link=2 wikilink=0 frontmatter=0
+=== docs/ja/decisions/0001-github-as-backend.md ===
+changes: md_link=0 wikilink=2 frontmatter=0
+=== docs/ja/decisions/0002-cloudflare-workers-for-mcp.md ===
+changes: md_link=0 wikilink=2 frontmatter=0
+=== docs/ja/decisions/0004-thin-project-instructions.md ===
+changes: md_link=0 wikilink=1 frontmatter=0
+=== docs/ja/decisions/0005-early-framework-separation.md ===
+changes: md_link=0 wikilink=1 frontmatter=0
+=== docs/ja/decisions/0006-naming-vault-scheme.md ===
+changes: md_link=0 wikilink=7 frontmatter=0
+=== docs/ja/decisions/0007-save-destination-plan-b.md ===
+changes: md_link=0 wikilink=1 frontmatter=0
+=== docs/ja/decisions/0008-cursor-delegation-by-maintenance-level.md ===
+changes: md_link=0 wikilink=1 frontmatter=0
+=== docs/ja/decisions/0013-projects-merge-two-to-one.md ===
+changes: md_link=0 wikilink=1 frontmatter=0
+=== docs/ja/glossary.md ===
+changes: md_link=6 wikilink=0 frontmatter=0
+=== docs/ja/guidelines/README.md ===
+changes: md_link=4 wikilink=0 frontmatter=0
+=== docs/ja/guidelines/operational-principles.md ===
+changes: md_link=0 wikilink=9 frontmatter=0
+=== docs/ja/guidelines/save-decision-flow.md ===
+changes: md_link=0 wikilink=10 frontmatter=0
+=== docs/ja/guidelines/sonnet-optimization.md ===
+changes: md_link=0 wikilink=7 frontmatter=0
+=== docs/ja/guidelines/v1-nine-principles.md ===
+changes: md_link=0 wikilink=11 frontmatter=0
+=== docs/ja/index.md ===
+changes: md_link=13 wikilink=0 frontmatter=0
+=== docs/ja/maintenance-guide.md ===
+changes: md_link=2 wikilink=0 frontmatter=0
+=== docs/ja/naming-conventions.md ===
+changes: md_link=7 wikilink=0 frontmatter=0
+=== docs/ja/overview.md ===
+changes: md_link=2 wikilink=0 frontmatter=0
+=== docs/ja/philosophy.md ===
+changes: md_link=1 wikilink=0 frontmatter=0
+=== docs/ja/rejected-alternatives/README.md ===
+changes: md_link=16 wikilink=0 frontmatter=0
+=== docs/ja/rejected-alternatives/cursor-delegation-by-file-count.md ===
+changes: md_link=0 wikilink=3 frontmatter=0
+=== docs/ja/rejected-alternatives/framework-integration-maintain.md ===
+changes: md_link=0 wikilink=3 frontmatter=0
+=== docs/ja/rejected-alternatives/instructions-attached-file.md ===
+changes: md_link=0 wikilink=2 frontmatter=0
+=== docs/ja/rejected-alternatives/mcp-platform-cloud-run.md ===
+changes: md_link=0 wikilink=3 frontmatter=0
+=== docs/ja/rejected-alternatives/mcp-platform-other-candidates.md ===
+changes: md_link=0 wikilink=3 frontmatter=0
+=== docs/ja/rejected-alternatives/naming-plan-archive-ledger.md ===
+changes: md_link=0 wikilink=4 frontmatter=0
+=== docs/ja/rejected-alternatives/naming-plan-cerebro-cortex.md ===
+changes: md_link=0 wikilink=2 frontmatter=0
+=== docs/ja/rejected-alternatives/naming-plan-codex.md ===
+changes: md_link=0 wikilink=3 frontmatter=0
+=== docs/ja/rejected-alternatives/naming-plan-functional-only.md ===
+changes: md_link=0 wikilink=2 frontmatter=0
+=== docs/ja/rejected-alternatives/naming-plan-japanese.md ===
+changes: md_link=0 wikilink=3 frontmatter=0
+=== docs/ja/rejected-alternatives/naming-plan-personal-vault-prefix.md ===
+changes: md_link=0 wikilink=8 frontmatter=0
+=== docs/ja/rejected-alternatives/naming-plan-vault-only.md ===
+changes: md_link=0 wikilink=3 frontmatter=0
+=== docs/ja/rejected-alternatives/projects-split-two.md ===
+changes: md_link=0 wikilink=3 frontmatter=0
+=== docs/ja/rejected-alternatives/save-destination-plan-a-inbox.md ===
+changes: md_link=0 wikilink=2 frontmatter=0
+=== docs/ja/rejected-alternatives/vault-composition-plan-2-obsidian-sync.md ===
+changes: md_link=0 wikilink=3 frontmatter=0
+=== docs/ja/rejected-alternatives/vault-composition-plan-3-hybrid.md ===
+changes: md_link=0 wikilink=3 frontmatter=0
+=== docs/ja/setup/00-prerequisites.md ===
+changes: md_link=2 wikilink=0 frontmatter=0
+=== docs/ja/setup/01-fork-vault-templates.md ===
+changes: md_link=1 wikilink=0 frontmatter=0
+=== docs/ja/setup/02-deploy-mcp-server.md ===
+changes: md_link=1 wikilink=0 frontmatter=0
+=== docs/ja/setup/03-configure-mcp-connector.md ===
+changes: md_link=1 wikilink=0 frontmatter=0
+=== docs/ja/setup/04-upload-skill.md ===
+changes: md_link=1 wikilink=0 frontmatter=0
+=== docs/ja/setup/05-configure-project.md ===
+changes: md_link=1 wikilink=0 frontmatter=0
+=== docs/ja/setup/06-first-save-test.md ===
+changes: md_link=2 wikilink=0 frontmatter=0
+=== docs/ja/setup/README.md ===
+changes: md_link=12 wikilink=0 frontmatter=0
+=== docs/ja/setup/customization.md ===
+changes: md_link=1 wikilink=3 frontmatter=0
+=== docs/ja/setup/troubleshooting.md ===
+changes: md_link=0 wikilink=5 frontmatter=0
+=== docs/ja/specs/README.md ===
+changes: md_link=8 wikilink=0 frontmatter=0
+=== docs/ja/specs/abstract-generation.md ===
+changes: md_link=0 wikilink=4 frontmatter=0
+=== docs/ja/specs/ambiguous-name-resolution.md ===
+changes: md_link=0 wikilink=3 frontmatter=0
+=== docs/ja/specs/file-naming.md ===
+changes: md_link=0 wikilink=4 frontmatter=0
+=== docs/ja/specs/frontmatter-schema.md ===
+changes: md_link=0 wikilink=4 frontmatter=0
+=== docs/ja/specs/handoff-mechanism.md ===
+changes: md_link=0 wikilink=6 frontmatter=0
+=== docs/ja/specs/maintenance-four-levels.md ===
+changes: md_link=0 wikilink=5 frontmatter=0
+=== docs/ja/specs/reference-level-system.md ===
+changes: md_link=0 wikilink=4 frontmatter=0
+=== docs/ja/specs/vocabulary-design.md ===
+changes: md_link=0 wikilink=2 frontmatter=0
+=== mcp-server-reference/README.ja.md ===
+changes: md_link=3 wikilink=0 frontmatter=0
+=== mcp-server-reference/README.md ===
+changes: md_link=6 wikilink=0 frontmatter=0
+=== mcp-server-reference/rationale.md ===
+changes: md_link=2 wikilink=0 frontmatter=0
+=== project-instructions/README.md ===
+changes: md_link=5 wikilink=0 frontmatter=0
+=== project-instructions/rationale.md ===
+changes: md_link=1 wikilink=0 frontmatter=0
+=== skills/README.md ===
+changes: md_link=3 wikilink=0 frontmatter=0
+=== vault-templates/30_projects/_template/README.md ===
+changes: md_link=4 wikilink=0 frontmatter=0

@@ -1,21 +1,25 @@
 ---
 audience: adopter
-created: 2026-07-14T09:20:00+09:00
+created: 2026-07-14 09:20:00+09:00
 keywords:
-  - setup
-  - customization
-  - vocabulary-extension
-  - templates
-  - skill-adjustment
-  - iteration
+- setup
+- customization
+- vocabulary-extension
+- templates
+- skill-adjustment
+- iteration
 status: published
-summary: Vault-Framework の初期セットアップ完了後、自分の運用に合わせて Vault をカスタマイズする方法。統制語彙の拡張、テンプレートの追加、Skill の調整、Vault 構造のカスタマイズを扱う。
+summary: Vault-Framework の初期セットアップ完了後、自分の運用に合わせて Vault をカスタマイズする方法。統制語彙の拡張、テンプレートの追加、Skill
+  の調整、Vault 構造のカスタマイズを扱う。
 tags:
-  - setup
-  - customization
+- setup
+- customization
 title: カスタマイズ
 type: setup
-updated: 2026-07-14T09:20:00+09:00
+updated: 2026-07-14 09:20:00+09:00
+id: pj-2026-07-13-e55f
+aliases:
+- pj-2026-07-13-e55f
 ---
 
 ## Summary
@@ -237,12 +241,12 @@ Instructions とは別に、より Chat レベルでの調整を行う。
 ## References
 
 - **関連 spec**: 
-  - [[../specs/vocabulary-design.md]](統制語彙の拡張手順)
-  - [[../specs/maintenance-four-levels.md]](保守運用の詳細)
+  - [[pj-2026-07-13-f5e9]](統制語彙の拡張手順)
+  - [[pj-2026-07-13-d0dd]](保守運用の詳細)
 - **関連 guideline**: 
-  - [[../guidelines/operational-principles.md]](日常運用パターン)
+  - [[pj-2026-07-13-988d]](日常運用パターン)
 - **実装**: `vault-templates/00_meta/`(カスタマイズ対象の canonical)
 
 ## Next Step
 
-問題が発生した時は [troubleshooting.md](./troubleshooting.md) を参照してください。
+問題が発生した時は [[pj-2026-07-13-e32c|troubleshooting.md]] を参照してください。

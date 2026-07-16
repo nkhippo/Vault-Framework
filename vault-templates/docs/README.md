@@ -4,8 +4,12 @@ type: readme
 audience: human_primary
 status: draft
 date: 2026-07-13
-keywords: [vault-docs]
+keywords:
+- vault-docs
 summary: Vault 内ドキュメント(Cursor 指示書・validators)。
+id: pj-2026-07-13-3be6
+aliases:
+- pj-2026-07-13-3be6
 ---
 
 ## Summary

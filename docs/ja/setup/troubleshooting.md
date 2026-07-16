@@ -1,21 +1,24 @@
 ---
 audience: adopter
-created: 2026-07-14T09:25:00+09:00
+created: 2026-07-14 09:25:00+09:00
 keywords:
-  - setup
-  - troubleshooting
-  - problems
-  - solutions
-  - faq
-  - common-issues
+- setup
+- troubleshooting
+- problems
+- solutions
+- faq
+- common-issues
 status: published
 summary: Vault-Framework の運用中によく発生する問題と解決策。MCP 接続、認証、Skill 発火、Front Matter、命名衝突、コスト等の問題を扱う。
 tags:
-  - setup
-  - troubleshooting
+- setup
+- troubleshooting
 title: トラブルシューティング
 type: setup
-updated: 2026-07-14T09:25:00+09:00
+updated: 2026-07-14 09:25:00+09:00
+id: pj-2026-07-13-e32c
+aliases:
+- pj-2026-07-13-e32c
 ---
 
 ## Summary
@@ -311,10 +314,10 @@ git status
 ## Reference
 
 - **関連 ADR**: 
-  - [[../decisions/0016-mcp-connection-failure-abort.md]](MCP 接続失敗ルール)
-  - [[../decisions/0012-fine-grained-pat-adoption.md]](PAT のセキュリティ)
+  - [[pj-2026-07-13-e19b]](MCP 接続失敗ルール)
+  - [[pj-2026-07-13-9107]](PAT のセキュリティ)
 - **関連 spec**: 
-  - [[../specs/reference-level-system.md]](Level の適切な使用)
-  - [[../specs/maintenance-four-levels.md]](保守運用による問題予防)
+  - [[pj-2026-07-13-dd44]](Level の適切な使用)
+  - [[pj-2026-07-13-d0dd]](保守運用による問題予防)
 - **関連 guideline**: 
-  - [[../guidelines/v1-nine-principles.md]](運用の原則)
+  - [[pj-2026-07-13-fba6]](運用の原則)

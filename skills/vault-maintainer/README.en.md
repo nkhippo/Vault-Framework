@@ -4,8 +4,16 @@ type: readme
 audience: human_primary
 status: draft
 date: 2026-07-13
-keywords: [vault-maintainer, skill, readme, english, maintenance]
+keywords:
+- vault-maintainer
+- skill
+- readme
+- english
+- maintenance
 summary: Overview of vault-maintainer Skill (English).
+id: pj-2026-07-13-4823
+aliases:
+- pj-2026-07-13-4823
 ---
 
 ## Summary

@@ -1,25 +1,28 @@
 ---
-created: 2026-07-13T22:15:00+09:00
+created: 2026-07-13 22:15:00+09:00
 example_of_type: chat_log
 keywords:
-  - example
-  - chat_log
-  - mcp-platform
-  - cloudflare-workers
-  - cloud-run
+- example
+- chat_log
+- mcp-platform
+- cloudflare-workers
+- cloud-run
 related: []
 sensitive: false
 source_chat_date: 2026-07-13
 status: published
 summary: chat_log type の記入例。MCP プラットフォーム選定を題材にした設計議論の保存例。导入者が Chat の議論を保存する際の雛形。
 tags:
-  - example
-  - chat_log
-  - mcp
-  - cloudflare
-title: "例: MCP プラットフォーム選定の議論"
+- example
+- chat_log
+- mcp
+- cloudflare
+title: '例: MCP プラットフォーム選定の議論'
 type: example
-updated: 2026-07-13T22:15:00+09:00
+updated: 2026-07-13 22:15:00+09:00
+id: pj-2026-07-13-0bfb
+aliases:
+- pj-2026-07-13-0bfb
 ---
 
 ## Summary

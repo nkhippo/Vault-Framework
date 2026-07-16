@@ -1,36 +1,41 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: adr-0002
+id: pj-2026-07-15-f3be
 keywords:
-  - mcp
-  - cloudflare-workers
-  - platform
-  - cloud-run
-  - deployment
-  - cold-start
-  - wrangler
-  - edge
-  - english
+- mcp
+- cloudflare-workers
+- platform
+- cloud-run
+- deployment
+- cold-start
+- wrangler
+- edge
+- english
 lang: en
 related_adrs:
-  - "0001"
-  - "0012"
-  - "0015"
-  - "0016"
+- '0001'
+- '0012'
+- '0015'
+- '0016'
 related_ja: docs/ja/decisions/0002-cloudflare-workers-for-mcp.md
 related_specs: []
 status: accepted
-summary: Decision to adopt Cloudflare Workers from 8 candidates as the MCP server hosting platform. Near-0ms cold start, a generous free tier, and a simple operational model were the deciding factors.
+summary: Decision to adopt Cloudflare Workers from 8 candidates as the MCP server
+  hosting platform. Near-0ms cold start, a generous free tier, and a simple operational
+  model were the deciding factors.
 tags:
-  - adr
-  - mcp
-  - platform
-title: "ADR-0002: Cloudflare Workers for the MCP Platform"
-title_ja: "ADR-0002: MCP プラットフォームに Cloudflare Workers"
+- adr
+- mcp
+- platform
+title: 'ADR-0002: Cloudflare Workers for the MCP Platform'
+title_ja: 'ADR-0002: MCP プラットフォームに Cloudflare Workers'
 type: adr
-created: 2026-07-14T21:15:01+09:00
-updated: 2026-07-14T21:15:01+09:00
+created: 2026-07-14 21:15:01+09:00
+updated: 2026-07-14 21:15:01+09:00
+aliases:
+- pj-2026-07-15-f3be
+- adr-0002
 ---
 
 ## Summary

@@ -1,37 +1,43 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: adr-0009
+id: pj-2026-07-15-dede
 keywords:
-  - maintenance
-  - four-level
-  - level-1
-  - level-2
-  - level-3
-  - level-4
-  - abstract-generation
-  - cadence
-  - english
+- maintenance
+- four-level
+- level-1
+- level-2
+- level-3
+- level-4
+- abstract-generation
+- cadence
+- english
 lang: en
 related_adrs:
-  - "0003"
-  - "0008"
-  - "0011"
+- '0003'
+- 0008
+- '0011'
 related_ja: docs/ja/decisions/0009-four-level-maintenance-operation.md
 related_specs:
-  - maintenance-four-levels
-  - abstract-generation
+- maintenance-four-levels
+- abstract-generation
 status: accepted
-summary: Decision to classify Vault maintenance operations into four levels (daily trigger / weekly / monthly / seasonal correction) and to position abstract generation as an independent parallel operation. Frequency, ownership, and intervention cost are made explicit.
+summary: Decision to classify Vault maintenance operations into four levels (daily
+  trigger / weekly / monthly / seasonal correction) and to position abstract generation
+  as an independent parallel operation. Frequency, ownership, and intervention cost
+  are made explicit.
 tags:
-  - adr
-  - maintenance
-  - important
-title: "ADR-0009: Four-Level Maintenance Operation + Abstract Generation in Parallel"
-title_ja: "ADR-0009: 保守運用 4 レベル + 抽象生成の並行運用"
+- adr
+- maintenance
+- important
+title: 'ADR-0009: Four-Level Maintenance Operation + Abstract Generation in Parallel'
+title_ja: 'ADR-0009: 保守運用 4 レベル + 抽象生成の並行運用'
 type: adr
-created: 2026-07-15T08:29:44+09:00
-updated: 2026-07-15T08:29:44+09:00
+created: 2026-07-15 08:29:44+09:00
+updated: 2026-07-15 08:29:44+09:00
+aliases:
+- pj-2026-07-15-dede
+- adr-0009
 ---
 
 ## Summary

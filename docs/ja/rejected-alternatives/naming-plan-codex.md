@@ -1,25 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T06:10:00+09:00
+created: 2026-07-14 06:10:00+09:00
 date: 2026-07-13
 keywords:
-  - naming
-  - codex
-  - grimoire
-  - compendium
-  - openai-collision
-  - brand-conflict
+- naming
+- codex
+- grimoire
+- compendium
+- openai-collision
+- brand-conflict
 related_adrs:
-  - "0006"
+- '0006'
 status: rejected
 summary: 3 リポジトリを Codex・Grimoire・Compendium 等の規範集・書物系で命名する案。OpenAI Codex との衝突リスクと修辞的すぎる点で却下。
-superseded_by: "0006"
+superseded_by: '0006'
 tags:
-  - rejected
-  - naming
-title: "却下案: Codex 系命名"
+- rejected
+- naming
+title: '却下案: Codex 系命名'
 type: rejected_alternative
-updated: 2026-07-14T06:10:00+09:00
+updated: 2026-07-14 06:10:00+09:00
+id: pj-2026-07-13-3e01
+aliases:
+- pj-2026-07-13-3e01
 ---
 
 ## Summary
@@ -70,11 +73,11 @@ updated: 2026-07-14T06:10:00+09:00
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0006「命名スキーム: Vault / Vault-MCP / Vault-Framework」
-- **参照**: [[../decisions/0006-naming-vault-scheme.md]]
+- **参照**: [[pj-2026-07-13-e13e]]
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md`
-- 対応 ADR: [[../decisions/0006-naming-vault-scheme.md]]
-- 関連却下案: [[./naming-plan-cerebro-cortex.md]](Cerebro/Cortex 系)
+- 対応 ADR: [[pj-2026-07-13-e13e]]
+- 関連却下案: [[pj-2026-07-13-395d]](Cerebro/Cortex 系)
 - 参考: OpenAI Codex(https://openai.com/blog/openai-codex)

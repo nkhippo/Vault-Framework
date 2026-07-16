@@ -5,8 +5,18 @@ type: report
 audience: mixed
 status: published
 date: 2026-07-14
-keywords: [mirroring, report, step3, vault-staging, skills, vault-templates, examples]
+keywords:
+- mirroring
+- report
+- step3
+- vault-staging
+- skills
+- vault-templates
+- examples
 summary: CURSOR_INSTRUCTIONS_step3_mirroring.md に基づく Phase 1〜4 の実行結果。Claude による確認用レポート。
+id: pj-2026-07-14-d025
+aliases:
+- pj-2026-07-14-d025
 ---
 
 # Vault-Framework ミラーリング完了レポート (step 3 / Phase B)

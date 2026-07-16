@@ -5,8 +5,19 @@ type: report
 audience: mixed
 status: published
 date: 2026-07-15
-keywords: [mirroring, report, step9, backbone, i18n, adr-en, vault-maintainer]
-summary: CURSOR_INSTRUCTIONS_step9_integrated-mirroring.md の実行結果。JA backbone 上書き・EN backbone/ADR/i18n・vault-maintainer・README 言語セクション更新まで 6 コミットで反映。
+keywords:
+- mirroring
+- report
+- step9
+- backbone
+- i18n
+- adr-en
+- vault-maintainer
+summary: CURSOR_INSTRUCTIONS_step9_integrated-mirroring.md の実行結果。JA backbone 上書き・EN
+  backbone/ADR/i18n・vault-maintainer・README 言語セクション更新まで 6 コミットで反映。
+id: pj-2026-07-15-8f06
+aliases:
+- pj-2026-07-15-8f06
 ---
 
 # Vault-Framework 統合ミラーリング完了レポート (step 9)

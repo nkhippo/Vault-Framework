@@ -1,33 +1,37 @@
 ---
 audience: mixed
-created: 2026-07-14T03:30:00+09:00
+created: 2026-07-14 03:30:00+09:00
 date: 2026-07-13
-id: adr-0001
+id: pj-2026-07-13-2564
 keywords:
-  - github
-  - backend
-  - vault
-  - obsidian
-  - storage
-  - philosophy
-  - single-source-of-truth
+- github
+- backend
+- vault
+- obsidian
+- storage
+- philosophy
+- single-source-of-truth
 related_adrs:
-  - "0002"
-  - "0003"
-  - "0012"
+- '0002'
+- '0003'
+- '0012'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_vault-system-design-inception-to-completion.md
+- 10_chat_logs/2026/07/2026-07-13_vault-system-design-inception-to-completion.md
 related_specs: []
 status: accepted
-summary: Chat 内容の永続化にあたり、GitHub リポジトリを実質バックエンドとして採用した意思決定。Obsidian は編集 UI、真実の source は GitHub。この決定が Framework 全体の起点。
+summary: Chat 内容の永続化にあたり、GitHub リポジトリを実質バックエンドとして採用した意思決定。Obsidian は編集 UI、真実の source
+  は GitHub。この決定が Framework 全体の起点。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - important
-title: "ADR-0001: GitHub-as-a-Backend の採用"
+- adr
+- important
+title: 'ADR-0001: GitHub-as-a-Backend の採用'
 type: adr
-updated: 2026-07-14T03:30:00+09:00
+updated: 2026-07-14 03:30:00+09:00
+aliases:
+- pj-2026-07-13-2564
+- adr-0001
 ---
 
 ## Summary
@@ -86,7 +90,7 @@ Chat 集約のための保存戦略として、3 案を比較検討:
 
 ### 案 2: Obsidian Sync 主導
 
-Obsidian Sync(有料の Obsidian 純正同期サービス)を主軸に、GitHub は補助バックアップとして使う案。詳細は [[../rejected-alternatives/vault-composition-plan-2-obsidian-sync.md]]。
+Obsidian Sync(有料の Obsidian 純正同期サービス)を主軸に、GitHub は補助バックアップとして使う案。詳細は [[pj-2026-07-13-e650]]。
 
 **却下理由**:
 - Vendor Lock-in(Obsidian の運営継続に依存)
@@ -96,7 +100,7 @@ Obsidian Sync(有料の Obsidian 純正同期サービス)を主軸に、GitHub 
 
 ### 案 3: ハイブリッド構成
 
-Obsidian Sync と GitHub を並列運用し、それぞれの強みを活かす案。詳細は [[../rejected-alternatives/vault-composition-plan-3-hybrid.md]]。
+Obsidian Sync と GitHub を並列運用し、それぞれの強みを活かす案。詳細は [[pj-2026-07-13-8398]]。
 
 **却下理由**:
 - 単一 source of truth を維持できず、乖離が発生した時の統合コストが高い

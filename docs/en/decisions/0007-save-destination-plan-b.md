@@ -1,36 +1,42 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: adr-0007
+id: pj-2026-07-15-8310
 keywords:
-  - save-destination
-  - plan-b
-  - inbox
-  - classification
-  - save-flow
-  - gtd
-  - 3-second-rule
-  - english
+- save-destination
+- plan-b
+- inbox
+- classification
+- save-flow
+- gtd
+- 3-second-rule
+- english
 lang: en
 related_adrs:
-  - "0003"
-  - "0008"
-  - "0011"
+- '0003'
+- 0008
+- '0011'
 related_ja: docs/ja/decisions/0007-save-destination-plan-b.md
 related_specs:
-  - ../guidelines/save-decision-flow
-  - reference-level-system
+- ../guidelines/save-decision-flow
+- reference-level-system
 status: accepted
-summary: Decision to adopt the policy that Claude judges from the Chat context and saves Chat content directly to the appropriate directory (Option B). The via-inbox Option A is explicitly rejected because it caused a vicious cycle in actual operation.
+summary: Decision to adopt the policy that Claude judges from the Chat context and
+  saves Chat content directly to the appropriate directory (Option B). The via-inbox
+  Option A is explicitly rejected because it caused a vicious cycle in actual operation.
 tags:
-  - adr
-  - save
-  - important
-title: "ADR-0007: Save Destination Philosophy: Right Place From the Start (Option B)"
-title_ja: "ADR-0007: 保存先思想: 最初から適切な場所へ(案 B)"
+- adr
+- save
+- important
+title: 'ADR-0007: Save Destination Philosophy: Right Place From the Start (Option
+  B)'
+title_ja: 'ADR-0007: 保存先思想: 最初から適切な場所へ(案 B)'
 type: adr
-created: 2026-07-15T08:29:04+09:00
-updated: 2026-07-15T08:29:04+09:00
+created: 2026-07-15 08:29:04+09:00
+updated: 2026-07-15 08:29:04+09:00
+aliases:
+- pj-2026-07-15-8310
+- adr-0007
 ---
 
 ## Summary

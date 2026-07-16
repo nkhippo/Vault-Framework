@@ -1,28 +1,32 @@
 ---
 audience: mixed
-created: 2026-07-14T07:15:00+09:00
+created: 2026-07-14 07:15:00+09:00
 keywords:
-  - reference-level
-  - spec
-  - level-0
-  - level-1
-  - level-2
-  - level-3
-  - level-4
-  - prompt-caching
-  - phase3.1-tools
+- reference-level
+- spec
+- level-0
+- level-1
+- level-2
+- level-3
+- level-4
+- prompt-caching
+- phase3.1-tools
 related_adrs:
-  - "0003"
-  - "0014"
+- '0003'
+- '0014'
 status: published
-summary: Skill が vault を参照する際の 5 段階(Level 0、4)の詳細仕様。各レベルの発火条件、参照ファイル、キャッシュ挙動、prompt caching への配慮を規定。
+summary: Skill が vault を参照する際の 5 段階(Level 0、4)の詳細仕様。各レベルの発火条件、参照ファイル、キャッシュ挙動、prompt
+  caching への配慮を規定。
 tags:
-  - spec
-  - reference-level
-  - skill
+- spec
+- reference-level
+- skill
 title: 参照レベルシステム 仕様
 type: spec
-updated: 2026-07-14T07:15:00+09:00
+updated: 2026-07-14 07:15:00+09:00
+id: pj-2026-07-13-dd44
+aliases:
+- pj-2026-07-13-dd44
 ---
 
 ## Summary
@@ -240,11 +244,11 @@ Skill(SKILL.md)側での実装ガイドライン:
 ## References
 
 - **関連 ADR**: 
-  - [[../decisions/0003-skill-project-vault-3-layer.md]](Skill の役割)
-  - [[../decisions/0014-sonnet-standardization-response.md]](プロンプト工夫 2 の対応)
+  - [[pj-2026-07-13-d28f]](Skill の役割)
+  - [[pj-2026-07-13-d3c5]](プロンプト工夫 2 の対応)
 - **関連 spec**: 
-  - [[./handoff-mechanism.md]](Level 2 での handoff 参照)
-  - [[./ambiguous-name-resolution.md]](Level 2 遷移の判定)
+  - [[pj-2026-07-13-c1bd]](Level 2 での handoff 参照)
+  - [[pj-2026-07-13-47fd]](Level 2 遷移の判定)
 - **実装**: `skills/vault-manager/SKILL.md`(canonical)
 
 ## Change Log

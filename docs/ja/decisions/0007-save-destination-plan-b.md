@@ -1,36 +1,40 @@
 ---
 audience: mixed
-created: 2026-07-14T03:45:00+09:00
+created: 2026-07-14 03:45:00+09:00
 date: 2026-07-13
-id: adr-0007
+id: pj-2026-07-13-b5c2
 keywords:
-  - save-destination
-  - plan-b
-  - inbox
-  - classification
-  - save-flow
-  - gtd
-  - 3-second-rule
+- save-destination
+- plan-b
+- inbox
+- classification
+- save-flow
+- gtd
+- 3-second-rule
 related_adrs:
-  - "0003"
-  - "0008"
-  - "0011"
+- '0003'
+- 0008
+- '0011'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md
+- 10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md
 related_specs:
-  - ../guidelines/save-decision-flow
-  - reference-level-system
+- ../guidelines/save-decision-flow
+- reference-level-system
 status: accepted
-summary: Chat 内容を Vault に保存する際、Claude が Chat 文脈から判断して直接該当ディレクトリに保存する方針(案 B)を採用した意思決定。inbox 経由案は実際の運用で悪循環が発生したため明示的に却下。
+summary: Chat 内容を Vault に保存する際、Claude が Chat 文脈から判断して直接該当ディレクトリに保存する方針(案 B)を採用した意思決定。inbox
+  経由案は実際の運用で悪循環が発生したため明示的に却下。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - save
-  - important
-title: "ADR-0007: 保存先思想: 最初から適切な場所へ(案 B)"
+- adr
+- save
+- important
+title: 'ADR-0007: 保存先思想: 最初から適切な場所へ(案 B)'
 type: adr
-updated: 2026-07-14T03:45:00+09:00
+updated: 2026-07-14 03:45:00+09:00
+aliases:
+- pj-2026-07-13-b5c2
+- adr-0007
 ---
 
 ## Summary
@@ -106,7 +110,7 @@ Skill.md に詳細を定義し、以下の順序で判断:
 - 「後で整理する」は多くの場合実行されない(GTD の Inbox Zero 原則の反例)
 - 保存直後に情報が「探しに行く場所」に置かれず、参照性が低い
 
-詳細: [[../rejected-alternatives/save-destination-plan-a-inbox.md]]
+詳細: [[pj-2026-07-13-8dfd]]
 
 ### 案 C: ユーザーに毎回確認
 

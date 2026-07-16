@@ -1,27 +1,31 @@
 ---
 audience: mixed
-created: 2026-07-14T07:20:00+09:00
+created: 2026-07-14 07:20:00+09:00
 keywords:
-  - handoff
-  - current-state
-  - recent-changes
-  - prepend
-  - spec
-  - session-continuity
-  - archive
+- handoff
+- current-state
+- recent-changes
+- prepend
+- spec
+- session-continuity
+- archive
 related_adrs:
-  - "0010"
-  - "0011"
-  - "0003"
+- '0010'
+- '0011'
+- '0003'
 status: published
-summary: 各プロジェクトの handoff/ 領域(current-state.md + recent-changes/YYYY/MM/)の詳細仕様。current-state.md の構造・prepend 運用、recent-changes/ のアーカイブ手順、Skill 側の参照優先度を規定。
+summary: 各プロジェクトの handoff/ 領域(current-state.md + recent-changes/YYYY/MM/)の詳細仕様。current-state.md
+  の構造・prepend 運用、recent-changes/ のアーカイブ手順、Skill 側の参照優先度を規定。
 tags:
-  - spec
-  - handoff
-  - session-continuity
+- spec
+- handoff
+- session-continuity
 title: Handoff 機構 仕様
 type: spec
-updated: 2026-07-14T07:20:00+09:00
+updated: 2026-07-14 07:20:00+09:00
+id: pj-2026-07-13-c1bd
+aliases:
+- pj-2026-07-13-c1bd
 ---
 
 ## Summary
@@ -272,13 +276,13 @@ Skill が以下を並列で読む:
 ## References
 
 - **関連 ADR**: 
-  - [[../decisions/0010-handoff-directory-introduction.md]](handoff/ 領域の新設)
-  - [[../decisions/0011-directory-restructure-captures-self.md]](handoff/ の全プロジェクト展開)
-  - [[../decisions/0003-skill-project-vault-3-layer.md]](Skill の参照ルール)
+  - [[pj-2026-07-13-e49e]](handoff/ 領域の新設)
+  - [[pj-2026-07-13-ab6d]](handoff/ の全プロジェクト展開)
+  - [[pj-2026-07-13-d28f]](Skill の参照ルール)
 - **関連 spec**: 
-  - [[./reference-level-system.md]](Level 2 での handoff 参照)
-  - [[./maintenance-four-levels.md]](Level 3 の月次アーカイブ)
-  - [[./file-naming.md]](recent-changes/ のファイル名)
+  - [[pj-2026-07-13-dd44]](Level 2 での handoff 参照)
+  - [[pj-2026-07-13-d0dd]](Level 3 の月次アーカイブ)
+  - [[pj-2026-07-13-5c9b]](recent-changes/ のファイル名)
 - **テンプレ**: `vault-templates/00_meta/templates/handoff.md`
 
 ## Change Log

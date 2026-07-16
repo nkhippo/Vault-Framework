@@ -1,17 +1,20 @@
 ---
-created: 2026-07-14T01:10:59+09:00
+created: 2026-07-14 01:10:59+09:00
 keywords: []
-one_line_purpose: ""
-project: ""
+one_line_purpose: ''
+project: ''
 related: []
 status: wip
-summary: ""
+summary: ''
 tags:
-  - handoff
-  - current-state
-title: ""
+- handoff
+- current-state
+title: ''
 type: handoff
-updated: 2026-07-14T01:10:59+09:00
+updated: 2026-07-14 01:10:59+09:00
+id: pj-2026-07-13-5cfc
+aliases:
+- pj-2026-07-13-5cfc
 ---
 
 ## Summary

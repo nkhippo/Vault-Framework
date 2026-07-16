@@ -1,14 +1,17 @@
 ---
-created: 2026-07-14T01:10:34+09:00
-idea_slug: ""
+created: 2026-07-14 01:10:34+09:00
+idea_slug: ''
 related: []
 sensitive: false
 status: incubating
-summary: ""
+summary: ''
 tags: []
-title: ""
+title: ''
 type: project_idea
-updated: 2026-07-14T01:10:34+09:00
+updated: 2026-07-14 01:10:34+09:00
+id: pj-2026-07-13-55c8
+aliases:
+- pj-2026-07-13-55c8
 ---
 
 ## Summary

@@ -1,33 +1,37 @@
 ---
 audience: mixed
-created: 2026-07-14T05:00:00+09:00
+created: 2026-07-14 05:00:00+09:00
 date: 2026-07-13
-id: adr-0014
+id: pj-2026-07-13-d3c5
 keywords:
-  - sonnet
-  - sonnet-5
-  - opus
-  - standardization
-  - prompt-engineering
-  - response-length
-  - prompt-caching
+- sonnet
+- sonnet-5
+- opus
+- standardization
+- prompt-engineering
+- response-length
+- prompt-caching
 related_adrs:
-  - "0003"
+- '0003'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_maintenance-operation-design.md
+- 10_chat_logs/2026/07/2026-07-13_maintenance-operation-design.md
 related_specs:
-  - reference-level-system
+- reference-level-system
 status: accepted
-summary: Anthropic が Sonnet 5 を標準モデルとして推進する動向に対応し、Vault 運用の Chat 体験を維持するため、プロンプト工夫 5 個 + 構造修正 4 点で対応する意思決定。Sonnet 5 特有の特性を踏まえて Skill と vault の記述を調整。
+summary: Anthropic が Sonnet 5 を標準モデルとして推進する動向に対応し、Vault 運用の Chat 体験を維持するため、プロンプト工夫
+  5 個 + 構造修正 4 点で対応する意思決定。Sonnet 5 特有の特性を踏まえて Skill と vault の記述を調整。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - sonnet
-  - prompt-engineering
-title: "ADR-0014: Sonnet 5 標準化への対応"
+- adr
+- sonnet
+- prompt-engineering
+title: 'ADR-0014: Sonnet 5 標準化への対応'
 type: adr
-updated: 2026-07-14T05:00:00+09:00
+updated: 2026-07-14 05:00:00+09:00
+aliases:
+- pj-2026-07-13-d3c5
+- adr-0014
 ---
 
 ## Summary

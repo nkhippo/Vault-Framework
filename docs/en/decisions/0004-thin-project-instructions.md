@@ -1,32 +1,38 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: adr-0004
+id: pj-2026-07-15-721d
 keywords:
-  - project-instructions
-  - thin
-  - delegation
-  - vault
-  - canonical
-  - instructions-template
-  - english
+- project-instructions
+- thin
+- delegation
+- vault
+- canonical
+- instructions-template
+- english
 lang: en
 related_adrs:
-  - "0003"
-  - "0013"
-  - "0016"
+- '0003'
+- '0013'
+- '0016'
 related_ja: docs/ja/decisions/0004-thin-project-instructions.md
 related_specs: []
 status: accepted
-summary: Policy to keep Claude Projects' Instructions very thin, consolidating substantive operational rules into 00_meta/project_instructions_vault.md inside the vault. The Instructions hold only a pointer at session start saying to read the vault's canonical rules.
+summary: Policy to keep Claude Projects' Instructions very thin, consolidating substantive
+  operational rules into 00_meta/project_instructions_vault.md inside the vault. The
+  Instructions hold only a pointer at session start saying to read the vault's canonical
+  rules.
 tags:
-  - adr
-  - instructions
-title: "ADR-0004: Very Thin Project Instructions Policy"
-title_ja: "ADR-0004: 激薄 Project Instructions 方針"
+- adr
+- instructions
+title: 'ADR-0004: Very Thin Project Instructions Policy'
+title_ja: 'ADR-0004: 激薄 Project Instructions 方針'
 type: adr
-created: 2026-07-14T21:43:32+09:00
-updated: 2026-07-14T21:43:32+09:00
+created: 2026-07-14 21:43:32+09:00
+updated: 2026-07-14 21:43:32+09:00
+aliases:
+- pj-2026-07-15-721d
+- adr-0004
 ---
 
 ## Summary

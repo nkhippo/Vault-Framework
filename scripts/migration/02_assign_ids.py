@@ -16,6 +16,7 @@ if str(_SCRIPTS) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS))
 
 from lib.common import (  # noqa: E402
+    ID_RE,
     add_common_args,
     dump_frontmatter,
     ensure_parent_dir,
@@ -78,19 +79,33 @@ def build_new_content(
         }
         return dump_frontmatter(fm) + body.lstrip("\n"), "added_fm"
 
-    if "id" in fm and fm["id"]:
-        print(f"warn: id already present, skip {path}", file=sys.stderr)
+    existing = fm.get("id")
+    if existing and isinstance(existing, str) and ID_RE.match(existing):
+        print(f"warn: scheme id already present, skip {path}", file=sys.stderr)
         return text, "skipped"
 
     fm = dict(fm)
-    fm["id"] = new_id
     aliases = fm.get("aliases")
     if not isinstance(aliases, list):
         aliases = []
     else:
         aliases = list(aliases)
+
+    # Legacy non-scheme id (e.g. adr-0002) → keep as alias, assign scheme id
+    if existing and isinstance(existing, str) and not ID_RE.match(existing):
+        print(
+            f"warn: replacing legacy id {existing!r} with scheme id on {path}",
+            file=sys.stderr,
+        )
+        if existing not in aliases:
+            aliases.append(existing)
+
+    fm["id"] = new_id
     if new_id not in aliases:
         aliases.insert(0, new_id)
+    else:
+        # ensure scheme id is aliases[0]
+        aliases = [new_id] + [a for a in aliases if a != new_id]
     fm["aliases"] = aliases
     new_text = dump_frontmatter(fm)
     if body:
@@ -186,7 +201,17 @@ def main(argv: list[str] | None = None) -> int:
 
             abs_path.write_text(new_text, encoding="utf-8")
 
-        if not args.dry_run:
+        if args.dry_run:
+            out = repo_root / "migration" / "dry-run-02-assignments.jsonl"
+            ensure_parent_dir(out)
+            with out.open("w", encoding="utf-8") as fh:
+                for row in assignments:
+                    fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+            print(
+                f"dry-run: wrote {len(assignments)} planned assignments -> {out.as_posix()}",
+                file=sys.stderr,
+            )
+        else:
             out = repo_root / "migration" / "id-assignments.jsonl"
             ensure_parent_dir(out)
             with out.open("w", encoding="utf-8") as fh:

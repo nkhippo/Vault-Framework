@@ -1,22 +1,25 @@
 ---
-created: 2026-07-13T21:46:00+09:00
+created: 2026-07-13 21:46:00+09:00
 keywords:
-  - claude
-  - operation
-  - rules
-  - skill
-  - vault
-  - cursor-delegation
-  - mcp-failure
+- claude
+- operation
+- rules
+- skill
+- vault
+- cursor-delegation
+- mcp-failure
 status: published
 summary: Claude が vault を操作する際の振る舞い規約。保存判断、Cursor 委譲判定、MCP 接続失敗ルール、センシティブ情報の扱いを包含。
 tags:
-  - framework
-  - vault-templates
-  - meta
+- framework
+- vault-templates
+- meta
 title: Claude 操作規約
 type: knowledge
-updated: 2026-07-13T21:46:00+09:00
+updated: 2026-07-13 21:46:00+09:00
+id: pj-2026-07-13-b159
+aliases:
+- pj-2026-07-13-b159
 ---
 
 ## Summary

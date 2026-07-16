@@ -1,35 +1,39 @@
 ---
 audience: mixed
-created: 2026-07-14T04:30:00+09:00
+created: 2026-07-14 04:30:00+09:00
 date: 2026-07-13
-id: adr-0016
+id: pj-2026-07-13-e19b
 keywords:
-  - mcp
-  - failure
-  - retry
-  - abort
-  - guardrail
-  - connection
-  - prompt-injection
-  - silent-failure
+- mcp
+- failure
+- retry
+- abort
+- guardrail
+- connection
+- prompt-injection
+- silent-failure
 related_adrs:
-  - "0002"
-  - "0003"
-  - "0004"
+- '0002'
+- '0003'
+- '0004'
 related_chats: []
 related_specs: []
 status: accepted
-summary: Vault MCP コネクタ接続失敗時のルール。1 回リトライ後に中断、憶測での続行を禁止し、Naoya に失敗を明示して判断を仰ぐ。vault との不整合・判断ミスを防ぎ、prompt injection への防御を兼ねる。
+summary: Vault MCP コネクタ接続失敗時のルール。1 回リトライ後に中断、憶測での続行を禁止し、Naoya に失敗を明示して判断を仰ぐ。vault
+  との不整合・判断ミスを防ぎ、prompt injection への防御を兼ねる。
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - safety
-  - guardrail
-  - important
-title: "ADR-0016: MCP 接続失敗時のリトライと中断"
+- adr
+- safety
+- guardrail
+- important
+title: 'ADR-0016: MCP 接続失敗時のリトライと中断'
 type: adr
-updated: 2026-07-14T04:30:00+09:00
+updated: 2026-07-14 04:30:00+09:00
+aliases:
+- pj-2026-07-13-e19b
+- adr-0016
 ---
 
 ## Summary

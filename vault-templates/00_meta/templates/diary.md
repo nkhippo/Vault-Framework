@@ -1,22 +1,26 @@
 ---
-created: 2026-07-13T21:55:00+09:00
+created: 2026-07-13 21:55:00+09:00
 keywords:
-  - diary
-  - template
-  - self
-  - 50_self
-  - sensitive
-  - 日記
-  - テンプレート
+- diary
+- template
+- self
+- 50_self
+- sensitive
+- 日記
+- テンプレート
 status: published
-summary: "50_self/diary/YYYY/MM/YYYY-MM-DD.md に新規日記ファイルを作る際のテンプレート。sensitive: true がデフォルト、mood / energy / weather は任意フィールド。"
+summary: '50_self/diary/YYYY/MM/YYYY-MM-DD.md に新規日記ファイルを作る際のテンプレート。sensitive: true
+  がデフォルト、mood / energy / weather は任意フィールド。'
 tags:
-  - template
-  - diary
-  - self
+- template
+- diary
+- self
 title: Diary Template
 type: template
-updated: 2026-07-13T21:55:00+09:00
+updated: 2026-07-13 21:55:00+09:00
+id: pj-2026-07-14-bd85
+aliases:
+- pj-2026-07-14-bd85
 ---
 
 ## 使い方(このテンプレ自体は使い捨てではなく、コピー元として保持)

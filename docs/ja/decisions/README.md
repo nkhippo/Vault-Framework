@@ -5,8 +5,15 @@ type: index
 audience: mixed
 status: published
 date: 2026-07-13
-keywords: [adr, decisions, index, 意思決定]
+keywords:
+- adr
+- decisions
+- index
+- 意思決定
 summary: Vault-Framework の意思決定記録(ADR)の索引。
+id: pj-2026-07-13-eaa1
+aliases:
+- pj-2026-07-13-eaa1
 ---
 
 ## ADR 一覧

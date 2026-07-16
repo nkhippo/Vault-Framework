@@ -1,33 +1,37 @@
 ---
 audience: mixed
-created: 2026-07-14T04:05:00+09:00
+created: 2026-07-14 04:05:00+09:00
 date: 2026-07-13
-id: adr-0013
+id: pj-2026-07-13-f6cf
 keywords:
-  - projects
-  - merge
-  - claude-projects
-  - ux
-  - consolidation
-  - memory-fragmentation
+- projects
+- merge
+- claude-projects
+- ux
+- consolidation
+- memory-fragmentation
 related_adrs:
-  - "0003"
-  - "0004"
+- '0003'
+- '0004'
 related_chats:
-  - 10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md
+- 10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md
 related_specs:
-  - ambiguous-name-resolution
+- ambiguous-name-resolution
 status: accepted
-summary: "当初 2 分割していた Claude Projects(Vault: General と Vault: Project Design)を 1 Project(Vault)に統合した意思決定。実運用で UX 上の摩擦と記憶の分断が発生したため。あいまい名解決フローで用途値換は可能。"
+summary: '当初 2 分割していた Claude Projects(Vault: General と Vault: Project Design)を 1 Project(Vault)に統合した意思決定。実運用で
+  UX 上の摩擦と記憶の分断が発生したため。あいまい名解決フローで用途値換は可能。'
 superseded_by: null
 supersedes: null
 tags:
-  - adr
-  - projects
-  - ux
-title: "ADR-0013: Projects 統合(2 → 1)"
+- adr
+- projects
+- ux
+title: 'ADR-0013: Projects 統合(2 → 1)'
 type: adr
-updated: 2026-07-14T04:05:00+09:00
+updated: 2026-07-14 04:05:00+09:00
+aliases:
+- pj-2026-07-13-f6cf
+- adr-0013
 ---
 
 ## Summary
@@ -103,7 +107,7 @@ Skill `vault-manager` が以下のフローで対応:
 
 **却下理由**: UX 上の摩擦と記憶の分断が実運用で問題化(数日運用で顕在化)。
 
-詳細: [[../rejected-alternatives/projects-split-two.md]]
+詳細: [[pj-2026-07-13-08cd]]
 
 ### 案 B: 3+ Projects に細分化
 

@@ -1,22 +1,26 @@
 ---
 audience: adopter
-created: 2026-07-14T08:45:00+09:00
+created: 2026-07-14 08:45:00+09:00
 keywords:
-  - setup
-  - vault-repository
-  - fork
-  - vault-templates
-  - hashicorp-collision
-  - naming
-  - customization
+- setup
+- vault-repository
+- fork
+- vault-templates
+- hashicorp-collision
+- naming
+- customization
 status: published
-summary: Framework の vault-templates/ を元に、自分の GitHub アカウントに vault リポジトリを初期化する手順。命名選定、リポジトリ作成、初期構造の配置、iCloud との同期設定までを含む。
+summary: Framework の vault-templates/ を元に、自分の GitHub アカウントに vault リポジトリを初期化する手順。命名選定、リポジトリ作成、初期構造の配置、iCloud
+  との同期設定までを含む。
 tags:
-  - setup
-  - vault-repository
+- setup
+- vault-repository
 title: 01 - vault リポジトリの初期化
 type: setup
-updated: 2026-07-14T08:45:00+09:00
+updated: 2026-07-14 08:45:00+09:00
+id: pj-2026-07-13-472f
+aliases:
+- pj-2026-07-13-472f
 ---
 
 ## Summary
@@ -291,4 +295,4 @@ git push origin main
 
 ## Next Step
 
-vault リポジトリの初期化が完了したら [02-deploy-mcp-server.md](./02-deploy-mcp-server.md) に進み、Vault-MCP を Cloudflare Workers にデプロイします。
+vault リポジトリの初期化が完了したら [[pj-2026-07-13-1341|02-deploy-mcp-server.md]] に進み、Vault-MCP を Cloudflare Workers にデプロイします。

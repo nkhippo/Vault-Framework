@@ -2,25 +2,29 @@
 audience: mixed
 date: 2026-07-14
 keywords:
-  - naming
-  - kebab-case
-  - repository-naming
-  - hashicorp-collision
-  - english
+- naming
+- kebab-case
+- repository-naming
+- hashicorp-collision
+- english
 lang: en
 related_adrs:
-  - "0006"
+- '0006'
 related_ja: docs/ja/naming-conventions.md
 related_specs:
-  - file-naming
-  - vocabulary-design
+- file-naming
+- vocabulary-design
 status: published
-summary: Overview of Vault-Framework's naming conventions covering file names, directory names, and repository names.
+summary: Overview of Vault-Framework's naming conventions covering file names, directory
+  names, and repository names.
 title: Naming Conventions Overview
 title_ja: 命名規約の思想
 type: overview
-created: 2026-07-14T20:49:45+09:00
-updated: 2026-07-14T20:49:45+09:00
+created: 2026-07-14 20:49:45+09:00
+updated: 2026-07-14 20:49:45+09:00
+id: pj-2026-07-15-4e85
+aliases:
+- pj-2026-07-15-4e85
 ---
 
 ## Summary
@@ -77,8 +81,8 @@ Separate from naming rules, the Front Matter fields `type`, `status`, `tags`, an
 
 ## Related
 
-- [ADR 0006: Finalizing the naming scheme](../ja/decisions/0006-naming-vault-scheme.md) *(English translation pending)*
+- [[pj-2026-07-13-e13e|ADR 0006: Finalizing the naming scheme]] *(English translation pending)*
 - [file-naming spec: Detailed file-naming specification](./specs/file-naming.md) *(English translation pending)*
 - [vocabulary-design spec: Controlled vocabulary design](./specs/vocabulary-design.md) *(English translation pending)*
 - [rejected-alternatives: Rejected naming candidates](./rejected-alternatives/README.md) *(English translation pending)*
-- [Philosophy: GitHub-as-a-Backend](./philosophy.md)
+- [[pj-2026-07-15-4872|Philosophy: GitHub-as-a-Backend]]

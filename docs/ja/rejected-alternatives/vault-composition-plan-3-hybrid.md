@@ -1,24 +1,27 @@
 ---
 audience: mixed
-created: 2026-07-14T05:20:00+09:00
+created: 2026-07-14 05:20:00+09:00
 date: 2026-07-13
 keywords:
-  - hybrid
-  - obsidian-sync
-  - github
-  - single-source-of-truth
-  - dual-write
+- hybrid
+- obsidian-sync
+- github
+- single-source-of-truth
+- dual-write
 related_adrs:
-  - "0001"
+- '0001'
 status: rejected
 summary: Obsidian Syncと GitHub を並列運用するハイブリッド構成の案。単一 source of truth を維持できず、統合コストが高いため却下。
-superseded_by: "0001"
+superseded_by: '0001'
 tags:
-  - rejected
-  - vault-composition
-title: "却下案: ハイブリッド構成"
+- rejected
+- vault-composition
+title: '却下案: ハイブリッド構成'
 type: rejected_alternative
-updated: 2026-07-14T05:20:00+09:00
+updated: 2026-07-14 05:20:00+09:00
+id: pj-2026-07-13-8398
+aliases:
+- pj-2026-07-13-8398
 ---
 
 ## Summary
@@ -56,12 +59,12 @@ Vault を以下のハイブリッド構成で運用する案:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0001「GitHub-as-a-Backend」(単一 source of truth = GitHub)
-- **参照**: [[../decisions/0001-github-as-backend.md]]
+- **参照**: [[pj-2026-07-13-2564]]
 
 Obsidian は編集 UI として使用するが、真実の source は GitHub。iCloud Drive はローカルミラーで、GitHub への push が「保存」の意味を持つ。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_vault-system-design-inception-to-completion.md`
-- 対応 ADR: [[../decisions/0001-github-as-backend.md]]
-- 関連却下案: [[./vault-composition-plan-2-obsidian-sync.md]](Obsidian Sync 主導)
+- 対応 ADR: [[pj-2026-07-13-2564]]
+- 関連却下案: [[pj-2026-07-13-e650]](Obsidian Sync 主導)

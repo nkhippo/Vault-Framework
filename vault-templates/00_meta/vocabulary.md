@@ -1,23 +1,26 @@
 ---
-created: 2026-07-13T21:45:00+09:00
+created: 2026-07-13 21:45:00+09:00
 keywords:
-  - vocabulary
-  - controlled-vocabulary
-  - type
-  - tags
-  - status
-  - project
-  - 統制語彙
+- vocabulary
+- controlled-vocabulary
+- type
+- tags
+- status
+- project
+- 統制語彙
 status: published
 summary: Front Matter の統制語彙。type、status、tags、project の定義と拡張手順。プレースホルダ形式で導入者がカスタマイズする部分を明示。
 tags:
-  - framework
-  - vault-templates
-  - meta
-  - vocabulary
+- framework
+- vault-templates
+- meta
+- vocabulary
 title: 統制語彙
 type: knowledge
-updated: 2026-07-13T21:45:00+09:00
+updated: 2026-07-13 21:45:00+09:00
+id: pj-2026-07-13-24f6
+aliases:
+- pj-2026-07-13-24f6
 ---
 
 ## Summary

@@ -1,25 +1,28 @@
 ---
 audience: mixed
-created: 2026-07-14T06:00:00+09:00
+created: 2026-07-14 06:00:00+09:00
 date: 2026-07-13
 keywords:
-  - naming
-  - vault-only
-  - monorepo
-  - single-name
-  - identification
+- naming
+- vault-only
+- monorepo
+- single-name
+- identification
 related_adrs:
-  - "0005"
-  - "0006"
+- '0005'
+- '0006'
 status: rejected
 summary: 3 リポジトリを全て Vault と命名し、区別を付けない案。MCP・Framework がリポジトリ名で識別できず、Public 化時に混乱を招くため却下。
-superseded_by: "0006"
+superseded_by: '0006'
 tags:
-  - rejected
-  - naming
-title: "却下案: Vault のみ命名"
+- rejected
+- naming
+title: '却下案: Vault のみ命名'
 type: rejected_alternative
-updated: 2026-07-14T06:00:00+09:00
+updated: 2026-07-14 06:00:00+09:00
+id: pj-2026-07-13-cb3e
+aliases:
+- pj-2026-07-13-cb3e
 ---
 
 ## Summary
@@ -62,12 +65,12 @@ updated: 2026-07-14T06:00:00+09:00
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0006「命名スキーム: Vault / Vault-MCP / Vault-Framework」
-- **参照**: [[../decisions/0006-naming-vault-scheme.md]]
+- **参照**: [[pj-2026-07-13-e13e]]
 
 3 リポジトリを明確に別名で区別。責務分離とパッケージ化の柔軟性を確保。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md`
-- 対応 ADR: [[../decisions/0006-naming-vault-scheme.md]]
-- 関連 ADR: [[../decisions/0005-early-framework-separation.md]](Framework 分離の意義)
+- 対応 ADR: [[pj-2026-07-13-e13e]]
+- 関連 ADR: [[pj-2026-07-13-a7f9]](Framework 分離の意義)

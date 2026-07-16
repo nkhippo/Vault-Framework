@@ -1,15 +1,18 @@
 ---
-created: 2026-07-14T01:10:22+09:00
+created: 2026-07-14 01:10:22+09:00
 related: []
 sensitive: false
 status: wip
-summary: ""
+summary: ''
 tags:
-  - note-article
-target_publish_date: ""
-title: ""
+- note-article
+target_publish_date: ''
+title: ''
 type: note_draft
-updated: 2026-07-14T01:10:22+09:00
+updated: 2026-07-14 01:10:22+09:00
+id: pj-2026-07-13-684d
+aliases:
+- pj-2026-07-13-684d
 ---
 
 ## Summary

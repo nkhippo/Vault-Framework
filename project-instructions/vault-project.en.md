@@ -4,8 +4,16 @@ type: template
 audience: human_primary
 status: draft
 date: 2026-07-13
-keywords: [vault-project, instructions, template, en, thin]
+keywords:
+- vault-project
+- instructions
+- template
+- en
+- thin
 summary: English thin Instructions template for the Vault project. Pending full translation.
+id: pj-2026-07-13-2b53
+aliases:
+- pj-2026-07-13-2b53
 ---
 
 # Vault Project Instructions Template (English)

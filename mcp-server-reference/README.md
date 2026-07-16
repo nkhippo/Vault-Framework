@@ -5,8 +5,18 @@ type: reference
 audience: mixed
 status: published
 date: 2026-07-13
-keywords: [mcp, mcp-server, cloudflare-workers, vault-mcp, reference, deployment]
-summary: Reference documentation for the Vault MCP server implementation, deployment, and configuration.
+keywords:
+- mcp
+- mcp-server
+- cloudflare-workers
+- vault-mcp
+- reference
+- deployment
+summary: Reference documentation for the Vault MCP server implementation, deployment,
+  and configuration.
+id: pj-2026-07-13-d955
+aliases:
+- pj-2026-07-13-d955
 ---
 
 # Vault MCP Server Reference
@@ -30,12 +40,12 @@ The Vault MCP server is implemented in a separate repository. This directory pro
 
 ## Documentation
 
-- [Setup Guide](./setup.md) - Deployment to Cloudflare Workers
-- [Environment Variables](./env-reference.md) - Required env vars and PAT scopes
-- [Design Rationale](./rationale.md) - Why Cloudflare Workers, why Fine-grained PAT
+- [[pj-2026-07-13-2157|Setup Guide]] - Deployment to Cloudflare Workers
+- [[pj-2026-07-13-9d1f|Environment Variables]] - Required env vars and PAT scopes
+- [[pj-2026-07-13-8f48|Design Rationale]] - Why Cloudflare Workers, why Fine-grained PAT
 
 ## Related
 
-- ADR: [`docs/ja/decisions/0002-cloudflare-workers-for-mcp.md`](../docs/ja/decisions/0002-cloudflare-workers-for-mcp.md)
-- ADR: [`docs/ja/decisions/0012-fine-grained-pat-adoption.md`](../docs/ja/decisions/0012-fine-grained-pat-adoption.md)
-- Setup: [`docs/ja/setup/02-deploy-mcp-server.md`](../docs/ja/setup/02-deploy-mcp-server.md)
+- ADR: [[pj-2026-07-13-bccd|`docs/ja/decisions/0002-cloudflare-workers-for-mcp.md`]]
+- ADR: [[pj-2026-07-13-9107|`docs/ja/decisions/0012-fine-grained-pat-adoption.md`]]
+- Setup: [[pj-2026-07-13-1341|`docs/ja/setup/02-deploy-mcp-server.md`]]

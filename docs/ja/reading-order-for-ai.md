@@ -5,8 +5,18 @@ type: guide
 audience: ai_primary
 status: published
 date: 2026-07-13
-keywords: [reading-order, 参照順序, ai, claude, dispatcher, 順序, guide]
+keywords:
+- reading-order
+- 参照順序
+- ai
+- claude
+- dispatcher
+- 順序
+- guide
 summary: Claude 等の AI が Vault-Framework を初めて読む時、どの順序でファイルを読めば全体像を効率よく把握できるかを示す。
+id: pj-2026-07-13-de42
+aliases:
+- pj-2026-07-13-de42
 ---
 
 ## Summary

@@ -1,25 +1,29 @@
 ---
 audience: mixed
-created: 2026-07-14T05:40:00+09:00
+created: 2026-07-14 05:40:00+09:00
 date: 2026-07-13
 keywords:
-  - projects-split
-  - two-projects
-  - consolidation
-  - ux
-  - memory-fragmentation
+- projects-split
+- two-projects
+- consolidation
+- ux
+- memory-fragmentation
 related_adrs:
-  - "0004"
-  - "0013"
+- '0004'
+- '0013'
 status: rejected
-summary: "Claude Projects を「Vault: General」と「Vault: Project Design」の 2 分割で運用した案。UX 上の摩擦と記憶の分断が発生したため却下、後に 1 Project に統合された。"
-superseded_by: "0013"
+summary: 'Claude Projects を「Vault: General」と「Vault: Project Design」の 2 分割で運用した案。UX
+  上の摩擦と記憶の分断が発生したため却下、後に 1 Project に統合された。'
+superseded_by: '0013'
 tags:
-  - rejected
-  - projects
-title: "却下案: Projects 2 分割運用"
+- rejected
+- projects
+title: '却下案: Projects 2 分割運用'
 type: rejected_alternative
-updated: 2026-07-14T05:40:00+09:00
+updated: 2026-07-14 05:40:00+09:00
+id: pj-2026-07-13-08cd
+aliases:
+- pj-2026-07-13-08cd
 ---
 
 ## Summary
@@ -61,12 +65,12 @@ Claude Projects を用途別に 2 つに分割:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0013「Projects 統合(2 → 1)」
-- **参照**: [[../decisions/0013-projects-merge-two-to-one.md]]
+- **参照**: [[pj-2026-07-13-f6cf]]
 
 1 Project(`Vault`)に統合し、用途判定は Skill のあいまい名解決フローで対応。過去の 2 Project の Chat は履歴として残す(conversation_search で横断検索可能)。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md`
-- 対応 ADR: [[../decisions/0013-projects-merge-two-to-one.md]]
-- 関連 ADR: [[../decisions/0004-thin-project-instructions.md]](激薄 Instructions 方針との整合)
+- 対応 ADR: [[pj-2026-07-13-f6cf]]
+- 関連 ADR: [[pj-2026-07-13-9b13]](激薄 Instructions 方針との整合)

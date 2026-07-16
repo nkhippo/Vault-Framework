@@ -4,8 +4,16 @@ type: template
 audience: human_primary
 status: draft
 date: 2026-07-13
-keywords: [app-project, instructions, template, ja, thin]
+keywords:
+- app-project
+- instructions
+- template
+- ja
+- thin
 summary: 特定アプリ用 Claude Project の Instructions 激薄テンプレ。
+id: pj-2026-07-13-2a91
+aliases:
+- pj-2026-07-13-2a91
 ---
 
 # App Project Instructions テンプレ(日本語版)

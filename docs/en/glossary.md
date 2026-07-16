@@ -2,20 +2,24 @@
 audience: mixed
 date: 2026-07-14
 keywords:
-  - glossary
-  - terminology
-  - english
+- glossary
+- terminology
+- english
 lang: en
 related_adrs: []
 related_ja: docs/ja/glossary.md
 related_specs: []
 status: published
-summary: A glossary of terms used throughout Vault-Framework, letting adopters and third parties quickly check the meaning of project-specific terminology.
+summary: A glossary of terms used throughout Vault-Framework, letting adopters and
+  third parties quickly check the meaning of project-specific terminology.
 title: Glossary
 title_ja: 用語集
 type: reference
-created: 2026-07-14T20:50:21+09:00
-updated: 2026-07-14T20:50:21+09:00
+created: 2026-07-14 20:50:21+09:00
+updated: 2026-07-14 20:50:21+09:00
+id: pj-2026-07-15-5baf
+aliases:
+- pj-2026-07-15-5baf
 ---
 
 ## Summary
@@ -98,15 +102,15 @@ Delegating work that requires consistency across multiple files — rather than 
 
 ### GitHub-as-a-Backend
 
-The core philosophy of Vault-Framework: the design decision to adopt a GitHub repository as the canonical data store for a personal knowledge base (see [Philosophy](./philosophy.md)).
+The core philosophy of Vault-Framework: the design decision to adopt a GitHub repository as the canonical data store for a personal knowledge base (see [[pj-2026-07-15-4872|Philosophy]]).
 
 ### 3-Layer Structure (Skill / Project / Vault)
 
-Vault-Framework's operational architecture. Separates responsibilities into 3 layers: Skill (behavioral logic), Project Instructions (a minimal pointer), and Vault (canonical operational rules) (see [Architecture](./architecture.md)).
+Vault-Framework's operational architecture. Separates responsibilities into 3 layers: Skill (behavioral logic), Project Instructions (a minimal pointer), and Vault (canonical operational rules) (see [[pj-2026-07-15-89b9|Architecture]]).
 
 ## Related
 
-- [Philosophy: GitHub-as-a-Backend](./philosophy.md)
-- [Architecture: Skill / Project / Vault 3-layer](./architecture.md)
-- [naming-conventions.md: Naming philosophy](./naming-conventions.md)
-- [maintenance-guide.md: Maintenance guide](./maintenance-guide.md)
+- [[pj-2026-07-15-4872|Philosophy: GitHub-as-a-Backend]]
+- [[pj-2026-07-15-89b9|Architecture: Skill / Project / Vault 3-layer]]
+- [[pj-2026-07-15-4e85|naming-conventions.md: Naming philosophy]]
+- [[pj-2026-07-15-7604|maintenance-guide.md: Maintenance guide]]

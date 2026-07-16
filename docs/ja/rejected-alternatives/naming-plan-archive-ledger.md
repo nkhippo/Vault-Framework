@@ -1,26 +1,30 @@
 ---
 audience: mixed
-created: 2026-07-14T06:20:00+09:00
+created: 2026-07-14 06:20:00+09:00
 date: 2026-07-13
 keywords:
-  - naming
-  - archive
-  - ledger
-  - repository
-  - registry
-  - stale-feel
-  - financial-connotation
+- naming
+- archive
+- ledger
+- repository
+- registry
+- stale-feel
+- financial-connotation
 related_adrs:
-  - "0006"
+- '0006'
 status: rejected
-summary: 3 リポジトリを Archive・Ledger・Repository・Registry 系の書庫・台帳・保管所で命名する案。Archive の「終わった感」や Ledger の金融連想で違和感が強く却下。
-superseded_by: "0006"
+summary: 3 リポジトリを Archive・Ledger・Repository・Registry 系の書庫・台帳・保管所で命名する案。Archive の「終わった感」や
+  Ledger の金融連想で違和感が強く却下。
+superseded_by: '0006'
 tags:
-  - rejected
-  - naming
-title: "却下案: Archive / Ledger 系命名"
+- rejected
+- naming
+title: '却下案: Archive / Ledger 系命名'
 type: rejected_alternative
-updated: 2026-07-14T06:20:00+09:00
+updated: 2026-07-14 06:20:00+09:00
+id: pj-2026-07-13-dc3d
+aliases:
+- pj-2026-07-13-dc3d
 ---
 
 ## Summary
@@ -80,10 +84,10 @@ updated: 2026-07-14T06:20:00+09:00
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0006「命名スキーム: Vault / Vault-MCP / Vault-Framework」
-- **参照**: [[../decisions/0006-naming-vault-scheme.md]]
+- **参照**: [[pj-2026-07-13-e13e]]
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md`
-- 対応 ADR: [[../decisions/0006-naming-vault-scheme.md]]
-- 関連却下案: [[./naming-plan-cerebro-cortex.md]]、[[./naming-plan-codex.md]]
+- 対応 ADR: [[pj-2026-07-13-e13e]]
+- 関連却下案: [[pj-2026-07-13-395d]]、[[pj-2026-07-13-3e01]]

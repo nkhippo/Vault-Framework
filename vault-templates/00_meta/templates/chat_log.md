@@ -1,14 +1,17 @@
 ---
-created: 2026-07-14T01:10:15+09:00
+created: 2026-07-14 01:10:15+09:00
 related: []
 sensitive: false
-source_chat_date: ""
+source_chat_date: ''
 status: draft
-summary: ""
+summary: ''
 tags: []
-title: ""
+title: ''
 type: chat_log
-updated: 2026-07-14T01:10:15+09:00
+updated: 2026-07-14 01:10:15+09:00
+id: pj-2026-07-13-6e9d
+aliases:
+- pj-2026-07-13-6e9d
 ---
 
 ## Summary

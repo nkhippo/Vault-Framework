@@ -1,28 +1,32 @@
 ---
-created: 2026-07-13T21:15:00+09:00
+created: 2026-07-13 21:15:00+09:00
 keywords:
-  - skill
-  - vault-manager
-  - readme
-  - management
-  - zip
-  - upload
-  - canonical
-  - version
+- skill
+- vault-manager
+- readme
+- management
+- zip
+- upload
+- canonical
+- version
 project: Vault-Framework
 related:
-  - "[[30_projects/Vault-Framework/skills/vault-manager/SKILL.md]]"
-  - "[[30_projects/Vault-Framework/handoff/current-state.md]]"
+- '[[30_projects/Vault-Framework/skills/vault-manager/SKILL.md]]'
+- '[[30_projects/Vault-Framework/handoff/current-state.md]]'
 status: published
-summary: vault-manager Skill の canonical SKILL.md を Vault 上で管理するためのメタ情報。zip 化手順、Frontmatter の注意事項、Framework 側との同期状況、トラブルシューティングを包含。
+summary: vault-manager Skill の canonical SKILL.md を Vault 上で管理するためのメタ情報。zip 化手順、Frontmatter
+  の注意事項、Framework 側との同期状況、トラブルシューティングを包含。
 tags:
-  - skill
-  - vault-manager
-  - readme
-  - important
+- skill
+- vault-manager
+- readme
+- important
 title: vault-manager Skill Management README
 type: knowledge
-updated: 2026-07-13T21:15:00+09:00
+updated: 2026-07-13 21:15:00+09:00
+id: pj-2026-07-13-8d56
+aliases:
+- pj-2026-07-13-8d56
 ---
 
 ## Summary

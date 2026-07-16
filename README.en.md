@@ -2,19 +2,23 @@
 audience: mixed
 date: 2026-07-14
 keywords:
-  - readme
-  - dispatch-table
-  - english
-  - i18n
+- readme
+- dispatch-table
+- english
+- i18n
 lang: en
 related_ja: README.md
 status: published
-summary: English translation of the Vault-Framework top-level README, including the AI dispatch table and human overview.
+summary: English translation of the Vault-Framework top-level README, including the
+  AI dispatch table and human overview.
 title: Vault-Framework README (English)
 title_ja: Vault-Framework README(英語版)
 type: overview
-created: 2026-07-14T20:48:54+09:00
-updated: 2026-07-14T20:48:54+09:00
+created: 2026-07-14 20:48:54+09:00
+updated: 2026-07-14 20:48:54+09:00
+id: pj-2026-07-15-9e7c
+aliases:
+- pj-2026-07-15-9e7c
 ---
 
 ## Summary

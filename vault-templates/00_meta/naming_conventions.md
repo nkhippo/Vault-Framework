@@ -1,21 +1,24 @@
 ---
-created: 2026-07-13T21:43:00+09:00
+created: 2026-07-13 21:43:00+09:00
 keywords:
-  - naming
-  - conventions
-  - vault
-  - vault-mcp
-  - framework
-  - hashicorp-collision
+- naming
+- conventions
+- vault
+- vault-mcp
+- framework
+- hashicorp-collision
 status: published
 summary: Vault 内のファイル・ディレクトリの命名規約と、Vault-Framework が推奨する 3 リポジトリ命名スキーム。名前衝突への対処も含む。
 tags:
-  - framework
-  - vault-templates
-  - meta
+- framework
+- vault-templates
+- meta
 title: 命名規約
 type: knowledge
-updated: 2026-07-13T21:43:00+09:00
+updated: 2026-07-13 21:43:00+09:00
+id: pj-2026-07-13-6106
+aliases:
+- pj-2026-07-13-6106
 ---
 
 ## Summary

@@ -4,8 +4,12 @@ type: readme
 audience: human_primary
 status: draft
 date: 2026-07-13
-keywords: [50_self]
+keywords:
+- 50_self
 summary: 自己関連ナレッジ領域。
+id: pj-2026-07-13-fff7
+aliases:
+- pj-2026-07-13-fff7
 ---
 
 ## Summary

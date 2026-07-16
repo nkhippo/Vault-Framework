@@ -1,25 +1,29 @@
 ---
 audience: mixed
-created: 2026-07-14T07:25:00+09:00
+created: 2026-07-14 07:25:00+09:00
 keywords:
-  - ambiguous-name
-  - resolution
-  - project-aliases
-  - spec
-  - disambiguation
-  - search-by-keyword
-  - phase3.1-tools
+- ambiguous-name
+- resolution
+- project-aliases
+- spec
+- disambiguation
+- search-by-keyword
+- phase3.1-tools
 related_adrs:
-  - "0013"
+- '0013'
 status: published
-summary: ユーザーが機能表現・通称・略称でアプリを指した時、Skill が正式リポジトリ名を特定するあいまい名解決フローの詳細仕様。project_aliases.md の構造と Skill の判定ロジック、複数候補時の対話パターンを規定。
+summary: ユーザーが機能表現・通称・略称でアプリを指した時、Skill が正式リポジトリ名を特定するあいまい名解決フローの詳細仕様。project_aliases.md
+  の構造と Skill の判定ロジック、複数候補時の対話パターンを規定。
 tags:
-  - spec
-  - ambiguous-name
-  - resolution
+- spec
+- ambiguous-name
+- resolution
 title: あいまい名解決 仕様
 type: spec
-updated: 2026-07-14T07:25:00+09:00
+updated: 2026-07-14 07:25:00+09:00
+id: pj-2026-07-13-47fd
+aliases:
+- pj-2026-07-13-47fd
 ---
 
 ## Summary
@@ -228,10 +232,10 @@ project_aliases.md が肥大化(プロジェクト数 20+ 等)した場合、以
 ## References
 
 - **関連 ADR**: 
-  - [[../decisions/0013-projects-merge-two-to-one.md]](1 Project 統合、あいまい名解決フローの前提)
+  - [[pj-2026-07-13-f6cf]](1 Project 統合、あいまい名解決フローの前提)
 - **関連 spec**: 
-  - [[./reference-level-system.md]](Level 2 遷移の詳細)
-  - [[./vocabulary-design.md]](project フィールドの管理)
+  - [[pj-2026-07-13-dd44]](Level 2 遷移の詳細)
+  - [[pj-2026-07-13-f5e9]](project フィールドの管理)
 - **実装**: `vault-templates/00_meta/project_aliases.md`(vault 内テンプレ)
 
 ## Change Log

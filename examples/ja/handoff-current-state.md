@@ -1,25 +1,29 @@
 ---
-created: 2026-07-13T22:25:00+09:00
+created: 2026-07-13 22:25:00+09:00
 example_of_type: handoff
 keywords:
-  - example
-  - handoff
-  - current-state
-  - mcp-server
-  - cloudflare-workers
+- example
+- handoff
+- current-state
+- mcp-server
+- cloudflare-workers
 one_line_purpose: MCP サーバプロジェクトの現在の状態スナップショットの例
 project: <your-mcp-project>
 related: []
 status: wip
-summary: handoff type の記入例。MCP サーバプロジェクトの current-state.md を題材にした、他 Chat からのキャッチアップ用千ピースの例。プロジェクトごとに handoff/ 下に 1 つ配置し、現在値を定期的に更新する。
+summary: handoff type の記入例。MCP サーバプロジェクトの current-state.md を題材にした、他 Chat からのキャッチアップ用千ピースの例。プロジェクトごとに
+  handoff/ 下に 1 つ配置し、現在値を定期的に更新する。
 tags:
-  - example
-  - handoff
-  - current-state
-  - mcp
-title: "例: MCP サーバの handoff/current-state.md"
+- example
+- handoff
+- current-state
+- mcp
+title: '例: MCP サーバの handoff/current-state.md'
 type: example
-updated: 2026-07-13T22:25:00+09:00
+updated: 2026-07-13 22:25:00+09:00
+id: pj-2026-07-13-4dd4
+aliases:
+- pj-2026-07-13-4dd4
 ---
 
 ## Summary
