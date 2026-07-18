@@ -15,7 +15,7 @@ tags:
 title: Vault-Framework CHANGELOG
 type: knowledge
 created: 2026-07-18T12:52:43+09:00
-updated: 2026-07-18T20:05:00+09:00
+updated: 2026-07-18T20:15:00+09:00
 ---
 
 Vault-Framework の変更履歴。フォーマットは [Keep a Changelog](https://keepachangelog.com/) に準拠、バージョニングは [Semantic Versioning](https://semver.org/) に準拠する。
@@ -31,6 +31,31 @@ Vault-Framework の変更履歴。フォーマットは [Keep a Changelog](https
 ## Unreleased
 
 _(次リリースに向けた作業中の変更をここに)_
+
+## [1.5.1] — 2026-07-18
+
+v1.5.0 直後のパッチリリース。内部相互参照の修正のみ、既存挙動・canonical 構造・API への影響なし。
+
+### Fixed
+
+- **`docs/ja/maintainer-guide.md` の内部相互参照修正**: §15「保護すべき既存構造」節への内部参照(6 箇所)が、renumber 反映漏れにより `§16` を指していた問題を修正:
+  - §0 Claude への発動条件
+  - §4-A read-modify-write 原則の末尾
+  - §7 MAJOR bump 判定条件
+  - §8 Cursor 標準テンプレ「前回学びの継承」項目
+  - §12 Step 3.5 保護対象の確認(§16.2 → §15.2、§16.3 → §15.3)
+  - §16 更新履歴に v1.2 エントリを追加
+
+**内容欠落なし**、既存 canonical 構造や挙動への影響なし。既存 adopter は特別な作業不要。
+
+### Migration Notes
+
+v1.5.0 からの update:
+- **既存 adopter**: 追加作業なし
+- **新規 adopter**: 変更なし(v1.5.0 と同じ手順で導入可能)
+- **Framework の maintainer / fork maintainer**: maintainer-guide の内部整合性が改善。「取り込んで」プロンプト時に参照する §15 保護構造セクションが正確な相互参照で辿れるようになる
+
+[1.5.1]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.5.1
 
 ## [1.5.0] — 2026-07-18
 
