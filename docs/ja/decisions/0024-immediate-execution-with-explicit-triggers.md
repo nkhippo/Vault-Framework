@@ -1,12 +1,22 @@
 ---
-title: '0024 - Immediate Execution With Explicit Trigger Phrases'
-type: knowledge
+created: 2026-07-17 06:00:00+09:00
 status: accepted
-created: 2026-07-17T06:00:00+09:00
-updated: 2026-07-17T06:00:00+09:00
-tags: [adr, skill, backlog, chat, handoff, phase-1g, trigger-phrase]
-summary: 3 独立コマンド(chat_log 保存 / 候補抽出+起票 / handoff 保存)を明示 trigger phrase で駆動、全て即時実行(承認 gate なし)。候補抽出のみ 2 step(抽出→保存 trigger)。Cursor 委譲・Issue 起票等の外部影響 flow は現状維持。
-amends: [ADR-0020, ADR-0023]
+summary: 3 独立コマンド(chat_log 保存 / 候補抽出+起票 / handoff 保存)を明示 trigger phrase で駆動、全て即時実行(承認
+  gate なし)。候補抽出のみ 2 step(抽出→保存 trigger)。Cursor 委譲・Issue 起票等の外部影響 flow は現状維持。
+tags:
+- adr
+- skill
+- backlog
+- chat
+- handoff
+- phase-1g
+- trigger-phrase
+title: 0024 - Immediate Execution With Explicit Trigger Phrases
+type: knowledge
+updated: 2026-07-17 06:00:00+09:00
+amends:
+- ADR-0020
+- ADR-0023
 ---
 
 # ADR 0024: Immediate Execution With Explicit Trigger Phrases
@@ -110,9 +120,9 @@ Mitigation: 過剰起票は事後 abandoned/update、抽出漏れは直接明示
 
 ## Related
 
-- [[pj-2026-07-17-632e|ADR-0020 Skill Backlog Save Workflow]](部分 amend)
-- [[pj-2026-07-17-c14c|ADR-0023 Phase 1f Three Independent Commands]](部分 amend)
-- [[pj-2026-07-17-4a23|Candidate Extraction Workflow]]
-- [[pj-2026-07-17-68cf|Handoff Workflow]]
-- [[pj-2026-07-17-64df|Save Workflow]]
+- ADR-0020 Skill Backlog Save Workflow(部分 amend)
+- ADR-0023 Phase 1f Three Independent Commands(部分 amend)
+- Candidate Extraction Workflow
+- Handoff Workflow
+- Save Workflow
 - Skill: `skills/vault-manager/SKILL.md`

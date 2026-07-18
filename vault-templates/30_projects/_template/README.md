@@ -20,7 +20,7 @@ summary: 新規プロジェクトの README テンプレ。
 
 ## Links
 
-- [[pj-2026-07-13-ab9f|design-decisions.md]]
-- [[pj-2026-07-13-0fe9|open-questions.md]]
-- [[pj-2026-07-13-b4f8|roadmap.md]]
-- [[pj-2026-07-13-594e|handoff/current-state.md]]
+- design-decisions.md
+- open-questions.md
+- roadmap.md
+- handoff/current-state.md

@@ -1,6 +1,6 @@
 ---
 audience: mixed
-created: 2026-07-17T01:30:00+09:00
+created: 2026-07-17 01:30:00+09:00
 date: 2026-07-17
 keywords:
 - skill
@@ -19,8 +19,8 @@ related_specs:
 - frontmatter-spec
 - wikilink-conventions
 status: accepted
-summary: Phase 0.5 で全 markdown に id scheme を適用済みのため、Skill vault-manager の新規保存時に
-  id/aliases を必須化し、Body/FM 参照を ID 形式に統一する。
+summary: Phase 0.5 で全 markdown に id scheme を適用済みのため、Skill vault-manager の新規保存時に id/aliases
+  を必須化し、Body/FM 参照を ID 形式に統一する。
 superseded_by: null
 supersedes: null
 tags:
@@ -30,7 +30,7 @@ tags:
 - phase-0.6
 title: 'ADR-0017: Skill vault-manager への id scheme 統合'
 type: adr
-updated: 2026-07-17T01:30:00+09:00
+updated: 2026-07-17 01:30:00+09:00
 ---
 
 ## Summary

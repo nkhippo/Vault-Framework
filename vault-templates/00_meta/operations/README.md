@@ -34,7 +34,7 @@ updated: 2026-07-15 23:00:00+09:00
 骨格を使った運用実例は `examples/ja/operations/` に配置される。実例はテンプレとしてそのまま使うためではなく、「骨格をどう埋めたか」の参考として読む位置づけ。
 
 - 骨格を使う: `vault-templates/00_meta/operations/dev_project_common.md` を個人 Vault の `00_meta/operations/dev_project_common.md` にコピーし、必要に応じてプロジェクト固有条項を追加
-- 実例を読む: `examples/ja/operations/dev_project_common_ipasounddrill.md` を参考にしながら埋める箇所を判断
+- 実例を読む: `examples/ja/operations/dev_project_common_project-a.md` を参考にしながら埋める箇所を判断
 
 ## 新規種別を追加する時の判断基準
 

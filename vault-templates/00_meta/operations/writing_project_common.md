@@ -210,4 +210,4 @@ updated: YYYY-MM-DDTHH:MM:SS+09:00
 
 ## 変更履歴
 
-- **v1.0**(2026-07-15): 初版。個人 Vault の `writing_project_common.md`(<your-account>-note-writing 移管時に新設)を Framework 用に一般化。特定媒体(note.com)や著者名(あなた(導入者))への言及を抽象化し、任意の外部媒体・任意の著者に適用可能な骨格とした。運用実例は `examples/ja/operations/writing_project_common_nkhippo.md`(作者スナップショット)を参照。
+- **v1.0**(2026-07-15): 初版。個人 Vault の `writing_project_common.md`(<your-account>-note-writing 移管時に新設)を Framework 用に一般化。特定媒体(note.com)や著者名(あなた(導入者))への言及を抽象化し、任意の外部媒体・任意の著者に適用可能な骨格とした。運用実例は `examples/ja/operations/writing_project_common_owner.md`(作者スナップショット)を参照。
