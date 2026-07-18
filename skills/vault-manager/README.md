@@ -9,7 +9,6 @@ keywords:
 - upload
 - canonical
 - version
-project: Vault-Framework
 related:
 - '[[30_projects/Vault-Framework/skills/vault-manager/SKILL.md]]'
 - '[[30_projects/Vault-Framework/handoff/current-state.md]]'
@@ -24,9 +23,6 @@ tags:
 title: vault-manager Skill Management README
 type: knowledge
 updated: 2026-07-13 21:15:00+09:00
-id: pj-2026-07-14-61b4
-aliases:
-- pj-2026-07-14-61b4
 related_ids:
 - pj-2026-07-14-75dc
 - pj-2026-07-13-0371
