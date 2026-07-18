@@ -15,7 +15,7 @@ tags:
 title: Vault-Framework CHANGELOG
 type: knowledge
 created: 2026-07-18T12:52:43+09:00
-updated: 2026-07-18T17:35:00+09:00
+updated: 2026-07-18T18:15:00+09:00
 ---
 
 Vault-Framework の変更履歴。フォーマットは [Keep a Changelog](https://keepachangelog.com/) に準拠、バージョニングは [Semantic Versioning](https://semver.org/) に準拠する。
@@ -31,6 +31,38 @@ Vault-Framework の変更履歴。フォーマットは [Keep a Changelog](https
 ## Unreleased
 
 _(次リリースに向けた作業中の変更をここに)_
+
+## [1.4.0] — 2026-07-18
+
+日常運用ガイドと handoff 拡張。破壊的変更なし。
+
+### Added
+
+- **`docs/ja/user-guide.md`** の新設: 導入後の日常運用ガイド(約 620 行)。以下を網羅:
+  - 導入背景(何を解決するために生まれたか)と解決アプローチ(3 層アーキテクチャの意味)
+  - 基本操作(Vault 保存、過去 Chat 検索、profile 参照)
+  - **Chat 引き継ぎ ★重要機能**: handoff 保存に加え、adopter が新規 Chat で continuation するための再会テンプレを Chat に出力。テンプレには「MCP 経由で参照できない添付すべきファイル」の案内を含む
+  - Task / Issue の抽出と backlog 管理
+  - プロジェクト管理の基準と手順
+  - Vault メンテナンス(Level 別、Cursor 委譲パターン)
+  - profile と価値観の運用
+  - Framework 更新の取り込み
+  - 高度な使い方(横断検索、note 執筆、日記、GitHub Issue 起票)
+  - トラブル対応
+
+### Changed
+
+- **`skills/vault-manager/SKILL.md`**: handoff 保存フローに「再会テンプレ出力」挙動を追加。adopter は出力されたテンプレを新規 Chat にコピペするだけで context を復元できる
+- **`README.md`**: user-guide への参照を追加
+
+### Migration Notes
+
+v1.3.x からの update:
+- **既存 adopter**: Skill を再アップロードすれば handoff 保存時の再会テンプレ出力が有効化される
+- **新規 adopter**: 初回導入時から新挙動が有効
+- 既存の handoff ファイル・current-state.md 形式は変更なし
+
+[1.4.0]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.4.0
 
 ## [1.3.0] — 2026-07-18
 
