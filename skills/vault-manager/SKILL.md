@@ -2,11 +2,30 @@
 name: vault-manager
 description: >-
   個人 Vault(GitHub 上の Markdown リポジトリ)への保存・参照を Front Matter 準拠で管理する Skill。Chat の議論記録、執筆記事、プロジェクト設計相談、日記等の保存、過去 chat / 意思決定 / open-questions の参照、backlog(task / issue)の起票・昇格・実装 AI 委譲・Issue 起票 workflow、ID scheme(pj/nt/kn/mt prefix)を扱う。
-updated: 2026-07-18T14:26:13+09:00
+updated: 2026-07-18T17:30:00+09:00
 ---
 # Vault Manager (v1.10)
 
 あなた(導入者) の個人 Vault リポジトリ(`<your-account>/Vault`)を Cloudflare Workers ベースの MCP コネクタ経由で操作するための Skill。
+
+## Phase 0.0: 初期セットアップ検知(最優先)
+
+Vault との最初のやりとりで、以下を最優先で実行する。
+
+1. `Vault-MCP:get_frontmatter` で `00_meta/SETUP.md` の存在を確認
+2. **存在する場合**(= adopter の初期セットアップが未完了):
+   - **通常のケース分岐(case 1〜5)に入らない**
+   - `docs/ja/prompts/initial-alignment.md` を MCP で取得し、Phase 7 モードを発動
+   - adopter への初回メッセージ:
+     > 初期セットアップ未完了を検知しました。対話で初期認識合わせを進めます。所要 30〜60 分、途中中断可能です。開始してよいですか?
+   - adopter の承認後、`initial-alignment.md` の 6 ステップに沿って進行
+   - 各 step 完了時、`SETUP.md` の該当チェックボックスを更新(`update_note` mode=replace_body で本文更新)
+   - 全 step 完了 + adopter の明示承認後、`SETUP.md` を削除(`delete_note`)、通常モードへ復帰宣言
+3. **存在しない場合**: 通常のケース分岐(case 1〜5)へ進む(既存の Phase 0.5 以降を継続)
+
+**注意**:
+- `SETUP.md` は bootstrap-only 一回限りファイル。adopter が削除した後、Framework の update で再取得しない(canonical-vs-personal.md 参照)
+- Phase 7 モード進行中に他のトピックへの問いかけが来ても、adopter に確認の上「Phase 7 完了後に対応します」と保留
 
 ## この Skill の役割
 

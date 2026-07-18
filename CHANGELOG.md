@@ -15,7 +15,7 @@ tags:
 title: Vault-Framework CHANGELOG
 type: knowledge
 created: 2026-07-18T12:52:43+09:00
-updated: 2026-07-18T16:30:00+09:00
+updated: 2026-07-18T17:35:00+09:00
 ---
 
 Vault-Framework の変更履歴。フォーマットは [Keep a Changelog](https://keepachangelog.com/) に準拠、バージョニングは [Semantic Versioning](https://semver.org/) に準拠する。
@@ -31,6 +31,30 @@ Vault-Framework の変更履歴。フォーマットは [Keep a Changelog](https
 ## Unreleased
 
 _(次リリースに向けた作業中の変更をここに)_
+
+## [1.3.0] — 2026-07-18
+
+AI-guided setup と初回セットアップ検知の追加。破壊的変更なし、既存 adopter は特別な作業なしに継続利用可能。
+
+### Added
+
+- **`docs/ja/setup/setup-companion.md`** の新設: adopter が別 Chat の Claude に本ファイルを渡すことで、対話形式で導入をサポートしてもらえる Claude 向け対話ガイド spec。約 480 行、Phase 1〜7 全体をカバー、GitHub アカウント作成から Private リポジトリ設定、PAT 発行、Cloudflare Workers デプロイ、Claude Skills / Projects / MCP Connector 設定、Phase 7 初期認識合わせまで
+- **`vault-templates/00_meta/SETUP.md`** の新設: adopter の Vault に存在する間、初期セットアップが未完了であることをマーク。bootstrap-only ファイル(削除後、Framework update で再取得しない)
+- **`skills/vault-manager/SKILL.md` に Phase 0.0(初期セットアップ検知)を追加**: Vault との最初のやりとりで `00_meta/SETUP.md` の存在を検知、通常のケース分岐に入らず自動的に Phase 7 モードを発動。Phase 7 完了後、`SETUP.md` を削除して通常モードへ復帰
+- **`vault-templates/00_meta/project_instructions_vault.md` v1.6**: SETUP.md 検知による Phase 7 発動条件を明示
+
+### Changed
+
+- **`README.md` の Quick Start を AI-guided setup 推奨型に刷新**: setup-companion 経由を第一選択に、マニュアル setup を代替経路として明示
+- **`docs/ja/setup/canonical-vs-personal.md` に bootstrap-only カテゴリを追加**: SETUP.md の update 時の扱い(削除後は復元しない)を明示
+
+### Migration Notes
+
+v1.2.x からの update:
+- **既存 adopter**: 追加作業なし。既にセットアップが完了している場合、SETUP.md は Vault に存在しないため Skill Phase 0.0 は空振り(通常モードに遷移)し、既存挙動と同じ
+- **新規 adopter**: vault-templates を初回コピーすると SETUP.md も自動的に含まれる。以降の新規 Chat で Skill が自動的に Phase 7 モードを駆動
+
+[1.3.0]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.3.0
 
 ## [1.2.0] — 2026-07-18
 
