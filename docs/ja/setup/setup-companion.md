@@ -1,6 +1,6 @@
 ---
 audience: claude
-framework_version: 1.3.0
+framework_version: 1.4.0
 keywords:
   - setup
   - ai-guided
@@ -17,7 +17,7 @@ tags:
 title: Vault-Framework Setup Companion (Claude 向け対話ガイド)
 type: setup
 created: 2026-07-18T17:03:51+09:00
-updated: 2026-07-18T17:30:00+09:00
+updated: 2026-07-18T18:10:00+09:00
 ---
 
 ## このファイルは何か
