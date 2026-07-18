@@ -32,6 +32,27 @@ Vault-Framework の変更履歴。フォーマットは [Keep a Changelog](https
 
 _(次リリースに向けた作業中の変更をここに)_
 
+## [1.1.0] — 2026-07-18
+
+### Added
+
+- **`mcp-server-reference/` セクション新設**: adopter が Vault-MCP を深く理解し、独自に fork/拡張できる技術リファレンス
+  - `README.md`: 位置づけ、対象読者、章立て
+  - `architecture.md`: Cloudflare Workers + GitHub Contents API アーキテクチャ
+  - `env-vars.md`: 環境変数と Secrets の詳細
+  - `tools/reference.md`: 全 17 ツール(+1 reserved)の統一フォーマット API リファレンス
+  - `extending.md`: fork ベースの独自ツール追加ガイド
+  - `troubleshooting.md`: 拡張トラブルシューティング
+
+### Changed
+
+- **`docs/ja/setup/02-deploy-mcp-server.md`**: tools/list 期待数を「8 ツール」から現行の **17**(Vault-MCP v1.6.0)へ更新、`mcp-server-reference/` への参照を追加
+
+### Migration Notes
+
+v1.0.x からの update は canonical ドキュメントの追加のみで、破壊的変更なし。Skill 挙動・Vault データ構造・Vault-MCP 実装への影響なし。
+
+
 ## [1.0.1] — 2026-07-18
 
 v1.0.0 直後のパッチリリース。非機能改善のみ、Skill 動作・canonical 構造・API は変更なし。
@@ -110,5 +131,6 @@ v1.0.0 直後のパッチリリース。非機能改善のみ、Skill 動作・c
 - update 手順: `docs/ja/setup/08-update.md`
 - Claude ガードレール: `docs/ja/guardrails/claude-behavior.md`
 
+[1.1.0]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.1.0
 [1.0.1]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.0.1
 [1.0.0]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.0.0
