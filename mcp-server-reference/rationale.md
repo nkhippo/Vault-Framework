@@ -14,9 +14,6 @@ summary: Cloudflare Workers 採用と Fine-grained PAT 採用の設計根拠。
 related_adrs:
 - 2
 - 10
-id: pj-2026-07-13-8f48
-aliases:
-- pj-2026-07-13-8f48
 ---
 
 ## Summary

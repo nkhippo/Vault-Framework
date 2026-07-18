@@ -13,9 +13,6 @@ keywords:
 - reference
 - 日本語
 summary: Vault MCP サーバ実装・デプロイ・設定の参照ドキュメント(日本語版)。
-id: pj-2026-07-13-4b5e
-aliases:
-- pj-2026-07-13-4b5e
 ---
 
 # Vault MCP サーバ参照

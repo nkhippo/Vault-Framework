@@ -12,9 +12,6 @@ keywords:
 - fine-grained
 - wrangler
 summary: Cloudflare Secrets / wrangler.toml 変数と Fine-grained PAT スコープの参照。
-id: pj-2026-07-13-9d1f
-aliases:
-- pj-2026-07-13-9d1f
 ---
 
 ## Summary

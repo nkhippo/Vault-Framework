@@ -12,9 +12,6 @@ keywords:
 - wrangler
 - mcp
 summary: Cloudflare Workers への Vault MCP デプロイ手順。
-id: pj-2026-07-13-2157
-aliases:
-- pj-2026-07-13-2157
 ---
 
 ## Summary

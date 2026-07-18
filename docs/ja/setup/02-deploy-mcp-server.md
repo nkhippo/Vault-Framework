@@ -16,7 +16,7 @@ tags:
 - mcp-deploy
 title: 02 - MCP サーバのデプロイ
 type: setup
-updated: 2026-07-14 08:55:00+09:00
+updated: 2026-07-18T15:45:00+09:00
 ---
 
 ## Summary
@@ -161,7 +161,10 @@ curl -X POST https://vault-mcp.<your-subdomain>.workers.dev/ \
   -d '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}'
 ```
 
-期待: Phase 1+2 の 5 ツール + Phase 3.1 の 3 ツール = 8 ツールが返る。
+期待: 現行 Vault-MCP が提供する全ツール(**現在 17**、server version `1.6.0`)が返る。詳細は
+`mcp-server-reference/tools/reference.md` を参照。
+
+> 注: 概観表に名前だけ残る `get_file_permissions` は未実装のため `tools/list` には含まれない。
 
 ## Cost
 
