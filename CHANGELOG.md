@@ -15,7 +15,7 @@ tags:
 title: Vault-Framework CHANGELOG
 type: knowledge
 created: 2026-07-18T12:52:43+09:00
-updated: 2026-07-18T18:15:00+09:00
+updated: 2026-07-18T20:05:00+09:00
 ---
 
 Vault-Framework の変更履歴。フォーマットは [Keep a Changelog](https://keepachangelog.com/) に準拠、バージョニングは [Semantic Versioning](https://semver.org/) に準拠する。
@@ -31,6 +31,43 @@ Vault-Framework の変更履歴。フォーマットは [Keep a Changelog](https
 ## Unreleased
 
 _(次リリースに向けた作業中の変更をここに)_
+
+## [1.5.0] — 2026-07-18
+
+Framework maintainer 向け運用ガイドの新設と、既存 canonical 構造保護レイヤーの canonical 化。破壊的変更なし、adopter への影響なし。
+
+### Added
+
+- **`docs/ja/maintainer-guide.md`** の新設: Framework の maintainer(primary maintainer および fork maintainer)向け upstream 運用ガイド。約 750 行、16 セクション構成。以下を canonical 化:
+  - 発動条件(Naoya から「取り込んで」等のプロンプトを検知した Claude が本ファイルを最優先で読む前提)
+  - 全体ワークフロー(個人 Vault → 汎用化判断 → 保護対象確認 → staging → Cursor → mirror → iCloud pull)
+  - 変更カテゴリ A〜I と影響ファイルマッピング(Skill / templates / vocabulary / doc / operations / instructions / meta / bug fix / breaking)
+  - **PII マスキング規則 A〜J**: v1.0.1 で確立された genericize カテゴリを完全収録(Naoya / naoya / nkhippo / 実プロジェクト名 / エイリアス / 個人 URL / 価値観の断定 / 固有 wikilink / 個人エピソード / sensitive)
+  - Front Matter 二層戦略(staging と public の非対称扱い)
+  - 版バンプ判断基準(PATCH / MINOR / MAJOR の SemVer 準拠)
+  - Cursor 指示書標準テンプレート(過去 13 個の指示書から抽出した共通構造)
+  - CHANGELOG 書式(Keep a Changelog 準拠、Migration Notes の書き方)
+  - mirror 運用(選択同期、rsync --delete 禁止、除外パス、iCloud pull)
+  - Vault-MCP 別サイクルの扱い
+  - **「取り込んで」プロンプトへの Claude 対応フロー 9 ステップ**(Step 3.5 保護対象確認を含む)
+  - **§15 保護すべき既存構造**: 既存 canonical の意図しない削除を防ぐ防御レイヤー
+    - メタルール:全 canonical 変更で read → diff 提示 → 承認 → 書き込みの 4 段プロセス
+    - 保護対象リスト:Skill Phase 0.0 / handoff 再会テンプレ / Phase 番号体系 / キックオフ検知 / case 1〜5 分類 / 境界表 / FM 二層戦略節 / bootstrap-only カテゴリ / CHANGELOG 過去 entry / ADR 過去決定 / vocabulary 骨格 等
+    - 例外ルール:保護対象の意図的削除は自動的に MAJOR bump 扱い、Migration Notes 必須
+    - Claude 用チェックリスト:Naoya への計画提示時に含める確認事項
+
+### Changed
+
+- **`README.md`**: maintainer-guide への参照を「何が入っているか」テーブルに追加
+
+### Migration Notes
+
+v1.4.x からの update:
+- **既存 adopter**: 追加作業なし。maintainer-guide は adopter 向けではないため、通常運用への影響なし
+- **新規 adopter**: 変わらず setup-companion.md / user-guide.md 経由で導入・運用可
+- **Framework の maintainer / fork maintainer**: 別 Chat で Framework upstream 作業を依頼する際、Claude が本ガイドを読んで作業する前提になる。過去 Chat 記憶に頼らず本ガイドを canonical とする。特に §15 保護構造リストの遵守により、既存 Skill 挙動(Phase 0.0 検知、handoff 再会テンプレ 等)や canonical ドキュメント構造(キックオフ検知、境界表 等)が意図せず削除される事故を防ぐ
+
+[1.5.0]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.5.0
 
 ## [1.4.0] — 2026-07-18
 
