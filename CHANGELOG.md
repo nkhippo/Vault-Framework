@@ -32,6 +32,25 @@ Vault-Framework の変更履歴。フォーマットは [Keep a Changelog](https
 
 _(次リリースに向けた作業中の変更をここに)_
 
+## [1.1.1] — 2026-07-18
+
+v1.1.0 直後のパッチリリース。非機能改善のみ、canonical 構造・Skill 挙動・Vault-MCP 実装への影響なし。
+
+### Fixed
+
+- **`mcp-server-reference/tools/reference.md` の構造修正**: `create_note` / `update_note` が誤って「Read 系」の下に配置されていた問題を修正、「Write 系」の正しい位置へ移動
+- **`mcp-server-reference/tools/reference.md` の表現修正**: 存在しない `AUTO_INJECT_*` 環境変数への参照を、Vault-MCP 実装の実挙動(`ensureTimestamps` によるコード固定の自動注入)に基づく記述へ修正。`update_note` 使用例と `append` モード注意事項も併せて明確化
+
+### Changed
+
+- **Landing README 更新**: staging で整備された adopter 向け Landing を公開側へ反映
+- **Vault-MCP リポジトリの導線レビュー**: パターン **B**(相互リンク・setup 導線・version 明示の不足)。draft PR で README 改訂を提案。License は `package.json` が ISC / Framework は MIT 表記のため統一は保留。詳細ログ: Vault staging `logs/2026/07/2026-07-18_vault-mcp-review-v1.1.1.md`(公開ミラー対象外)。Vault-MCP draft PR: https://github.com/nkhippo/Vault-MCP/pull/3
+
+### Migration Notes
+
+v1.1.0 からの update はドキュメントの誤り修正のみで、破壊的変更なし。adopter は特別な作業なしに v1.1.0 を継続利用可能、CHANGELOG 反映のみで OK。
+
+
 ## [1.1.0] — 2026-07-18
 
 ### Added
@@ -131,6 +150,7 @@ v1.0.0 直後のパッチリリース。非機能改善のみ、Skill 動作・c
 - update 手順: `docs/ja/setup/08-update.md`
 - Claude ガードレール: `docs/ja/guardrails/claude-behavior.md`
 
+[1.1.1]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.1.1
 [1.1.0]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.1.0
 [1.0.1]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.0.1
 [1.0.0]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.0.0
