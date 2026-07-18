@@ -8,7 +8,7 @@ keywords:
   - hybrid
   - boundary
 status: draft
-summary: Framework の同期対象(canonical)と各自固有領域(personal)の境界を明示する正典。update 時にどのファイルをどう扱うか(差し替え / マージ / 触らない)を規定する。Claude のガードレールおよび update 手順から参照される。
+summary: Framework の同期対象(canonical)と各自固有領域(personal)の境界を明示する正典。update 時のファイル判定（差し替え / マージ / 触らない）と Front Matter の二層戦略（Framework 配布層と Vault 運用層の非対称な id/aliases/project 扱い）を規定する。
 tags:
   - framework
   - setup
@@ -18,7 +18,7 @@ tags:
 title: canonical / personal 境界表
 type: setup
 created: 2026-07-18T12:51:05+09:00
-updated: 2026-07-18T12:51:05+09:00
+updated: 2026-07-18T16:21:40+09:00
 ---
 
 Framework は「配布された骨格を各自の Vault にコピーして使う」構造。配布後、Framework 側のアップデートを取り込むとき、**どのファイルを差し替えていいか / 触ってはいけないか** を明確にするための正典。
@@ -85,6 +85,50 @@ hybrid 領域(vocabulary、backlog_tags 等)は「追加していい / 削除・
 
 これらを違反すると Framework update 時に整合性が壊れ、Skill が正しく動かなくなる。
 
+## Front Matter の二層戦略
+
+Framework の配布物と、あなたの Vault の実態には、**Front Matter に非対称なフィールドが存在する**。この非対称は意図されたもので、adopter は update 時にこの構造を理解しておく必要がある。
+
+### 二層の内訳
+
+| 層 | 対象 | `id` / `aliases` / `project` の扱い |
+|---|---|---|
+| **Framework 配布層**(公開リポジトリ) | 全 canonical ファイル | **除去**(公開の可読性・汎用性を優先) |
+| **Vault 運用層**(あなたのリポジトリ) | 全 Markdown ファイル | **保持**(Vault-MCP と CI がこれらを使う) |
+
+背景と経緯は `CHANGELOG.md` の v1.0.1 セクション「FM 二層戦略の確立」参照。
+
+### なぜこうしたのか
+
+- **Framework 側**:`id: pj-2026-07-14-e8f2` のような私的識別子は、公開ドキュメントの可読性を下げる。fork 者は自分の `id` を付ける必要があり、Framework 側の `id` は無意味
+- **Vault 側**:Vault-MCP はファイル操作の楽観ロックや検索インデックスで `id`/`aliases` を利用。CI(実装している場合)も必須フィールドとして検証
+
+### update 時の実務手順
+
+canonical / hybrid ファイルを差し替えるとき、Front Matter を丸ごと上書きしてはいけない。以下の 2 パターンのどちらかで対応する。
+
+**パターン 1**:pure canonical ファイル(schema / templates / decisions / operations 等)
+
+1. Framework 新版のファイルを取得(FM に `id` / `aliases` / `project` は無い)
+2. あなたの Vault の該当ファイルから、既存の `id` / `aliases` / `project` をメモ
+3. 新版で全体を上書き
+4. メモした 3 フィールドを新版 FM に追記
+
+**パターン 2**:hybrid ファイル(vocabulary / backlog_tags / profile / writing_examples)
+
+1. Framework 新版と、あなたの Vault の該当ファイルを diff で並べる
+2. Framework 側の canonical セクション(見出し配下の骨格構造・共通定義)と、canonical FM フィールド(`title` / `summary` / `keywords` / `tags` / `type` / `status`)を反映
+3. personal セクション(あなたのプロジェクト一覧、記入した中身、追加した実例)は保持
+4. FM の `id` / `aliases` / `project` は変更せず保持
+5. `updated` は自動更新(Vault-MCP `ensureTimestamps`)
+
+判断に迷ったら、Chat で相談:
+
+```
+canonical-vs-personal.md の FM 二層戦略に沿って、<ファイル名> の update をレビューして。
+新版と旧版の diff を貼るので、canonical と personal を分けて反映手順を教えて。
+```
+
 ## Claude の振る舞い(参照)
 
 Claude はこの境界表に従って、通常の Chat セッションでは canonical 領域を変更しない。詳細は `docs/ja/guardrails/claude-behavior.md`。
@@ -97,7 +141,7 @@ Claude はこの境界表に従って、通常の Chat セッションでは can
 
 1. Framework の CHANGELOG を読む(何が変わったか把握)
 2. Skill を再アップロード
-3. canonical ファイルを差し替え(hybrid は canonical セクションのみ)
+3. canonical ファイルを差し替え(hybrid は canonical セクションのみ、FM 二層戦略に従う)
 4. 破壊的変更(major version bump)があれば移行手順に従う
 5. 再度 Chat で「再認識合わせセッション」を実行(推奨)
 
@@ -106,4 +150,4 @@ Claude はこの境界表に従って、通常の Chat セッションでは can
 - update 手順: `docs/ja/setup/08-update.md`
 - Claude ガードレール: `docs/ja/guardrails/claude-behavior.md`
 - 初期認識合わせセッション: `docs/ja/setup/07-initial-alignment-session.md`
-- 変更履歴: リポジトリ ルート `CHANGELOG.md`
+- 変更履歴: リポジトリ ルート `CHANGELOG.md`(FM 二層戦略の起点は v1.0.1)

@@ -2,7 +2,7 @@
 name: vault-maintainer
 description: >-
   個人 Vault の週次・月次・季節メンテナンスと abstract 生成を担当する Skill。Level 2(週次)はリンク切れチェック、handoff アーカイブ、backlog stalled detection。Level 3(月次)、Level 4(季節)、chat_log からの ADR/spec 抽象化を含む。日常の保存・参照は vault-manager が担当。
-updated: 2026-07-18T14:28:30+09:00
+updated: 2026-07-18T14:26:13+09:00
 ---
 # Vault Maintainer (v1.0)
 

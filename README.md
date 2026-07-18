@@ -99,7 +99,7 @@ updated: 2026-07-18T15:44:14+09:00
 
 ## Status
 
-- **Current version**: v1.1.1(参考実装として運用中、実運用実績あり)
+- **Current version**: v1.0.1(参考実装として運用中、実運用実績あり)
 - **License**: MIT
 - **Language**: JA(EN 版は将来対応)
 
