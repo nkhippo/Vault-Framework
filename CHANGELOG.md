@@ -15,7 +15,7 @@ tags:
 title: Vault-Framework CHANGELOG
 type: knowledge
 created: 2026-07-18T12:52:43+09:00
-updated: 2026-07-18T12:52:43+09:00
+updated: 2026-07-18T16:30:00+09:00
 ---
 
 Vault-Framework の変更履歴。フォーマットは [Keep a Changelog](https://keepachangelog.com/) に準拠、バージョニングは [Semantic Versioning](https://semver.org/) に準拠する。
@@ -31,6 +31,28 @@ Vault-Framework の変更履歴。フォーマットは [Keep a Changelog](https
 ## Unreleased
 
 _(次リリースに向けた作業中の変更をここに)_
+
+## [1.2.0] — 2026-07-18
+
+canonical ドキュメントと canonical テンプレの拡張。破壊的変更なし、既存 adopter の運用に影響なし。
+
+### Added
+
+- **`vault-templates/.framework-version`** の新規追加。adopter の Vault が「どの Framework バージョンから初期化/更新されたか」を記録する 1 行テキストファイル。update 手順ステップ 0 で参照される(旧 doc では参照はあったが実ファイルが存在しなかった問題を解消)
+- **`docs/ja/setup/canonical-vs-personal.md` に「Front Matter の二層戦略」節を追加**:v1.0.1 で確立された、Framework 配布層と Vault 運用層で `id` / `aliases` / `project` を非対称に扱う設計思想と、update 時の実務手順(pure canonical / hybrid の 2 パターン)を canonicalize。update フローに迷いが減る
+
+### Changed
+
+- **GitHub リポジトリ About**(Framework)の Description / Topics 整備。SEO / 発見性向上を目的とした更新(参照: `docs/ja/setup/canonical-vs-personal.md` の思想)
+- **Vault-MCP License 統一**(別サイクル):`nkhippo/Vault-MCP` の LICENSE を ISC → MIT へ変更(Framework Landing の MIT 宣言との整合。実質同等の permissive ライセンスのため既存 fork への影響なし)。詳細は Vault-MCP CHANGELOG
+
+### Migration Notes
+
+v1.1.x からの update:
+- **既存 adopter**: 特別な作業なし。次回 update 時に `.framework-version` ファイルをあなたの Vault ルートへコピーすれば、以降の update ステップ 0 チェックが有効になる(任意)
+- **新規 adopter**: setup/01 の初期化時に vault-templates 配下から自動的にコピーされる
+
+[1.2.0]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.2.0
 
 ## [1.1.1] — 2026-07-18
 

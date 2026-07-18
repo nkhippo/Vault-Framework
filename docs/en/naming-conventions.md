@@ -70,7 +70,7 @@ Main reasons:
 - **Prioritizing simplicity**: Prefixes like `Personal-Vault` were judged redundant and dropped
 - **Risk of name collision with HashiCorp Vault**: The bare name `Vault` risks colliding with HashiCorp's secrets-management tool, so when publishing or forking, adopters are recommended to choose their own naming (e.g., `<YourName>-Vault`) — see the setup guide
 
-For details on the rejected naming candidates, see the [naming-plan-* files under rejected-alternatives](../ja/rejected-alternatives/README.md) *(English translation pending)*.
+For details on the rejected naming candidates, see the [naming-plan-* files under rejected-alternatives](./rejected-alternatives/README.md) *(English translation pending)*.
 
 ## Relationship to Controlled Vocabulary
 
@@ -81,5 +81,5 @@ Separate from naming rules, the Front Matter fields `type`, `status`, `tags`, an
 - ADR 0006: Finalizing the naming scheme *(English translation pending)*
 - file-naming spec: Detailed file-naming specification *(English translation pending)*
 - vocabulary-design spec: Controlled vocabulary design *(English translation pending)*
-- [rejected-alternatives: Rejected naming candidates](../ja/rejected-alternatives/README.md) *(English translation pending)*
+- [rejected-alternatives: Rejected naming candidates](./rejected-alternatives/README.md) *(English translation pending)*
 - Philosophy: GitHub-as-a-Backend

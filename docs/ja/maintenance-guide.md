@@ -88,6 +88,6 @@ Vault-Framework 自体の ADR 16 本、rejected-alternatives 16 本、spec 8 本
 ## 関連
 
 - ADR 0008: Cursor 委譲の判定基準
-- [ADR 0009: 保守運用 4 レベル + 抽象生成](./decisions/0009-four-level-maintenance-operation.md)
+- [ADR 0009: 保守運用 4 レベル + 抽象生成](../decisions/0009-four-level-maintenance-operation.md)
 - maintenance-four-levels spec: 保守運用の詳細仕様
 - abstract-generation spec: 抽象生成の詳細仕様

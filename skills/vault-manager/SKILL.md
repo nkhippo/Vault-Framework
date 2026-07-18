@@ -2,7 +2,7 @@
 name: vault-manager
 description: >-
   個人 Vault(GitHub 上の Markdown リポジトリ)への保存・参照を Front Matter 準拠で管理する Skill。Chat の議論記録、執筆記事、プロジェクト設計相談、日記等の保存、過去 chat / 意思決定 / open-questions の参照、backlog(task / issue)の起票・昇格・実装 AI 委譲・Issue 起票 workflow、ID scheme(pj/nt/kn/mt prefix)を扱う。
-updated: 2026-07-18T14:28:30+09:00
+updated: 2026-07-18T14:26:13+09:00
 ---
 # Vault Manager (v1.10)
 
