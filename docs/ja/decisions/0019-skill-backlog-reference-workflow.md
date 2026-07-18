@@ -29,20 +29,20 @@ Skill vault-manager に以下 3 種類の workflow を追加:
 ### 作業混ざり防止規約の適用
 
 - 対象プロジェクト外の GitHub コネクタは能動的に使わない
-- 全体棚卸しは Naoya の明示指示があった時のみ、複数コネクタ切り替えを許容
+- 全体棚卸しは あなた(導入者) の明示指示があった時のみ、複数コネクタ切り替えを許容
 - Backlog 参照で 50_self/ や他プロジェクト docs を波及参照しない
 
-### Naoya 承認 gate
+### あなた(導入者) 承認 gate
 
-- Backlog item の状態変更・tag 変更・Front Matter 更新は必ず Naoya の明示承認を経る
+- Backlog item の状態変更・tag 変更・Front Matter 更新は必ず あなた(導入者) の明示承認を経る
 - 無断更新禁止(Skill の既存原則を継続)
 
 ## Consequences
 
 ### Positive
 
-- Naoya が Chat で backlog 状態を素早く把握できる
-- 棚卸しが自動化(候補提案 + Naoya 承認)、GitHub 状態同期の手間削減
+- あなた(導入者) が Chat で backlog 状態を素早く把握できる
+- 棚卸しが自動化(候補提案 + あなた(導入者) 承認)、GitHub 状態同期の手間削減
 - Skill 既存挙動を破壊しない(追加のみ)
 
 ### Negative

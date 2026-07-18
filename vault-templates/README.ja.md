@@ -19,7 +19,7 @@ updated: 2026-07-13 21:40:00+09:00
 
 ## Summary
 
-このディレクトリは、`nkhippo/Vault-Framework/vault-templates/` にミラーリングされる canonical source を格納する staging area。SKILL.md と同じパターンで、Naoya の個人 Vault の 00_meta/ から個人情報を伏せた汎用テンプレを配置する。
+このディレクトリは、`nkhippo/Vault-Framework/vault-templates/` にミラーリングされる canonical source を格納する staging area。SKILL.md と同じパターンで、あなた(導入者) の個人 Vault の 00_meta/ から個人情報を伏せた汎用テンプレを配置する。
 
 ## 位置づけ
 
@@ -31,10 +31,10 @@ updated: 2026-07-13 21:40:00+09:00
 
 汎用化の際、以下を適用済:
 
-- Naoya 固有の名前や参照 → `<your-name>` プレースホルダ
+- あなた(導入者) 固有の名前や参照 → `<your-name>` プレースホルダ
 - 具体的プロジェクト名 → `<your-project-1>` 等のプレースホルダ + 例示コメント
 - リポジトリ URL → `<your-github-username>/<your-vault-repo>` 形式
-- Naoya 個人の運用固有情報 → 例示 or 削除
+- あなた(導入者) 個人の運用固有情報 → 例示 or 削除
 
 ## Framework 側の受け側
 

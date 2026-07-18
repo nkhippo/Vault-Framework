@@ -29,7 +29,7 @@ summary: open-questions.md / roadmap.md / design-decisions.md と backlog system
 
 - **性質**: 「そのうち考えたい」「後で決めるかも」の思いつきメモ
 - **backlog に上げるべきでないもの**: 1 行の疑問、5 分で答えが出るもの、まだ議論する時ですらないもの
-- **backlog に上げるべきもの**: Naoya が「これはちゃんとタスク化して」「起票して」と明示した時
+- **backlog に上げるべきもの**: あなた(導入者) が「これはちゃんとタスク化して」「起票して」と明示した時
 
 ### roadmap.md
 
@@ -49,19 +49,19 @@ summary: open-questions.md / roadmap.md / design-decisions.md と backlog system
 
 以下いずれかのトリガーで backlog に昇格:
 
-- Naoya が「これはちゃんとタスク化して」と明示
-- Naoya が「これ起票して」「backlog に入れて」と明示
-- Claude が「これは backlog 化した方が良さそう」と提案 → Naoya 承認
+- あなた(導入者) が「これはちゃんとタスク化して」と明示
+- あなた(導入者) が「これ起票して」「backlog に入れて」と明示
+- Claude が「これは backlog 化した方が良さそう」と提案 → あなた(導入者) 承認
 
 昇格時の処理:
 
 1. `30_projects/<Repo>/backlog/YYYY-MM-DD_slug.md` に新規 backlog item 作成
    - kind は文脈から判定(方針未決 → issue、決定済み → task)
    - state: open
-   - assignee: naoya(初期)
+   - assignee: owner(初期)
    - summary は open-questions の該当行 + Chat の議論から生成
 2. `open-questions.md` の該当行を **削除**、または「→ [[<backlog id>|<title>]]」に置換
-   - 削除するか置換するかは Naoya の好み(Naoya に確認、または Skill Level で決定 → Phase 1c)
+   - 削除するか置換するかは あなた(導入者) の好み(あなた(導入者) に確認、または Skill Level で決定 → Phase 1c)
 3. backlog item の body H2 History に「元 open-questions.md から昇格」を記録
 
 ## design-decisions.md との連携
@@ -103,7 +103,7 @@ Roadmap の段階「XXX」の一部として起票。詳細は [[<id of roadmap>
 
 - 既存 open-questions.md 等は「思いつきレベル」として意味がある
 - backlog に全部上げると氾濫、棚卸し疲弊
-- 昇格は Naoya の判断で選択的に行う
+- 昇格は あなた(導入者) の判断で選択的に行う
 
 したがって Phase 1b では **既存資産の移行作業は発生しない**。ルール記述のみ。
 

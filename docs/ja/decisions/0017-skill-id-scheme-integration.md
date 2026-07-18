@@ -53,7 +53,7 @@ Skill vault-manager を Phase 0.6 として更新:
 - FM 参照フィールドは `_id` / `_ids` サフィックス規約
 - Collision 回避: `search_by_keyword` で最大 3 回 retry
 
-Skill 更新は Vault-Framework の source of truth を編集し、Naoya が Anthropic Skills に再アップロードする。
+Skill 更新は Vault-Framework の source of truth を編集し、あなた(導入者) が Anthropic Skills に再アップロードする。
 
 ## Consequences
 

@@ -52,8 +52,8 @@ Backlog 参照操作の初回検知時、以下を Level 1 で読み込み Chat 
 
 ### Step 1: 対象プロジェクト特定
 
-- Naoya の発話や Chat context から対象プロジェクトを推定
-- 特定できない場合、Naoya に「全プロジェクトですか、それとも特定のプロジェクトですか」と確認
+- あなた(導入者) の発話や Chat context から対象プロジェクトを推定
+- 特定できない場合、あなた(導入者) に「全プロジェクトですか、それとも特定のプロジェクトですか」と確認
 - 特定できた場合:
   - Specific repo → `30_projects/<Repo>/backlog/`
   - Life-scope → `30_projects/_life/backlog/`
@@ -73,7 +73,7 @@ Backlog 参照操作の初回検知時、以下を Level 1 で読み込み Chat 
 
 ### Step 4: フィルタと集計
 
-- `state: open` のみを集計対象(done/abandoned は除外、Naoya が明示要求した場合のみ含める)
+- `state: open` のみを集計対象(done/abandoned は除外、あなた(導入者) が明示要求した場合のみ含める)
 - `stalled` tag があれば flag
 - `updated` が 2 週間以上前のものは実質 stalled(tag 未付与でも警告表示)
 
@@ -83,7 +83,7 @@ Backlog 参照操作の初回検知時、以下を Level 1 で読み込み Chat 
 
 | # | Title | Kind | Assignee | Updated | GitHub | Notes |
 
-- Kind グループごとに分けるか混在するかは Naoya の好みで(初回は混在で提示、要求あれば分割)
+- Kind グループごとに分けるか混在するかは あなた(導入者) の好みで(初回は混在で提示、要求あれば分割)
 - Notes には stalled、blocked、cursor 委譲中等の状況を短く
 
 ## 棚卸し flow
@@ -95,36 +95,36 @@ Backlog 参照操作の初回検知時、以下を Level 1 で読み込み Chat 
 一覧の各 item のうち `github_issue` を持つものについて、対象プロジェクトの GitHub コネクタで Issue state を取得:
 
 - **作業混ざり防止規約遵守**: 相談中の対象プロジェクト以外の GitHub コネクタは能動的に使わない
-- 全体棚卸しの場合、各プロジェクトの GitHub コネクタを順次使う必要がある。Naoya の明示指示を「全プロジェクト対象」の意思表示として扱う
+- 全体棚卸しの場合、各プロジェクトの GitHub コネクタを順次使う必要がある。あなた(導入者) の明示指示を「全プロジェクト対象」の意思表示として扱う
 
 ### Step 7: 状態変化検出と更新提案
 
 Issue state と Vault state の乖離を検出:
 
 - Issue closed & merged & Vault `state: open` → Vault `state: done` 更新を提案
-- Issue closed but not merged & Vault `state: open` → 「これは abandoned にしますか、それとも継続ですか?」と Naoya 確認
-- Issue open & Vault `state: open` → 変化なし、Vault の状況を Naoya 確認(進捗、blocker)
+- Issue closed but not merged & Vault `state: open` → 「これは abandoned にしますか、それとも継続ですか?」と あなた(導入者) 確認
+- Issue open & Vault `state: open` → 変化なし、Vault の状況を あなた(導入者) 確認(進捗、blocker)
 
 ### Step 8: Stalled 検出
 
 - `state: open` かつ `updated` が 2 週間以上前のもの
 - 現在 `stalled` tag なし → 「これ止まっていますが、再開しますか、abandoned にしますか、tag だけ付けて追跡しますか?」と提案
 
-### Step 9: Naoya 承認と反映
+### Step 9: あなた(導入者) 承認と反映
 
-各更新提案について Naoya の Yes/No を得る:
+各更新提案について あなた(導入者) の Yes/No を得る:
 
 - 承認 → `update_note(mode=append)` で Front Matter 更新(state, updated, completed_at 等)+ H2 History に「YYYY-MM-DD: XX 更新(理由)」を追記
 - 保留 → 変更なし、次の item に進む
 
-**無断更新は禁止**。必ず Naoya の明示承認を得る。
+**無断更新は禁止**。必ず あなた(導入者) の明示承認を得る。
 
 ## 単一 item 参照 flow
 
 ### Step 1: item 特定
 
-- Naoya の発話から backlog item を特定(タイトル、id、または path)
-- 曖昧な場合は `search_by_keyword` で候補を提示、Naoya に選択させる
+- あなた(導入者) の発話から backlog item を特定(タイトル、id、または path)
+- 曖昧な場合は `search_by_keyword` で候補を提示、あなた(導入者) に選択させる
 
 ### Step 2: 全体取得
 
@@ -132,7 +132,7 @@ Issue state と Vault state の乖離を検出:
 
 ### Step 3: 要約提示
 
-以下を Naoya に提示:
+以下を あなた(導入者) に提示:
 
 - Front Matter 概要(kind, state, assignee, tags, github_issue 等)
 - Body の Summary セクション
@@ -141,7 +141,7 @@ Issue state と Vault state の乖離を検出:
 
 ### Step 4: 関連 item 参照(任意)
 
-Naoya が求めれば `derived_from_id`, `related_ids`, `cursor_instruction_id`, `github_issue` の対象を辿る。
+あなた(導入者) が求めれば `derived_from_id`, `related_ids`, `cursor_instruction_id`, `github_issue` の対象を辿る。
 
 ## GitHub MCP との協働
 
@@ -150,7 +150,7 @@ Naoya が求めれば `derived_from_id`, `related_ids`, `cursor_instruction_id`,
 Skill v1.2 で確立済みの規約を遵守:
 
 - 相談中の対象プロジェクト以外の GitHub コネクタは能動的に使わない
-- 全体棚卸しでは Naoya の明示指示を「全プロジェクト対象」の意思表示として受け入れる
+- 全体棚卸しでは あなた(導入者) の明示指示を「全プロジェクト対象」の意思表示として受け入れる
 
 ### 全体棚卸しの実行
 
@@ -162,7 +162,7 @@ Skill v1.2 で確立済みの規約を遵守:
 
 ### GitHub コネクタ利用不可時
 
-対応する GitHub コネクタが接続されていない場合、Vault backlog の一覧のみ提示し、「対応する GitHub 状態確認には X コネクタ接続が必要」と Naoya に伝える。
+対応する GitHub コネクタが接続されていない場合、Vault backlog の一覧のみ提示し、「対応する GitHub 状態確認には X コネクタ接続が必要」と あなた(導入者) に伝える。
 
 ## Backlog 系操作外への波及禁止
 
@@ -180,7 +180,7 @@ Backlog 参照 workflow の実行中、以下は禁止:
 - open-questions.md からの昇格
 - Cursor 委譲 → Issue 起票 の flow
 
-参照中に Naoya が新規起票を要求した場合、「これは保存 workflow(Phase 1d 相当)ですが、当面 open-questions.md への追記提案でよいですか」と応答(Phase 1d 完了までの暫定挙動)。
+参照中に あなた(導入者) が新規起票を要求した場合、「これは保存 workflow(Phase 1d 相当)ですが、当面 open-questions.md への追記提案でよいですか」と応答(Phase 1d 完了までの暫定挙動)。
 
 ## Related
 
