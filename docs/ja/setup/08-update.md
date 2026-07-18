@@ -17,7 +17,7 @@ tags:
 title: Framework 更新の取り込み(update 手順)
 type: setup
 created: 2026-07-18T12:52:03+09:00
-updated: 2026-07-18T12:52:03+09:00
+updated: 2026-07-18T17:30:00+09:00
 ---
 
 Framework は継続的に改善される。新バージョンが公開されたら、この手順で自分の Vault に取り込む。
@@ -81,6 +81,13 @@ cp -r <framework>/docs/* docs/
 - `20_notes/guides/writing_examples.md`:
   - 記入方法の説明・空フォーマットのみ差し替え
   - **あなたが追記した実例ペアは残す**
+
+**bootstrap-only(再取得しない)**:
+
+- `00_meta/SETUP.md`:
+  - vault-templates 初回コピー時のみ存在する初期セットアップ未完了マーカー
+  - **既に削除済みなら、Framework 新版に含まれていても復元しない**
+  - 詳細は `docs/ja/setup/canonical-vs-personal.md` の bootstrap-only 節
 
 **判断に迷ったら Chat で相談**:
 ```

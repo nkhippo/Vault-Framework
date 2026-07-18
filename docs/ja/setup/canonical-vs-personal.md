@@ -8,7 +8,7 @@ keywords:
   - hybrid
   - boundary
 status: draft
-summary: Framework の同期対象(canonical)と各自固有領域(personal)の境界を明示する正典。update 時のファイル判定（差し替え / マージ / 触らない）と Front Matter の二層戦略（Framework 配布層と Vault 運用層の非対称な id/aliases/project 扱い）を規定する。
+summary: Framework の同期対象(canonical)と各自固有領域(personal)の境界を明示する正典。update 時のファイル判定（差し替え / マージ / 触らない）、bootstrap-only(SETUP.md)、Front Matter の二層戦略（Framework 配布層と Vault 運用層の非対称な id/aliases/project 扱い）を規定する。
 tags:
   - framework
   - setup
@@ -18,7 +18,7 @@ tags:
 title: canonical / personal 境界表
 type: setup
 created: 2026-07-18T12:51:05+09:00
-updated: 2026-07-18T16:21:40+09:00
+updated: 2026-07-18T17:30:00+09:00
 ---
 
 Framework は「配布された骨格を各自の Vault にコピーして使う」構造。配布後、Framework 側のアップデートを取り込むとき、**どのファイルを差し替えていいか / 触ってはいけないか** を明確にするための正典。
@@ -28,6 +28,7 @@ Framework は「配布された骨格を各自の Vault にコピーして使う
 - **canonical**: Framework が正典として保持し、配布後もあなた個人の判断で変えない領域。update 時に Framework 側から差し替える対象
 - **personal**: あなたの Vault だけに存在する、あなた固有の内容。update 時に **Framework 側から一切上書きされない**
 - **hybrid**: canonical な骨格 + personal な記入欄が同一ファイルに同居する領域(例: vocabulary.md の `project` セクション)
+- **bootstrap-only**: 初回セットアップ時のみ存在するマーカー。完了後に削除され、**update では復元しない**
 
 ## 境界表
 
@@ -57,6 +58,12 @@ Framework は「配布された骨格を各自の Vault にコピーして使う
 | `20_notes/guides/writing_examples.md` | 記入方法の説明・空フォーマット | あなたが追記した実例ペア |
 
 update 時は **canonical セクションのみ Framework 側の版に置き換え**、personal セクションは保持する。マージ操作はあなたが手動で確認する(具体手順は `docs/ja/setup/08-update.md`)。
+
+### bootstrap-only(初回限り、update で再取得しない)
+
+| パス | 内容 | 扱い |
+|---|---|---|
+| `00_meta/SETUP.md` | 初期セットアップ未完了マーカー(vault-templates 配布物) | adopter が Phase 7 完了後に削除。**削除後、Framework update で該当ファイルが変わっていても復元しない** |
 
 ### personal(Framework から一切触らない)
 
@@ -141,7 +148,7 @@ Claude はこの境界表に従って、通常の Chat セッションでは can
 
 1. Framework の CHANGELOG を読む(何が変わったか把握)
 2. Skill を再アップロード
-3. canonical ファイルを差し替え(hybrid は canonical セクションのみ、FM 二層戦略に従う)
+3. canonical ファイルを差し替え(hybrid は canonical セクションのみ、FM 二層戦略に従う)。**bootstrap-only(`00_meta/SETUP.md`)は、既に削除済みなら復元しない**
 4. 破壊的変更(major version bump)があれば移行手順に従う
 5. 再度 Chat で「再認識合わせセッション」を実行(推奨)
 
