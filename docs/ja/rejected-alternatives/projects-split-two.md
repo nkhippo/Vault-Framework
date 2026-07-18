@@ -21,9 +21,6 @@ tags:
 title: '却下案: Projects 2 分割運用'
 type: rejected_alternative
 updated: 2026-07-14 05:40:00+09:00
-id: pj-2026-07-13-08cd
-aliases:
-- pj-2026-07-13-08cd
 ---
 
 ## Summary
@@ -38,7 +35,7 @@ Claude Projects を用途別に 2 つに分割:
   - note 執筆、汎用ナレッジ、雑談、リポジトリ化前のアイデア
   - Instructions は「note と汎用ナレッジを中心に扱う」を明示
 - **Vault: Project Design**: 
-  - 特定リポジトリ(IPASoundDrill、Vault-MCP 等)の設計相談
+  - 特定リポジトリ(<your-project>、Vault-MCP 等)の設計相談
   - Instructions は「30_projects/ 配下を優先参照」を明示
 
 各 Project の Instructions を用途に応じて書き分け、Claude が「今どの Project にいるか」で振る舞いを切り替える構想。
@@ -65,12 +62,12 @@ Claude Projects を用途別に 2 つに分割:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0013「Projects 統合(2 → 1)」
-- **参照**: [[pj-2026-07-13-f6cf]]
+- **参照**: `id-ref-removed`
 
 1 Project(`Vault`)に統合し、用途判定は Skill のあいまい名解決フローで対応。過去の 2 Project の Chat は履歴として残す(conversation_search で横断検索可能)。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md`
-- 対応 ADR: [[pj-2026-07-13-f6cf]]
-- 関連 ADR: [[pj-2026-07-13-9b13]](激薄 Instructions 方針との整合)
+- 対応 ADR: `id-ref-removed`
+- 関連 ADR: `id-ref-removed`(激薄 Instructions 方針との整合)

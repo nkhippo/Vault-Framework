@@ -1,19 +1,6 @@
 ---
-created: 2026-07-14 21:12:00+09:00
-keywords:
-- skill
-- vault-maintainer
-- readme
-- upload
-- defer-lifted
-status: published
-summary: vault-maintainer Skill の管理用 README。この Skill の目的、vault-manager との棲み分け、アップロード手順、保留解除の経緯を説明。
-title: vault-maintainer README(日本語)
-type: reference
-updated: 2026-07-14 21:06:00+09:00
-id: pj-2026-07-13-0eb8
-aliases:
-- pj-2026-07-13-0eb8
+title: ローカル例(ローカルディレクトリ経由)
+created: '2026-07-14'
 ---
 
 ## Summary
@@ -22,7 +9,7 @@ aliases:
 
 ## この Skill は何か
 
-`vault-maintainer` は、個人 Vault(`nkhippo/Vault`)の**保守運用(Level 2〜4)と抽象生成**を担当する Claude Skill です。
+`vault-maintainer` は、個人 Vault(`<your-account>/Vault`)の**保守運用(Level 2〜4)と抽象生成**を担当する Claude Skill です。
 
 `vault-manager`(日常の保存・参照・Level 1 自動修正を担当)とは役割が分離されており、この Skill は保守運用または抽象生成の**明示的なトリガーがある時のみ**発火します。
 
@@ -39,29 +26,27 @@ aliases:
 
 ## 保留解除の経緯
 
-この Skill は当初、Naoya の設計判断により「**3 ヶ月の運用データが蓄積されるまで着手を保留**」とされていました(Reference Class Forecasting 的な、実データを見てから設計する慎重な判断)。
+この Skill は当初、あなた(導入者) の設計判断により「**3 ヶ月の運用データが蓄積されるまで着手を保留**」とされていました(Reference Class Forecasting 的な、実データを見てから設計する慎重な判断)。
 
-2026-07-14、Naoya の判断で保留を解除し、v1.0 を作成しました。運用データ蓄積前の作成となるため、実際の運用パターンが見えてきたら、Level 2〜4 の具体的な作業内容や抽象生成のフローを調整する想定です(v1.1 以降で反映)。
+2026-07-14、あなた(導入者) の判断で保留を解除し、v1.0 を作成しました。運用データ蓄積前の作成となるため、実際の運用パターンが見えてきたら、Level 2〜4 の具体的な作業内容や抽象生成のフローを調整する想定です(v1.1 以降で反映)。
 
 ## アップロード手順
 
-1. Vault から `skills/vault-maintainer/SKILL.md` を取得(iCloud パス)
-2. `updated:` 等の Vault 用 Front Matter フィールドを削除(`name` + `description` のみの純粋形式にする)
-3. `vault-maintainer/` フォルダを zip 化
-4. Claude Skills にアップロード
-5. `vault-manager` と併せて両方 Enabled にする
+Vault-Framework の SKILL.md は Claude Skills 標準フォーマット(`name` + `description` + `updated` のみの Front Matter)で書かれているため、追加加工は不要です。
+
+1. Vault-Framework から `skills/vault-maintainer/` フォルダを取得
+2. そのフォルダを zip 化(SKILL.md 単体でも可)
+3. Claude Skills にアップロード
+4. `vault-manager` と併せて両方 Enabled にする
 
 ```bash
+# ローカル例(ローカルディレクトリ経由)
 cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Vault/30_projects/Vault-Framework/skills/
-# vault-maintainer の Front Matter を純粋形式に
-cd vault-maintainer/
-sed -i '' '/^created: /d; /^updated: /d; /^type: /d; /^status: /d; /^title: /d; /^summary: /d; /^keywords:/,/^[a-z]/d' SKILL.md
-head -5 SKILL.md  # name + description のみになっているか確認
-cd ../
 zip -r vault-maintainer-v1.0.zip vault-maintainer/
+# 生成された zip を Claude Skills にアップロード
 ```
 
-注意: 上記の sed は複数フィールド削除のため、実行後に必ず `head` で `name:` と `description:` の 2 フィールドのみ残っていることを確認してください。うまくいかない場合は手動でエディタから不要フィールドを削除するのが確実です。
+Claude Skills UI 上で、既存の同名 Skill を更新する場合は、既存を削除してから新しい zip をアップロードすることを推奨します(キャッシュ回避のため)。
 
 ## 動作確認
 
@@ -72,6 +57,11 @@ zip -r vault-maintainer-v1.0.zip vault-maintainer/
 - 「これを Vault に保存して」→ **vault-manager が発火**(vault-maintainer は反応しない、棲み分けの確認)
 
 3 つ目で vault-maintainer が誤発火しないことが、棲み分け設計の正しさの確認ポイントです。
+
+Claude Skills UI 上での見え方の確認ポイント:
+
+- description が `Use this skill ONLY when...` から始まっている(冒頭に `---` や `name:` が含まれていない)
+- Front Matter が正しく解釈されている(name / description / updated の 3 フィールドのみ)
 
 ## 関連
 

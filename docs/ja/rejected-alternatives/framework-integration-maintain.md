@@ -20,9 +20,6 @@ tags:
 title: '却下案: Framework を Vault 内に統合維持'
 type: rejected_alternative
 updated: 2026-07-14 06:35:00+09:00
-id: pj-2026-07-13-fa96
-aliases:
-- pj-2026-07-13-fa96
 ---
 
 ## Summary
@@ -74,12 +71,12 @@ Framework 部分を Vault 内に維持する案:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0005「Vault-Framework 早期分離」
-- **参照**: [[pj-2026-07-13-a7f9]]
+- **参照**: `id-ref-removed`
 
 早期に別リポジトリ(`nkhippo/Vault-Framework`)に分離。staging → mirroring workflow を受容し、Public 化・Fable パッケージングの準備を整える。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md`
-- 対応 ADR: [[pj-2026-07-13-a7f9]]
-- 関連 ADR: [[pj-2026-07-13-e13e]](3 リポジトリ命名の前提)
+- 対応 ADR: `id-ref-removed`
+- 関連 ADR: `id-ref-removed`(3 リポジトリ命名の前提)

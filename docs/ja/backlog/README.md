@@ -1,7 +1,4 @@
 ---
-id: pj-2026-07-17-a9e4
-aliases:
-- pj-2026-07-17-a9e4
 title: Backlog System - Index
 type: knowledge
 status: published

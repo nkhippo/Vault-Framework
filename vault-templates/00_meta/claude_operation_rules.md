@@ -17,9 +17,6 @@ tags:
 title: Claude 操作規約
 type: knowledge
 updated: 2026-07-13 21:46:00+09:00
-id: pj-2026-07-13-b159
-aliases:
-- pj-2026-07-13-b159
 ---
 
 ## Summary

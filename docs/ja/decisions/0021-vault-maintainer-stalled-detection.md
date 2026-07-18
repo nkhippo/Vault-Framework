@@ -1,8 +1,4 @@
 ---
-id: pj-2026-07-17-e2ef
-aliases:
-- pj-2026-07-17-e2ef
-- adr-0021
 title: '0021 - Vault-maintainer Stalled Detection'
 type: knowledge
 status: accepted

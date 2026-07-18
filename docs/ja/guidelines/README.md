@@ -11,9 +11,6 @@ keywords:
 - index
 - principles
 summary: Vault-Framework の運用ガイドライン索引。9 原則、動作原則、Sonnet 対応、保存判断フロー等。
-id: pj-2026-07-13-5c2c
-aliases:
-- pj-2026-07-13-5c2c
 ---
 
 ## Guideline 一覧

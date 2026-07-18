@@ -1,7 +1,4 @@
 ---
-id: pj-2026-07-17-4a23
-aliases:
-- pj-2026-07-17-4a23
 title: Backlog Candidate Extraction Workflow
 type: knowledge
 status: published

@@ -20,9 +20,6 @@ tags:
 title: '却下案: Cursor 委譲のファイル数ルール'
 type: rejected_alternative
 updated: 2026-07-14 06:40:00+09:00
-id: pj-2026-07-13-7ee4
-aliases:
-- pj-2026-07-13-7ee4
 ---
 
 ## Summary
@@ -79,12 +76,12 @@ Cursor 委譲判定を以下のシンプルな数値ルールで行う案:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0008「Cursor 委譲判定: メンテナンスレベル方式」
-- **参照**: [[pj-2026-07-13-b51c]]
+- **参照**: `id-ref-removed`
 
 作業種別 × メンテナンスレベルで判定。リネーム、restructure、Front Matter 一括更新等は常に Cursor 委譲。独立操作は Claude 単独で高速に実施。
 
 ## References
 
 - 実運用の記録: 2026-07-13 前半のファイル数ルールでの運用と数日後の反省
-- 対応 ADR: [[pj-2026-07-13-b51c]]
-- 関連 ADR: [[pj-2026-07-13-48bc]](保守運用 4 レベル)
+- 対応 ADR: `id-ref-removed`
+- 関連 ADR: `id-ref-removed`(保守運用 4 レベル)

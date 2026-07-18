@@ -9,9 +9,6 @@ tags: []
 title: ''
 type: project_idea
 updated: 2026-07-14 01:10:34+09:00
-id: pj-2026-07-13-55c8
-aliases:
-- pj-2026-07-13-55c8
 ---
 
 ## Summary

@@ -20,9 +20,6 @@ tags:
 title: '却下案: Google Cloud Run'
 type: rejected_alternative
 updated: 2026-07-14 05:25:00+09:00
-id: pj-2026-07-13-a307
-aliases:
-- pj-2026-07-13-a307
 ---
 
 ## Summary
@@ -58,12 +55,12 @@ Vault-MCP を Google Cloud Run にデプロイする案:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0002「MCP プラットフォームに Cloudflare Workers」
-- **参照**: [[pj-2026-07-13-bccd]]
+- **参照**: `id-ref-removed`
 
 Cloudflare Workers はコールドスタート実質 0ms、Edge ネットワークでレイテンシ最小、`wrangler.toml` + Secrets の運用がシンプル。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_platform-selection-and-phase12-completion.md`
-- 対応 ADR: [[pj-2026-07-13-bccd]]
-- 関連却下案: [[pj-2026-07-13-6540]](他 6 候補の統合記録)
+- 対応 ADR: `id-ref-removed`
+- 関連却下案: `id-ref-removed`(他 6 候補の統合記録)

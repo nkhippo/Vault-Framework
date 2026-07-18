@@ -17,9 +17,6 @@ tags:
 title: 04 - Skill のアップロード
 type: setup
 updated: 2026-07-14 09:05:00+09:00
-id: pj-2026-07-13-ff6f
-aliases:
-- pj-2026-07-13-ff6f
 ---
 
 ## Summary
@@ -157,8 +154,8 @@ Skill を更新する場合の運用:
 
 ### 6.3 Vault 側での canonical 管理
 
-- Naoya のパターン: `nkhippo/Vault/30_projects/Vault-Framework/skills/vault-manager/SKILL.md` を canonical として保持
-- iCloud 経由で zip 化してアップロードするワークフロー
+- 作者のパターン: `nkhippo/Vault/30_projects/Vault-Framework/skills/vault-manager/SKILL.md` を canonical として保持
+- ローカルで zip 化してアップロードするワークフロー
 
 ## Troubleshooting
 
@@ -181,4 +178,4 @@ Skill を更新する場合の運用:
 
 ## Next Step
 
-Skill のアップロードが完了したら [[pj-2026-07-13-19c6|05-configure-project.md]] で Claude Projects の Vault Project を作成します。
+Skill のアップロードが完了したら 05-configure-project.md で Claude Projects の Vault Project を作成します。

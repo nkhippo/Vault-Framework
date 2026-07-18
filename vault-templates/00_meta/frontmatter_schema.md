@@ -20,9 +20,6 @@ tags:
 title: Front Matter スキーマ
 type: knowledge
 updated: 2026-07-13 21:44:00+09:00
-id: pj-2026-07-13-dca8
-aliases:
-- pj-2026-07-13-dca8
 ---
 
 ## Summary

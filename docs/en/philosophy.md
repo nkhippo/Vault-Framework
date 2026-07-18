@@ -20,9 +20,6 @@ title_ja: '思想: GitHub-as-a-Backend'
 type: overview
 created: 2026-07-14 20:49:11+09:00
 updated: 2026-07-14 20:49:11+09:00
-id: pj-2026-07-15-4872
-aliases:
-- pj-2026-07-15-4872
 ---
 
 ## Summary
@@ -54,7 +51,7 @@ Traditional knowledge bases are designed with human readers in mind (prioritizin
 - **Explicit cross-links**: Lets AI trace related information
 - **Controlled vocabulary**: Improves AI's judgment accuracy
 
-The human (Naoya) browses and edits this data through tools like Obsidian, but day-to-day interactions (saving, searching, referencing) mostly happen through Claude. This "AI-first" design philosophy runs through the entire Framework — the Front Matter schema, naming conventions, reference-level system, and more.
+The human (the adopter) browses and edits this data through tools like Obsidian, but day-to-day interactions (saving, searching, referencing) mostly happen through Claude. This "AI-first" design philosophy runs through the entire Framework — the Front Matter schema, naming conventions, reference-level system, and more.
 
 ## Relationship With the Obsidian Brand
 
@@ -75,5 +72,5 @@ This GitHub-as-a-Backend philosophy connects to the following design decisions a
 
 ## Related
 
-- [[pj-2026-07-13-2564|ADR 0001: Adoption of GitHub-as-a-Backend]] *(English translation pending)*
-- [[pj-2026-07-15-89b9|Architecture: Skill / Project / Vault 3-layer]]
+- ADR 0001: Adoption of GitHub-as-a-Backend *(English translation pending)*
+- Architecture: Skill / Project / Vault 3-layer

@@ -1,8 +1,4 @@
 ---
-id: pj-2026-07-17-ba5f
-aliases:
-- pj-2026-07-17-ba5f
-- adr-0022
 title: '0022 - Chat Save With Residue Integration'
 type: knowledge
 status: superseded

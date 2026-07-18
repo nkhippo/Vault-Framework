@@ -1,7 +1,6 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: pj-2026-07-15-dede
 keywords:
 - maintenance
 - four-level
@@ -35,9 +34,6 @@ title_ja: 'ADR-0009: 保守運用 4 レベル + 抽象生成の並行運用'
 type: adr
 created: 2026-07-15 08:29:44+09:00
 updated: 2026-07-15 08:29:44+09:00
-aliases:
-- pj-2026-07-15-dede
-- adr-0009
 ---
 
 ## Summary
@@ -79,7 +75,7 @@ At the same time, consistency with the Cursor-delegation judgment (ADR-0008) had
 ### Level 2: weekly correction
 
 - **Timing**: weekly (recommended: Sunday)
-- **Owner**: Cursor performs it after Naoya's approval
+- **Owner**: Cursor performs it after the adopter's approval
 - **Content**:
   - Re-classification of chat_logs (moving items that fell into the inbox to their proper place)
   - Consistency check of Front Matter against the controlled vocabulary
@@ -90,7 +86,7 @@ At the same time, consistency with the Cursor-delegation judgment (ADR-0008) had
 ### Level 3: monthly correction
 
 - **Timing**: monthly (recommended: the 1st of the month)
-- **Owner**: Cursor performs it after Naoya's approval
+- **Owner**: Cursor performs it after the adopter's approval
 - **Content**:
   - Structural consistency check (confirmation of handoff/current-state.md updates across 30_projects)
   - Archiving of handoff's recent-changes/
@@ -102,7 +98,7 @@ At the same time, consistency with the Cursor-delegation judgment (ADR-0008) had
 ### Level 4: seasonal correction
 
 - **Timing**: seasonal (March, June, September, December)
-- **Owner**: led by Naoya, performed by Cursor
+- **Owner**: led by the adopter, performed by Cursor
 - **Content**:
   - Large structural changes (directory restructuring, bulk renaming of old names)
   - Cleanup of deprecated tags and retroactive application to past files
@@ -113,8 +109,8 @@ At the same time, consistency with the Cursor-delegation judgment (ADR-0008) had
 
 ### Abstract generation (parallel operation)
 
-- **Timing**: any timing at Naoya's discretion (recommended: monthly to quarterly)
-- **Owner**: Claude proposes + Naoya judges + Cursor performs
+- **Timing**: any timing at the adopter's discretion (recommended: monthly to quarterly)
+- **Owner**: Claude proposes + the adopter judges + Cursor performs
 - **Content**:
   - Extract common patterns from multiple chat_logs and organize them as specs
   - Structure the results of discussions as ADRs
@@ -170,7 +166,7 @@ An option not to have abstract generation stand alone, but to perform it as part
 
 **Reasons for rejection**:
 
-- Abstract generation should be done at any timing at Naoya's discretion (does not fit periodization)
+- Abstract generation should be done at any timing at the adopter's discretion (does not fit periodization)
 - Its nature differs from the other Level 3 work (consistency checks, handoff archiving)
 - Keeping it independent as a parallel operation allows flexible firing according to intent
 

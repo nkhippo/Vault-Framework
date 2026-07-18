@@ -1,7 +1,4 @@
 ---
-id: pj-2026-07-17-27e2
-aliases:
-- pj-2026-07-17-27e2
 title: Backlog Reference Workflow
 type: knowledge
 status: published

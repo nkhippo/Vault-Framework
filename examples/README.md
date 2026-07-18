@@ -5,7 +5,6 @@ keywords:
 - staging
 - readme
 - framework-mirror
-project: Vault-Framework
 status: published
 summary: examples/ja/ の staging area の説明。Framework へのミラーの canonical source を格納し、実データベースの記入例を
   4 type 分提供。
@@ -16,9 +15,6 @@ tags:
 title: Vault-Framework examples staging README
 type: knowledge
 updated: 2026-07-13 22:35:00+09:00
-id: pj-2026-07-13-ca82
-aliases:
-- pj-2026-07-13-ca82
 ---
 
 ## Summary
@@ -52,5 +48,5 @@ Framework の `examples/ja/` は現在 Cursor により scaffold(空の Front Ma
 
 ## 関連
 
-- 進捗管理: [[30_projects/Vault-Framework/handoff/current-state.md]]
+- 進捗管理: `id-ref-removed`
 - 同パターンで配置済み: `30_projects/Vault-Framework/skills/vault-manager/`(SKILL.md canonical)、`30_projects/Vault-Framework/vault-templates/`(vault-templates staging)

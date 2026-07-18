@@ -2,7 +2,6 @@
 audience: mixed
 created: 2026-07-14 04:50:00+09:00
 date: 2026-07-13
-id: pj-2026-07-13-e49e
 keywords:
 - handoff
 - current-state
@@ -29,9 +28,6 @@ tags:
 title: 'ADR-0010: handoff/ 領域の新設'
 type: adr
 updated: 2026-07-14 04:50:00+09:00
-aliases:
-- pj-2026-07-13-e49e
-- adr-0010
 ---
 
 ## Summary
@@ -45,7 +41,7 @@ Vault 運用の初期、以下の問題が顕在化していた:
 - 新しい Chat セッションで、あるプロジェクトの続きから話したい時、Claude が過去の議論・意思決定を効率よく把握するのが難しかった
 - README.md、design-decisions.md、open-questions.md を読ませても、「直近の状態」の情報が薄い
 - 「今どこにいるか」「次に何をやるか」を把握するには、複数の chat_log を横断する必要があった
-- Naoya 側も「あのプロジェクトの続きどこまでやったっけ?」を思い出すのに時間がかかる
+- あなた(導入者) 側も「あのプロジェクトの続きどこまでやったっけ?」を思い出すのに時間がかかる
 
 Chat 間の引き継ぎ問題を解決するには、以下の情報が 1 ページにまとまっている必要がある:
 
@@ -108,9 +104,9 @@ Chat 間の引き継ぎ問題を解決するには、以下の情報が 1 ペー
 **Positive**:
 
 - 新 Chat セッション開始時のキャッチアップが劇的に改善(1 ファイル読めば直近状態が把握可能)
-- Naoya 自身のプロジェクト進捗確認が容易(handoff/ を見れば OK)
+- あなた(導入者) 自身のプロジェクト進捗確認が容易(handoff/ を見れば OK)
 - 過去の chat_log を全て読み返す必要がなくなる
-- current-state.md は Naoya が手動で更新するのではなく、Chat 内で Claude が prepend する運用で、書き手の負担が最小
+- current-state.md は あなた(導入者) が手動で更新するのではなく、Chat 内で Claude が prepend する運用で、書き手の負担が最小
 - 各プロジェクトの状態が並列で可視化される(Vault、Vault-MCP、Vault-Framework の 3 プロジェクトを並べて比較しやすい)
 
 **Negative**:

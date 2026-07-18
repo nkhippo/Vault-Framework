@@ -16,9 +16,6 @@ tags:
 title: トラブルシューティング
 type: setup
 updated: 2026-07-14 09:25:00+09:00
-id: pj-2026-07-13-e32c
-aliases:
-- pj-2026-07-13-e32c
 ---
 
 ## Summary
@@ -229,7 +226,7 @@ git status
 
 - **Front Matter 修正**: `sensitive: true` を明示
 - **Skill 更新**: sensitive 引用禁止ルールを再確認
-- **Chat の途中で気づいた場合**: Naoya が「今の話は sensitive、引用しないで」と明示
+- **Chat の途中で気づいた場合**: あなた(導入者) が「今の話は sensitive、引用しないで」と明示
 
 ### 恒久対策
 
@@ -296,7 +293,7 @@ git status
 
 - **同一 Chat 内での再取得**: 「最新版を再取得して」と明示
 - **新規 Chat**: Chat を新規で開始
-- **明示的な更新指示**: Naoya が「vault を更新した」と伝える
+- **明示的な更新指示**: あなた(導入者) が「vault を更新した」と伝える
 
 ### 恒久対策
 
@@ -309,15 +306,15 @@ git status
 
 - Framework の Issues に報告: https://github.com/nkhippo/Vault-Framework/issues
 - コミュニティ(将来的な Discord 等)で相談
-- Naoya のパターンを参考にする(Naoya の Vault は Private のため直接参照不可)
+- あなた(導入者) のパターンを参考にする(あなた(導入者) の Vault は Private のため直接参照不可)
 
 ## Reference
 
 - **関連 ADR**: 
-  - [[pj-2026-07-13-e19b]](MCP 接続失敗ルール)
-  - [[pj-2026-07-13-9107]](PAT のセキュリティ)
+  - `id-ref-removed`(MCP 接続失敗ルール)
+  - `id-ref-removed`(PAT のセキュリティ)
 - **関連 spec**: 
-  - [[pj-2026-07-13-dd44]](Level の適切な使用)
-  - [[pj-2026-07-13-d0dd]](保守運用による問題予防)
+  - `id-ref-removed`(Level の適切な使用)
+  - `id-ref-removed`(保守運用による問題予防)
 - **関連 guideline**: 
-  - [[pj-2026-07-13-fba6]](運用の原則)
+  - `id-ref-removed`(運用の原則)

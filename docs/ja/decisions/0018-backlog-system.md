@@ -1,8 +1,4 @@
 ---
-id: pj-2026-07-17-e9df
-aliases:
-- pj-2026-07-17-e9df
-- adr-0018
 title: '0018 - Backlog System の導入'
 type: knowledge
 status: accepted

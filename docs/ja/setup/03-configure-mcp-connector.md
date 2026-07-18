@@ -15,9 +15,6 @@ tags:
 title: 03 - MCP コネクタの設定
 type: setup
 updated: 2026-07-14 09:00:00+09:00
-id: pj-2026-07-13-d62b
-aliases:
-- pj-2026-07-13-d62b
 ---
 
 ## Summary
@@ -159,4 +156,4 @@ Chat ごとにコネクタの有効/無効を切り替えできます:
 
 ## Next Step
 
-MCP コネクタの設定が完了したら [[pj-2026-07-13-ff6f|04-upload-skill.md]] で Skill `vault-manager` を Claude Skills にアップロードします。
+MCP コネクタの設定が完了したら 04-upload-skill.md で Skill `vault-manager` を Claude Skills にアップロードします。

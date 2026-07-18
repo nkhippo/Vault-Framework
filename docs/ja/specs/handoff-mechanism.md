@@ -23,9 +23,6 @@ tags:
 title: Handoff 機構 仕様
 type: spec
 updated: 2026-07-14 07:20:00+09:00
-id: pj-2026-07-13-c1bd
-aliases:
-- pj-2026-07-13-c1bd
 ---
 
 ## Summary
@@ -162,7 +159,7 @@ summary: <2-4 行の要約>
 2. **大きな意思決定が確定した時**: ADR に近い判断
 3. **Cursor 委譲作業が完了した時**: 大規模構造変更後
 4. **handoff のアーカイブが完了した時**: 月次補正後
-5. **Naoya が明示的に「handoff 更新して」と指示した時**
+5. **あなた(導入者) が明示的に「handoff 更新して」と指示した時**
 
 小さな更新(1-2 ファイルの追加保存等)では発火しない(通常の chat_log 保存で足りる)。
 
@@ -247,7 +244,7 @@ Skill `vault-manager` は Level 2 参照時、以下を判定:
 3. `design-decisions.md`(過去の意思決定)
 4. `open-questions.md`(未解決論点)
 
-### アプリ系プロジェクト(IPASoundDrill 等)の相談時
+### アプリ系プロジェクト(<your-project> 等)の相談時
 
 現状 handoff/ が展開されていない場合、通常の 3 ファイル(README、design-decisions、open-questions)を読む。handoff/ が展開されたプロジェクトでは、上記と同様に handoff/ を優先。
 
@@ -256,14 +253,14 @@ Skill `vault-manager` は Level 2 参照時、以下を判定:
 複数プロジェクトの handoff を並列で読むことで、全体像を把握しやすい:
 
 ```
-[Naoya の質問: 「Vault 系の進捗を全体的に教えて」]
+[あなた(導入者) の質問: 「Vault 系の進捗を全体的に教えて」]
     ↓
 Skill が以下を並列で読む:
 - 30_projects/Vault/handoff/current-state.md
 - 30_projects/Vault-MCP/handoff/current-state.md
 - 30_projects/Vault-Framework/handoff/current-state.md
     ↓
-統合した状態レポートを Naoya に提示
+統合した状態レポートを あなた(導入者) に提示
 ```
 
 各プロジェクトの current-state.md が統一構造で書かれているため、Claude が差分を効率的に把握できる。
@@ -276,13 +273,13 @@ Skill が以下を並列で読む:
 ## References
 
 - **関連 ADR**: 
-  - [[pj-2026-07-13-e49e]](handoff/ 領域の新設)
-  - [[pj-2026-07-13-ab6d]](handoff/ の全プロジェクト展開)
-  - [[pj-2026-07-13-d28f]](Skill の参照ルール)
+  - `id-ref-removed`(handoff/ 領域の新設)
+  - `id-ref-removed`(handoff/ の全プロジェクト展開)
+  - `id-ref-removed`(Skill の参照ルール)
 - **関連 spec**: 
-  - [[pj-2026-07-13-dd44]](Level 2 での handoff 参照)
-  - [[pj-2026-07-13-d0dd]](Level 3 の月次アーカイブ)
-  - [[pj-2026-07-13-5c9b]](recent-changes/ のファイル名)
+  - `id-ref-removed`(Level 2 での handoff 参照)
+  - `id-ref-removed`(Level 3 の月次アーカイブ)
+  - `id-ref-removed`(recent-changes/ のファイル名)
 - **テンプレ**: `vault-templates/00_meta/templates/handoff.md`
 
 ## Change Log

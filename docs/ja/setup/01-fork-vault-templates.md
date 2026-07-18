@@ -18,9 +18,6 @@ tags:
 title: 01 - vault リポジトリの初期化
 type: setup
 updated: 2026-07-14 08:45:00+09:00
-id: pj-2026-07-13-472f
-aliases:
-- pj-2026-07-13-472f
 ---
 
 ## Summary
@@ -42,7 +39,7 @@ Framework の vault-templates/ を元に、自分の GitHub アカウントに v
 
 Framework の標準推奨は:
 
-- **リポジトリ名**: `Vault`(Naoya と同じ)
+- **リポジトリ名**: `Vault`(あなた(導入者) と同じ)
 - **表示名**: シンプルさ優先
 
 ### HashiCorp Vault との衝突対策
@@ -52,7 +49,7 @@ Framework の標準推奨は:
 | 命名 | 使いどころ |
 |---|---|
 | `Vault` | Private リポジトリ運用中、Public 化予定なし |
-| `<YourName>-Vault` | 例: `naoya-vault`、他プロジェクトと区別したい場合 |
+| `<YourName>-Vault` | 例: `<your-name>-vault`、他プロジェクトと区別したい場合 |
 | `Personal-Vault` | 個人利用を明示、Public 化予定あり |
 | `Knowledge-Vault` | 「知識ベース」を強調 |
 | `Chat-Archive` | 「Chat 集約」を強調 |
@@ -206,8 +203,8 @@ cp -r /tmp/Vault-Framework/vault-templates/.gitkeep* . 2>/dev/null || true
 例:
 
 ```markdown
-- IPASoundDrill
-- English-Vocab-Chunk-Trainer
+- <your-project>
+- <your-project>
 - Vault
 - Vault-MCP
 ```
@@ -295,4 +292,4 @@ git push origin main
 
 ## Next Step
 
-vault リポジトリの初期化が完了したら [[pj-2026-07-13-1341|02-deploy-mcp-server.md]] に進み、Vault-MCP を Cloudflare Workers にデプロイします。
+vault リポジトリの初期化が完了したら 02-deploy-mcp-server.md に進み、Vault-MCP を Cloudflare Workers にデプロイします。

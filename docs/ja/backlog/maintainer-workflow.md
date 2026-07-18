@@ -1,7 +1,4 @@
 ---
-id: pj-2026-07-17-74af
-aliases:
-- pj-2026-07-17-74af
 title: Backlog Maintainer Workflow
 type: knowledge
 status: published

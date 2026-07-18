@@ -1,7 +1,6 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: pj-2026-07-15-318e
 keywords:
 - architecture
 - skill
@@ -34,9 +33,6 @@ title_ja: 'ADR-0003: Skill・Project・Vault の 3 層運用アーキテクチ�
 type: adr
 created: 2026-07-14 21:42:50+09:00
 updated: 2026-07-14 21:42:50+09:00
-aliases:
-- pj-2026-07-15-318e
-- adr-0003
 ---
 
 ## Summary
@@ -93,7 +89,7 @@ The priority order when the three sources conflict:
 **Positive**:
 
 - Responsibilities are clear; each layer updates independently
-- Naoya can directly edit Vault-side rules in Obsidian (no Skill re-upload needed)
+- the adopter can directly edit Vault-side rules in Obsidian (no Skill re-upload needed)
 - SKILL.md can be kept compact (detailed rules delegated to the Vault)
 - What must be loaded at Chat-session start is minimized (consideration for prompt caching)
 
@@ -118,7 +114,7 @@ An option to abolish Project Instructions and operate with two layers: Skill and
 
 ### Option B: Four layers (Skill + Project + Vault + external config)
 
-An option to separate Naoya-specific settings (tokens, URLs, etc.) into a separate external config.
+An option to separate the adopter-specific settings (tokens, URLs, etc.) into a separate external config.
 
 **Reason for rejection**: Managing an external config creates an additional sync path, raising complexity. The current Cloudflare Secrets plus the Vault's 00_meta are sufficient.
 
@@ -126,7 +122,7 @@ An option to separate Naoya-specific settings (tokens, URLs, etc.) into a separa
 
 An option to consolidate all rules and reference rules into SKILL.md.
 
-**Reason for rejection**: Including detailed rules bloats SKILL.md and requires re-upload on every Skill update. Naoya would lose the freedom to edit in Obsidian.
+**Reason for rejection**: Including detailed rules bloats SKILL.md and requires re-upload on every Skill update. the adopter would lose the freedom to edit in Obsidian.
 
 ## Related
 

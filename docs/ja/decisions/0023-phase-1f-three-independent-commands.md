@@ -1,8 +1,4 @@
 ---
-id: pj-2026-07-17-c14c
-aliases:
-- pj-2026-07-17-c14c
-- adr-0023
 title: '0023 - Phase 1f Three Independent Commands'
 type: knowledge
 status: accepted

@@ -7,9 +7,6 @@ keywords:
 - handoff
 - current-state
 summary: プロジェクトの現在状態。
-id: pj-2026-07-13-594e
-aliases:
-- pj-2026-07-13-594e
 ---
 
 ## Current State

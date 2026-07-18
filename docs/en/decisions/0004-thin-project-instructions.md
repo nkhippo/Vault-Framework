@@ -1,7 +1,6 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: pj-2026-07-15-721d
 keywords:
 - project-instructions
 - thin
@@ -30,9 +29,6 @@ title_ja: 'ADR-0004: 激薄 Project Instructions 方針'
 type: adr
 created: 2026-07-14 21:43:32+09:00
 updated: 2026-07-14 21:43:32+09:00
-aliases:
-- pj-2026-07-15-721d
-- adr-0004
 ---
 
 ## Summary
@@ -50,7 +46,7 @@ After adopting the Skill / Project / Vault 3-layer architecture in ADR-0003, a d
 Criteria:
 
 - Update frequency: operational rules are fine-tuned daily on the vault side, making it cumbersome to keep the Instructions side in sync
-- Ease of editing for Naoya: the vault side can be edited directly in Obsidian, but Instructions must be edited via the Claude UI
+- Ease of editing for the adopter: the vault side can be edited directly in Obsidian, but Instructions must be edited via the Claude UI
 - Consistency with the Skill: putting similar information in the Skill too would mean syncing three places, with high divergence risk
 - Behavior when MCP is disconnected: whether it can work with Instructions alone
 
@@ -59,7 +55,7 @@ Criteria:
 **Adopt Option B (very thin Instructions).**
 
 - The Project Instructions contain only the following:
-  1. The Project's purpose (e.g., "the core Chat-aggregation destination for Naoya's personal Vault operation")
+  1. The Project's purpose (e.g., "the core Chat-aggregation destination for the adopter's personal Vault operation")
   2. Required actions at session start ("if the MCP connector is connected, read the vault's `00_meta/project_instructions_vault.md`")
   3. Fallback behavior when MCP is disconnected ("handle within the scope of the Skill and userMemories; be honest when vault reference is needed")
   4. The role division of the three parties and the priority rule (Skill > vault > Instructions)
@@ -92,7 +88,7 @@ If the three conflict, the priority is Skill > vault > Instructions
 
 **Positive**:
 
-- The Instructions update frequency is minimal (only on use-case change), so Naoya's operational burden is low
+- The Instructions update frequency is minimal (only on use-case change), so the adopter's operational burden is low
 - The canonical source of operational rules is consolidated on the vault side, directly editable in Obsidian
 - Easy to keep consistency with the Skill (the Instructions only say "read," holding no substantive rules)
 - When the Framework is turned into a Fable manual, the explanation of the Instructions template is simple
@@ -102,7 +98,7 @@ If the three conflict, the priority is Skill > vault > Instructions
 
 - When the MCP connector is disconnected, the Instructions alone are insufficient (they hold no substantive operational rules)
 - Claude must always read the vault in the first session, slightly increasing token consumption
-- Someone viewing the Instructions (a third party other than Naoya) may wonder "does this really work on its own?"
+- Someone viewing the Instructions (a third party other than the adopter) may wonder "does this really work on its own?"
 
 **Mitigation**:
 
@@ -119,7 +115,7 @@ An option to write all of the reference rules, save flow, ambiguous-name resolut
 **Reasons for rejection**:
 
 - Requires triple synchronization with the Skill (Skill, Instructions, vault)
-- The Instructions update frequency rises, increasing Naoya's operational burden
+- The Instructions update frequency rises, increasing the adopter's operational burden
 - Flexible changes on the vault side are not reflected in the Instructions, causing divergence
 
 ### Option C: Attached-file method
@@ -131,7 +127,7 @@ An option to write a pointer in the Instructions and attach detailed rules as a 
 - The attached file's update frequency drops (attaching via the Claude UI is cumbersome)
 - Vault-side changes are not reflected, essentially the same problem as Option A
 
-Details: [[../rejected-alternatives/instructions-attached-file.md]]
+Details: `id-ref-removed`
 
 ## Related
 

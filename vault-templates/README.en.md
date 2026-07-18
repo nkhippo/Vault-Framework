@@ -11,9 +11,6 @@ keywords:
 - setup
 summary: Template set for bootstrapping your own Vault repository. Copy this directory
   as the initial structure.
-id: pj-2026-07-13-83d5
-aliases:
-- pj-2026-07-13-83d5
 ---
 
 ## Summary

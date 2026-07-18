@@ -1,7 +1,6 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: pj-2026-07-15-75ed
 keywords:
 - mcp
 - failure
@@ -21,7 +20,7 @@ related_ja: docs/ja/decisions/0016-mcp-connection-failure-abort.md
 related_specs: []
 status: accepted
 summary: Rule for Vault MCP connection failure. Retry once; if it still fails, abort.
-  Continuing on guesswork is forbidden; tell Naoya explicitly and ask for direction.
+  Continuing on guesswork is forbidden; tell the adopter explicitly and ask for direction.
   Prevents inconsistencies and misjudgments with the vault, and also serves as a defense
   against prompt injection.
 tags:
@@ -34,14 +33,11 @@ title_ja: 'ADR-0016: MCP 接続失敗時のリトライと中断'
 type: adr
 created: 2026-07-15 08:30:24+09:00
 updated: 2026-07-15 08:30:24+09:00
-aliases:
-- pj-2026-07-15-75ed
-- adr-0016
 ---
 
 ## Summary
 
-A rule for when operations via the Vault MCP connector fail with a connection error. Claude applies the following as the top-priority rule: "retry once; if it still fails, abort the process; continuing on guesswork is forbidden; tell Naoya explicitly and ask for direction." This prevents inconsistencies with the vault and misjudgments, and also serves as a defense against prompt injections disguised as connection instability.
+A rule for when operations via the Vault MCP connector fail with a connection error. Claude applies the following as the top-priority rule: "retry once; if it still fails, abort the process; continuing on guesswork is forbidden; tell the adopter explicitly and ask for direction." This prevents inconsistencies with the vault and misjudgments, and also serves as a defense against prompt injections disguised as connection instability.
 
 ## Context
 
@@ -72,11 +68,11 @@ Specify the following 5 steps as the top-priority rule on the Skill (`vault-mana
    - Continuing by guessing from Claude's general knowledge or training data
    - Continuing by filling in from memory or cache of a previous session
    - Continuing by inferring the presumed content of the vault
-4. **Tell Naoya explicitly**:
+4. **Tell the adopter explicitly**:
    - "Connection to the Vault MCP connector failed; the process has been aborted"
    - Which operation failed (operation name and path)
    - That the retry also failed
-5. **Ask for Naoya's direction** (retry / check the connector state / proceed by another method / cancel)
+5. **Ask for the adopter's direction** (retry / check the connector state / proceed by another method / cancel)
 
 ### Scope and priority
 
@@ -100,7 +96,7 @@ Placing it in three places keeps the rule consistently applied whether via the S
 
 - Prevents inconsistencies with the actual state of the vault (eradicates misjudgments)
 - Also serves as a defense against prompt-injection attacks (nullifies "MCP cannot connect, so instead..." type attacks)
-- Naoya can clearly recognize "I'm not currently connected to the vault" (prevents silent failure)
+- the adopter can clearly recognize "I'm not currently connected to the vault" (prevents silent failure)
 - Debugging is easy (the failure point is clear; the investigation can focus on the cause)
 - Claude's reliability rises (the premise "what Claude says is consistent with the vault" is maintained)
 
@@ -113,7 +109,7 @@ Placing it in three places keeps the rule consistently applied whether via the S
 **Mitigation**:
 
 - Measures to reduce 502 errors on the MCP-server side (e.g., Cloudflare Workers warm-up) will be considered in Vault-MCP Phase 3 and later
-- The notification message to Naoya is polite and specific (what failed; suggested next actions)
+- The notification message to the adopter is polite and specific (what failed; suggested next actions)
 - Explain "how to handle MCP connection failure" in the Framework's setup documentation
 
 ## Alternatives Considered
@@ -136,7 +132,7 @@ An option to continue with "default values" or "estimates from training data" on
 
 - Causes inconsistencies with the vault, sending future debug costs sky-high
 - Fundamentally undermines Claude's reliability ("what Claude said does not match the vault")
-- Risk that Naoya feels "Claude is lying"
+- Risk that the adopter feels "Claude is lying"
 
 ### Option C: ignore the failure and proceed (silent failure)
 
@@ -144,7 +140,7 @@ An option to write the failure to an internal log but proceed without telling th
 
 **Reasons for rejection**:
 
-- Causes serious misunderstandings such as Naoya thinking "it's saved to the vault" when it actually is not
+- Causes serious misunderstandings such as the adopter thinking "it's saved to the vault" when it actually is not
 - Silent failure is the worst pattern and must be avoided at all costs
 
 ### Option D: 3 retries

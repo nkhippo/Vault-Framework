@@ -13,9 +13,6 @@ keywords:
 related_adrs: []
 related_specs: []
 summary: Framework の目的と解こうとする問題領域の概要。
-id: pj-2026-07-13-9fa8
-aliases:
-- pj-2026-07-13-9fa8
 ---
 
 ## Summary

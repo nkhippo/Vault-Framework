@@ -8,7 +8,6 @@ keywords:
 - mcp-server
 - cloudflare-workers
 one_line_purpose: MCP サーバプロジェクトの現在の状態スナップショットの例
-project: <your-mcp-project>
 related: []
 status: wip
 summary: handoff type の記入例。MCP サーバプロジェクトの current-state.md を題材にした、他 Chat からのキャッチアップ用千ピースの例。プロジェクトごとに
@@ -21,9 +20,6 @@ tags:
 title: '例: MCP サーバの handoff/current-state.md'
 type: example
 updated: 2026-07-13 22:25:00+09:00
-id: pj-2026-07-13-4dd4
-aliases:
-- pj-2026-07-13-4dd4
 ---
 
 ## Summary

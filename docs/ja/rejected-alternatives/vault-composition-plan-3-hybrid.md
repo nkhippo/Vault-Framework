@@ -19,9 +19,6 @@ tags:
 title: '却下案: ハイブリッド構成'
 type: rejected_alternative
 updated: 2026-07-14 05:20:00+09:00
-id: pj-2026-07-13-8398
-aliases:
-- pj-2026-07-13-8398
 ---
 
 ## Summary
@@ -35,7 +32,7 @@ Vault を以下のハイブリッド構成で運用する案:
 - **書き込み経路 A**: Obsidian(iCloud + Obsidian Sync)経由の編集
 - **書き込み経路 B**: Claude(MCP 経由)の直接書き込み
 - **同期戦略**: 両者を定期的に同期(スクリプト or 手動)
-- **役割分担**: 「Naoya の手動編集は Obsidian、AI 経由は GitHub」等の暗黙的な区分け
+- **役割分担**: 「あなた(導入者) の手動編集は Obsidian、AI 経由は GitHub」等の暗黙的な区分け
 
 各書き込み経路にそれぞれのメリット(Obsidian の編集体験、GitHub の履歴管理)を活かせるという構想。
 
@@ -59,12 +56,12 @@ Vault を以下のハイブリッド構成で運用する案:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0001「GitHub-as-a-Backend」(単一 source of truth = GitHub)
-- **参照**: [[pj-2026-07-13-2564]]
+- **参照**: `id-ref-removed`
 
 Obsidian は編集 UI として使用するが、真実の source は GitHub。iCloud Drive はローカルミラーで、GitHub への push が「保存」の意味を持つ。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_vault-system-design-inception-to-completion.md`
-- 対応 ADR: [[pj-2026-07-13-2564]]
-- 関連却下案: [[pj-2026-07-13-e650]](Obsidian Sync 主導)
+- 対応 ADR: `id-ref-removed`
+- 関連却下案: `id-ref-removed`(Obsidian Sync 主導)

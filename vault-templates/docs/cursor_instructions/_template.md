@@ -8,9 +8,6 @@ keywords:
 - instructions
 - template
 summary: Cursor 向け指示書の汎用テンプレ。
-id: pj-2026-07-13-2524
-aliases:
-- pj-2026-07-13-2524
 ---
 
 ## Goal

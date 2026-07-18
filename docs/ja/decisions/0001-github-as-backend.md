@@ -2,7 +2,6 @@
 audience: mixed
 created: 2026-07-14 03:30:00+09:00
 date: 2026-07-13
-id: pj-2026-07-13-2564
 keywords:
 - github
 - backend
@@ -29,9 +28,6 @@ tags:
 title: 'ADR-0001: GitHub-as-a-Backend の採用'
 type: adr
 updated: 2026-07-14 03:30:00+09:00
-aliases:
-- pj-2026-07-13-2564
-- adr-0001
 ---
 
 ## Summary
@@ -40,7 +36,7 @@ Chat 内容の永続化にあたり、GitHub リポジトリ(`nkhippo/Vault`)を
 
 ## Context
 
-Naoya は Obsidian で個人ナレッジベースを運用していたが、Chat の内容を体系的に集約する場所が課題だった。Obsidian Sync + iCloud で複数デバイス同期していたものの、Claude との連携は手動コピペ中心で、以下の問題があった:
+あなた(導入者) は Obsidian で個人ナレッジベースを運用していたが、Chat の内容を体系的に集約する場所が課題だった。Obsidian Sync + iCloud で複数デバイス同期していたものの、Claude との連携は手動コピペ中心で、以下の問題があった:
 
 - Claude が過去の議論や意思決定を参照できない(セッション間で記憶を持たない)
 - 保存の手間で貴重な議論が消える
@@ -79,7 +75,7 @@ Chat 集約のための保存戦略として、3 案を比較検討:
 - 直接編集(Obsidian)と Claude 経由(MCP)の 2 系統の書き込みパスが並立し、同期タイミングに注意が必要
 - iCloud 同期のタイムラグで、直後の Claude 参照が古い状態を見る可能性
 - MCP のレスポンスタイムが GitHub API の rate/latency に依存
-- Naoya がオフラインの時、Obsidian 編集は可能だが Claude 連携は動かない
+- あなた(導入者) がオフラインの時、Obsidian 編集は可能だが Claude 連携は動かない
 
 **Mitigation**:
 
@@ -90,7 +86,7 @@ Chat 集約のための保存戦略として、3 案を比較検討:
 
 ### 案 2: Obsidian Sync 主導
 
-Obsidian Sync(有料の Obsidian 純正同期サービス)を主軸に、GitHub は補助バックアップとして使う案。詳細は [[pj-2026-07-13-e650]]。
+Obsidian Sync(有料の Obsidian 純正同期サービス)を主軸に、GitHub は補助バックアップとして使う案。詳細は `id-ref-removed`。
 
 **却下理由**:
 - Vendor Lock-in(Obsidian の運営継続に依存)
@@ -100,7 +96,7 @@ Obsidian Sync(有料の Obsidian 純正同期サービス)を主軸に、GitHub 
 
 ### 案 3: ハイブリッド構成
 
-Obsidian Sync と GitHub を並列運用し、それぞれの強みを活かす案。詳細は [[pj-2026-07-13-8398]]。
+Obsidian Sync と GitHub を並列運用し、それぞれの強みを活かす案。詳細は `id-ref-removed`。
 
 **却下理由**:
 - 単一 source of truth を維持できず、乖離が発生した時の統合コストが高い

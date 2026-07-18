@@ -2,7 +2,6 @@
 audience: mixed
 created: 2026-07-14 04:40:00+09:00
 date: 2026-07-13
-id: pj-2026-07-13-b51c
 keywords:
 - cursor
 - delegation
@@ -28,9 +27,6 @@ tags:
 title: 'ADR-0008: Cursor 委譲判定: メンテナンスレベル方式'
 type: adr
 updated: 2026-07-14 04:40:00+09:00
-aliases:
-- pj-2026-07-13-b51c
-- adr-0008
 ---
 
 ## Summary
@@ -76,7 +72,7 @@ Vault 運用初期、以下のシンプルな数値ルールで Cursor 委譲を
 
 ### 判定に迷った場合
 
-Naoya に以下を提案:
+あなた(導入者) に以下を提案:
 
 ```
 この作業は複数ファイルの整合性が必要なため、Cursor 経由での実施を推奨します。
@@ -104,7 +100,7 @@ Cursor 委譲指示書のテンプレは Framework の `vault-templates/docs/cur
 **Mitigation**:
 
 - Skill.md で判定基準を明示的に列挙(境界事例のパターンを蓄積)
-- 判断に迷う時は Naoya に確認するフローを標準化
+- 判断に迷う時は あなた(導入者) に確認するフローを標準化
 - 新しい判定パターンは月次補正(Level 3)時に Skill.md への追加を検討
 
 ## Alternatives Considered
@@ -115,7 +111,7 @@ Cursor 委譲指示書のテンプレは Framework の `vault-templates/docs/cur
 
 **却下理由**: ファイル数という指標そのものが誤っており、閾値を変えても本質的な問題は解決しない。
 
-詳細: [[pj-2026-07-13-7ee4]]
+詳細: `id-ref-removed`
 
 ### 案 B: 全ての操作を Cursor 委譲
 

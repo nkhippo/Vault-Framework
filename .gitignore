@@ -24,3 +24,9 @@ package-lock.json.backup
 # Build outputs
 dist/
 build/
+
+.pytest_cache/
+
+__pycache__/
+
+*.log

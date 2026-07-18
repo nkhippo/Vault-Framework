@@ -21,9 +21,6 @@ tags:
 title: Sonnet 5 最適化
 type: guideline
 updated: 2026-07-14 08:25:00+09:00
-id: pj-2026-07-13-b12c
-aliases:
-- pj-2026-07-13-b12c
 ---
 
 ## Summary
@@ -317,15 +314,15 @@ Sonnet 5 対応が完了しているかのチェックリスト:
 
 ## References
 
-- **関連 ADR**: [[pj-2026-07-13-d3c5]]
+- **関連 ADR**: `id-ref-removed`
 - **関連 spec**: 
-  - [[pj-2026-07-13-dd44]](プロンプト工夫 2)
-  - [[pj-2026-07-13-9fa5]](構造修正 2)
-  - [[pj-2026-07-13-f5e9]](構造修正 1)
-  - [[pj-2026-07-13-47fd]](構造修正 3)
-  - [[pj-2026-07-13-c1bd]](構造修正 4)
+  - `id-ref-removed`(プロンプト工夫 2)
+  - `id-ref-removed`(構造修正 2)
+  - `id-ref-removed`(構造修正 1)
+  - `id-ref-removed`(構造修正 3)
+  - `id-ref-removed`(構造修正 4)
 - **関連 guideline**: 
-  - [[pj-2026-07-13-fba6]](Principle 9: prompt caching)
+  - `id-ref-removed`(Principle 9: prompt caching)
 
 ## Change Log
 

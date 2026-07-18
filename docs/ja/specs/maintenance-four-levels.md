@@ -23,9 +23,6 @@ tags:
 title: 保守運用 4 レベル 仕様
 type: spec
 updated: 2026-07-14 07:35:00+09:00
-id: pj-2026-07-13-d0dd
-aliases:
-- pj-2026-07-13-d0dd
 ---
 
 ## Summary
@@ -67,7 +64,7 @@ Vault の保守運用 4 レベル(Level 1 日常発火 / Level 2 週次補正 / 
 
 - **Claude(Skill `vault-manager`)単独**
 - Cursor 委譲なし
-- Naoya の承認不要
+- あなた(導入者) の承認不要
 
 ### 作業内容
 
@@ -88,7 +85,7 @@ Vault の保守運用 4 レベル(Level 1 日常発火 / Level 2 週次補正 / 
 #### 命名規約違反の警告
 
 - ファイル名が `YYYY-MM-DD_kebab-slug.md` パターンに合わない場合、警告
-- Naoya に確認して修正するか、そのまま保存するかを提案
+- あなた(導入者) に確認して修正するか、そのまま保存するかを提案
 
 #### sensitive フィールドの自動付与
 
@@ -97,7 +94,7 @@ Vault の保守運用 4 レベル(Level 1 日常発火 / Level 2 週次補正 / 
 
 ### 介入コスト
 
-- **ゼロ**: Naoya が気づかないうちに実施
+- **ゼロ**: あなた(導入者) が気づかないうちに実施
 - 例外: 命名規約違反等で確認が必要な場合のみ、1-2 秒の対話
 
 ### Cursor 委譲
@@ -109,13 +106,13 @@ Vault の保守運用 4 レベル(Level 1 日常発火 / Level 2 週次補正 / 
 ### 発火条件
 
 - 週次(推奨: 日曜日、vault_maintenance_config.md で cadence 設定可能)
-- Naoya が明示的に「週次の Vault メンテナンスをお願いします」と発話した時
+- あなた(導入者) が明示的に「週次の Vault メンテナンスをお願いします」と発話した時
 - Level 1 で検出した違反が 10 件以上蓄積した時(バッチ処理の必要性)
 
 ### 担当
 
-- **Naoya の承認を経て Cursor が実施**
-- Claude(Skill)は指示書を作成、Naoya が Cursor に渡す
+- **あなた(導入者) の承認を経て Cursor が実施**
+- Claude(Skill)は指示書を作成、あなた(導入者) が Cursor に渡す
 
 ### 作業内容
 
@@ -139,17 +136,11 @@ Vault の保守運用 4 レベル(Level 1 日常発火 / Level 2 週次補正 / 
 #### 週次スナップショット
 
 - 各プロジェクトの handoff/current-state.md の updated 日時をチェック
-- 1 週間以上更新されていないプロジェクトを Naoya に報告
-
-#### Backlog stalled detection(Phase 1d PR-B)
-
-- `state: open` かつ `updated` が threshold(デフォルト 14 日)より古い backlog item を検出
-- `stalled` tag の有無で A/B 群に分別し、Naoya 承認 gate 経由で tag 付与 / abandoned 化等を提案
-- 詳細: [[pj-2026-07-17-74af|docs/ja/backlog/maintainer-workflow.md]]
+- 1 週間以上更新されていないプロジェクトを あなた(導入者) に報告
 
 ### 介入コスト
 
-- **30 分〜1 時間**(Naoya のレビュー含む)
+- **30 分〜1 時間**(あなた(導入者) のレビュー含む)
 - Cursor の実行は 5-10 分、レビューが主要な時間
 
 ### Cursor 委譲
@@ -162,11 +153,11 @@ Vault の保守運用 4 レベル(Level 1 日常発火 / Level 2 週次補正 / 
 ### 発火条件
 
 - 月次(推奨: 月初 1 日、vault_maintenance_config.md で cadence 設定可能)
-- Naoya が明示的に「月次のクリーンアップをお願いします」と発話した時
+- あなた(導入者) が明示的に「月次のクリーンアップをお願いします」と発話した時
 
 ### 担当
 
-- **Naoya の承認を経て Cursor が実施**
+- **あなた(導入者) の承認を経て Cursor が実施**
 
 ### 作業内容
 
@@ -191,11 +182,11 @@ Vault の保守運用 4 レベル(Level 1 日常発火 / Level 2 週次補正 / 
 #### Skill と vault の乖離チェック
 
 - SKILL.md の記述と vault 側 00_meta の記述が一致しているか
-- 乖離があれば Naoya に報告し、どちらを正とみなすか確認
+- 乖離があれば あなた(導入者) に報告し、どちらを正とみなすか確認
 
 ### 介入コスト
 
-- **1〜3 時間**(Naoya のレビュー含む)
+- **1〜3 時間**(あなた(導入者) のレビュー含む)
 - Cursor の実行は 15-30 分
 
 ### Cursor 委譲
@@ -213,7 +204,7 @@ Vault の保守運用 4 レベル(Level 1 日常発火 / Level 2 週次補正 / 
 
 ### 担当
 
-- **Naoya が主導、Cursor が実施**
+- **あなた(導入者) が主導、Cursor が実施**
 - 大規模作業のため、複数セッションに分けて実施することも
 
 ### 作業内容
@@ -247,7 +238,7 @@ Vault の保守運用 4 レベル(Level 1 日常発火 / Level 2 週次補正 / 
 
 - **数時間〜1 日**(セッション分割の場合、合計はさらに大きい)
 - Cursor の実行は 30 分-2 時間
-- Naoya のレビューが最も時間かかる
+- あなた(導入者) のレビューが最も時間かかる
 
 ### Cursor 委譲
 
@@ -287,7 +278,7 @@ cadence:
 ### 抽象生成との並行運用
 
 - 保守運用と抽象生成は独立
-- 抽象生成は Naoya の意向で任意タイミング(月次〜四半期)で発火
+- 抽象生成は あなた(導入者) の意向で任意タイミング(月次〜四半期)で発火
 - 詳細は abstract-generation.md 参照
 
 ## Monitoring and Reporting
@@ -300,7 +291,7 @@ cadence:
 ### Level 2、3、4 の実施レポート
 
 - 各実施の完了レポートを handoff/recent-changes/YYYY/MM/ に保存
-- 実施内容、修正件数、Naoya の判断ポイントを記録
+- 実施内容、修正件数、あなた(導入者) の判断ポイントを記録
 
 ### 定期的な振り返り
 
@@ -310,12 +301,12 @@ cadence:
 ## References
 
 - **関連 ADR**: 
-  - [[pj-2026-07-13-48bc]](4 レベル + 抽象生成)
-  - [[pj-2026-07-13-b51c]](Cursor 委譲判定)
-  - [[pj-2026-07-13-ab6d]](Level 4 の例)
+  - `id-ref-removed`(4 レベル + 抽象生成)
+  - `id-ref-removed`(Cursor 委譲判定)
+  - `id-ref-removed`(Level 4 の例)
 - **関連 spec**: 
-  - [[pj-2026-07-13-7921]](抽象生成の並行運用)
-  - [[pj-2026-07-13-c1bd]](Level 3 の月次アーカイブ)
+  - `id-ref-removed`(抽象生成の並行運用)
+  - `id-ref-removed`(Level 3 の月次アーカイブ)
 - **実装**: `vault-templates/00_meta/vault_maintenance_config.md`(cadence 設定)
 
 ## Change Log

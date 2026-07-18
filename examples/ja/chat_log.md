@@ -20,9 +20,6 @@ tags:
 title: '例: MCP プラットフォーム選定の議論'
 type: example
 updated: 2026-07-13 22:15:00+09:00
-id: pj-2026-07-13-0bfb
-aliases:
-- pj-2026-07-13-0bfb
 ---
 
 ## Summary

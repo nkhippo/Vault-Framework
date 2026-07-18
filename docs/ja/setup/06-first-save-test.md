@@ -18,9 +18,6 @@ tags:
 title: 06 - 初回保存テスト
 type: setup
 updated: 2026-07-14 09:15:00+09:00
-id: pj-2026-07-13-9c97
-aliases:
-- pj-2026-07-13-9c97
 ---
 
 ## Summary
@@ -189,7 +186,7 @@ Chat の Connectors 設定で `Vault MCP` を **OFF** にする。
 - Skill が MCP 接続の欠如を検出
 - 「Vault MCP が接続されていません」と伝える
 - 憶測での保存を実施しない(ADR-0016)
-- Naoya に判断を仰ぐ
+- あなた(導入者) に判断を仰ぐ
 
 ### 6.4 復旧確認
 
@@ -230,8 +227,8 @@ Chat の Connectors 設定で `Vault MCP` を **OFF** にする。
 
 初回動作テストが完了したら、日常運用が可能です。以下を参考にしてください:
 
-- [[pj-2026-07-13-e55f|customization.md]] - 拡張・カスタマイズの手順
-- [[pj-2026-07-13-e32c|troubleshooting.md]] - 問題解決とトラブルシューティング
+- customization.md - 拡張・カスタマイズの手順
+- troubleshooting.md - 問題解決とトラブルシューティング
 - Framework の [guidelines/](../guidelines/) - 運用原則
 
-Naoya の運用パターンをそのまま真似するか、自分の運用に合わせて段階的にカスタマイズしてください。
+あなた(導入者) の運用パターンをそのまま真似するか、自分の運用に合わせて段階的にカスタマイズしてください。

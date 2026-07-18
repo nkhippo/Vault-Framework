@@ -22,9 +22,6 @@ tags:
 title: 統制語彙の設計 仕様
 type: spec
 updated: 2026-07-14 07:05:00+09:00
-id: pj-2026-07-13-f5e9
-aliases:
-- pj-2026-07-13-f5e9
 ---
 
 ## Summary
@@ -204,8 +201,8 @@ SKILL.md, 各 template      (実際の使用箇所)
 
 - **関連 ADR**: なし(vocabulary は仕様として独立)
 - **関連 spec**: 
-  - [[pj-2026-07-13-9fa5]](Front Matter での使用)
-  - [[pj-2026-07-13-5c9b]](type と保存先の対応)
+  - `id-ref-removed`(Front Matter での使用)
+  - `id-ref-removed`(type と保存先の対応)
 - **実装**: `vault-templates/00_meta/vocabulary.md`(vault 内正典)
 
 ## Change Log

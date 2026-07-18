@@ -1,7 +1,4 @@
 ---
-id: pj-2026-07-17-68cf
-aliases:
-- pj-2026-07-17-68cf
 title: Handoff Workflow
 type: knowledge
 status: published

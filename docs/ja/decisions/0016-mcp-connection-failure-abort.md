@@ -2,7 +2,6 @@
 audience: mixed
 created: 2026-07-14 04:30:00+09:00
 date: 2026-07-13
-id: pj-2026-07-13-e19b
 keywords:
 - mcp
 - failure
@@ -19,7 +18,7 @@ related_adrs:
 related_chats: []
 related_specs: []
 status: accepted
-summary: Vault MCP コネクタ接続失敗時のルール。1 回リトライ後に中断、憶測での続行を禁止し、Naoya に失敗を明示して判断を仰ぐ。vault
+summary: Vault MCP コネクタ接続失敗時のルール。1 回リトライ後に中断、憶測での続行を禁止し、あなた(導入者) に失敗を明示して判断を仰ぐ。vault
   との不整合・判断ミスを防ぎ、prompt injection への防御を兼ねる。
 superseded_by: null
 supersedes: null
@@ -31,9 +30,6 @@ tags:
 title: 'ADR-0016: MCP 接続失敗時のリトライと中断'
 type: adr
 updated: 2026-07-14 04:30:00+09:00
-aliases:
-- pj-2026-07-13-e19b
-- adr-0016
 ---
 
 ## Summary
@@ -69,11 +65,11 @@ Vault MCP コネクタ経由の操作(`list_directory`、`get_file_content`、`c
    - Claude の一般知識や訓練データから憶測で補って処理を続けること
    - 前回セッションの記憶やキャッシュから補って処理を続けること
    - vault の想定される内容を推定して処理を続けること
-4. **Naoya に対して以下を明示**:
+4. **あなた(導入者) に対して以下を明示**:
    - 「Vault MCP コネクタへの接続に失敗し、処理を中断しました」
    - どの操作が失敗したか(操作名とパス)
    - リトライも失敗したこと
-5. **Naoya の判断を仰ぐ**(再試行 / コネクタ状態確認 / 別方法での進行 / 中止)
+5. **あなた(導入者) の判断を仰ぐ**(再試行 / コネクタ状態確認 / 別方法での進行 / 中止)
 
 ### 適用範囲と優先順位
 
@@ -97,7 +93,7 @@ Vault MCP コネクタ経由の操作(`list_directory`、`get_file_content`、`c
 
 - vault の実状態との不整合を防止(判断ミスの根絶)
 - prompt injection 攻撃への防御を兼ねる(「MCP に接続できないので代わりに...」型の攻撃を無効化)
-- Naoya が「今 vault と接続できていない」ことを明示的に認知できる(sil ent failure の防止)
+- あなた(導入者) が「今 vault と接続できていない」ことを明示的に認知できる(sil ent failure の防止)
 - debug が容易(失敗ポイントが明確、原因調査に集中できる)
 - Claude の信頼性が向上(「Claude が言ったことは vault と整合している」という前提が保たれる)
 
@@ -110,7 +106,7 @@ Vault MCP コネクタ経由の操作(`list_directory`、`get_file_content`、`c
 **Mitigation**:
 
 - MCP サーバ側で 502 エラーを減らすための対策(Cloudflare Workers の warm-up 等)は Vault-MCP Phase 3 以降で検討
-- Naoya への通知メッセージは丁寧かつ具体的(何が失敗したか、次のアクション候補を提示)
+- あなた(導入者) への通知メッセージは丁寧かつ具体的(何が失敗したか、次のアクション候補を提示)
 - Framework の setup ドキュメントで「MCP 接続失敗時の対処法」を説明
 
 ## Alternatives Considered
@@ -133,7 +129,7 @@ Vault MCP コネクタ経由の操作(`list_directory`、`get_file_content`、`c
 
 - vault との不整合を招き、後日の debug コストが跳ね上がる
 - Claude の信頼性が根本的に損なわれる(「Claude が言ったことが vault と一致しない」)
-- Naoya が「Claude が嘘をついている」と感じるリスク
+- あなた(導入者) が「Claude が嘘をついている」と感じるリスク
 
 ### 案 C: 失敗を無視して進める(silent failure)
 
@@ -141,7 +137,7 @@ Vault MCP コネクタ経由の操作(`list_directory`、`get_file_content`、`c
 
 **却下理由**:
 
-- Naoya が「vault に保存された」と思っているが実際には保存されていない、等の重大な誤解を招く
+- あなた(導入者) が「vault に保存された」と思っているが実際には保存されていない、等の重大な誤解を招く
 - silent failure は最悪のパターン、絶対避けるべき
 
 ### 案 D: 3 回リトライ

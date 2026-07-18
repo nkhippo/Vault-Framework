@@ -22,9 +22,6 @@ tags:
 title: '却下案: Fly.io / Railway / Render / Vercel / Netlify / Deno Deploy'
 type: rejected_alternative
 updated: 2026-07-14 05:30:00+09:00
-id: pj-2026-07-13-6540
-aliases:
-- pj-2026-07-13-6540
 ---
 
 ## Summary
@@ -85,10 +82,10 @@ Vault-MCP のホスティングプラットフォームとして、Cloudflare Wo
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0002「MCP プラットフォームに Cloudflare Workers」
-- **参照**: [[pj-2026-07-13-bccd]]
+- **参照**: `id-ref-removed`
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_platform-selection-and-phase12-completion.md`
-- 対応 ADR: [[pj-2026-07-13-bccd]]
-- 関連却下案: [[pj-2026-07-13-a307]](Cloud Run 個別記録)
+- 対応 ADR: `id-ref-removed`
+- 関連却下案: `id-ref-removed`(Cloud Run 個別記録)

@@ -10,9 +10,6 @@ tags:
 title: ''
 type: note_published
 updated: 2026-07-14 01:10:27+09:00
-id: pj-2026-07-13-94e3
-aliases:
-- pj-2026-07-13-94e3
 ---
 
 ## Summary

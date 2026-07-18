@@ -17,9 +17,6 @@ tags:
 title: 00 - 前提確認
 type: setup
 updated: 2026-07-14 08:40:00+09:00
-id: pj-2026-07-13-ed0d
-aliases:
-- pj-2026-07-13-ed0d
 ---
 
 ## Summary
@@ -168,7 +165,7 @@ wrangler --version
 - **Markdown の基本**: Wikilink、Front Matter
 - **環境変数の扱い**: Cloudflare Secrets(GUI で設定可能)
 
-これらに慣れていない場合、[[pj-2026-07-13-d62b|03-configure-mcp-connector.md]] 以降のステップで手取り足取り説明します。
+これらに慣れていない場合、03-configure-mcp-connector.md 以降のステップで手取り足取り説明します。
 
 ## Prerequisites チェックリスト
 
@@ -201,4 +198,4 @@ Vault-Framework 運用にかかる費用の目安:
 
 ## Next Step
 
-前提の確認ができたら [[pj-2026-07-13-472f|01-fork-vault-templates.md]] に進んでください。
+前提の確認ができたら 01-fork-vault-templates.md に進んでください。

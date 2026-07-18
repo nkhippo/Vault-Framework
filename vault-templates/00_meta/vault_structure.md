@@ -16,9 +16,6 @@ tags:
 title: Vault 構造
 type: knowledge
 updated: 2026-07-13 21:42:00+09:00
-id: pj-2026-07-13-0391
-aliases:
-- pj-2026-07-13-0391
 ---
 
 ## Summary

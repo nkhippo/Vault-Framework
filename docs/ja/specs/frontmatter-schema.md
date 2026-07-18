@@ -21,9 +21,6 @@ tags:
 title: Front Matter スキーマ 仕様
 type: spec
 updated: 2026-07-14 07:00:00+09:00
-id: pj-2026-07-13-9fa5
-aliases:
-- pj-2026-07-13-9fa5
 ---
 
 ## Summary
@@ -134,7 +131,7 @@ status: published
 
 - **型**: array of wikilink
 - **意味**: 関連ファイルへのリンク
-- **例**: `["[[pj-2026-07-13-bccd]]"]`
+- **例**: `["`id-ref-removed`"]`
 
 ### `supersedes`
 
@@ -146,7 +143,7 @@ status: published
 
 - **型**: string
 - **意味**: このファイルを置き換えた新ファイル(ADR 番号または wikilink)
-- **例**: `"0006"`(ADR 番号)、`"[[pj-2026-07-13-e13e]]"`(wikilink)
+- **例**: `"0006"`(ADR 番号)、`"`id-ref-removed`"`(wikilink)
 
 ### `sensitive`
 
@@ -270,7 +267,7 @@ key: value
 ```yaml
 title: MCP プラットフォーム選定             # quoting なし
 description: "Use this skill when..."       # double-quote(内部に : を含むため)
-notes: 'It is Naoya''s project'             # single-quote(内部に ' を含む場合はエスケープ)
+notes: 'It is あなた(導入者)''s project'             # single-quote(内部に ' を含む場合はエスケープ)
 ```
 
 ### 配列(リスト)
@@ -363,8 +360,8 @@ Front Matter 直後に H2 `## Summary` セクションを置く:
 
 - **関連 ADR**: なし(schema はスペックとして独立)
 - **関連 spec**: 
-  - [[pj-2026-07-13-f5e9]](統制語彙の設計原則)
-  - [[pj-2026-07-13-5c9b]](ファイル名の規則)
+  - `id-ref-removed`(統制語彙の設計原則)
+  - `id-ref-removed`(ファイル名の規則)
 - **実装**: `vault-templates/00_meta/frontmatter_schema.md`(vault 内正典)
 
 ## Change Log

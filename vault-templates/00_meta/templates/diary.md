@@ -18,9 +18,6 @@ tags:
 title: Diary Template
 type: template
 updated: 2026-07-13 21:55:00+09:00
-id: pj-2026-07-14-bd85
-aliases:
-- pj-2026-07-14-bd85
 ---
 
 ## 使い方(このテンプレ自体は使い捨てではなく、コピー元として保持)

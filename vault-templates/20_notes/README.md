@@ -7,9 +7,6 @@ date: 2026-07-13
 keywords:
 - 20_notes
 summary: ノート領域(wip / published)。
-id: pj-2026-07-13-c2c6
-aliases:
-- pj-2026-07-13-c2c6
 ---
 
 ## Summary

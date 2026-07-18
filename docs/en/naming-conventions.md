@@ -22,9 +22,6 @@ title_ja: 命名規約の思想
 type: overview
 created: 2026-07-14 20:49:45+09:00
 updated: 2026-07-14 20:49:45+09:00
-id: pj-2026-07-15-4e85
-aliases:
-- pj-2026-07-15-4e85
 ---
 
 ## Summary
@@ -47,7 +44,7 @@ The standard format is `YYYY-MM-DD_kebab-case-slug.md`.
 - The slug is an English kebab-case string, at most 30 characters
 - There are exception patterns (e.g., diary entries) — see the spec for details
 
-For detailed rules, slug-generation logic, and the Skill's auto-generation algorithm, see the [file-naming spec](./specs/file-naming.md) *(English translation pending)*.
+For detailed rules, slug-generation logic, and the Skill's auto-generation algorithm, see the file-naming spec *(English translation pending)*.
 
 ## Directory Naming Rules (Overview)
 
@@ -73,16 +70,16 @@ Main reasons:
 - **Prioritizing simplicity**: Prefixes like `Personal-Vault` were judged redundant and dropped
 - **Risk of name collision with HashiCorp Vault**: The bare name `Vault` risks colliding with HashiCorp's secrets-management tool, so when publishing or forking, adopters are recommended to choose their own naming (e.g., `<YourName>-Vault`) — see the setup guide
 
-For details on the rejected naming candidates, see the [naming-plan-* files under rejected-alternatives](./rejected-alternatives/README.md) *(English translation pending)*.
+For details on the rejected naming candidates, see the [naming-plan-* files under rejected-alternatives](../ja/rejected-alternatives/README.md) *(English translation pending)*.
 
 ## Relationship to Controlled Vocabulary
 
-Separate from naming rules, the Front Matter fields `type`, `status`, `tags`, and `project` use a controlled vocabulary. This is a different layer of control from file/directory "naming" — see the [vocabulary-design spec](./specs/vocabulary-design.md) *(English translation pending)* for details.
+Separate from naming rules, the Front Matter fields `type`, `status`, `tags`, and `project` use a controlled vocabulary. This is a different layer of control from file/directory "naming" — see the vocabulary-design spec *(English translation pending)* for details.
 
 ## Related
 
-- [[pj-2026-07-13-e13e|ADR 0006: Finalizing the naming scheme]] *(English translation pending)*
-- [file-naming spec: Detailed file-naming specification](./specs/file-naming.md) *(English translation pending)*
-- [vocabulary-design spec: Controlled vocabulary design](./specs/vocabulary-design.md) *(English translation pending)*
-- [rejected-alternatives: Rejected naming candidates](./rejected-alternatives/README.md) *(English translation pending)*
-- [[pj-2026-07-15-4872|Philosophy: GitHub-as-a-Backend]]
+- ADR 0006: Finalizing the naming scheme *(English translation pending)*
+- file-naming spec: Detailed file-naming specification *(English translation pending)*
+- vocabulary-design spec: Controlled vocabulary design *(English translation pending)*
+- [rejected-alternatives: Rejected naming candidates](../ja/rejected-alternatives/README.md) *(English translation pending)*
+- Philosophy: GitHub-as-a-Backend

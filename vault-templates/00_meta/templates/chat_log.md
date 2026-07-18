@@ -9,9 +9,6 @@ tags: []
 title: ''
 type: chat_log
 updated: 2026-07-14 01:10:15+09:00
-id: pj-2026-07-13-6e9d
-aliases:
-- pj-2026-07-13-6e9d
 ---
 
 ## Summary

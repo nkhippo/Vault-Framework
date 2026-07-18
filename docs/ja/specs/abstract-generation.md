@@ -20,9 +20,6 @@ tags:
 title: 抽象生成 仕様
 type: spec
 updated: 2026-07-14 07:45:00+09:00
-id: pj-2026-07-13-7921
-aliases:
-- pj-2026-07-13-7921
 ---
 
 ## Summary
@@ -97,7 +94,7 @@ ADR-0002 (Cloudflare Workers for MCP)
 
 - **月次〜四半期**: 抽象化の候補が蓄積された頃合い
 - **プロジェクトのマイルストーン後**: 大きな判断を伴うフェーズ終了時
-- **Naoya の意向**: 「そろそろ抽象化したい」等の発話
+- **あなた(導入者) の意向**: 「そろそろ抽象化したい」等の発話
 
 ### 発火不要のケース
 
@@ -139,9 +136,9 @@ Claude が Skill 側で以下を実施:
 - Front Matter の骨格を生成(該当 type のテンプレート使用)
 - 本文を該当ファイル形式(ADR: Summary → Context → Decision …、spec: Summary → Scope → Behavior …)で構造化
 
-### Step 4: 内容の充実(Naoya のレビュー含む)
+### Step 4: 内容の充実(あなた(導入者) のレビュー含む)
 
-- Claude が生成した草案を Naoya が確認
+- Claude が生成した草案を あなた(導入者) が確認
 - 追加すべき内容、修正すべき表現をレビュー
 - 相互リンク(related_adrs、related_specs、related_chats)の確認と補完
 
@@ -173,11 +170,11 @@ Framework(`nkhippo/Vault-Framework/docs/ja/`)への反映:
 
 - diary / reflection / goal は sensitive(ADR-0016)
 - 個人的な感情や思考を「抽象化・公開」するのは不適切
-- 万一パターン化するとしても、Naoya の明示的な意向が必要
+- 万一パターン化するとしても、あなた(導入者) の明示的な意向が必要
 
 ### 特定プロジェクトの実装詳細
 
-- 30_projects/<Repo>/logs/ の中で、Naoya のアプリの具体的な実装コード議論は抽象化しない
+- 30_projects/<Repo>/logs/ の中で、あなた(導入者) のアプリの具体的な実装コード議論は抽象化しない
 - 実装は該当リポジトリの Cursor 委譲で扱う、vault では原則メタ議論のみ
 
 ### 個人的なトピック
@@ -195,7 +192,7 @@ Framework(`nkhippo/Vault-Framework/docs/ja/`)への反映:
 - Front Matter の整備
 - 相互リンクの提案
 
-### Naoya
+### あなた(導入者)
 
 - 発火の意向表明
 - 抽象化候補の承認
@@ -228,13 +225,13 @@ Framework(`nkhippo/Vault-Framework/docs/ja/`)への反映:
 ### 生成した guideline の質チェック
 
 - 判断の指針(9 原則等)が具体的な事例で説明されているか
-- Naoya の実運用と乖離していないか
+- あなた(導入者) の実運用と乖離していないか
 
 ## Iteration Pattern
 
 抽象生成は 1 回で完成しない:
 
-1. **初回**: 骨格生成、Naoya のレビュー
+1. **初回**: 骨格生成、あなた(導入者) のレビュー
 2. **数週間後**: 実運用で気づいた点を反映
 3. **数ヶ月後**: 新たな chat_log が蓄積されたら Change Log に追記
 4. **必要に応じて**: supersede(旧 ADR を新 ADR で置き換え)
@@ -242,11 +239,11 @@ Framework(`nkhippo/Vault-Framework/docs/ja/`)への反映:
 ## References
 
 - **関連 ADR**: 
-  - [[pj-2026-07-13-48bc]](並行運用の位置づけ)
-  - [[pj-2026-07-13-e19b]](sensitive 引用禁止)
+  - `id-ref-removed`(並行運用の位置づけ)
+  - `id-ref-removed`(sensitive 引用禁止)
 - **関連 spec**: 
-  - [[pj-2026-07-13-d0dd]](保守運用 4 レベル、抽象生成は並行)
-  - [[pj-2026-07-13-9fa5]](ADR/spec/rejected の Front Matter)
+  - `id-ref-removed`(保守運用 4 レベル、抽象生成は並行)
+  - `id-ref-removed`(ADR/spec/rejected の Front Matter)
 - **実装**: `vault-templates/00_meta/vault_maintenance_config.md`(有効化設定)
 
 ## Change Log

@@ -19,9 +19,6 @@ tags:
 title: '却下案: 添付ファイル方式 Instructions'
 type: rejected_alternative
 updated: 2026-07-14 05:50:00+09:00
-id: pj-2026-07-13-9bc9
-aliases:
-- pj-2026-07-13-9bc9
 ---
 
 ## Summary
@@ -50,16 +47,16 @@ Project Instructions を以下の構成で運用する案:
 - **同期の乖離リスク**: vault と添付ファイルの内容が乖離した時、どちらを正とみなすか不明瞭
 - **激薄 Instructions と実質同じ問題**: 詳細ルールをどこかに置く必要があり、vault 側に置く方が編集容易
 - **添付ファイル数の増加**: type/status 定義、テンプレート集、命名規約等を全て添付すると、Instructions が肥大化(実質「厚い Instructions」と同じ)
-- **Naoya の運用習慣**: Obsidian で日常的に vault を編集する運用と、Claude UI での添付ファイル差し替えのモード切り替えが不自然
+- **あなた(導入者) の運用習慣**: Obsidian で日常的に vault を編集する運用と、Claude UI での添付ファイル差し替えのモード切り替えが不自然
 
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0004「激薄 Project Instructions 方針」
-- **参照**: [[pj-2026-07-13-9b13]]
+- **参照**: `id-ref-removed`
 
 Instructions には「vault の `00_meta/project_instructions_vault.md` を読め」というポインタのみを書き、詳細ルールは vault 側に集約。Obsidian で直接編集可能で、更新が容易。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_operational-architecture-skill-project-vault.md`
-- 対応 ADR: [[pj-2026-07-13-9b13]]
+- 対応 ADR: `id-ref-removed`
