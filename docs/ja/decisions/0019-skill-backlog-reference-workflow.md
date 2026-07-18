@@ -1,11 +1,15 @@
 ---
-title: '0019 - Skill Backlog Reference Workflow'
-type: knowledge
+created: 2026-07-17 02:20:00+09:00
 status: accepted
-created: 2026-07-17T02:20:00+09:00
-updated: 2026-07-17T02:20:00+09:00
-tags: [adr, skill, backlog, phase-1c]
 summary: Skill vault-manager に backlog 参照系 workflow(一覧・棚卸し・単一 item 参照)を追加する意思決定記録。
+tags:
+- adr
+- skill
+- backlog
+- phase-1c
+title: 0019 - Skill Backlog Reference Workflow
+type: knowledge
+updated: 2026-07-17 02:20:00+09:00
 ---
 
 # ADR 0019: Skill Backlog Reference Workflow
@@ -77,5 +81,5 @@ reference-workflow.md を作らず、Skill 内にすべて記載する案。
 
 - Phase 1a: Vault #8
 - Phase 1b: Vault-Framework #9(ADR-0018)
-- Reference workflow doc: [[pj-2026-07-17-27e2|reference-workflow]]
+- Reference workflow doc: reference-workflow
 - Skill: `skills/vault-manager/SKILL.md`

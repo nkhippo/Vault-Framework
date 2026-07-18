@@ -485,4 +485,4 @@ updated: YYYY-MM-DDTHH:MM:SS+09:00
 
 ## 変更履歴
 
-- **v1.0**(2026-07-15): 初版。個人 Vault で運用してきた `dev_project_common.md`(v1.1、<your-project> / <your-project> 実運用)を Framework 用に一般化。特定プロジェクト固有の名称・コネクタ名・Track 分離ルールをすべて抽象プレースホルダに置換。運用実例は `examples/ja/operations/dev_project_common_ipasounddrill.md` を参照。
+- **v1.0**(2026-07-15): 初版。個人 Vault で運用してきた `dev_project_common.md`(v1.1、<your-project> / <your-project> 実運用)を Framework 用に一般化。特定プロジェクト固有の名称・コネクタ名・Track 分離ルールをすべて抽象プレースホルダに置換。運用実例は `examples/ja/operations/dev_project_common_project-a.md` を参照。

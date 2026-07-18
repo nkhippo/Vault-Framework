@@ -1,12 +1,8 @@
 ---
 name: vault-manager
 description: >-
-  Vault(<your-account>/Vault)への保存・参照を管理する Skill。
-  Chat の議論記録、note 記事、プロジェクト設計相談、日記等を Front Matter 準拠で保存し、
-  過去 chat / 意思決定 / open-questions を参照する。
-  ID scheme(pj/nt/kn/mt prefix)準拠、backlog システムの参照(棚卸し等)と保存(起票、昇格、Cursor 委譲、Issue 起票)workflow を含む。
-  詳細トリガー phrase と workflow は body 参照。
-updated: 2026-07-18T11:20:00+09:00
+  個人 Vault(GitHub 上の Markdown リポジトリ)への保存・参照を Front Matter 準拠で管理する Skill。Chat の議論記録、執筆記事、プロジェクト設計相談、日記等の保存、過去 chat / 意思決定 / open-questions の参照、backlog(task / issue)の起票・昇格・実装 AI 委譲・Issue 起票 workflow、ID scheme(pj/nt/kn/mt prefix)を扱う。
+updated: 2026-07-18T14:28:30+09:00
 ---
 # Vault Manager (v1.10)
 

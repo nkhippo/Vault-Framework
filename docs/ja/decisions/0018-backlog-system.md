@@ -1,11 +1,15 @@
 ---
-title: '0018 - Backlog System の導入'
-type: knowledge
+created: 2026-07-17 02:05:00+09:00
 status: accepted
-created: 2026-07-17T02:05:00+09:00
-updated: 2026-07-17T02:05:00+09:00
-tags: [adr, backlog, phase-1]
-summary: Chat 発生の課題・タスクを構造化管理する Backlog System を Vault に導入する意思決定記録。Phase 1a-1b で基盤 + 規約が確立。
+summary: Chat 発生の課題・タスクを構造化管理する Backlog System を Vault に導入する意思決定記録。Phase 1a-1b で基盤
+  + 規約が確立。
+tags:
+- adr
+- backlog
+- phase-1
+title: 0018 - Backlog System の導入
+type: knowledge
+updated: 2026-07-17 02:05:00+09:00
 ---
 
 # ADR 0018: Backlog System の導入
@@ -96,5 +100,5 @@ Vault を挟まず GitHub Issue に直接起票する案。
 
 - Phase 1a: [Vault #8](https://github.com/nkhippo/Vault/pull/8)(基盤構築)
 - Phase 1b: 本 PR
-- Backlog docs: [[pj-2026-07-17-a9e4|Backlog docs index]]
-- ID scheme: [[pj-2026-07-16-4a20|id-scheme]]
+- Backlog docs: Backlog docs index
+- ID scheme: id-scheme

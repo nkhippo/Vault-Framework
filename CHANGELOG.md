@@ -32,6 +32,23 @@ Vault-Framework の変更履歴。フォーマットは [Keep a Changelog](https
 
 _(次リリースに向けた作業中の変更をここに)_
 
+## [1.0.1] — 2026-07-18
+
+v1.0.0 直後のパッチリリース。非機能改善のみ、Skill 動作・canonical 構造・API は変更なし。
+
+### Changed
+
+- **Skill description の汎用化**:
+  - `vault-manager`: `<your-account>/Vault` placeholder を「個人 Vault(GitHub 上の Markdown リポジトリ)」に変更、「note 記事」→「執筆記事」、「Cursor 委譲」→「実装 AI 委譲」、末尾冗長文言を削除
+  - `vault-maintainer`: 冒頭「Vault の…」→「個人 Vault の…」、末尾冗長文言を削除
+- **examples ファイル名の汎用化**: `*_ipasounddrill.md` 等の固有名を `*_project-a.md` 等の汎用スラグへリネーム。内容内の固有名も併せて genericize
+- **staging リポジトリ整備**(公開側への影響なし): 公開側にのみ存在していた ADR 0017–0024 と vault 骨格ディレクトリを staging に取り込み。次回以降のミラーが選択同期不要になる
+
+### Fixed
+
+- なし(挙動に影響するバグ修正なし)
+
+
 ## [1.0.0] — 2026-07-18
 
 初回安定版。個人 Vault 運用(`nkhippo/Vault`)で実証された仕組みを Framework 化。
@@ -93,4 +110,5 @@ _(次リリースに向けた作業中の変更をここに)_
 - update 手順: `docs/ja/setup/08-update.md`
 - Claude ガードレール: `docs/ja/guardrails/claude-behavior.md`
 
+[1.0.1]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.0.1
 [1.0.0]: https://github.com/nkhippo/Vault-Framework/releases/tag/v1.0.0

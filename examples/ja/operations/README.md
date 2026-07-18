@@ -29,8 +29,8 @@ updated: 2026-07-15 23:00:00+09:00
 
 | ファイル | 対応する骨格 | 参考にできること |
 |---|---|---|
-| `dev_project_common_ipasounddrill.md` | `vault-templates/00_meta/operations/dev_project_common.md` | <your-project><!-- 実例: IPA Sound Drill -->(発音学習アプリ)/ <your-project><!-- 実例: ThinkGrindAi --> 開発運用で使っている固有条項の埋め方。Track A/B 分離、Category A ドキュメント一覧、MCP コネクタ名の指定、あなた(導入者) 個人の判断軸への言及 等 |
-| `writing_project_common_nkhippo.md` | `vault-templates/00_meta/operations/writing_project_common.md` | nkhippo(note.com アカウント「かばさん」)の執筆運用で使っている固有条項の埋め方。個人ブランディング要素、生の言葉保持リスト、note.com 特有の投稿・タイトル・ハッシュタグ運用 等 |
+| `dev_project_common_project-a.md` | `vault-templates/00_meta/operations/dev_project_common.md` | <your-project><!-- 実例: IPA Sound Drill -->(発音学習アプリ)/ <your-project><!-- 実例: ThinkGrindAi --> 開発運用で使っている固有条項の埋め方。Track A/B 分離、Category A ドキュメント一覧、MCP コネクタ名の指定、あなた(導入者) 個人の判断軸への言及 等 |
+| `writing_project_common_owner.md` | `vault-templates/00_meta/operations/writing_project_common.md` | 作者(外部媒体アカウント)<!-- 実例: note.com -->の執筆運用で使っている固有条項の埋め方。個人ブランディング要素、生の言葉保持リスト、note.com 特有の投稿・タイトル・ハッシュタグ運用 等 |
 
 ## 読み方の推奨順
 
