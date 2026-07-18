@@ -1,6 +1,6 @@
 ---
 audience: maintainer
-framework_version: 1.5.1
+framework_version: 1.0.0
 keywords:
   - maintainer
   - upstream
@@ -18,7 +18,7 @@ tags:
 title: Framework Maintainer Guide (upstream 運用ガイド)
 type: knowledge
 created: 2026-07-18T18:18:01+09:00
-updated: 2026-07-18T20:10:00+09:00
+updated: 2026-07-18T23:00:00+09:00
 ---
 
 ## このガイドは何か
