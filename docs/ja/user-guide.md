@@ -1,6 +1,6 @@
 ---
 audience: adopter
-framework_version: 1.4.0
+framework_version: 1.5.0
 keywords:
   - user-guide
   - operations
@@ -18,7 +18,7 @@ tags:
 title: Vault-Framework User Guide
 type: knowledge
 created: 2026-07-18T18:01:44+09:00
-updated: 2026-07-18T18:10:00+09:00
+updated: 2026-07-18T20:00:00+09:00
 ---
 
 ## このガイドは何か
