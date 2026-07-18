@@ -1,26 +1,23 @@
 ---
 created: 2026-07-13 21:45:00+09:00
 keywords:
-- vocabulary
-- controlled-vocabulary
-- type
-- tags
-- status
-- project
-- 統制語彙
+  - vocabulary
+  - controlled-vocabulary
+  - type
+  - tags
+  - status
+  - project
+  - 統制語彙
 status: published
-summary: Front Matter の統制語彙。type、status、tags、project の定義と拡張手順。プレースホルダ形式で導入者がカスタマイズする部分を明示。
+summary: Front Matter の統制語彙。type、status、tags、project、および backlog_item(kind/state/assignee)の定義と拡張手順。プレースホルダ形式で導入者がカスタマイズする部分を明示。
 tags:
-- framework
-- vault-templates
-- meta
-- vocabulary
+  - framework
+  - vault-templates
+  - meta
+  - vocabulary
 title: 統制語彙
 type: knowledge
-updated: 2026-07-13 21:45:00+09:00
-id: pj-2026-07-13-24f6
-aliases:
-- pj-2026-07-13-24f6
+updated: 2026-07-18T00:42:30+09:00
 ---
 
 ## Summary
@@ -55,6 +52,37 @@ Front Matter の `type` / `status` / `tags` / `project` はここで定義され
 - `handoff` - handoff 領域のファイル(current-state.md や recent-changes/)
 - `template` - 00_meta/templates/ 配下の雛形ファイル
 - `report` - 作業実行レポート
+- `project_readme` - プロジェクト直下 README.md(例: `30_projects/<your-project>/README.md`)
+- `backlog_item` - 課題・タスクノード(詳細は `templates/backlog_item.md` / `frontmatter_schema/backlog_item.md`)
+
+## Backlog 系(type: backlog_item)
+
+課題・タスクを「1 ノード 1 ファイル」で明示管理するための統制。スキーマ詳細は `frontmatter_schema/backlog_item.md`、雛形は `templates/backlog_item.md`、tag 運用ルールは `backlog_tags.md` を参照。
+
+### kind(排他的、起票時確定・原則不変)
+
+- `task` - 方針決定済み、実行段階
+- `issue` - 方針未決、検討段階
+
+### state(遷移可能)
+
+- `open` - 起票時デフォルト、棚卸し対象
+- `done` - 完了(`completed_at` を記録)
+- `abandoned` - 方向転換で不要(`abandoned_at` / `abandoned_reason` を記録)
+
+### assignee(必須、null 禁止)
+
+- `owner` - あなた(Vault の持ち主)が握っている
+- `cursor` - 実装 AI(Cursor 等)へ委譲済み
+
+<!-- 導入者メモ: `owner` は自分の名前に置き換えてもよい(例: 自分の名前)。Cursor 以外の実装 AI を使う場合は値名を読み替える。 -->
+
+### 参照・連携フィールド
+
+- `derived_from_id` - 親 backlog item の id(課題 → タスク発展時)
+- `related_ids` - 関連 item の id 配列(親子関係以外)
+- `cursor_instruction_id` - 実装 AI 指示書への参照
+- `github_issue` - `owner/repo#N` 形式
 
 ## status
 
@@ -94,9 +122,9 @@ Front Matter の `type` / `status` / `tags` / `project` はここで定義され
 ```
 
 <!-- 実際の記入例:
-- IPASoundDrill
-- English-Vocab-Chunk-Trainer
-- ThinkGrindAi
+- <your-project>
+- <your-project>
+- <your-project>
 - Vault
 - Vault-MCP
 - Vault-Framework
@@ -144,13 +172,27 @@ Front Matter の `type` / `status` / `tags` / `project` はここで定義され
 **メタ系**
 `experimental`, `deprecated`, `important`, `sensitive`
 
+### Backlog 系(backlog_item 用)
+
+必須: `backlog`
+
+主題系(汎用): `ui`, `ux`, `performance`, `docs`, `architecture`, `spec`
+
+性質系: `bug-fix`, `enhancement`, `investigation`, `refactor`, `design`, `question`
+
+状況系: `urgent`, `blocked`, `stalled`
+
+<!-- ドメイン固有の主題 tag は導入者が追加(例: `pronunciation`, `vocabulary`)。追加は backlog_tags.md の追加ルールに従う。 -->
+
+Backlog tag の追加は `backlog_tags.md` の追加ルールに従い、あなたの明示承認を前提とする。
+
 ### プロジェクト系(導入者が追加)
 
 各プロジェクトに対応した tag を導入者が追加。命名規則: `kebab-case`、プロジェクト名の短縮形が使いやすい。
 
 <!-- 実際の記入例:
-- `ipa-drill` (IPASoundDrill 用)
-- `vct` (English-Vocab-Chunk-Trainer 用)
+- `ipa-drill` (<your-project> 用)
+- `vct` (<your-project> 用)
 - `vault-mcp` (Vault-MCP 用)
 -->
 

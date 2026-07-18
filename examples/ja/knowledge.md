@@ -21,9 +21,6 @@ tags:
 title: '例: Cloudflare Workers で MCP サーバを実装して学んだこと'
 type: example
 updated: 2026-07-13 22:30:00+09:00
-id: pj-2026-07-13-596a
-aliases:
-- pj-2026-07-13-596a
 ---
 
 ## Summary

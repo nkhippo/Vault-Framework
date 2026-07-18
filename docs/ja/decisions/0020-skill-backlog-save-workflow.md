@@ -1,8 +1,4 @@
 ---
-id: pj-2026-07-17-632e
-aliases:
-- pj-2026-07-17-632e
-- adr-0020
 title: '0020 - Skill Backlog Save Workflow'
 type: knowledge
 status: accepted

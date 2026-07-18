@@ -1,8 +1,4 @@
 ---
-id: pj-2026-07-17-052b
-aliases:
-- pj-2026-07-17-052b
-- adr-0024
 title: '0024 - Immediate Execution With Explicit Trigger Phrases'
 type: knowledge
 status: accepted

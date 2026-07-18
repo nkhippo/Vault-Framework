@@ -1,7 +1,4 @@
 ---
-id: pj-2026-07-17-cb46
-aliases:
-- pj-2026-07-17-cb46
 title: Backlog System Overview
 type: knowledge
 status: published

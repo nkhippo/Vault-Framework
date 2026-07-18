@@ -10,9 +10,6 @@ target_publish_date: ''
 title: ''
 type: note_draft
 updated: 2026-07-14 01:10:22+09:00
-id: pj-2026-07-13-684d
-aliases:
-- pj-2026-07-13-684d
 ---
 
 ## Summary

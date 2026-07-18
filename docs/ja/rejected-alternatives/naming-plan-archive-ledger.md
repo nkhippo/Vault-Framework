@@ -22,9 +22,6 @@ tags:
 title: '却下案: Archive / Ledger 系命名'
 type: rejected_alternative
 updated: 2026-07-14 06:20:00+09:00
-id: pj-2026-07-13-dc3d
-aliases:
-- pj-2026-07-13-dc3d
 ---
 
 ## Summary
@@ -84,10 +81,10 @@ aliases:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0006「命名スキーム: Vault / Vault-MCP / Vault-Framework」
-- **参照**: [[pj-2026-07-13-e13e]]
+- **参照**: `id-ref-removed`
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md`
-- 対応 ADR: [[pj-2026-07-13-e13e]]
-- 関連却下案: [[pj-2026-07-13-395d]]、[[pj-2026-07-13-3e01]]
+- 対応 ADR: `id-ref-removed`
+- 関連却下案: `id-ref-removed`、`id-ref-removed`

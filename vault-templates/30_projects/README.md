@@ -7,9 +7,6 @@ date: 2026-07-13
 keywords:
 - 30_projects
 summary: プロジェクト領域と _template / _ideas。
-id: pj-2026-07-13-f590
-aliases:
-- pj-2026-07-13-f590
 ---
 
 ## Summary

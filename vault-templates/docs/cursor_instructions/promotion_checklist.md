@@ -9,9 +9,6 @@ keywords:
 - ideas
 - project
 summary: incubating アイデアを正式プロジェクトへ昇格する時のチェックリスト。
-id: pj-2026-07-13-197a
-aliases:
-- pj-2026-07-13-197a
 ---
 
 ## Checklist

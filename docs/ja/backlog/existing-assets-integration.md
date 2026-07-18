@@ -1,7 +1,4 @@
 ---
-id: pj-2026-07-17-7293
-aliases:
-- pj-2026-07-17-7293
 title: 既存資産と backlog システムの棲み分け
 type: knowledge
 status: published

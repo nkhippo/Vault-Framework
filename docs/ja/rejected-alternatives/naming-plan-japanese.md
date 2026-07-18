@@ -23,9 +23,6 @@ tags:
 title: '却下案: 日本語命名'
 type: rejected_alternative
 updated: 2026-07-14 06:25:00+09:00
-id: pj-2026-07-13-93a4
-aliases:
-- pj-2026-07-13-93a4
 ---
 
 ## Summary
@@ -53,7 +50,7 @@ aliases:
 
 ## Why It Was Considered
 
-- **母語の親近感**: Naoya にとって最も直感的な命名
+- **母語の親近感**: あなた(導入者) にとって最も直感的な命名
 - **オリジナリティ**: 英語圏で既にある命名との衝突を回避
 - **日本語コンテンツとの一貫性**: vault の内容(記録、note 記事)が日本語中心のため、リポジトリ名も日本語で揃える
 - **文化的アイデンティティ**: 日本発のプロジェクトであることを明示
@@ -85,12 +82,12 @@ aliases:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0006「命名スキーム: Vault / Vault-MCP / Vault-Framework」
-- **参照**: [[pj-2026-07-13-e13e]]
+- **参照**: `id-ref-removed`
 
 英語名で統一。ドキュメントは日本語版(ja/)と英語版(en/)を並列で用意する Framework 構成。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md`
-- 対応 ADR: [[pj-2026-07-13-e13e]]
-- 関連 ADR: [[pj-2026-07-13-a7f9]](Public 化・Fable 化の前提)
+- 対応 ADR: `id-ref-removed`
+- 関連 ADR: `id-ref-removed`(Public 化・Fable 化の前提)

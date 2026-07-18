@@ -2,7 +2,6 @@
 created: 2026-07-14 01:10:59+09:00
 keywords: []
 one_line_purpose: ''
-project: ''
 related: []
 status: wip
 summary: ''
@@ -12,9 +11,6 @@ tags:
 title: ''
 type: handoff
 updated: 2026-07-14 01:10:59+09:00
-id: pj-2026-07-13-5cfc
-aliases:
-- pj-2026-07-13-5cfc
 ---
 
 ## Summary

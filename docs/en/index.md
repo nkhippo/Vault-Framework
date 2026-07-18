@@ -12,9 +12,6 @@ keywords:
 - pending
 - i18n
 summary: Placeholder English index mirroring docs/ja/index.md. Pending translation.
-id: pj-2026-07-13-861f
-aliases:
-- pj-2026-07-13-861f
 ---
 
 # Vault-Framework English Index

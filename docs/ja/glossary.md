@@ -14,9 +14,6 @@ title_en: Glossary
 type: reference
 created: 2026-07-14 20:48:28+09:00
 updated: 2026-07-14 20:48:28+09:00
-id: pj-2026-07-13-bc88
-aliases:
-- pj-2026-07-13-bc88
 ---
 
 ## Summary
@@ -99,15 +96,15 @@ Front Matter の boolean フィールド。`true` の場合、そのファイル
 
 ### GitHub-as-a-Backend
 
-Vault-Framework の中核思想。個人ナレッジベースの正典データストアとして GitHub リポジトリを採用する設計判断([[pj-2026-07-13-b9c7|Philosophy]] 参照)。
+Vault-Framework の中核思想。個人ナレッジベースの正典データストアとして GitHub リポジトリを採用する設計判断(Philosophy 参照)。
 
 ### 3 層構造(Skill・Project・Vault)
 
-Vault-Framework の運用アーキテクチャ。Skill(振る舞いロジック)、Project Instructions(最小限のポインタ)、Vault(運用ルールの正典)の 3 層に責務を分離する([[pj-2026-07-13-0245|Architecture]] 参照)。
+Vault-Framework の運用アーキテクチャ。Skill(振る舞いロジック)、Project Instructions(最小限のポインタ)、Vault(運用ルールの正典)の 3 層に責務を分離する(Architecture 参照)。
 
 ## 関連
 
-- [[pj-2026-07-13-b9c7|Philosophy: GitHub-as-a-Backend]]
-- [[pj-2026-07-13-0245|Architecture: Skill・Project・Vault の 3 層]]
-- [[pj-2026-07-13-d0c9|naming-conventions.md: 命名規約の思想]]
-- [[pj-2026-07-13-d0b2|maintenance-guide.md: 保守運用ガイド]]
+- Philosophy: GitHub-as-a-Backend
+- Architecture: Skill・Project・Vault の 3 層
+- naming-conventions.md: 命名規約の思想
+- maintenance-guide.md: 保守運用ガイド

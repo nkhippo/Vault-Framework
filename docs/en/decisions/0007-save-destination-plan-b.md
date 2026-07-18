@@ -1,7 +1,6 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: pj-2026-07-15-8310
 keywords:
 - save-destination
 - plan-b
@@ -34,9 +33,6 @@ title_ja: 'ADR-0007: 保存先思想: 最初から適切な場所へ(案 B)'
 type: adr
 created: 2026-07-15 08:29:04+09:00
 updated: 2026-07-15 08:29:04+09:00
-aliases:
-- pj-2026-07-15-8310
-- adr-0007
 ---
 
 ## Summary
@@ -104,7 +100,7 @@ Details are defined in SKILL.md; judge in the following order:
 
 ### Option A: classify via inbox
 
-An option to save all Chat content to `90_inbox/` first and let Naoya classify/organize it later.
+An option to save all Chat content to `90_inbox/` first and let the adopter classify/organize it later.
 
 **Reasons for rejection**:
 
@@ -112,7 +108,7 @@ An option to save all Chat content to `90_inbox/` first and let Naoya classify/o
 - "Sort it out later" is often not done (a counterexample to GTD's Inbox Zero principle)
 - Immediately after saving, information is not placed in "where you would go to look for it," so referenceability is low
 
-Details: [[../rejected-alternatives/save-destination-plan-a-inbox.md]] *(English translation pending)*
+Details: `id-ref-removed` *(English translation pending)*
 
 ### Option C: ask the user every time
 

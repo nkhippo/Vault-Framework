@@ -19,9 +19,6 @@ title_en: 'Architecture: Skill / Project / Vault 3-layer'
 type: overview
 created: 2026-07-14 20:47:07+09:00
 updated: 2026-07-14 20:47:07+09:00
-id: pj-2026-07-13-0245
-aliases:
-- pj-2026-07-13-0245
 ---
 
 ## Summary
@@ -97,7 +94,7 @@ Skill が「いつ・どう動くか」を決め、Vault が「具体的に何�
 
 ## 関連
 
-- [ADR 0003: Skill・Project・Vault の 3 層構造](../decisions/0003-skill-project-vault-3-layer.md)
-- [ADR 0004: Project Instructions を激薄にする](../decisions/0004-thin-project-instructions.md)
-- [[pj-2026-07-13-b9c7|Philosophy: GitHub-as-a-Backend]]
-- [[pj-2026-07-13-dd44|参照レベルシステム]]
+- [ADR 0003: Skill・Project・Vault の 3 層構造](./decisions/0003-skill-project-vault-3-layer.md)
+- [ADR 0004: Project Instructions を激薄にする](./decisions/0004-thin-project-instructions.md)
+- Philosophy: GitHub-as-a-Backend
+- 参照レベルシステム

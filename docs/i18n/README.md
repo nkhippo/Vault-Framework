@@ -16,9 +16,6 @@ title_en: Internationalization (i18n) Strategy
 type: overview
 created: 2026-07-14 21:12:21+09:00
 updated: 2026-07-14 21:12:21+09:00
-id: pj-2026-07-13-3cbd
-aliases:
-- pj-2026-07-13-3cbd
 ---
 
 ## Summary
@@ -77,12 +74,12 @@ docs/
 
 ## 貢献の受け入れ
 
-翻訳の貢献(英語以外の言語を含む)を歓迎する。詳細は [[pj-2026-07-13-f022|contributing-translations.md]] を参照。
+翻訳の貢献(英語以外の言語を含む)を歓迎する。詳細は contributing-translations.md を参照。
 
 新しい言語を追加する場合は `docs/<言語コード>/`(ISO 639-1、例: `zh`、`ko`、`fr`)を作り、`ja/` の構造をミラーする。
 
 ## 関連
 
-- [[pj-2026-07-13-e271|translation-strategy.md: 翻訳の方針と手順]]
-- [[pj-2026-07-13-f022|contributing-translations.md: 翻訳貢献のガイド]]
-- [[pj-2026-07-13-bc88|用語集(glossary)]]: 訳語の統一に使う
+- translation-strategy.md: 翻訳の方針と手順
+- contributing-translations.md: 翻訳貢献のガイド
+- 用語集(glossary): 訳語の統一に使う

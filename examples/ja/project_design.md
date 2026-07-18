@@ -8,7 +8,6 @@ keywords:
 - mcp-server
 - cloudflare-workers
 - fine-grained-pat
-project: <your-mcp-project>
 related: []
 status: published
 summary: project_design type の記入例。MCP サーバプロジェクトの design-decisions.md ファイルを題材にした設計判断の逆完例。プロジェクトごとに
@@ -21,9 +20,6 @@ tags:
 title: '例: MCP サーバ設計上の意思決定'
 type: example
 updated: 2026-07-13 22:20:00+09:00
-id: pj-2026-07-13-72b8
-aliases:
-- pj-2026-07-13-72b8
 ---
 
 ## Summary

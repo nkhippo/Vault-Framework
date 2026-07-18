@@ -11,9 +11,6 @@ keywords:
 - index
 - 仕様
 summary: Vault-Framework の仕様書索引。Front Matter スキーマ、統制語彙、参照レベル、保守運用等の詳細仕様。
-id: pj-2026-07-13-7d43
-aliases:
-- pj-2026-07-13-7d43
 ---
 
 ## Spec 一覧

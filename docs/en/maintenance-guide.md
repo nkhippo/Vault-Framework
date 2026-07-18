@@ -22,9 +22,6 @@ title_ja: 保守運用ガイド
 type: overview
 created: 2026-07-14 20:50:04+09:00
 updated: 2026-07-14 20:50:04+09:00
-id: pj-2026-07-15-7604
-aliases:
-- pj-2026-07-15-7604
 ---
 
 ## Summary
@@ -40,7 +37,7 @@ The longer a Vault is used, the more "entropy" accumulates — drift in controll
 | Level 1 | Daily (event-driven) | Claude alone | Auto-correcting controlled vocabulary, completing Front Matter |
 | Level 2 | Weekly | Delegated to Cursor | Re-classification, detecting broken links |
 | Level 3 | Monthly | Delegated to Cursor | Structural consistency checks, handoff archiving |
-| Level 4 | Seasonal (every 3 months) | Led by Naoya + Cursor | Large-scale structural changes, cleanup of deprecated tags |
+| Level 4 | Seasonal (every 3 months) | Led by the adopter + Cursor | Large-scale structural changes, cleanup of deprecated tags |
 
 The design is such that higher-frequency levels do lighter work, and lower-frequency levels do heavier work.
 
@@ -52,11 +49,11 @@ Every time a Chat saves or references something, Claude (the Skill) automaticall
 - Completing required Front Matter fields
 - Warning about naming-convention violations
 
-The intervention cost to Naoya is near zero — this happens without being noticed.
+The intervention cost to the adopter is near zero — this happens without being noticed.
 
 ## Level 2: Weekly Correction (Delegated to Cursor)
 
-Once a week, with Naoya's approval, Cursor performs:
+Once a week, with the adopter's approval, Cursor performs:
 
 - Re-classifying files that landed in `90_inbox/`
 - Checking consistency against `vocabulary.md`
@@ -70,7 +67,7 @@ Once a month, the following is performed:
 - Archiving into `recent-changes/` if `current-state.md` has become bloated
 - Analyzing controlled-vocabulary usage frequency and proposing extension candidates
 
-## Level 4: Seasonal Correction (Led by Naoya)
+## Level 4: Seasonal Correction (Led by the adopter)
 
 Roughly once every 3 months, larger-scale work is performed, such as:
 
@@ -93,7 +90,7 @@ Rather than a single "maintenance" concept, the operation was split into 4 level
 
 ## Related
 
-- [[pj-2026-07-13-b51c|ADR 0008: Criteria for Cursor delegation]] *(English translation pending)*
-- [[pj-2026-07-13-48bc|ADR 0009: Four-level maintenance + abstract generation]] *(English translation pending)*
-- [maintenance-four-levels spec: Detailed maintenance specification](./specs/maintenance-four-levels.md) *(English translation pending)*
-- [abstract-generation spec: Detailed abstract-generation specification](./specs/abstract-generation.md) *(English translation pending)*
+- ADR 0008: Criteria for Cursor delegation *(English translation pending)*
+- ADR 0009: Four-level maintenance + abstract generation *(English translation pending)*
+- maintenance-four-levels spec: Detailed maintenance specification *(English translation pending)*
+- abstract-generation spec: Detailed abstract-generation specification *(English translation pending)*

@@ -7,9 +7,6 @@ date: 2026-07-13
 keywords:
 - 40_knowledge
 summary: 知識領域(ai / dev / english / other)。
-id: pj-2026-07-13-c181
-aliases:
-- pj-2026-07-13-c181
 ---
 
 ## Summary

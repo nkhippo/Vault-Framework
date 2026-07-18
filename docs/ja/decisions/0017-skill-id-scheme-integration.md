@@ -2,7 +2,6 @@
 audience: mixed
 created: 2026-07-17T01:30:00+09:00
 date: 2026-07-17
-id: pj-2026-07-17-a061
 keywords:
 - skill
 - vault-manager
@@ -32,9 +31,6 @@ tags:
 title: 'ADR-0017: Skill vault-manager への id scheme 統合'
 type: adr
 updated: 2026-07-17T01:30:00+09:00
-aliases:
-- pj-2026-07-17-a061
-- adr-0017
 ---
 
 ## Summary

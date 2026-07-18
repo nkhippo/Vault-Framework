@@ -1,7 +1,4 @@
 ---
-id: pj-2026-07-17-64df
-aliases:
-- pj-2026-07-17-64df
 title: Backlog Save Workflow
 type: knowledge
 status: published

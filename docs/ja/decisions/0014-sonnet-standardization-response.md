@@ -2,7 +2,6 @@
 audience: mixed
 created: 2026-07-14 05:00:00+09:00
 date: 2026-07-13
-id: pj-2026-07-13-d3c5
 keywords:
 - sonnet
 - sonnet-5
@@ -29,9 +28,6 @@ tags:
 title: 'ADR-0014: Sonnet 5 標準化への対応'
 type: adr
 updated: 2026-07-14 05:00:00+09:00
-aliases:
-- pj-2026-07-13-d3c5
-- adr-0014
 ---
 
 ## Summary

@@ -5,7 +5,6 @@ keywords:
 - vault-templates
 - readme
 - framework
-project: Vault-Framework
 status: published
 summary: vault-templates/00_meta/ の各ファイルの役割と、導入者がカスタマイズすべきファイルの説明。
 tags:
@@ -15,9 +14,6 @@ tags:
 title: vault-templates/00_meta/ README
 type: knowledge
 updated: 2026-07-13 21:41:00+09:00
-id: pj-2026-07-13-1e0c
-aliases:
-- pj-2026-07-13-1e0c
 ---
 
 ## Summary
@@ -50,7 +46,7 @@ Skill `vault-manager` は必要に応じて以下の順序で読む(prompt cachi
 
 ## メンテナンス
 
-これらのファイルの多くは Naoya が Obsidian で直接編集できる。統制語彙(vocabulary)と命名規約(naming_conventions)を変更した際は Skill `vault-manager` の記述と矛盾しないよう確認する。矛盾した場合、vocabulary.md と命名規約が正典とみなされる(ただし Skill 側の MCP 接続失敗ルール・sensitive 引用禁止ルールは Skill 優先)。
+これらのファイルの多くは あなた(導入者) が Obsidian で直接編集できる。統制語彙(vocabulary)と命名規約(naming_conventions)を変更した際は Skill `vault-manager` の記述と矛盾しないよう確認する。矛盾した場合、vocabulary.md と命名規約が正典とみなされる(ただし Skill 側の MCP 接続失敗ルール・sensitive 引用禁止ルールは Skill 優先)。
 
 ## 導入者への注意
 

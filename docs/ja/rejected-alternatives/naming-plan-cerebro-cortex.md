@@ -21,9 +21,6 @@ tags:
 title: '却下案: Cerebro / Cortex 系命名'
 type: rejected_alternative
 updated: 2026-07-14 06:05:00+09:00
-id: pj-2026-07-13-395d
-aliases:
-- pj-2026-07-13-395d
 ---
 
 ## Summary
@@ -74,12 +71,12 @@ aliases:
 ## What Was Chosen Instead
 
 - **採用案**: ADR-0006「命名スキーム: Vault / Vault-MCP / Vault-Framework」
-- **参照**: [[pj-2026-07-13-e13e]]
+- **参照**: `id-ref-removed`
 
 「Vault」は金庫・保管庫を意味し、Chat と個人ナレッジを保管するプロジェクトの機能を直接的に表現。修辞より機能性を優先。
 
 ## References
 
 - 検討 chat_log: `../../10_chat_logs/2026/07/2026-07-13_publication-strategy-and-naming-convention.md`
-- 対応 ADR: [[pj-2026-07-13-e13e]]
+- 対応 ADR: `id-ref-removed`
 - 関連却下案: 他 5 命名候補

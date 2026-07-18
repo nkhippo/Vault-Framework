@@ -1,7 +1,6 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: pj-2026-07-15-e78f
 keywords:
 - github
 - backend
@@ -30,9 +29,6 @@ title_ja: 'ADR-0001: GitHub-as-a-Backend の採用'
 type: adr
 created: 2026-07-14 21:14:17+09:00
 updated: 2026-07-14 21:14:17+09:00
-aliases:
-- pj-2026-07-15-e78f
-- adr-0001
 ---
 
 ## Summary
@@ -41,7 +37,7 @@ Decision to adopt a GitHub repository (`nkhippo/Vault`) as the de facto backend 
 
 ## Context
 
-Naoya had been running a personal knowledge base in Obsidian, but the lack of a systematic place to aggregate Chat content was a problem. Although multiple devices were synced via Obsidian Sync + iCloud, integration with Claude was mostly manual copy-paste, which led to the following issues:
+the adopter had been running a personal knowledge base in Obsidian, but the lack of a systematic place to aggregate Chat content was a problem. Although multiple devices were synced via Obsidian Sync + iCloud, integration with Claude was mostly manual copy-paste, which led to the following issues:
 
 - Claude could not reference past discussions or decisions (no memory across sessions)
 - Valuable discussions were lost due to the friction of saving
@@ -80,7 +76,7 @@ Key evaluation axes for each option: strength of version control, multi-device s
 - Two write paths — direct editing (Obsidian) and via Claude (MCP) — coexist, requiring care about sync timing
 - Due to iCloud sync lag, a Claude reference made right after an edit may see a stale state
 - MCP response time depends on GitHub API rate/latency
-- When Naoya is offline, Obsidian editing is possible but Claude integration does not work
+- When the adopter is offline, Obsidian editing is possible but Claude integration does not work
 
 **Mitigation**:
 
@@ -91,7 +87,7 @@ Key evaluation axes for each option: strength of version control, multi-device s
 
 ### Option 2: Obsidian-Sync-led
 
-An option using Obsidian Sync (Obsidian's official paid sync service) as the primary axis, with GitHub as auxiliary backup. For details, see [[../rejected-alternatives/vault-composition-plan-2-obsidian-sync.md]].
+An option using Obsidian Sync (Obsidian's official paid sync service) as the primary axis, with GitHub as auxiliary backup. For details, see `id-ref-removed`.
 
 **Reasons for rejection**:
 - Vendor lock-in (dependent on Obsidian's continued operation)
@@ -101,7 +97,7 @@ An option using Obsidian Sync (Obsidian's official paid sync service) as the pri
 
 ### Option 3: Hybrid configuration
 
-An option running Obsidian Sync and GitHub in parallel, leveraging the strengths of each. For details, see [[../rejected-alternatives/vault-composition-plan-3-hybrid.md]].
+An option running Obsidian Sync and GitHub in parallel, leveraging the strengths of each. For details, see `id-ref-removed`.
 
 **Reasons for rejection**:
 - Cannot maintain a single source of truth; high integration cost when divergence occurs

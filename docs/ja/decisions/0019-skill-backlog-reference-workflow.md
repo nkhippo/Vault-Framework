@@ -1,8 +1,4 @@
 ---
-id: pj-2026-07-17-a25e
-aliases:
-- pj-2026-07-17-a25e
-- adr-0019
 title: '0019 - Skill Backlog Reference Workflow'
 type: knowledge
 status: accepted

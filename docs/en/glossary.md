@@ -17,9 +17,6 @@ title_ja: 用語集
 type: reference
 created: 2026-07-14 20:50:21+09:00
 updated: 2026-07-14 20:50:21+09:00
-id: pj-2026-07-15-5baf
-aliases:
-- pj-2026-07-15-5baf
 ---
 
 ## Summary
@@ -102,15 +99,15 @@ Delegating work that requires consistency across multiple files — rather than 
 
 ### GitHub-as-a-Backend
 
-The core philosophy of Vault-Framework: the design decision to adopt a GitHub repository as the canonical data store for a personal knowledge base (see [[pj-2026-07-15-4872|Philosophy]]).
+The core philosophy of Vault-Framework: the design decision to adopt a GitHub repository as the canonical data store for a personal knowledge base (see Philosophy).
 
 ### 3-Layer Structure (Skill / Project / Vault)
 
-Vault-Framework's operational architecture. Separates responsibilities into 3 layers: Skill (behavioral logic), Project Instructions (a minimal pointer), and Vault (canonical operational rules) (see [[pj-2026-07-15-89b9|Architecture]]).
+Vault-Framework's operational architecture. Separates responsibilities into 3 layers: Skill (behavioral logic), Project Instructions (a minimal pointer), and Vault (canonical operational rules) (see Architecture).
 
 ## Related
 
-- [[pj-2026-07-15-4872|Philosophy: GitHub-as-a-Backend]]
-- [[pj-2026-07-15-89b9|Architecture: Skill / Project / Vault 3-layer]]
-- [[pj-2026-07-15-4e85|naming-conventions.md: Naming philosophy]]
-- [[pj-2026-07-15-7604|maintenance-guide.md: Maintenance guide]]
+- Philosophy: GitHub-as-a-Backend
+- Architecture: Skill / Project / Vault 3-layer
+- naming-conventions.md: Naming philosophy
+- maintenance-guide.md: Maintenance guide

@@ -1,7 +1,6 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: pj-2026-07-15-f3be
 keywords:
 - mcp
 - cloudflare-workers
@@ -33,9 +32,6 @@ title_ja: 'ADR-0002: MCP プラットフォームに Cloudflare Workers'
 type: adr
 created: 2026-07-14 21:15:01+09:00
 updated: 2026-07-14 21:15:01+09:00
-aliases:
-- pj-2026-07-15-f3be
-- adr-0002
 ---
 
 ## Summary
@@ -120,7 +116,7 @@ Container-based serverless, fully managed.
 - The per-request pricing model could be more expensive than Workers at the assumed personal-use volume
 - Complexity of container builds and gcloud CLI operations
 
-Details: [[../rejected-alternatives/mcp-platform-cloud-run.md]]
+Details: `id-ref-removed`
 
 ### Candidates 3-8: Fly.io, Railway, Render, Vercel, Netlify, Deno Deploy
 
@@ -130,7 +126,7 @@ Details: [[../rejected-alternatives/mcp-platform-cloud-run.md]]
 - **Vercel / Netlify**: Edge Functions are available, but the feature set centers on Next.js / static sites. Optimization as an MCP server is thin
 - **Deno Deploy**: assumes the Deno ecosystem, with uncertainty around compatibility with the Node.js SDK (@modelcontextprotocol/sdk)
 
-Details: [[../rejected-alternatives/mcp-platform-other-candidates.md]]
+Details: `id-ref-removed`
 
 ## Related
 

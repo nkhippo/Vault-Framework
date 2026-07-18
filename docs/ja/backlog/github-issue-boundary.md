@@ -1,7 +1,4 @@
 ---
-id: pj-2026-07-17-315f
-aliases:
-- pj-2026-07-17-315f
 title: GitHub Issue 境界
 type: knowledge
 status: published

@@ -7,9 +7,6 @@ date: 2026-07-13
 keywords:
 - 10_captures
 summary: 生の入力データ(captures)領域。
-id: pj-2026-07-13-d8ab
-aliases:
-- pj-2026-07-13-d8ab
 ---
 
 ## Summary

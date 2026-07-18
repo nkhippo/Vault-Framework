@@ -21,9 +21,6 @@ tags:
 title: 運用原則
 type: guideline
 updated: 2026-07-14 08:00:00+09:00
-id: pj-2026-07-13-988d
-aliases:
-- pj-2026-07-13-988d
 ---
 
 ## Summary
@@ -37,7 +34,7 @@ Vault の日々の運用における実践的な判断原則。v1-nine-principle
 - 日常的な保存・参照・引き継ぎのパターン
 - 判断の優先順位ルール
 - Chat セッションの標準的な流れ
-- Naoya と Claude の対話パターン
+- あなた(導入者) と Claude の対話パターン
 - 導入者への実践的アドバイス
 
 このガイドラインが規定しないもの:
@@ -50,7 +47,7 @@ Vault の日々の運用における実践的な判断原則。v1-nine-principle
 
 **「判断を早く、選択肢を少なく、対話を短く」**。以下 3 原則:
 
-1. **判断コストの最小化**: Claude が能動的に判断、Naoya に確認質問を最小化
+1. **判断コストの最小化**: Claude が能動的に判断、あなた(導入者) に確認質問を最小化
 2. **選択肢の絞り込み**: 複数候補を列挙する時は 2-3 候補に絞る
 3. **対話の短縮**: 「これでいいですか?」を減らし、Skill の判断で進める
 
@@ -58,7 +55,7 @@ Vault の日々の運用における実践的な判断原則。v1-nine-principle
 
 ### セッション開始
 
-1. **Naoya が発話**: 保存指示、参照要求、雑談、質問等
+1. **あなた(導入者) が発話**: 保存指示、参照要求、雑談、質問等
 2. **Skill が発火判定**: Level 0-4 のどれで対応するか判定
 3. **Claude が応答**: 判定結果に基づいて応答生成
 
@@ -71,14 +68,14 @@ Vault の日々の運用における実践的な判断原則。v1-nine-principle
 ### セッション終了
 
 - 大きな変化があった場合、handoff/current-state.md の prepend 更新を Claude が提案
-- Naoya が明示的に「保存して」と指示した場合、該当ディレクトリに保存
+- あなた(導入者) が明示的に「保存して」と指示した場合、該当ディレクトリに保存
 
 ## Operational Pattern 2: 保存指示の受け方
 
 ### 標準パターン
 
 ```
-Naoya: 「今の議論を Vault に保存して」
+あなた(導入者): 「今の議論を Vault に保存して」
     ↓
 Skill: 保存判断フロー(save-decision-flow.md 参照)を実施
     ↓
@@ -88,11 +85,11 @@ Skill: 該当ディレクトリに保存、コミット URL を報告
 ### 詳細パターン
 
 ```
-Naoya: 「今の議論を IPASoundDrill の設計として保存して」
+あなた(導入者): 「今の議論を <your-project> の設計として保存して」
     ↓
-Skill: あいまい名解決フロー(ambiguous-name-resolution.md 参照)で IPASoundDrill を確定
+Skill: あいまい名解決フロー(ambiguous-name-resolution.md 参照)で <your-project> を確定
     ↓
-Skill: 30_projects/IPASoundDrill/logs/2026/07/ に保存
+Skill: 30_projects/<your-project>/logs/2026/07/ に保存
     ↓
 Skill: 保存先とコミット URL を報告
 ```
@@ -119,19 +116,19 @@ Skill: 保存先とコミット URL を報告
 ### 標準パターン
 
 ```
-Naoya: 「Vault-MCP の Phase 3.1 で何を決めたか教えて」
+あなた(導入者): 「Vault-MCP の Phase 3.1 で何を決めたか教えて」
     ↓
 Skill: Level 2 参照で 30_projects/Vault-MCP/handoff/current-state.md を最優先で読む
     ↓
 Skill: 必要なら design-decisions.md、open-questions.md も追加参照
     ↓
-Skill: 統合した情報を Naoya に提示
+Skill: 統合した情報を あなた(導入者) に提示
 ```
 
 ### 過去記録の検索
 
 ```
-Naoya: 「以前に MCP のプラットフォーム選定で議論した内容を思い出させて」
+あなた(導入者): 「以前に MCP のプラットフォーム選定で議論した内容を思い出させて」
     ↓
 Skill: Level 3(conversation_search + search_by_keyword)を実施
     ↓
@@ -145,21 +142,21 @@ Skill: 「詳細を確認しますか?」と提案
 ### 1 候補で確信ある場合
 
 ```
-Naoya: 「発音のアプリの続きを検討したい」
+あなた(導入者): 「発音のアプリの続きを検討したい」
     ↓
-Skill: 通称「発音」から IPASoundDrill を 1 候補として抽出
+Skill: 通称「発音」から <your-project> を 1 候補として抽出
     ↓
-Skill: 「IPASoundDrill の情報を読みますね」と一言添えて Level 2 遷移
+Skill: 「<your-project> の情報を読みますね」と一言添えて Level 2 遷移
 ```
 
 ### 複数候補がある場合
 
 ```
-Naoya: 「単語のアプリの相談」
+あなた(導入者): 「単語のアプリの相談」
     ↓
-Skill: 「単語」から複数候補を抽出(VCT、English-Marker-Trainer 等)
+Skill: 「単語」から複数候補を抽出(<alias>、<your-project> 等)
     ↓
-Skill: 候補提示 → Naoya の選択 → Level 2 遷移
+Skill: 候補提示 → あなた(導入者) の選択 → Level 2 遷移
 ```
 
 ## Operational Pattern 5: Cursor 委譲の判定と提案
@@ -182,7 +179,7 @@ Skill: この作業は複数ファイルの整合性が必要なため、Cursor 
 指示書を作成しますか?
 ```
 
-Naoya が承認したら、Cursor 用の指示書を作成(step N の形式)。
+あなた(導入者) が承認したら、Cursor 用の指示書を作成(step N の形式)。
 
 ## Operational Pattern 6: Vault MCP 接続失敗時の対応
 
@@ -194,7 +191,7 @@ Vault MCP コネクタ経由の操作(list_directory、get_file_content、create
 
 1. **1 回リトライ**: 即座に同じ操作を再実行
 2. **リトライも失敗**: 処理を中断
-3. **Naoya に報告**:
+3. **あなた(導入者) に報告**:
 
 ```
 Vault MCP コネクタへの接続に失敗し、処理を中断しました。
@@ -240,7 +237,7 @@ Chat の最後に以下を追加すると、次セッションのキャッチア
 - 関連ファイル: <参照すべき handoff や design-decisions>
 ```
 
-## Naoya との対話パターン
+## あなた(導入者) との対話パターン
 
 ### 質問を少なく、判断を早く
 
@@ -252,13 +249,13 @@ Chat の最後に以下を追加すると、次セッションのキャッチア
 
 - 同じ状況で異なる判断をしない
 - Skill の判定フローに忠実に従う
-- 迷った時は Naoya に一言確認(ただし頻繁にはしない)
+- 迷った時は あなた(導入者) に一言確認(ただし頻繁にはしない)
 
 ### 進捗の可視化
 
 - 累計進捗を明示(「16/16 完了」等)
 - 次のアクションを明示
-- Naoya が「今どこにいるか」を常に把握できる状態
+- あなた(導入者) が「今どこにいるか」を常に把握できる状態
 
 ## 導入者への実践的アドバイス
 
@@ -284,17 +281,17 @@ Chat の最後に以下を追加すると、次セッションのキャッチア
 ## References
 
 - **関連 ADR**: 
-  - [[pj-2026-07-13-d28f]]
-  - [[pj-2026-07-13-b5c2]]
-  - [[pj-2026-07-13-b51c]]
+  - `id-ref-removed`
+  - `id-ref-removed`
+  - `id-ref-removed`
 - **関連 spec**: 
-  - [[pj-2026-07-13-dd44]]
-  - [[pj-2026-07-13-c1bd]]
-  - [[pj-2026-07-13-47fd]]
+  - `id-ref-removed`
+  - `id-ref-removed`
+  - `id-ref-removed`
 - **関連 guideline**: 
-  - [[pj-2026-07-13-fba6]](思想レベルの原則)
-  - [[pj-2026-07-13-c302]](保存判断の詳細)
-  - [[pj-2026-07-13-b12c]](モデル最適化)
+  - `id-ref-removed`(思想レベルの原則)
+  - `id-ref-removed`(保存判断の詳細)
+  - `id-ref-removed`(モデル最適化)
 
 ## Change Log
 

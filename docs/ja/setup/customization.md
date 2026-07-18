@@ -17,9 +17,6 @@ tags:
 title: カスタマイズ
 type: setup
 updated: 2026-07-14 09:20:00+09:00
-id: pj-2026-07-13-e55f
-aliases:
-- pj-2026-07-13-e55f
 ---
 
 ## Summary
@@ -206,7 +203,7 @@ Instructions とは別に、より Chat レベルでの調整を行う。
 
 自分の Vault-Framework をベースに、他人にも使えるパッケージを作る:
 
-1. 個人情報を完全に除去(Naoya のパターンを参考)
+1. 個人情報を完全に除去(あなた(導入者) のパターンを参考)
 2. `<your-*>` プレースホルダで汎用化
 3. GitHub で Public リポジトリとして公開
 4. README で導入方法を明示
@@ -241,12 +238,12 @@ Instructions とは別に、より Chat レベルでの調整を行う。
 ## References
 
 - **関連 spec**: 
-  - [[pj-2026-07-13-f5e9]](統制語彙の拡張手順)
-  - [[pj-2026-07-13-d0dd]](保守運用の詳細)
+  - `id-ref-removed`(統制語彙の拡張手順)
+  - `id-ref-removed`(保守運用の詳細)
 - **関連 guideline**: 
-  - [[pj-2026-07-13-988d]](日常運用パターン)
+  - `id-ref-removed`(日常運用パターン)
 - **実装**: `vault-templates/00_meta/`(カスタマイズ対象の canonical)
 
 ## Next Step
 
-問題が発生した時は [[pj-2026-07-13-e32c|troubleshooting.md]] を参照してください。
+問題が発生した時は troubleshooting.md を参照してください。

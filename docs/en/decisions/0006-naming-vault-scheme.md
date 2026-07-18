@@ -1,7 +1,6 @@
 ---
 audience: mixed
 date: 2026-07-13
-id: pj-2026-07-15-ffd1
 keywords:
 - naming
 - vault
@@ -33,9 +32,6 @@ title_ja: 'ADR-0006: 命名スキーム: Vault / Vault-MCP / Vault-Framework'
 type: adr
 created: 2026-07-15 08:28:27+09:00
 updated: 2026-07-15 08:28:27+09:00
-aliases:
-- pj-2026-07-15-ffd1
-- adr-0006
 ---
 
 ## Summary
@@ -48,7 +44,7 @@ In splitting off Vault-Framework (ADR-0005), the naming of the three repositorie
 
 - Option A: `Vault` only (do not distinguish Framework or MCP by name)
 - Option B: `personal-vault-*` prefix unified (personal-vault, personal-vault-mcp, personal-vault-framework)
-- Option C: `<Naoya>-Vault` series (naoya-vault, naoya-vault-mcp)
+- Option C: `<the adopter>-Vault` series (<your-name>-vault, <your-name>-vault-mcp)
 - Option D: metaphorical series (brain/memory metaphors such as Cerebro / Cortex / Memex)
 - Option E: Codex series (codex, codex-mcp)
 - Option F: Archive / Ledger series (archive-* / ledger-*)
@@ -110,16 +106,16 @@ This prefix proposal was adopted early on and was even incorporated into the ini
 - The word "personal" feels off for adopters (a third-party adopter would feel "this isn't mine")
 - `Vault-*` is also better in URL brevity
 
-Details: [[../rejected-alternatives/naming-plan-personal-vault-prefix.md]] *(English translation pending)*
+Details: `id-ref-removed` *(English translation pending)*
 
 ### Other rejected options
 
-- **Option A** (Vault only): impossible to distinguish MCP and Framework. Details: [[../rejected-alternatives/naming-plan-vault-only.md]] *(English translation pending)*
-- **Option D** (Cerebro/Cortex series): overly ornamental; hinders understanding of function. Details: [[../rejected-alternatives/naming-plan-cerebro-cortex.md]] *(English translation pending)*
-- **Option E** (Codex series): risk of collision with OpenAI Codex. Details: [[../rejected-alternatives/naming-plan-codex.md]] *(English translation pending)*
-- **Option F** (Archive/Ledger series): feels "finished" or evokes finance. Details: [[../rejected-alternatives/naming-plan-archive-ledger.md]] *(English translation pending)*
-- **Option G** (Japanese naming): a barrier to multilingual support; reduces readability of GitHub URLs. Details: [[../rejected-alternatives/naming-plan-japanese.md]] *(English translation pending)*
-- **Option H** (function-name only): lacks branding; the project loses a sense of unity. Details: [[../rejected-alternatives/naming-plan-functional-only.md]] *(English translation pending)*
+- **Option A** (Vault only): impossible to distinguish MCP and Framework. Details: `id-ref-removed` *(English translation pending)*
+- **Option D** (Cerebro/Cortex series): overly ornamental; hinders understanding of function. Details: `id-ref-removed` *(English translation pending)*
+- **Option E** (Codex series): risk of collision with OpenAI Codex. Details: `id-ref-removed` *(English translation pending)*
+- **Option F** (Archive/Ledger series): feels "finished" or evokes finance. Details: `id-ref-removed` *(English translation pending)*
+- **Option G** (Japanese naming): a barrier to multilingual support; reduces readability of GitHub URLs. Details: `id-ref-removed` *(English translation pending)*
+- **Option H** (function-name only): lacks branding; the project loses a sense of unity. Details: `id-ref-removed` *(English translation pending)*
 
 ## Related
 

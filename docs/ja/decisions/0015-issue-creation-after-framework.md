@@ -2,7 +2,6 @@
 audience: mixed
 created: 2026-07-14 04:10:00+09:00
 date: 2026-07-13
-id: pj-2026-07-13-ab24
 keywords:
 - issue-creation
 - mcp-extension
@@ -29,9 +28,6 @@ tags:
 title: 'ADR-0015: Issue 起票機能は Framework 分離の次'
 type: adr
 updated: 2026-07-14 04:10:00+09:00
-aliases:
-- pj-2026-07-13-ab24
-- adr-0015
 ---
 
 ## Summary
@@ -49,7 +45,7 @@ Issue 起票機能の意義:
 
 - Chat 内で「対象アプリの実装を変える必要がある」と判断した時、直接 GitHub Issue を起票して Cursor 側で消化する workflow が可能
 - Vault-Framework での議論から、対象アプリのリポジトリに向けた作業依頼を自然に発生させられる
-- Naoya のプロダクト開発全般で活用できる
+- あなた(導入者) のプロダクト開発全般で活用できる
 
 同時に、以下 2 つの外部要因があった:
 
@@ -92,12 +88,12 @@ Issue 起票機能の意義:
 **Negative**:
 
 - Issue 起票 workflow の成立が数日〜数週間遅れる
-- その間は Naoya が手動で GitHub Issue を起票する必要がある(現状の運用と変わらないが、Framework での議論を直接 Issue 化する体験は得られない)
+- その間は あなた(導入者) が手動で GitHub Issue を起票する必要がある(現状の運用と変わらないが、Framework での議論を直接 Issue 化する体験は得られない)
 - Phase 3.2 実装時に Framework 側の Cursor 指示書テンプレートとの整合を取る必要がある
 
 **Mitigation**:
 
-- 手動 Issue 起票は現状既に可能(Framework で議論 → Naoya が Cursor に指示 → Cursor が Issue 起票)
+- 手動 Issue 起票は現状既に可能(Framework で議論 → あなた(導入者) が Cursor に指示 → Cursor が Issue 起票)
 - Framework 側の Cursor 指示書テンプレートで、Issue 起票を伴う場合の指示形式を予め定めておく(step 2 の scaffold に含める)
 
 ## Alternatives Considered
